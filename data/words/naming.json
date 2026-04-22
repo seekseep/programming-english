@@ -1,0 +1,406 @@
+[
+  {
+    "word": "active",
+    "meaning": "有効な、現在動いている状態"
+  },
+  {
+    "word": "archive",
+    "meaning": "保管する、過去データとして残す"
+  },
+  {
+    "word": "available",
+    "meaning": "利用できる、使用可能な状態"
+  },
+  {
+    "word": "backup",
+    "meaning": "予備として保存した控え"
+  },
+  {
+    "word": "base",
+    "meaning": "基準となる土台、基本部分"
+  },
+  {
+    "word": "build",
+    "meaning": "組み立てる、生成する"
+  },
+  {
+    "word": "cache",
+    "meaning": "再利用のために一時保存するデータ"
+  },
+  {
+    "word": "calculate",
+    "meaning": "計算する"
+  },
+  {
+    "word": "cancel",
+    "meaning": "取り消す"
+  },
+  {
+    "word": "child",
+    "meaning": "子要素、下位に属するもの"
+  },
+  {
+    "word": "collection",
+    "meaning": "複数の要素をまとめた集合"
+  },
+  {
+    "word": "compare",
+    "meaning": "比較する"
+  },
+  {
+    "word": "complete",
+    "meaning": "完了する"
+  },
+  {
+    "word": "completed",
+    "meaning": "完了済みの状態"
+  },
+  {
+    "word": "convert",
+    "meaning": "形式を変換する"
+  },
+  {
+    "word": "count",
+    "meaning": "件数、数えること"
+  },
+  {
+    "word": "create",
+    "meaning": "作成する"
+  },
+  {
+    "word": "current",
+    "meaning": "現在の、今の対象"
+  },
+  {
+    "word": "custom",
+    "meaning": "独自に設定した、既定ではない"
+  },
+  {
+    "word": "default",
+    "meaning": "既定の、初期設定の"
+  },
+  {
+    "word": "delete",
+    "meaning": "削除する"
+  },
+  {
+    "word": "detail",
+    "meaning": "詳細情報"
+  },
+  {
+    "word": "disabled",
+    "meaning": "無効化された状態"
+  },
+  {
+    "word": "draft",
+    "meaning": "下書き、未確定の状態"
+  },
+  {
+    "word": "empty",
+    "meaning": "空の、内容がない状態"
+  },
+  {
+    "word": "enabled",
+    "meaning": "有効になっている状態"
+  },
+  {
+    "word": "entry",
+    "meaning": "一覧や記録の一件"
+  },
+  {
+    "word": "error",
+    "meaning": "異常、失敗状態"
+  },
+  {
+    "word": "external",
+    "meaning": "外部の"
+  },
+  {
+    "word": "failed",
+    "meaning": "失敗した状態"
+  },
+  {
+    "word": "fetch",
+    "meaning": "取得する"
+  },
+  {
+    "word": "filter",
+    "meaning": "条件に合うものだけを残す"
+  },
+  {
+    "word": "format",
+    "meaning": "整形する、表示形式を整える"
+  },
+  {
+    "word": "global",
+    "meaning": "全体で共有される"
+  },
+  {
+    "word": "group",
+    "meaning": "グループ、関連するまとまり"
+  },
+  {
+    "word": "handle",
+    "meaning": "処理する、扱う"
+  },
+  {
+    "word": "handler",
+    "meaning": "処理を受け持つ役割"
+  },
+  {
+    "word": "hidden",
+    "meaning": "隠された、表示されない状態"
+  },
+  {
+    "word": "history",
+    "meaning": "履歴、過去の記録"
+  },
+  {
+    "word": "internal",
+    "meaning": "内部の"
+  },
+  {
+    "word": "item",
+    "meaning": "項目、一つひとつの要素"
+  },
+  {
+    "word": "latest",
+    "meaning": "最新の"
+  },
+  {
+    "word": "limit",
+    "meaning": "上限、制限値"
+  },
+  {
+    "word": "list",
+    "meaning": "一覧"
+  },
+  {
+    "word": "load",
+    "meaning": "読み込む"
+  },
+  {
+    "word": "loading",
+    "meaning": "読み込み中の状態"
+  },
+  {
+    "word": "local",
+    "meaning": "その場だけで使う、局所的な"
+  },
+  {
+    "word": "manager",
+    "meaning": "管理する役割"
+  },
+  {
+    "word": "member",
+    "meaning": "所属している要素や人"
+  },
+  {
+    "word": "merge",
+    "meaning": "複数をひとつに結合する"
+  },
+  {
+    "word": "message",
+    "meaning": "通知や説明として扱う文"
+  },
+  {
+    "word": "offset",
+    "meaning": "基準位置からのずれ"
+  },
+  {
+    "word": "optional",
+    "meaning": "省略可能な"
+  },
+  {
+    "word": "order",
+    "meaning": "順序、並び順"
+  },
+  {
+    "word": "owner",
+    "meaning": "所有者、管理責任を持つ対象"
+  },
+  {
+    "word": "parent",
+    "meaning": "親要素、上位にあるもの"
+  },
+  {
+    "word": "parse",
+    "meaning": "文字列などを解析して取り出す"
+  },
+  {
+    "word": "payload",
+    "meaning": "やり取りする実データ本体"
+  },
+  {
+    "word": "pending",
+    "meaning": "保留中、まだ完了していない状態"
+  },
+  {
+    "word": "permanent",
+    "meaning": "恒久的な、一時的でない"
+  },
+  {
+    "word": "previous",
+    "meaning": "ひとつ前の、以前の"
+  },
+  {
+    "word": "primary",
+    "meaning": "主となる、優先される"
+  },
+  {
+    "word": "private",
+    "meaning": "内部だけで使う公開範囲"
+  },
+  {
+    "word": "profile",
+    "meaning": "利用者や設定の情報まとまり"
+  },
+  {
+    "word": "provider",
+    "meaning": "値や機能を供給する役割"
+  },
+  {
+    "word": "public",
+    "meaning": "外部から利用できる公開範囲"
+  },
+  {
+    "word": "publish",
+    "meaning": "公開する"
+  },
+  {
+    "word": "published",
+    "meaning": "公開済みの状態"
+  },
+  {
+    "word": "queue",
+    "meaning": "順番待ちの列"
+  },
+  {
+    "word": "recent",
+    "meaning": "最近の"
+  },
+  {
+    "word": "record",
+    "meaning": "記録、一件分のデータ"
+  },
+  {
+    "word": "remove",
+    "meaning": "取り除く"
+  },
+  {
+    "word": "repository",
+    "meaning": "データアクセスをまとめる窓口"
+  },
+  {
+    "word": "required",
+    "meaning": "必須の、欠かせない"
+  },
+  {
+    "word": "result",
+    "meaning": "結果"
+  },
+  {
+    "word": "retry",
+    "meaning": "再試行する"
+  },
+  {
+    "word": "save",
+    "meaning": "保存する"
+  },
+  {
+    "word": "schema",
+    "meaning": "データ構造や定義の枠組み"
+  },
+  {
+    "word": "search",
+    "meaning": "検索する"
+  },
+  {
+    "word": "secondary",
+    "meaning": "補助的な、第二の"
+  },
+  {
+    "word": "secret",
+    "meaning": "秘密情報として扱う値"
+  },
+  {
+    "word": "selected",
+    "meaning": "選択されている状態"
+  },
+  {
+    "word": "service",
+    "meaning": "処理や機能を提供する役割"
+  },
+  {
+    "word": "session",
+    "meaning": "一連の利用状態や接続単位"
+  },
+  {
+    "word": "setting",
+    "meaning": "設定項目"
+  },
+  {
+    "word": "shared",
+    "meaning": "共有される"
+  },
+  {
+    "word": "sort",
+    "meaning": "並び替える"
+  },
+  {
+    "word": "source",
+    "meaning": "元になる入力や参照元"
+  },
+  {
+    "word": "split",
+    "meaning": "分割する"
+  },
+  {
+    "word": "stack",
+    "meaning": "後入れ先出しの積み重ね構造"
+  },
+  {
+    "word": "status",
+    "meaning": "状態"
+  },
+  {
+    "word": "summary",
+    "meaning": "要約、全体を短くまとめた情報"
+  },
+  {
+    "word": "target",
+    "meaning": "対象、目標"
+  },
+  {
+    "word": "temporary",
+    "meaning": "一時的な"
+  },
+  {
+    "word": "token",
+    "meaning": "識別や認証に使う値"
+  },
+  {
+    "word": "total",
+    "meaning": "合計、全体量"
+  },
+  {
+    "word": "update",
+    "meaning": "更新する"
+  },
+  {
+    "word": "validate",
+    "meaning": "妥当か確認する"
+  },
+  {
+    "word": "value",
+    "meaning": "値"
+  },
+  {
+    "word": "version",
+    "meaning": "版、変更の世代"
+  },
+  {
+    "word": "visible",
+    "meaning": "見える、表示されている状態"
+  }
+]

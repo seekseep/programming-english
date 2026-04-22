@@ -1,0 +1,278 @@
+[
+  {
+    "word": "append",
+    "meaning": "末尾に追加する"
+  },
+  {
+    "word": "array",
+    "meaning": "配列、複数の値を順番に並べて保持するもの"
+  },
+  {
+    "word": "assign",
+    "meaning": "割り当てる、値を代入する"
+  },
+  {
+    "word": "await",
+    "meaning": "非同期処理の完了を待つ"
+  },
+  {
+    "word": "boolean",
+    "meaning": "真偽値、true または false を表す型"
+  },
+  {
+    "word": "break",
+    "meaning": "処理を途中で打ち切る"
+  },
+  {
+    "word": "case",
+    "meaning": "分岐の選択肢、条件ごとの処理"
+  },
+  {
+    "word": "catch",
+    "meaning": "発生した例外を受け取って処理する"
+  },
+  {
+    "word": "change",
+    "meaning": "変更、値が変わった状態"
+  },
+  {
+    "word": "class",
+    "meaning": "クラス、設計図となる型"
+  },
+  {
+    "word": "click",
+    "meaning": "クリック、押下イベント"
+  },
+  {
+    "word": "compare",
+    "meaning": "比較する"
+  },
+  {
+    "word": "continue",
+    "meaning": "次の繰り返しへ進む"
+  },
+  {
+    "word": "create",
+    "meaning": "作成する"
+  },
+  {
+    "word": "current",
+    "meaning": "現在の、今対象になっている"
+  },
+  {
+    "word": "default",
+    "meaning": "既定値、初期設定"
+  },
+  {
+    "word": "delete",
+    "meaning": "削除する"
+  },
+  {
+    "word": "dispatch",
+    "meaning": "イベントや処理を送り出す"
+  },
+  {
+    "word": "document",
+    "meaning": "ドキュメント、HTML 文書全体"
+  },
+  {
+    "word": "element",
+    "meaning": "要素、DOM の構成単位"
+  },
+  {
+    "word": "event",
+    "meaning": "イベント、発生した出来事"
+  },
+  {
+    "word": "every",
+    "meaning": "すべてが条件を満たすか判定する"
+  },
+  {
+    "word": "export",
+    "meaning": "外部へ公開する"
+  },
+  {
+    "word": "extends",
+    "meaning": "継承する、機能を引き継ぐ"
+  },
+  {
+    "word": "fetch",
+    "meaning": "取得する、外部データを読み込む"
+  },
+  {
+    "word": "filter",
+    "meaning": "条件に合うものだけを取り出す"
+  },
+  {
+    "word": "finally",
+    "meaning": "例外処理の最後に必ず実行される部分"
+  },
+  {
+    "word": "focus",
+    "meaning": "フォーカス、入力対象として注目された状態"
+  },
+  {
+    "word": "function",
+    "meaning": "関数、処理をまとめたもの"
+  },
+  {
+    "word": "handle",
+    "meaning": "処理する、扱う"
+  },
+  {
+    "word": "import",
+    "meaning": "外部の機能を読み込む"
+  },
+  {
+    "word": "input",
+    "meaning": "入力、入力値"
+  },
+  {
+    "word": "listener",
+    "meaning": "イベントを監視する仕組み"
+  },
+  {
+    "word": "local",
+    "meaning": "ローカル、現在の範囲だけで使う"
+  },
+  {
+    "word": "never",
+    "meaning": "決して発生しないことを表す型"
+  },
+  {
+    "word": "null",
+    "meaning": "値が存在しないことを表す値"
+  },
+  {
+    "word": "number",
+    "meaning": "数値型"
+  },
+  {
+    "word": "object",
+    "meaning": "オブジェクト、キーと値のまとまり"
+  },
+  {
+    "word": "parse",
+    "meaning": "解析して別の形に変換する"
+  },
+  {
+    "word": "pending",
+    "meaning": "保留中、まだ完了していない状態"
+  },
+  {
+    "word": "prepend",
+    "meaning": "先頭に追加する"
+  },
+  {
+    "word": "prevent",
+    "meaning": "防ぐ、既定動作を止める"
+  },
+  {
+    "word": "promise",
+    "meaning": "非同期処理の完了結果を表す仕組み"
+  },
+  {
+    "word": "property",
+    "meaning": "プロパティ、オブジェクトの属性"
+  },
+  {
+    "word": "query",
+    "meaning": "問い合わせる、条件に合うものを探す"
+  },
+  {
+    "word": "reduce",
+    "meaning": "まとめる、配列をひとつの値に集約する"
+  },
+  {
+    "word": "reject",
+    "meaning": "拒否する、失敗として終了する"
+  },
+  {
+    "word": "remove",
+    "meaning": "取り除く、削除する"
+  },
+  {
+    "word": "render",
+    "meaning": "画面に描画する"
+  },
+  {
+    "word": "replace",
+    "meaning": "置き換える"
+  },
+  {
+    "word": "request",
+    "meaning": "要求、データ取得の依頼"
+  },
+  {
+    "word": "resolve",
+    "meaning": "解決する、成功結果を確定する"
+  },
+  {
+    "word": "response",
+    "meaning": "応答、返された結果"
+  },
+  {
+    "word": "return",
+    "meaning": "値を返す、処理を終了して戻る"
+  },
+  {
+    "word": "selector",
+    "meaning": "選択条件、要素を指定する式"
+  },
+  {
+    "word": "session",
+    "meaning": "利用中の一連の操作状態"
+  },
+  {
+    "word": "slice",
+    "meaning": "一部を切り出す"
+  },
+  {
+    "word": "some",
+    "meaning": "一部が条件を満たすか判定する"
+  },
+  {
+    "word": "splice",
+    "meaning": "途中を削除や挿入で組み替える"
+  },
+  {
+    "word": "string",
+    "meaning": "文字列型"
+  },
+  {
+    "word": "submit",
+    "meaning": "送信する"
+  },
+  {
+    "word": "switch",
+    "meaning": "条件に応じて分岐する"
+  },
+  {
+    "word": "target",
+    "meaning": "対象、イベントの発生元"
+  },
+  {
+    "word": "throw",
+    "meaning": "例外を発生させる"
+  },
+  {
+    "word": "undefined",
+    "meaning": "未定義、値が設定されていない状態"
+  },
+  {
+    "word": "unknown",
+    "meaning": "不明な型、安全に扱う前提の型"
+  },
+  {
+    "word": "update",
+    "meaning": "更新する"
+  },
+  {
+    "word": "validate",
+    "meaning": "妥当かどうか検証する"
+  },
+  {
+    "word": "value",
+    "meaning": "値"
+  }
+]

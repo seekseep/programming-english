@@ -1,0 +1,242 @@
+[
+  {
+    "word": "action",
+    "meaning": "送信先の処理先 URL"
+  },
+  {
+    "word": "article",
+    "meaning": "記事や独立した内容の区画"
+  },
+  {
+    "word": "aside",
+    "meaning": "補足情報の領域"
+  },
+  {
+    "word": "audio",
+    "meaning": "音声コンテンツ"
+  },
+  {
+    "word": "author",
+    "meaning": "作成者"
+  },
+  {
+    "word": "body",
+    "meaning": "本文全体を表す要素"
+  },
+  {
+    "word": "button",
+    "meaning": "押して操作するためのボタン"
+  },
+  {
+    "word": "canvas",
+    "meaning": "描画領域"
+  },
+  {
+    "word": "caption",
+    "meaning": "表や図の見出し"
+  },
+  {
+    "word": "charset",
+    "meaning": "文字コードの指定"
+  },
+  {
+    "word": "checkbox",
+    "meaning": "複数選択できるチェック項目"
+  },
+  {
+    "word": "checked",
+    "meaning": "選択済みの状態"
+  },
+  {
+    "word": "class",
+    "meaning": "要素を分類するための属性"
+  },
+  {
+    "word": "content",
+    "meaning": "内容、メタ情報の中身"
+  },
+  {
+    "word": "description",
+    "meaning": "説明文"
+  },
+  {
+    "word": "details",
+    "meaning": "開閉できる詳細情報"
+  },
+  {
+    "word": "dialog",
+    "meaning": "対話用の画面やポップアップ"
+  },
+  {
+    "word": "disabled",
+    "meaning": "無効化された状態"
+  },
+  {
+    "word": "download",
+    "meaning": "ダウンロードさせる指定"
+  },
+  {
+    "word": "email",
+    "meaning": "電子メール用の入力形式"
+  },
+  {
+    "word": "figure",
+    "meaning": "図表や挿絵のまとまり"
+  },
+  {
+    "word": "footer",
+    "meaning": "下部領域、脚注や補足の部分"
+  },
+  {
+    "word": "form",
+    "meaning": "入力内容を送信するためのフォーム"
+  },
+  {
+    "word": "header",
+    "meaning": "上部領域、導入部分"
+  },
+  {
+    "word": "hidden",
+    "meaning": "表示しない状態"
+  },
+  {
+    "word": "image",
+    "meaning": "画像"
+  },
+  {
+    "word": "input",
+    "meaning": "入力欄"
+  },
+  {
+    "word": "label",
+    "meaning": "入力項目の見出し"
+  },
+  {
+    "word": "legend",
+    "meaning": "入力グループの説明見出し"
+  },
+  {
+    "word": "link",
+    "meaning": "外部資源との関連付け"
+  },
+  {
+    "word": "list",
+    "meaning": "項目の一覧"
+  },
+  {
+    "word": "main",
+    "meaning": "主要な内容の領域"
+  },
+  {
+    "word": "meter",
+    "meaning": "量や割合を示す計器表示"
+  },
+  {
+    "word": "method",
+    "meaning": "送信方法"
+  },
+  {
+    "word": "multiple",
+    "meaning": "複数選択を許可する状態"
+  },
+  {
+    "word": "navigation",
+    "meaning": "案内用のリンク群"
+  },
+  {
+    "word": "option",
+    "meaning": "選択肢"
+  },
+  {
+    "word": "password",
+    "meaning": "隠して入力する文字列"
+  },
+  {
+    "word": "pattern",
+    "meaning": "入力値の書式パターン"
+  },
+  {
+    "word": "picture",
+    "meaning": "画像候補をまとめる要素"
+  },
+  {
+    "word": "placeholder",
+    "meaning": "入力前に表示する補助文"
+  },
+  {
+    "word": "progress",
+    "meaning": "進行状況を示す表示"
+  },
+  {
+    "word": "radio",
+    "meaning": "ひとつだけ選ぶ選択項目"
+  },
+  {
+    "word": "required",
+    "meaning": "入力必須の状態"
+  },
+  {
+    "word": "reset",
+    "meaning": "入力内容を初期状態に戻す"
+  },
+  {
+    "word": "script",
+    "meaning": "スクリプトコード"
+  },
+  {
+    "word": "search",
+    "meaning": "検索用の入力形式"
+  },
+  {
+    "word": "section",
+    "meaning": "意味を持った区切り"
+  },
+  {
+    "word": "select",
+    "meaning": "選択欄、選ぶための要素"
+  },
+  {
+    "word": "selected",
+    "meaning": "選ばれている状態"
+  },
+  {
+    "word": "source",
+    "meaning": "参照元のデータ"
+  },
+  {
+    "word": "style",
+    "meaning": "見た目の指定"
+  },
+  {
+    "word": "submit",
+    "meaning": "送信するための値や動作"
+  },
+  {
+    "word": "summary",
+    "meaning": "要約、見出しとして表示する内容"
+  },
+  {
+    "word": "table",
+    "meaning": "表形式のデータ"
+  },
+  {
+    "word": "target",
+    "meaning": "リンクや送信の開き先"
+  },
+  {
+    "word": "title",
+    "meaning": "題名、ページや要素の名称"
+  },
+  {
+    "word": "track",
+    "meaning": "字幕や補助データのトラック"
+  },
+  {
+    "word": "video",
+    "meaning": "動画コンテンツ"
+  },
+  {
+    "word": "viewport",
+    "meaning": "表示領域"
+  }
+]

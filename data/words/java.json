@@ -1,0 +1,258 @@
+[
+  {
+    "word": "abstract",
+    "meaning": "抽象的な、具体実装を持たない"
+  },
+  {
+    "word": "adapter",
+    "meaning": "接続方法を合わせるための仲介役"
+  },
+  {
+    "word": "annotation",
+    "meaning": "コードに付ける補足情報"
+  },
+  {
+    "word": "argument",
+    "meaning": "呼び出し時に渡す値"
+  },
+  {
+    "word": "array",
+    "meaning": "配列"
+  },
+  {
+    "word": "bound",
+    "meaning": "型引数の上限や下限として制約された"
+  },
+  {
+    "word": "builder",
+    "meaning": "段階的にオブジェクトを組み立てる仕組み"
+  },
+  {
+    "word": "case",
+    "meaning": "分岐の選択肢"
+  },
+  {
+    "word": "catch",
+    "meaning": "例外を受け取って処理する"
+  },
+  {
+    "word": "class",
+    "meaning": "クラス"
+  },
+  {
+    "word": "collect",
+    "meaning": "集めてまとめる"
+  },
+  {
+    "word": "collection",
+    "meaning": "要素をまとめて扱う集合"
+  },
+  {
+    "word": "comparable",
+    "meaning": "比較順序を定義できる"
+  },
+  {
+    "word": "comparator",
+    "meaning": "比較方法を外部から与える仕組み"
+  },
+  {
+    "word": "compare",
+    "meaning": "比較する"
+  },
+  {
+    "word": "constructor",
+    "meaning": "生成時に呼ばれる初期化処理"
+  },
+  {
+    "word": "consumer",
+    "meaning": "値を受け取って処理する役割"
+  },
+  {
+    "word": "contains",
+    "meaning": "含んでいるか判定する"
+  },
+  {
+    "word": "decorator",
+    "meaning": "機能を追加で包み込む役割"
+  },
+  {
+    "word": "deprecated",
+    "meaning": "非推奨、将来の利用を避けるべき状態"
+  },
+  {
+    "word": "equals",
+    "meaning": "等しいか比較する"
+  },
+  {
+    "word": "exception",
+    "meaning": "例外、通常と異なる処理経路"
+  },
+  {
+    "word": "extends",
+    "meaning": "継承する"
+  },
+  {
+    "word": "factory",
+    "meaning": "生成処理をまとめる役割"
+  },
+  {
+    "word": "filter",
+    "meaning": "条件に合うものだけを通す"
+  },
+  {
+    "word": "final",
+    "meaning": "変更や継承を禁止する"
+  },
+  {
+    "word": "future",
+    "meaning": "後で利用できる結果"
+  },
+  {
+    "word": "generic",
+    "meaning": "型を後から指定できる汎用的な仕組み"
+  },
+  {
+    "word": "implements",
+    "meaning": "インターフェースを実装する"
+  },
+  {
+    "word": "import",
+    "meaning": "他の型を読み込む"
+  },
+  {
+    "word": "instance",
+    "meaning": "クラスから作られた実体"
+  },
+  {
+    "word": "interface",
+    "meaning": "実装すべき契約を表す型"
+  },
+  {
+    "word": "iterable",
+    "meaning": "順番に取り出して走査できる"
+  },
+  {
+    "word": "iterator",
+    "meaning": "要素を一つずつ取り出すための仕組み"
+  },
+  {
+    "word": "nullable",
+    "meaning": "null を取り得ることを示す"
+  },
+  {
+    "word": "object",
+    "meaning": "オブジェクト"
+  },
+  {
+    "word": "observer",
+    "meaning": "変化を監視して通知を受ける役割"
+  },
+  {
+    "word": "optional",
+    "meaning": "値があるかもしれない容器"
+  },
+  {
+    "word": "override",
+    "meaning": "親の定義を上書きして実装する"
+  },
+  {
+    "word": "package",
+    "meaning": "関連する型をまとめる名前空間"
+  },
+  {
+    "word": "parameter",
+    "meaning": "定義側で受け取る引数"
+  },
+  {
+    "word": "predicate",
+    "meaning": "真偽を返す条件関数"
+  },
+  {
+    "word": "private",
+    "meaning": "クラス内部だけで使える公開範囲"
+  },
+  {
+    "word": "protected",
+    "meaning": "継承先からも使える公開範囲"
+  },
+  {
+    "word": "public",
+    "meaning": "どこからでも使える公開範囲"
+  },
+  {
+    "word": "remove",
+    "meaning": "取り除く"
+  },
+  {
+    "word": "replace",
+    "meaning": "置き換える"
+  },
+  {
+    "word": "repository",
+    "meaning": "データアクセスをまとめる役割"
+  },
+  {
+    "word": "return",
+    "meaning": "値を返す"
+  },
+  {
+    "word": "runtime",
+    "meaning": "実行時環境"
+  },
+  {
+    "word": "service",
+    "meaning": "処理を提供する役割"
+  },
+  {
+    "word": "singleton",
+    "meaning": "実体を一つに限定する設計"
+  },
+  {
+    "word": "static",
+    "meaning": "インスタンスに依存しない共有要素"
+  },
+  {
+    "word": "strategy",
+    "meaning": "処理方法を切り替える設計"
+  },
+  {
+    "word": "stream",
+    "meaning": "要素を流れとして処理する仕組み"
+  },
+  {
+    "word": "string",
+    "meaning": "文字列"
+  },
+  {
+    "word": "supplier",
+    "meaning": "値を供給する役割"
+  },
+  {
+    "word": "switch",
+    "meaning": "条件に応じて分岐する"
+  },
+  {
+    "word": "synchronized",
+    "meaning": "同時実行を制御する"
+  },
+  {
+    "word": "thread",
+    "meaning": "並行に動く処理単位"
+  },
+  {
+    "word": "throw",
+    "meaning": "例外を発生させる"
+  },
+  {
+    "word": "transient",
+    "meaning": "永続化対象から外す"
+  },
+  {
+    "word": "volatile",
+    "meaning": "変更が直ちに共有されることを示す"
+  },
+  {
+    "word": "wildcard",
+    "meaning": "任意の型範囲を表す記号"
+  }
+]

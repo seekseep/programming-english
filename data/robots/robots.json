@@ -1,0 +1,17 @@
+[
+  {
+    "id": "robo-alpha",
+    "name": "アルファ",
+    "description": "バランス型のスタンダードロボット"
+  },
+  {
+    "id": "robo-beta",
+    "name": "ベータ",
+    "description": "スリムで俊敏なロボット"
+  },
+  {
+    "id": "robo-gamma",
+    "name": "ガンマ",
+    "description": "重厚でパワフルなロボット"
+  }
+]

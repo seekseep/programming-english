@@ -1,0 +1,262 @@
+[
+  {
+    "word": "active",
+    "meaning": "現在有効になっている状態"
+  },
+  {
+    "word": "argument",
+    "meaning": "呼び出し時に渡す値"
+  },
+  {
+    "word": "array",
+    "meaning": "配列"
+  },
+  {
+    "word": "binary",
+    "meaning": "二進の、バイナリ形式"
+  },
+  {
+    "word": "boolean",
+    "meaning": "真偽値型"
+  },
+  {
+    "word": "byte",
+    "meaning": "バイト型"
+  },
+  {
+    "word": "cell",
+    "meaning": "セル、表のひと区画"
+  },
+  {
+    "word": "close",
+    "meaning": "閉じる"
+  },
+  {
+    "word": "collection",
+    "meaning": "項目をまとめて持つ集合"
+  },
+  {
+    "word": "compare",
+    "meaning": "比較する"
+  },
+  {
+    "word": "convert",
+    "meaning": "変換する"
+  },
+  {
+    "word": "current",
+    "meaning": "現在の対象"
+  },
+  {
+    "word": "date",
+    "meaning": "日付型"
+  },
+  {
+    "word": "decimal",
+    "meaning": "小数型"
+  },
+  {
+    "word": "default",
+    "meaning": "既定値"
+  },
+  {
+    "word": "dictionary",
+    "meaning": "キーと値で管理する辞書構造"
+  },
+  {
+    "word": "double",
+    "meaning": "倍精度の数値型"
+  },
+  {
+    "word": "each",
+    "meaning": "それぞれの要素"
+  },
+  {
+    "word": "error",
+    "meaning": "エラー、異常状態"
+  },
+  {
+    "word": "event",
+    "meaning": "イベント"
+  },
+  {
+    "word": "exit",
+    "meaning": "途中で抜ける"
+  },
+  {
+    "word": "explicit",
+    "meaning": "明示的な、暗黙にしない設定"
+  },
+  {
+    "word": "format",
+    "meaning": "整形する、書式を指定する"
+  },
+  {
+    "word": "function",
+    "meaning": "値を返す処理のまとまり"
+  },
+  {
+    "word": "handler",
+    "meaning": "イベントを処理する役割"
+  },
+  {
+    "word": "integer",
+    "meaning": "整数型"
+  },
+  {
+    "word": "length",
+    "meaning": "長さ"
+  },
+  {
+    "word": "list",
+    "meaning": "一覧、順序付きの集合"
+  },
+  {
+    "word": "long",
+    "meaning": "長整数型"
+  },
+  {
+    "word": "loop",
+    "meaning": "繰り返し処理"
+  },
+  {
+    "word": "method",
+    "meaning": "メソッド、呼び出せる処理"
+  },
+  {
+    "word": "module",
+    "meaning": "関連する処理をまとめる単位"
+  },
+  {
+    "word": "next",
+    "meaning": "次の要素や次の繰り返し"
+  },
+  {
+    "word": "nothing",
+    "meaning": "何も参照していない状態"
+  },
+  {
+    "word": "object",
+    "meaning": "オブジェクト"
+  },
+  {
+    "word": "open",
+    "meaning": "開く"
+  },
+  {
+    "word": "option",
+    "meaning": "設定項目"
+  },
+  {
+    "word": "optional",
+    "meaning": "省略可能な"
+  },
+  {
+    "word": "parameter",
+    "meaning": "受け取る引数"
+  },
+  {
+    "word": "preserve",
+    "meaning": "保持する"
+  },
+  {
+    "word": "print",
+    "meaning": "出力する"
+  },
+  {
+    "word": "private",
+    "meaning": "内部だけで使える公開範囲"
+  },
+  {
+    "word": "property",
+    "meaning": "プロパティ、属性"
+  },
+  {
+    "word": "public",
+    "meaning": "外部から使える公開範囲"
+  },
+  {
+    "word": "raise",
+    "meaning": "イベントやエラーを発生させる"
+  },
+  {
+    "word": "range",
+    "meaning": "範囲、連続したセルのまとまり"
+  },
+  {
+    "word": "read",
+    "meaning": "読み込む"
+  },
+  {
+    "word": "replace",
+    "meaning": "置き換える"
+  },
+  {
+    "word": "resume",
+    "meaning": "中断地点から再開する"
+  },
+  {
+    "word": "return",
+    "meaning": "値を返す"
+  },
+  {
+    "word": "save",
+    "meaning": "保存する"
+  },
+  {
+    "word": "selection",
+    "meaning": "選択中の範囲や対象"
+  },
+  {
+    "word": "shared",
+    "meaning": "共通で使う、共有された"
+  },
+  {
+    "word": "single",
+    "meaning": "単精度の数値型"
+  },
+  {
+    "word": "split",
+    "meaning": "分割する"
+  },
+  {
+    "word": "step",
+    "meaning": "増減の刻み幅"
+  },
+  {
+    "word": "string",
+    "meaning": "文字列型"
+  },
+  {
+    "word": "text",
+    "meaning": "文字列データ"
+  },
+  {
+    "word": "trim",
+    "meaning": "前後の不要な空白を取り除く"
+  },
+  {
+    "word": "until",
+    "meaning": "その条件になるまで"
+  },
+  {
+    "word": "value",
+    "meaning": "値"
+  },
+  {
+    "word": "visible",
+    "meaning": "見えている状態"
+  },
+  {
+    "word": "workbook",
+    "meaning": "ブック、複数シートを持つファイル"
+  },
+  {
+    "word": "worksheet",
+    "meaning": "ワークシート"
+  },
+  {
+    "word": "write",
+    "meaning": "書き込む"
+  }
+]

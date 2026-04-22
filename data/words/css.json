@@ -1,0 +1,322 @@
+[
+  {
+    "word": "absolute",
+    "meaning": "絶対位置、基準から固定して配置する状態"
+  },
+  {
+    "word": "active",
+    "meaning": "操作中の状態"
+  },
+  {
+    "word": "after",
+    "meaning": "要素の後ろに作る疑似要素"
+  },
+  {
+    "word": "align",
+    "meaning": "位置をそろえる"
+  },
+  {
+    "word": "animation",
+    "meaning": "連続した動きの指定"
+  },
+  {
+    "word": "attachment",
+    "meaning": "背景画像の固定方法"
+  },
+  {
+    "word": "background",
+    "meaning": "背景"
+  },
+  {
+    "word": "before",
+    "meaning": "要素の前に作る疑似要素"
+  },
+  {
+    "word": "block",
+    "meaning": "行全体を占有する表示形式"
+  },
+  {
+    "word": "blur",
+    "meaning": "ぼかし"
+  },
+  {
+    "word": "bold",
+    "meaning": "太字"
+  },
+  {
+    "word": "border",
+    "meaning": "境界線"
+  },
+  {
+    "word": "brightness",
+    "meaning": "明るさ"
+  },
+  {
+    "word": "capitalize",
+    "meaning": "先頭文字を大文字にする"
+  },
+  {
+    "word": "center",
+    "meaning": "中央"
+  },
+  {
+    "word": "child",
+    "meaning": "子要素"
+  },
+  {
+    "word": "clip",
+    "meaning": "表示範囲を切り取る"
+  },
+  {
+    "word": "collapse",
+    "meaning": "折りたたむ、境界をまとめる"
+  },
+  {
+    "word": "color",
+    "meaning": "文字色や色"
+  },
+  {
+    "word": "column",
+    "meaning": "列方向"
+  },
+  {
+    "word": "content",
+    "meaning": "挿入する内容"
+  },
+  {
+    "word": "contrast",
+    "meaning": "コントラスト、明暗差"
+  },
+  {
+    "word": "cover",
+    "meaning": "領域を覆うように広げる"
+  },
+  {
+    "word": "cursor",
+    "meaning": "マウスポインターの形"
+  },
+  {
+    "word": "delay",
+    "meaning": "遅延時間"
+  },
+  {
+    "word": "display",
+    "meaning": "表示形式"
+  },
+  {
+    "word": "duration",
+    "meaning": "継続時間"
+  },
+  {
+    "word": "filter",
+    "meaning": "視覚効果をかける"
+  },
+  {
+    "word": "first",
+    "meaning": "最初の要素"
+  },
+  {
+    "word": "fixed",
+    "meaning": "固定位置"
+  },
+  {
+    "word": "focus",
+    "meaning": "注目されている状態"
+  },
+  {
+    "word": "gap",
+    "meaning": "要素間のすき間"
+  },
+  {
+    "word": "grayscale",
+    "meaning": "灰色化"
+  },
+  {
+    "word": "grow",
+    "meaning": "伸びる、余白を埋めて拡大する"
+  },
+  {
+    "word": "height",
+    "meaning": "高さ"
+  },
+  {
+    "word": "hidden",
+    "meaning": "隠す、見えない状態"
+  },
+  {
+    "word": "hover",
+    "meaning": "マウスが乗っている状態"
+  },
+  {
+    "word": "image",
+    "meaning": "画像"
+  },
+  {
+    "word": "inherit",
+    "meaning": "親要素から値を受け継ぐ"
+  },
+  {
+    "word": "initial",
+    "meaning": "初期値に戻す"
+  },
+  {
+    "word": "inline",
+    "meaning": "行内に並ぶ表示形式"
+  },
+  {
+    "word": "italic",
+    "meaning": "斜体"
+  },
+  {
+    "word": "justify",
+    "meaning": "両端や指定位置にそろえる"
+  },
+  {
+    "word": "last",
+    "meaning": "最後の要素"
+  },
+  {
+    "word": "linear",
+    "meaning": "一定の速さで変化する"
+  },
+  {
+    "word": "lowercase",
+    "meaning": "小文字に変換する"
+  },
+  {
+    "word": "margin",
+    "meaning": "外側の余白"
+  },
+  {
+    "word": "maximum",
+    "meaning": "最大値"
+  },
+  {
+    "word": "minimum",
+    "meaning": "最小値"
+  },
+  {
+    "word": "none",
+    "meaning": "なし、適用しない状態"
+  },
+  {
+    "word": "opacity",
+    "meaning": "不透明度"
+  },
+  {
+    "word": "order",
+    "meaning": "並び順"
+  },
+  {
+    "word": "outline",
+    "meaning": "外側の線"
+  },
+  {
+    "word": "overflow",
+    "meaning": "はみ出した内容の扱い"
+  },
+  {
+    "word": "padding",
+    "meaning": "内側の余白"
+  },
+  {
+    "word": "pointer",
+    "meaning": "指し示す形のカーソル"
+  },
+  {
+    "word": "position",
+    "meaning": "配置方法"
+  },
+  {
+    "word": "radius",
+    "meaning": "角の丸みの半径"
+  },
+  {
+    "word": "relative",
+    "meaning": "相対位置"
+  },
+  {
+    "word": "repeat",
+    "meaning": "繰り返す"
+  },
+  {
+    "word": "rotate",
+    "meaning": "回転する"
+  },
+  {
+    "word": "row",
+    "meaning": "行方向"
+  },
+  {
+    "word": "scale",
+    "meaning": "拡大縮小する"
+  },
+  {
+    "word": "separate",
+    "meaning": "分離する"
+  },
+  {
+    "word": "shadow",
+    "meaning": "影"
+  },
+  {
+    "word": "shrink",
+    "meaning": "縮む、縮小する"
+  },
+  {
+    "word": "size",
+    "meaning": "大きさ"
+  },
+  {
+    "word": "sticky",
+    "meaning": "一定位置で張り付く配置"
+  },
+  {
+    "word": "stretch",
+    "meaning": "引き伸ばす"
+  },
+  {
+    "word": "table",
+    "meaning": "表として並べる表示形式"
+  },
+  {
+    "word": "timing",
+    "meaning": "変化の進み方"
+  },
+  {
+    "word": "transform",
+    "meaning": "変形する"
+  },
+  {
+    "word": "transition",
+    "meaning": "状態変化をなめらかにする"
+  },
+  {
+    "word": "translate",
+    "meaning": "位置を移動する"
+  },
+  {
+    "word": "transparent",
+    "meaning": "透明な状態"
+  },
+  {
+    "word": "underline",
+    "meaning": "下線"
+  },
+  {
+    "word": "uppercase",
+    "meaning": "大文字に変換する"
+  },
+  {
+    "word": "visible",
+    "meaning": "見える状態"
+  },
+  {
+    "word": "width",
+    "meaning": "幅"
+  },
+  {
+    "word": "wrap",
+    "meaning": "折り返す"
+  }
+]

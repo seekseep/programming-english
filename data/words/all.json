@@ -1,0 +1,1558 @@
+[
+  {
+    "word": "absolute",
+    "meaning": "絶対位置、基準から固定して配置する状態"
+  },
+  {
+    "word": "abstract",
+    "meaning": "抽象的な、具体実装を持たない"
+  },
+  {
+    "word": "action",
+    "meaning": "送信先の処理先 URL"
+  },
+  {
+    "word": "active",
+    "meaning": "有効な、現在動いている状態"
+  },
+  {
+    "word": "adapter",
+    "meaning": "接続方法を合わせるための仲介役"
+  },
+  {
+    "word": "after",
+    "meaning": "要素の後ろに作る疑似要素"
+  },
+  {
+    "word": "align",
+    "meaning": "位置をそろえる"
+  },
+  {
+    "word": "alter",
+    "meaning": "定義を変更する"
+  },
+  {
+    "word": "animation",
+    "meaning": "連続した動きの指定"
+  },
+  {
+    "word": "annotation",
+    "meaning": "コードに付ける補足情報"
+  },
+  {
+    "word": "append",
+    "meaning": "末尾に追加する"
+  },
+  {
+    "word": "archive",
+    "meaning": "保管する、過去データとして残す"
+  },
+  {
+    "word": "argument",
+    "meaning": "呼び出し時に渡す値"
+  },
+  {
+    "word": "array",
+    "meaning": "配列、複数の値を順番に並べて保持するもの"
+  },
+  {
+    "word": "article",
+    "meaning": "記事や独立した内容の区画"
+  },
+  {
+    "word": "aside",
+    "meaning": "補足情報の領域"
+  },
+  {
+    "word": "assign",
+    "meaning": "割り当てる、値を代入する"
+  },
+  {
+    "word": "attachment",
+    "meaning": "背景画像の固定方法"
+  },
+  {
+    "word": "audio",
+    "meaning": "音声コンテンツ"
+  },
+  {
+    "word": "author",
+    "meaning": "作成者"
+  },
+  {
+    "word": "available",
+    "meaning": "利用できる、使用可能な状態"
+  },
+  {
+    "word": "average",
+    "meaning": "平均値"
+  },
+  {
+    "word": "await",
+    "meaning": "非同期処理の完了を待つ"
+  },
+  {
+    "word": "background",
+    "meaning": "背景"
+  },
+  {
+    "word": "backup",
+    "meaning": "予備として保存した控え"
+  },
+  {
+    "word": "base",
+    "meaning": "基準となる土台、基本部分"
+  },
+  {
+    "word": "before",
+    "meaning": "要素の前に作る疑似要素"
+  },
+  {
+    "word": "between",
+    "meaning": "二つの値の間にある条件"
+  },
+  {
+    "word": "binary",
+    "meaning": "二進の、バイナリ形式"
+  },
+  {
+    "word": "block",
+    "meaning": "行全体を占有する表示形式"
+  },
+  {
+    "word": "blur",
+    "meaning": "ぼかし"
+  },
+  {
+    "word": "body",
+    "meaning": "本文全体を表す要素"
+  },
+  {
+    "word": "bold",
+    "meaning": "太字"
+  },
+  {
+    "word": "boolean",
+    "meaning": "真偽値、true または false を表す型"
+  },
+  {
+    "word": "border",
+    "meaning": "境界線"
+  },
+  {
+    "word": "bound",
+    "meaning": "型引数の上限や下限として制約された"
+  },
+  {
+    "word": "break",
+    "meaning": "処理を途中で打ち切る"
+  },
+  {
+    "word": "brightness",
+    "meaning": "明るさ"
+  },
+  {
+    "word": "build",
+    "meaning": "組み立てる、生成する"
+  },
+  {
+    "word": "builder",
+    "meaning": "段階的にオブジェクトを組み立てる仕組み"
+  },
+  {
+    "word": "button",
+    "meaning": "押して操作するためのボタン"
+  },
+  {
+    "word": "byte",
+    "meaning": "バイト型"
+  },
+  {
+    "word": "cache",
+    "meaning": "再利用のために一時保存するデータ"
+  },
+  {
+    "word": "calculate",
+    "meaning": "計算する"
+  },
+  {
+    "word": "cancel",
+    "meaning": "取り消す"
+  },
+  {
+    "word": "canvas",
+    "meaning": "描画領域"
+  },
+  {
+    "word": "capitalize",
+    "meaning": "先頭文字を大文字にする"
+  },
+  {
+    "word": "caption",
+    "meaning": "表や図の見出し"
+  },
+  {
+    "word": "cascade",
+    "meaning": "関連する変更を連鎖して反映する"
+  },
+  {
+    "word": "case",
+    "meaning": "分岐の選択肢、条件ごとの処理"
+  },
+  {
+    "word": "catch",
+    "meaning": "発生した例外を受け取って処理する"
+  },
+  {
+    "word": "cell",
+    "meaning": "セル、表のひと区画"
+  },
+  {
+    "word": "center",
+    "meaning": "中央"
+  },
+  {
+    "word": "change",
+    "meaning": "変更、値が変わった状態"
+  },
+  {
+    "word": "character",
+    "meaning": "文字型"
+  },
+  {
+    "word": "charset",
+    "meaning": "文字コードの指定"
+  },
+  {
+    "word": "check",
+    "meaning": "条件を検証する制約"
+  },
+  {
+    "word": "checkbox",
+    "meaning": "複数選択できるチェック項目"
+  },
+  {
+    "word": "checked",
+    "meaning": "選択済みの状態"
+  },
+  {
+    "word": "child",
+    "meaning": "子要素、下位に属するもの"
+  },
+  {
+    "word": "class",
+    "meaning": "要素を分類するための属性"
+  },
+  {
+    "word": "click",
+    "meaning": "クリック、押下イベント"
+  },
+  {
+    "word": "clip",
+    "meaning": "表示範囲を切り取る"
+  },
+  {
+    "word": "close",
+    "meaning": "閉じる"
+  },
+  {
+    "word": "collapse",
+    "meaning": "折りたたむ、境界をまとめる"
+  },
+  {
+    "word": "collect",
+    "meaning": "集めてまとめる"
+  },
+  {
+    "word": "collection",
+    "meaning": "複数の要素をまとめた集合"
+  },
+  {
+    "word": "color",
+    "meaning": "文字色や色"
+  },
+  {
+    "word": "column",
+    "meaning": "列方向"
+  },
+  {
+    "word": "commit",
+    "meaning": "トランザクションを確定する"
+  },
+  {
+    "word": "comparable",
+    "meaning": "比較順序を定義できる"
+  },
+  {
+    "word": "comparator",
+    "meaning": "比較方法を外部から与える仕組み"
+  },
+  {
+    "word": "compare",
+    "meaning": "比較する"
+  },
+  {
+    "word": "complete",
+    "meaning": "完了する"
+  },
+  {
+    "word": "completed",
+    "meaning": "完了済みの状態"
+  },
+  {
+    "word": "constraint",
+    "meaning": "制約、守るべき条件"
+  },
+  {
+    "word": "constructor",
+    "meaning": "生成時に呼ばれる初期化処理"
+  },
+  {
+    "word": "consumer",
+    "meaning": "値を受け取って処理する役割"
+  },
+  {
+    "word": "contains",
+    "meaning": "含んでいるか判定する"
+  },
+  {
+    "word": "content",
+    "meaning": "内容、メタ情報の中身"
+  },
+  {
+    "word": "continue",
+    "meaning": "次の繰り返しへ進む"
+  },
+  {
+    "word": "contrast",
+    "meaning": "コントラスト、明暗差"
+  },
+  {
+    "word": "convert",
+    "meaning": "形式を変換する"
+  },
+  {
+    "word": "count",
+    "meaning": "件数、数えること"
+  },
+  {
+    "word": "cover",
+    "meaning": "領域を覆うように広げる"
+  },
+  {
+    "word": "create",
+    "meaning": "作成する"
+  },
+  {
+    "word": "cross",
+    "meaning": "全組み合わせで結合する"
+  },
+  {
+    "word": "current",
+    "meaning": "現在の、今対象になっている"
+  },
+  {
+    "word": "cursor",
+    "meaning": "マウスポインターの形"
+  },
+  {
+    "word": "custom",
+    "meaning": "独自に設定した、既定ではない"
+  },
+  {
+    "word": "database",
+    "meaning": "データベース"
+  },
+  {
+    "word": "date",
+    "meaning": "日付型"
+  },
+  {
+    "word": "decimal",
+    "meaning": "小数型"
+  },
+  {
+    "word": "decorator",
+    "meaning": "機能を追加で包み込む役割"
+  },
+  {
+    "word": "default",
+    "meaning": "既定の、初期設定の"
+  },
+  {
+    "word": "delay",
+    "meaning": "遅延時間"
+  },
+  {
+    "word": "delete",
+    "meaning": "削除する"
+  },
+  {
+    "word": "deprecated",
+    "meaning": "非推奨、将来の利用を避けるべき状態"
+  },
+  {
+    "word": "description",
+    "meaning": "説明文"
+  },
+  {
+    "word": "detail",
+    "meaning": "詳細情報"
+  },
+  {
+    "word": "details",
+    "meaning": "開閉できる詳細情報"
+  },
+  {
+    "word": "dialog",
+    "meaning": "対話用の画面やポップアップ"
+  },
+  {
+    "word": "dictionary",
+    "meaning": "キーと値で管理する辞書構造"
+  },
+  {
+    "word": "disabled",
+    "meaning": "無効化された状態"
+  },
+  {
+    "word": "dispatch",
+    "meaning": "イベントや処理を送り出す"
+  },
+  {
+    "word": "display",
+    "meaning": "表示形式"
+  },
+  {
+    "word": "distinct",
+    "meaning": "重複を除いた"
+  },
+  {
+    "word": "document",
+    "meaning": "ドキュメント、HTML 文書全体"
+  },
+  {
+    "word": "double",
+    "meaning": "倍精度の数値型"
+  },
+  {
+    "word": "download",
+    "meaning": "ダウンロードさせる指定"
+  },
+  {
+    "word": "draft",
+    "meaning": "下書き、未確定の状態"
+  },
+  {
+    "word": "drop",
+    "meaning": "定義を削除する"
+  },
+  {
+    "word": "duration",
+    "meaning": "継続時間"
+  },
+  {
+    "word": "each",
+    "meaning": "それぞれの要素"
+  },
+  {
+    "word": "element",
+    "meaning": "要素、DOM の構成単位"
+  },
+  {
+    "word": "else",
+    "meaning": "それ以外の場合"
+  },
+  {
+    "word": "email",
+    "meaning": "電子メール用の入力形式"
+  },
+  {
+    "word": "empty",
+    "meaning": "空の、内容がない状態"
+  },
+  {
+    "word": "enabled",
+    "meaning": "有効になっている状態"
+  },
+  {
+    "word": "entry",
+    "meaning": "一覧や記録の一件"
+  },
+  {
+    "word": "equals",
+    "meaning": "等しいか比較する"
+  },
+  {
+    "word": "error",
+    "meaning": "エラー、異常状態"
+  },
+  {
+    "word": "event",
+    "meaning": "イベント、発生した出来事"
+  },
+  {
+    "word": "every",
+    "meaning": "すべてが条件を満たすか判定する"
+  },
+  {
+    "word": "except",
+    "meaning": "差集合として除外する"
+  },
+  {
+    "word": "exception",
+    "meaning": "例外、通常と異なる処理経路"
+  },
+  {
+    "word": "exists",
+    "meaning": "存在するかどうか"
+  },
+  {
+    "word": "exit",
+    "meaning": "途中で抜ける"
+  },
+  {
+    "word": "explicit",
+    "meaning": "明示的な、暗黙にしない設定"
+  },
+  {
+    "word": "export",
+    "meaning": "外部へ公開する"
+  },
+  {
+    "word": "extends",
+    "meaning": "継承する、機能を引き継ぐ"
+  },
+  {
+    "word": "external",
+    "meaning": "外部の"
+  },
+  {
+    "word": "factory",
+    "meaning": "生成処理をまとめる役割"
+  },
+  {
+    "word": "failed",
+    "meaning": "失敗した状態"
+  },
+  {
+    "word": "fetch",
+    "meaning": "取得する、外部データを読み込む"
+  },
+  {
+    "word": "figure",
+    "meaning": "図表や挿絵のまとまり"
+  },
+  {
+    "word": "filter",
+    "meaning": "条件に合うものだけを取り出す"
+  },
+  {
+    "word": "final",
+    "meaning": "変更や継承を禁止する"
+  },
+  {
+    "word": "finally",
+    "meaning": "例外処理の最後に必ず実行される部分"
+  },
+  {
+    "word": "first",
+    "meaning": "最初の要素"
+  },
+  {
+    "word": "fixed",
+    "meaning": "固定位置"
+  },
+  {
+    "word": "focus",
+    "meaning": "フォーカス、入力対象として注目された状態"
+  },
+  {
+    "word": "footer",
+    "meaning": "下部領域、脚注や補足の部分"
+  },
+  {
+    "word": "foreign",
+    "meaning": "外部を参照する"
+  },
+  {
+    "word": "form",
+    "meaning": "入力内容を送信するためのフォーム"
+  },
+  {
+    "word": "format",
+    "meaning": "整形する、表示形式を整える"
+  },
+  {
+    "word": "function",
+    "meaning": "関数、処理をまとめたもの"
+  },
+  {
+    "word": "future",
+    "meaning": "後で利用できる結果"
+  },
+  {
+    "word": "gap",
+    "meaning": "要素間のすき間"
+  },
+  {
+    "word": "generic",
+    "meaning": "型を後から指定できる汎用的な仕組み"
+  },
+  {
+    "word": "global",
+    "meaning": "全体で共有される"
+  },
+  {
+    "word": "grant",
+    "meaning": "権限を与える"
+  },
+  {
+    "word": "grayscale",
+    "meaning": "灰色化"
+  },
+  {
+    "word": "group",
+    "meaning": "グループ、関連するまとまり"
+  },
+  {
+    "word": "grow",
+    "meaning": "伸びる、余白を埋めて拡大する"
+  },
+  {
+    "word": "handle",
+    "meaning": "処理する、扱う"
+  },
+  {
+    "word": "handler",
+    "meaning": "イベントを処理する役割"
+  },
+  {
+    "word": "having",
+    "meaning": "集約後の条件を指定する"
+  },
+  {
+    "word": "header",
+    "meaning": "上部領域、導入部分"
+  },
+  {
+    "word": "height",
+    "meaning": "高さ"
+  },
+  {
+    "word": "hidden",
+    "meaning": "隠された、表示されない状態"
+  },
+  {
+    "word": "history",
+    "meaning": "履歴、過去の記録"
+  },
+  {
+    "word": "hover",
+    "meaning": "マウスが乗っている状態"
+  },
+  {
+    "word": "image",
+    "meaning": "画像"
+  },
+  {
+    "word": "implements",
+    "meaning": "インターフェースを実装する"
+  },
+  {
+    "word": "import",
+    "meaning": "外部の機能を読み込む"
+  },
+  {
+    "word": "index",
+    "meaning": "検索を速くするための索引"
+  },
+  {
+    "word": "inherit",
+    "meaning": "親要素から値を受け継ぐ"
+  },
+  {
+    "word": "initial",
+    "meaning": "初期値に戻す"
+  },
+  {
+    "word": "inline",
+    "meaning": "行内に並ぶ表示形式"
+  },
+  {
+    "word": "inner",
+    "meaning": "共通部分だけを結合する"
+  },
+  {
+    "word": "input",
+    "meaning": "入力、入力値"
+  },
+  {
+    "word": "insert",
+    "meaning": "挿入する"
+  },
+  {
+    "word": "instance",
+    "meaning": "クラスから作られた実体"
+  },
+  {
+    "word": "integer",
+    "meaning": "整数型"
+  },
+  {
+    "word": "interface",
+    "meaning": "実装すべき契約を表す型"
+  },
+  {
+    "word": "internal",
+    "meaning": "内部の"
+  },
+  {
+    "word": "intersect",
+    "meaning": "共通部分を取り出す"
+  },
+  {
+    "word": "italic",
+    "meaning": "斜体"
+  },
+  {
+    "word": "item",
+    "meaning": "項目、一つひとつの要素"
+  },
+  {
+    "word": "iterable",
+    "meaning": "順番に取り出して走査できる"
+  },
+  {
+    "word": "iterator",
+    "meaning": "要素を一つずつ取り出すための仕組み"
+  },
+  {
+    "word": "join",
+    "meaning": "表を結合する"
+  },
+  {
+    "word": "justify",
+    "meaning": "両端や指定位置にそろえる"
+  },
+  {
+    "word": "label",
+    "meaning": "入力項目の見出し"
+  },
+  {
+    "word": "last",
+    "meaning": "最後の要素"
+  },
+  {
+    "word": "latest",
+    "meaning": "最新の"
+  },
+  {
+    "word": "left",
+    "meaning": "左側の表を基準にした結合"
+  },
+  {
+    "word": "legend",
+    "meaning": "入力グループの説明見出し"
+  },
+  {
+    "word": "length",
+    "meaning": "長さ"
+  },
+  {
+    "word": "like",
+    "meaning": "パターンに一致する条件"
+  },
+  {
+    "word": "limit",
+    "meaning": "上限、制限値"
+  },
+  {
+    "word": "linear",
+    "meaning": "一定の速さで変化する"
+  },
+  {
+    "word": "link",
+    "meaning": "外部資源との関連付け"
+  },
+  {
+    "word": "list",
+    "meaning": "一覧、順序付きの集合"
+  },
+  {
+    "word": "listener",
+    "meaning": "イベントを監視する仕組み"
+  },
+  {
+    "word": "load",
+    "meaning": "読み込む"
+  },
+  {
+    "word": "loading",
+    "meaning": "読み込み中の状態"
+  },
+  {
+    "word": "local",
+    "meaning": "ローカル、現在の範囲だけで使う"
+  },
+  {
+    "word": "long",
+    "meaning": "長整数型"
+  },
+  {
+    "word": "loop",
+    "meaning": "繰り返し処理"
+  },
+  {
+    "word": "lowercase",
+    "meaning": "小文字に変換する"
+  },
+  {
+    "word": "main",
+    "meaning": "主要な内容の領域"
+  },
+  {
+    "word": "manager",
+    "meaning": "管理する役割"
+  },
+  {
+    "word": "margin",
+    "meaning": "外側の余白"
+  },
+  {
+    "word": "maximum",
+    "meaning": "最大値"
+  },
+  {
+    "word": "member",
+    "meaning": "所属している要素や人"
+  },
+  {
+    "word": "merge",
+    "meaning": "複数をひとつに結合する"
+  },
+  {
+    "word": "message",
+    "meaning": "通知や説明として扱う文"
+  },
+  {
+    "word": "meter",
+    "meaning": "量や割合を示す計器表示"
+  },
+  {
+    "word": "method",
+    "meaning": "メソッド、呼び出せる処理"
+  },
+  {
+    "word": "minimum",
+    "meaning": "最小値"
+  },
+  {
+    "word": "module",
+    "meaning": "関連する処理をまとめる単位"
+  },
+  {
+    "word": "multiple",
+    "meaning": "複数選択を許可する状態"
+  },
+  {
+    "word": "navigation",
+    "meaning": "案内用のリンク群"
+  },
+  {
+    "word": "never",
+    "meaning": "決して発生しないことを表す型"
+  },
+  {
+    "word": "next",
+    "meaning": "次の要素や次の繰り返し"
+  },
+  {
+    "word": "none",
+    "meaning": "なし、適用しない状態"
+  },
+  {
+    "word": "nothing",
+    "meaning": "何も参照していない状態"
+  },
+  {
+    "word": "null",
+    "meaning": "値が存在しないことを表す値"
+  },
+  {
+    "word": "nullable",
+    "meaning": "null を取り得ることを示す"
+  },
+  {
+    "word": "number",
+    "meaning": "数値型"
+  },
+  {
+    "word": "numeric",
+    "meaning": "数値型"
+  },
+  {
+    "word": "object",
+    "meaning": "オブジェクト、キーと値のまとまり"
+  },
+  {
+    "word": "observer",
+    "meaning": "変化を監視して通知を受ける役割"
+  },
+  {
+    "word": "offset",
+    "meaning": "基準位置からのずれ"
+  },
+  {
+    "word": "opacity",
+    "meaning": "不透明度"
+  },
+  {
+    "word": "open",
+    "meaning": "開く"
+  },
+  {
+    "word": "option",
+    "meaning": "設定項目"
+  },
+  {
+    "word": "optional",
+    "meaning": "値があるかもしれない容器"
+  },
+  {
+    "word": "order",
+    "meaning": "並び順を指定する"
+  },
+  {
+    "word": "outer",
+    "meaning": "一致しない行も含める結合"
+  },
+  {
+    "word": "outline",
+    "meaning": "外側の線"
+  },
+  {
+    "word": "overflow",
+    "meaning": "はみ出した内容の扱い"
+  },
+  {
+    "word": "override",
+    "meaning": "親の定義を上書きして実装する"
+  },
+  {
+    "word": "owner",
+    "meaning": "所有者、管理責任を持つ対象"
+  },
+  {
+    "word": "package",
+    "meaning": "関連する型をまとめる名前空間"
+  },
+  {
+    "word": "padding",
+    "meaning": "内側の余白"
+  },
+  {
+    "word": "parameter",
+    "meaning": "定義側で受け取る引数"
+  },
+  {
+    "word": "parent",
+    "meaning": "親要素、上位にあるもの"
+  },
+  {
+    "word": "parse",
+    "meaning": "文字列などを解析して取り出す"
+  },
+  {
+    "word": "password",
+    "meaning": "隠して入力する文字列"
+  },
+  {
+    "word": "pattern",
+    "meaning": "入力値の書式パターン"
+  },
+  {
+    "word": "payload",
+    "meaning": "やり取りする実データ本体"
+  },
+  {
+    "word": "pending",
+    "meaning": "保留中、まだ完了していない状態"
+  },
+  {
+    "word": "permanent",
+    "meaning": "恒久的な、一時的でない"
+  },
+  {
+    "word": "picture",
+    "meaning": "画像候補をまとめる要素"
+  },
+  {
+    "word": "placeholder",
+    "meaning": "入力前に表示する補助文"
+  },
+  {
+    "word": "pointer",
+    "meaning": "指し示す形のカーソル"
+  },
+  {
+    "word": "position",
+    "meaning": "配置方法"
+  },
+  {
+    "word": "predicate",
+    "meaning": "真偽を返す条件関数"
+  },
+  {
+    "word": "prepend",
+    "meaning": "先頭に追加する"
+  },
+  {
+    "word": "preserve",
+    "meaning": "保持する"
+  },
+  {
+    "word": "prevent",
+    "meaning": "防ぐ、既定動作を止める"
+  },
+  {
+    "word": "previous",
+    "meaning": "ひとつ前の、以前の"
+  },
+  {
+    "word": "primary",
+    "meaning": "主となる識別用のキー"
+  },
+  {
+    "word": "print",
+    "meaning": "出力する"
+  },
+  {
+    "word": "private",
+    "meaning": "クラス内部だけで使える公開範囲"
+  },
+  {
+    "word": "profile",
+    "meaning": "利用者や設定の情報まとまり"
+  },
+  {
+    "word": "progress",
+    "meaning": "進行状況を示す表示"
+  },
+  {
+    "word": "promise",
+    "meaning": "非同期処理の完了結果を表す仕組み"
+  },
+  {
+    "word": "property",
+    "meaning": "プロパティ、オブジェクトの属性"
+  },
+  {
+    "word": "protected",
+    "meaning": "継承先からも使える公開範囲"
+  },
+  {
+    "word": "provider",
+    "meaning": "値や機能を供給する役割"
+  },
+  {
+    "word": "public",
+    "meaning": "どこからでも使える公開範囲"
+  },
+  {
+    "word": "publish",
+    "meaning": "公開する"
+  },
+  {
+    "word": "published",
+    "meaning": "公開済みの状態"
+  },
+  {
+    "word": "query",
+    "meaning": "問い合わせる、条件に合うものを探す"
+  },
+  {
+    "word": "queue",
+    "meaning": "順番待ちの列"
+  },
+  {
+    "word": "radio",
+    "meaning": "ひとつだけ選ぶ選択項目"
+  },
+  {
+    "word": "radius",
+    "meaning": "角の丸みの半径"
+  },
+  {
+    "word": "raise",
+    "meaning": "イベントやエラーを発生させる"
+  },
+  {
+    "word": "range",
+    "meaning": "範囲、連続したセルのまとまり"
+  },
+  {
+    "word": "read",
+    "meaning": "読み込む"
+  },
+  {
+    "word": "recent",
+    "meaning": "最近の"
+  },
+  {
+    "word": "record",
+    "meaning": "記録、一件分のデータ"
+  },
+  {
+    "word": "reduce",
+    "meaning": "まとめる、配列をひとつの値に集約する"
+  },
+  {
+    "word": "reference",
+    "meaning": "参照先として結び付ける"
+  },
+  {
+    "word": "reject",
+    "meaning": "拒否する、失敗として終了する"
+  },
+  {
+    "word": "relative",
+    "meaning": "相対位置"
+  },
+  {
+    "word": "remove",
+    "meaning": "取り除く、削除する"
+  },
+  {
+    "word": "render",
+    "meaning": "画面に描画する"
+  },
+  {
+    "word": "repeat",
+    "meaning": "繰り返す"
+  },
+  {
+    "word": "replace",
+    "meaning": "既存の値や行を置き換える"
+  },
+  {
+    "word": "repository",
+    "meaning": "データアクセスをまとめる役割"
+  },
+  {
+    "word": "request",
+    "meaning": "要求、データ取得の依頼"
+  },
+  {
+    "word": "required",
+    "meaning": "必須の、欠かせない"
+  },
+  {
+    "word": "reset",
+    "meaning": "入力内容を初期状態に戻す"
+  },
+  {
+    "word": "resolve",
+    "meaning": "解決する、成功結果を確定する"
+  },
+  {
+    "word": "response",
+    "meaning": "応答、返された結果"
+  },
+  {
+    "word": "restrict",
+    "meaning": "関連する変更を制限する"
+  },
+  {
+    "word": "result",
+    "meaning": "結果"
+  },
+  {
+    "word": "resume",
+    "meaning": "中断地点から再開する"
+  },
+  {
+    "word": "retry",
+    "meaning": "再試行する"
+  },
+  {
+    "word": "return",
+    "meaning": "値を返す、処理を終了して戻る"
+  },
+  {
+    "word": "revoke",
+    "meaning": "権限を取り消す"
+  },
+  {
+    "word": "right",
+    "meaning": "右側の表を基準にした結合"
+  },
+  {
+    "word": "rollback",
+    "meaning": "変更を取り消して元に戻す"
+  },
+  {
+    "word": "rotate",
+    "meaning": "回転する"
+  },
+  {
+    "word": "row",
+    "meaning": "行方向"
+  },
+  {
+    "word": "runtime",
+    "meaning": "実行時環境"
+  },
+  {
+    "word": "save",
+    "meaning": "保存する"
+  },
+  {
+    "word": "scale",
+    "meaning": "拡大縮小する"
+  },
+  {
+    "word": "schema",
+    "meaning": "データ構造や定義の枠組み"
+  },
+  {
+    "word": "script",
+    "meaning": "スクリプトコード"
+  },
+  {
+    "word": "search",
+    "meaning": "検索用の入力形式"
+  },
+  {
+    "word": "secondary",
+    "meaning": "補助的な、第二の"
+  },
+  {
+    "word": "secret",
+    "meaning": "秘密情報として扱う値"
+  },
+  {
+    "word": "section",
+    "meaning": "意味を持った区切り"
+  },
+  {
+    "word": "select",
+    "meaning": "取得対象を選ぶ、問い合わせで抽出する"
+  },
+  {
+    "word": "selected",
+    "meaning": "選択されている状態"
+  },
+  {
+    "word": "selection",
+    "meaning": "選択中の範囲や対象"
+  },
+  {
+    "word": "selector",
+    "meaning": "選択条件、要素を指定する式"
+  },
+  {
+    "word": "separate",
+    "meaning": "分離する"
+  },
+  {
+    "word": "service",
+    "meaning": "処理や機能を提供する役割"
+  },
+  {
+    "word": "session",
+    "meaning": "一連の利用状態や接続単位"
+  },
+  {
+    "word": "setting",
+    "meaning": "設定項目"
+  },
+  {
+    "word": "shadow",
+    "meaning": "影"
+  },
+  {
+    "word": "shared",
+    "meaning": "共通で使う、共有された"
+  },
+  {
+    "word": "shrink",
+    "meaning": "縮む、縮小する"
+  },
+  {
+    "word": "single",
+    "meaning": "単精度の数値型"
+  },
+  {
+    "word": "singleton",
+    "meaning": "実体を一つに限定する設計"
+  },
+  {
+    "word": "size",
+    "meaning": "大きさ"
+  },
+  {
+    "word": "slice",
+    "meaning": "一部を切り出す"
+  },
+  {
+    "word": "some",
+    "meaning": "一部が条件を満たすか判定する"
+  },
+  {
+    "word": "sort",
+    "meaning": "並び替える"
+  },
+  {
+    "word": "source",
+    "meaning": "元になる入力や参照元"
+  },
+  {
+    "word": "splice",
+    "meaning": "途中を削除や挿入で組み替える"
+  },
+  {
+    "word": "split",
+    "meaning": "分割する"
+  },
+  {
+    "word": "stack",
+    "meaning": "後入れ先出しの積み重ね構造"
+  },
+  {
+    "word": "static",
+    "meaning": "インスタンスに依存しない共有要素"
+  },
+  {
+    "word": "status",
+    "meaning": "状態"
+  },
+  {
+    "word": "step",
+    "meaning": "増減の刻み幅"
+  },
+  {
+    "word": "sticky",
+    "meaning": "一定位置で張り付く配置"
+  },
+  {
+    "word": "strategy",
+    "meaning": "処理方法を切り替える設計"
+  },
+  {
+    "word": "stream",
+    "meaning": "要素を流れとして処理する仕組み"
+  },
+  {
+    "word": "stretch",
+    "meaning": "引き伸ばす"
+  },
+  {
+    "word": "string",
+    "meaning": "文字列型"
+  },
+  {
+    "word": "style",
+    "meaning": "見た目の指定"
+  },
+  {
+    "word": "submit",
+    "meaning": "送信するための値や動作"
+  },
+  {
+    "word": "sum",
+    "meaning": "合計値"
+  },
+  {
+    "word": "summary",
+    "meaning": "要約、見出しとして表示する内容"
+  },
+  {
+    "word": "supplier",
+    "meaning": "値を供給する役割"
+  },
+  {
+    "word": "switch",
+    "meaning": "条件に応じて分岐する"
+  },
+  {
+    "word": "synchronized",
+    "meaning": "同時実行を制御する"
+  },
+  {
+    "word": "table",
+    "meaning": "表として並べる表示形式"
+  },
+  {
+    "word": "target",
+    "meaning": "対象、イベントの発生元"
+  },
+  {
+    "word": "temporary",
+    "meaning": "一時的な"
+  },
+  {
+    "word": "text",
+    "meaning": "文字列データ"
+  },
+  {
+    "word": "then",
+    "meaning": "条件成立時に返す結果"
+  },
+  {
+    "word": "thread",
+    "meaning": "並行に動く処理単位"
+  },
+  {
+    "word": "throw",
+    "meaning": "例外を発生させる"
+  },
+  {
+    "word": "time",
+    "meaning": "時刻型"
+  },
+  {
+    "word": "timestamp",
+    "meaning": "日付と時刻を合わせた型"
+  },
+  {
+    "word": "timing",
+    "meaning": "変化の進み方"
+  },
+  {
+    "word": "title",
+    "meaning": "題名、ページや要素の名称"
+  },
+  {
+    "word": "token",
+    "meaning": "識別や認証に使う値"
+  },
+  {
+    "word": "total",
+    "meaning": "合計、全体量"
+  },
+  {
+    "word": "track",
+    "meaning": "字幕や補助データのトラック"
+  },
+  {
+    "word": "transaction",
+    "meaning": "一連の更新処理単位"
+  },
+  {
+    "word": "transform",
+    "meaning": "変形する"
+  },
+  {
+    "word": "transient",
+    "meaning": "永続化対象から外す"
+  },
+  {
+    "word": "transition",
+    "meaning": "状態変化をなめらかにする"
+  },
+  {
+    "word": "translate",
+    "meaning": "位置を移動する"
+  },
+  {
+    "word": "transparent",
+    "meaning": "透明な状態"
+  },
+  {
+    "word": "trim",
+    "meaning": "前後の不要な空白を取り除く"
+  },
+  {
+    "word": "undefined",
+    "meaning": "未定義、値が設定されていない状態"
+  },
+  {
+    "word": "underline",
+    "meaning": "下線"
+  },
+  {
+    "word": "union",
+    "meaning": "結果を結合してまとめる"
+  },
+  {
+    "word": "unique",
+    "meaning": "重複を許さない制約"
+  },
+  {
+    "word": "unknown",
+    "meaning": "不明な型、安全に扱う前提の型"
+  },
+  {
+    "word": "until",
+    "meaning": "その条件になるまで"
+  },
+  {
+    "word": "update",
+    "meaning": "更新する"
+  },
+  {
+    "word": "uppercase",
+    "meaning": "大文字に変換する"
+  },
+  {
+    "word": "validate",
+    "meaning": "妥当かどうか検証する"
+  },
+  {
+    "word": "value",
+    "meaning": "値"
+  },
+  {
+    "word": "values",
+    "meaning": "挿入する値の一覧"
+  },
+  {
+    "word": "version",
+    "meaning": "版、変更の世代"
+  },
+  {
+    "word": "video",
+    "meaning": "動画コンテンツ"
+  },
+  {
+    "word": "viewport",
+    "meaning": "表示領域"
+  },
+  {
+    "word": "visible",
+    "meaning": "見える、表示されている状態"
+  },
+  {
+    "word": "volatile",
+    "meaning": "変更が直ちに共有されることを示す"
+  },
+  {
+    "word": "where",
+    "meaning": "行を絞り込む条件"
+  },
+  {
+    "word": "width",
+    "meaning": "幅"
+  },
+  {
+    "word": "wildcard",
+    "meaning": "任意の型範囲を表す記号"
+  },
+  {
+    "word": "workbook",
+    "meaning": "ブック、複数シートを持つファイル"
+  },
+  {
+    "word": "worksheet",
+    "meaning": "ワークシート"
+  },
+  {
+    "word": "wrap",
+    "meaning": "折り返す"
+  },
+  {
+    "word": "write",
+    "meaning": "書き込む"
+  }
+]

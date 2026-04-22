@@ -1,0 +1,262 @@
+[
+  {
+    "word": "alter",
+    "meaning": "定義を変更する"
+  },
+  {
+    "word": "average",
+    "meaning": "平均値"
+  },
+  {
+    "word": "between",
+    "meaning": "二つの値の間にある条件"
+  },
+  {
+    "word": "boolean",
+    "meaning": "真偽値型"
+  },
+  {
+    "word": "cascade",
+    "meaning": "関連する変更を連鎖して反映する"
+  },
+  {
+    "word": "case",
+    "meaning": "条件によって値を切り替える式"
+  },
+  {
+    "word": "character",
+    "meaning": "文字型"
+  },
+  {
+    "word": "check",
+    "meaning": "条件を検証する制約"
+  },
+  {
+    "word": "column",
+    "meaning": "列"
+  },
+  {
+    "word": "commit",
+    "meaning": "トランザクションを確定する"
+  },
+  {
+    "word": "constraint",
+    "meaning": "制約、守るべき条件"
+  },
+  {
+    "word": "count",
+    "meaning": "件数を数える"
+  },
+  {
+    "word": "create",
+    "meaning": "作成する"
+  },
+  {
+    "word": "cross",
+    "meaning": "全組み合わせで結合する"
+  },
+  {
+    "word": "current",
+    "meaning": "現在の値や時刻"
+  },
+  {
+    "word": "database",
+    "meaning": "データベース"
+  },
+  {
+    "word": "date",
+    "meaning": "日付型"
+  },
+  {
+    "word": "decimal",
+    "meaning": "小数型"
+  },
+  {
+    "word": "default",
+    "meaning": "既定値"
+  },
+  {
+    "word": "delete",
+    "meaning": "削除する"
+  },
+  {
+    "word": "distinct",
+    "meaning": "重複を除いた"
+  },
+  {
+    "word": "drop",
+    "meaning": "定義を削除する"
+  },
+  {
+    "word": "else",
+    "meaning": "それ以外の場合"
+  },
+  {
+    "word": "except",
+    "meaning": "差集合として除外する"
+  },
+  {
+    "word": "exists",
+    "meaning": "存在するかどうか"
+  },
+  {
+    "word": "foreign",
+    "meaning": "外部を参照する"
+  },
+  {
+    "word": "grant",
+    "meaning": "権限を与える"
+  },
+  {
+    "word": "group",
+    "meaning": "集約のためにまとめる"
+  },
+  {
+    "word": "having",
+    "meaning": "集約後の条件を指定する"
+  },
+  {
+    "word": "index",
+    "meaning": "検索を速くするための索引"
+  },
+  {
+    "word": "inner",
+    "meaning": "共通部分だけを結合する"
+  },
+  {
+    "word": "insert",
+    "meaning": "挿入する"
+  },
+  {
+    "word": "integer",
+    "meaning": "整数型"
+  },
+  {
+    "word": "intersect",
+    "meaning": "共通部分を取り出す"
+  },
+  {
+    "word": "join",
+    "meaning": "表を結合する"
+  },
+  {
+    "word": "left",
+    "meaning": "左側の表を基準にした結合"
+  },
+  {
+    "word": "like",
+    "meaning": "パターンに一致する条件"
+  },
+  {
+    "word": "maximum",
+    "meaning": "最大値"
+  },
+  {
+    "word": "minimum",
+    "meaning": "最小値"
+  },
+  {
+    "word": "null",
+    "meaning": "値が存在しない状態"
+  },
+  {
+    "word": "numeric",
+    "meaning": "数値型"
+  },
+  {
+    "word": "order",
+    "meaning": "並び順を指定する"
+  },
+  {
+    "word": "outer",
+    "meaning": "一致しない行も含める結合"
+  },
+  {
+    "word": "primary",
+    "meaning": "主となる識別用のキー"
+  },
+  {
+    "word": "record",
+    "meaning": "一件分のデータ"
+  },
+  {
+    "word": "reference",
+    "meaning": "参照先として結び付ける"
+  },
+  {
+    "word": "replace",
+    "meaning": "既存の値や行を置き換える"
+  },
+  {
+    "word": "restrict",
+    "meaning": "関連する変更を制限する"
+  },
+  {
+    "word": "revoke",
+    "meaning": "権限を取り消す"
+  },
+  {
+    "word": "right",
+    "meaning": "右側の表を基準にした結合"
+  },
+  {
+    "word": "rollback",
+    "meaning": "変更を取り消して元に戻す"
+  },
+  {
+    "word": "row",
+    "meaning": "行"
+  },
+  {
+    "word": "schema",
+    "meaning": "構造定義のまとまり"
+  },
+  {
+    "word": "select",
+    "meaning": "取得対象を選ぶ、問い合わせで抽出する"
+  },
+  {
+    "word": "sum",
+    "meaning": "合計値"
+  },
+  {
+    "word": "table",
+    "meaning": "表"
+  },
+  {
+    "word": "then",
+    "meaning": "条件成立時に返す結果"
+  },
+  {
+    "word": "time",
+    "meaning": "時刻型"
+  },
+  {
+    "word": "timestamp",
+    "meaning": "日付と時刻を合わせた型"
+  },
+  {
+    "word": "transaction",
+    "meaning": "一連の更新処理単位"
+  },
+  {
+    "word": "union",
+    "meaning": "結果を結合してまとめる"
+  },
+  {
+    "word": "unique",
+    "meaning": "重複を許さない制約"
+  },
+  {
+    "word": "update",
+    "meaning": "更新する"
+  },
+  {
+    "word": "values",
+    "meaning": "挿入する値の一覧"
+  },
+  {
+    "word": "where",
+    "meaning": "行を絞り込む条件"
+  }
+]
