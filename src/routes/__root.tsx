@@ -4,7 +4,9 @@ import {
   Scripts,
   Link,
   createRootRoute,
+  useMatchRoute,
 } from '@tanstack/react-router'
+import { Layers, BookOpen } from 'lucide-react'
 import { SaveDataProvider } from '#/context/SaveDataContext'
 
 import appCss from '../styles.css?url'
@@ -35,21 +37,24 @@ export const Route = createRootRoute({
 })
 
 function RootComponent() {
+  const matchRoute = useMatchRoute()
+  const isPlayMode = matchRoute({ to: '/stages/$stageId/play', fuzzy: true })
+
   return (
     <SaveDataProvider>
-      <nav className="site-nav">
-        <div className="nav-inner">
-          <Link to="/" className="nav-logo">
-            PEQ
-          </Link>
-          <div className="nav-links">
-            <Link to="/stages">ステージ</Link>
-            <Link to="/words">単語帳</Link>
-            <Link to="/store">ストア</Link>
-            <Link to="/avatar">アバター</Link>
+      {!isPlayMode && (
+        <nav className="site-nav">
+          <div className="nav-inner">
+            <Link to="/" className="nav-logo">
+              PEQ
+            </Link>
+            <div className="nav-links">
+              <Link to="/"><Layers size={18} /><span>ステージ</span></Link>
+              <Link to="/words"><BookOpen size={18} /><span>単語帳</span></Link>
+            </div>
           </div>
-        </div>
-      </nav>
+        </nav>
+      )}
       <Outlet />
     </SaveDataProvider>
   )

@@ -1,6 +1,5 @@
 import { useState, useCallback, useEffect } from 'react'
-import type { SaveData, ItemSlot, WordRecord } from '#/types'
-import { getAvatarLevel } from '#/types'
+import type { SaveData, WordRecord } from '#/types'
 
 const STORAGE_KEY = 'programming-english-save'
 
@@ -9,8 +8,6 @@ function getDefaultSaveData(): SaveData {
     player: {
       currentPoints: 0,
       robotId: 'robo-alpha',
-      equippedItems: {},
-      ownedItems: [],
     },
     wordHistory: {},
     stageClears: {},
@@ -98,60 +95,6 @@ export function useSaveData() {
     [update],
   )
 
-  const buyItem = useCallback(
-    (itemId: string, price: number): boolean => {
-      let success = false
-      update((prev) => {
-        if (prev.player.currentPoints < price) return prev
-        if (prev.player.ownedItems.includes(itemId)) return prev
-        success = true
-        return {
-          ...prev,
-          player: {
-            ...prev.player,
-            currentPoints: prev.player.currentPoints - price,
-            ownedItems: [...prev.player.ownedItems, itemId],
-          },
-        }
-      })
-      return success
-    },
-    [update],
-  )
-
-  const equipItem = useCallback(
-    (slot: ItemSlot, itemId: string) => {
-      update((prev) => ({
-        ...prev,
-        player: {
-          ...prev.player,
-          equippedItems: {
-            ...prev.player.equippedItems,
-            [slot]: itemId,
-          },
-        },
-      }))
-    },
-    [update],
-  )
-
-  const unequipItem = useCallback(
-    (slot: ItemSlot) => {
-      update((prev) => {
-        const next = { ...prev.player.equippedItems }
-        delete next[slot]
-        return {
-          ...prev,
-          player: {
-            ...prev.player,
-            equippedItems: next,
-          },
-        }
-      })
-    },
-    [update],
-  )
-
   const selectRobot = useCallback(
     (robotId: string) => {
       update((prev) => ({
@@ -168,18 +111,13 @@ export function useSaveData() {
   const clearedStageCount = Object.values(data.stageClears).filter(
     Boolean,
   ).length
-  const avatarLevel = getAvatarLevel(clearedStageCount)
 
   return {
     data,
-    avatarLevel,
     clearedStageCount,
     addPoints,
     recordWord,
     clearStage,
-    buyItem,
-    equipItem,
-    unequipItem,
     selectRobot,
   }
 }

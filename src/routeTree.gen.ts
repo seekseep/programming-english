@@ -9,141 +9,68 @@
 // Additionally, you should also exclude this file from your linter and/or formatter to prevent it from being checked or modified.
 
 import { Route as rootRouteImport } from './routes/__root'
-import { Route as WordsRouteImport } from './routes/words'
-import { Route as StoreRouteImport } from './routes/store'
-import { Route as AvatarRouteImport } from './routes/avatar'
 import { Route as IndexRouteImport } from './routes/index'
-import { Route as StagesIndexRouteImport } from './routes/stages.index'
-import { Route as StagesStageIdIndexRouteImport } from './routes/stages.$stageId.index'
-import { Route as StagesStageIdModeRouteImport } from './routes/stages.$stageId.$mode'
+import { Route as WordsIndexRouteImport } from './routes/words/index'
+import { Route as WordsWordRouteImport } from './routes/words/$word'
+import { Route as StagesStageIdPlayRouteImport } from './routes/stages.$stageId.play'
 
-const WordsRoute = WordsRouteImport.update({
-  id: '/words',
-  path: '/words',
-  getParentRoute: () => rootRouteImport,
-} as any)
-const StoreRoute = StoreRouteImport.update({
-  id: '/store',
-  path: '/store',
-  getParentRoute: () => rootRouteImport,
-} as any)
-const AvatarRoute = AvatarRouteImport.update({
-  id: '/avatar',
-  path: '/avatar',
-  getParentRoute: () => rootRouteImport,
-} as any)
 const IndexRoute = IndexRouteImport.update({
   id: '/',
   path: '/',
   getParentRoute: () => rootRouteImport,
 } as any)
-const StagesIndexRoute = StagesIndexRouteImport.update({
-  id: '/stages/',
-  path: '/stages/',
+const WordsIndexRoute = WordsIndexRouteImport.update({
+  id: '/words/',
+  path: '/words/',
   getParentRoute: () => rootRouteImport,
 } as any)
-const StagesStageIdIndexRoute = StagesStageIdIndexRouteImport.update({
-  id: '/stages/$stageId/',
-  path: '/stages/$stageId/',
+const WordsWordRoute = WordsWordRouteImport.update({
+  id: '/words/$word',
+  path: '/words/$word',
   getParentRoute: () => rootRouteImport,
 } as any)
-const StagesStageIdModeRoute = StagesStageIdModeRouteImport.update({
-  id: '/stages/$stageId/$mode',
-  path: '/stages/$stageId/$mode',
+const StagesStageIdPlayRoute = StagesStageIdPlayRouteImport.update({
+  id: '/stages/$stageId/play',
+  path: '/stages/$stageId/play',
   getParentRoute: () => rootRouteImport,
 } as any)
 
 export interface FileRoutesByFullPath {
   '/': typeof IndexRoute
-  '/avatar': typeof AvatarRoute
-  '/store': typeof StoreRoute
-  '/words': typeof WordsRoute
-  '/stages/': typeof StagesIndexRoute
-  '/stages/$stageId/$mode': typeof StagesStageIdModeRoute
-  '/stages/$stageId/': typeof StagesStageIdIndexRoute
+  '/words/$word': typeof WordsWordRoute
+  '/words/': typeof WordsIndexRoute
+  '/stages/$stageId/play': typeof StagesStageIdPlayRoute
 }
 export interface FileRoutesByTo {
   '/': typeof IndexRoute
-  '/avatar': typeof AvatarRoute
-  '/store': typeof StoreRoute
-  '/words': typeof WordsRoute
-  '/stages': typeof StagesIndexRoute
-  '/stages/$stageId/$mode': typeof StagesStageIdModeRoute
-  '/stages/$stageId': typeof StagesStageIdIndexRoute
+  '/words/$word': typeof WordsWordRoute
+  '/words': typeof WordsIndexRoute
+  '/stages/$stageId/play': typeof StagesStageIdPlayRoute
 }
 export interface FileRoutesById {
   __root__: typeof rootRouteImport
   '/': typeof IndexRoute
-  '/avatar': typeof AvatarRoute
-  '/store': typeof StoreRoute
-  '/words': typeof WordsRoute
-  '/stages/': typeof StagesIndexRoute
-  '/stages/$stageId/$mode': typeof StagesStageIdModeRoute
-  '/stages/$stageId/': typeof StagesStageIdIndexRoute
+  '/words/$word': typeof WordsWordRoute
+  '/words/': typeof WordsIndexRoute
+  '/stages/$stageId/play': typeof StagesStageIdPlayRoute
 }
 export interface FileRouteTypes {
   fileRoutesByFullPath: FileRoutesByFullPath
-  fullPaths:
-    | '/'
-    | '/avatar'
-    | '/store'
-    | '/words'
-    | '/stages/'
-    | '/stages/$stageId/$mode'
-    | '/stages/$stageId/'
+  fullPaths: '/' | '/words/$word' | '/words/' | '/stages/$stageId/play'
   fileRoutesByTo: FileRoutesByTo
-  to:
-    | '/'
-    | '/avatar'
-    | '/store'
-    | '/words'
-    | '/stages'
-    | '/stages/$stageId/$mode'
-    | '/stages/$stageId'
-  id:
-    | '__root__'
-    | '/'
-    | '/avatar'
-    | '/store'
-    | '/words'
-    | '/stages/'
-    | '/stages/$stageId/$mode'
-    | '/stages/$stageId/'
+  to: '/' | '/words/$word' | '/words' | '/stages/$stageId/play'
+  id: '__root__' | '/' | '/words/$word' | '/words/' | '/stages/$stageId/play'
   fileRoutesById: FileRoutesById
 }
 export interface RootRouteChildren {
   IndexRoute: typeof IndexRoute
-  AvatarRoute: typeof AvatarRoute
-  StoreRoute: typeof StoreRoute
-  WordsRoute: typeof WordsRoute
-  StagesIndexRoute: typeof StagesIndexRoute
-  StagesStageIdModeRoute: typeof StagesStageIdModeRoute
-  StagesStageIdIndexRoute: typeof StagesStageIdIndexRoute
+  WordsWordRoute: typeof WordsWordRoute
+  WordsIndexRoute: typeof WordsIndexRoute
+  StagesStageIdPlayRoute: typeof StagesStageIdPlayRoute
 }
 
 declare module '@tanstack/react-router' {
   interface FileRoutesByPath {
-    '/words': {
-      id: '/words'
-      path: '/words'
-      fullPath: '/words'
-      preLoaderRoute: typeof WordsRouteImport
-      parentRoute: typeof rootRouteImport
-    }
-    '/store': {
-      id: '/store'
-      path: '/store'
-      fullPath: '/store'
-      preLoaderRoute: typeof StoreRouteImport
-      parentRoute: typeof rootRouteImport
-    }
-    '/avatar': {
-      id: '/avatar'
-      path: '/avatar'
-      fullPath: '/avatar'
-      preLoaderRoute: typeof AvatarRouteImport
-      parentRoute: typeof rootRouteImport
-    }
     '/': {
       id: '/'
       path: '/'
@@ -151,25 +78,25 @@ declare module '@tanstack/react-router' {
       preLoaderRoute: typeof IndexRouteImport
       parentRoute: typeof rootRouteImport
     }
-    '/stages/': {
-      id: '/stages/'
-      path: '/stages'
-      fullPath: '/stages/'
-      preLoaderRoute: typeof StagesIndexRouteImport
+    '/words/': {
+      id: '/words/'
+      path: '/words'
+      fullPath: '/words/'
+      preLoaderRoute: typeof WordsIndexRouteImport
       parentRoute: typeof rootRouteImport
     }
-    '/stages/$stageId/': {
-      id: '/stages/$stageId/'
-      path: '/stages/$stageId'
-      fullPath: '/stages/$stageId/'
-      preLoaderRoute: typeof StagesStageIdIndexRouteImport
+    '/words/$word': {
+      id: '/words/$word'
+      path: '/words/$word'
+      fullPath: '/words/$word'
+      preLoaderRoute: typeof WordsWordRouteImport
       parentRoute: typeof rootRouteImport
     }
-    '/stages/$stageId/$mode': {
-      id: '/stages/$stageId/$mode'
-      path: '/stages/$stageId/$mode'
-      fullPath: '/stages/$stageId/$mode'
-      preLoaderRoute: typeof StagesStageIdModeRouteImport
+    '/stages/$stageId/play': {
+      id: '/stages/$stageId/play'
+      path: '/stages/$stageId/play'
+      fullPath: '/stages/$stageId/play'
+      preLoaderRoute: typeof StagesStageIdPlayRouteImport
       parentRoute: typeof rootRouteImport
     }
   }
@@ -177,12 +104,9 @@ declare module '@tanstack/react-router' {
 
 const rootRouteChildren: RootRouteChildren = {
   IndexRoute: IndexRoute,
-  AvatarRoute: AvatarRoute,
-  StoreRoute: StoreRoute,
-  WordsRoute: WordsRoute,
-  StagesIndexRoute: StagesIndexRoute,
-  StagesStageIdModeRoute: StagesStageIdModeRoute,
-  StagesStageIdIndexRoute: StagesStageIdIndexRoute,
+  WordsWordRoute: WordsWordRoute,
+  WordsIndexRoute: WordsIndexRoute,
+  StagesStageIdPlayRoute: StagesStageIdPlayRoute,
 }
 export const routeTree = rootRouteImport
   ._addFileChildren(rootRouteChildren)

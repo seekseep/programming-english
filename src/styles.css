@@ -1,6 +1,13 @@
 
 @import "tailwindcss";
 
+@keyframes feedback {
+  0% { opacity: 0; transform: scale(0.5); }
+  30% { opacity: 1; transform: scale(1.1); }
+  50% { transform: scale(1); }
+  100% { opacity: 0; transform: scale(1.2); }
+}
+
 :root {
   color-scheme: light;
   --bg: #f7f4ec;
@@ -103,6 +110,9 @@ input {
 }
 
 .nav-links a {
+  display: flex;
+  align-items: center;
+  gap: 6px;
   padding: 8px 14px;
   border-radius: 12px;
   font-weight: 600;
@@ -334,6 +344,10 @@ input {
   border-radius: 999px;
 }
 
+.category-card h2 {
+  font-size: 1.6rem;
+}
+
 .category-card strong {
   font-size: 1.35rem;
 }
@@ -393,7 +407,7 @@ input {
 
 @media (max-width: 640px) {
   .page-shell {
-    width: min(100vw - 16px, 1120px);
+    width: min(100vw - 32px, 1120px);
     padding: 16px 0 32px;
   }
 
@@ -424,19 +438,45 @@ input {
     grid-template-columns: 1fr;
   }
 
-  /* ナビゲーション */
+  /* ナビゲーション — ボトムナビ化 */
+  .site-nav {
+    position: fixed;
+    top: auto;
+    bottom: 0;
+    left: 0;
+    right: 0;
+    border-bottom: none;
+    border-top: 1px solid var(--line);
+  }
+
   .nav-inner {
-    width: min(100vw - 16px, 1120px);
-    padding: 8px 0;
+    width: 100%;
+    padding: 0;
+    justify-content: center;
+  }
+
+  .nav-logo {
+    display: none;
   }
 
   .nav-links {
+    display: flex;
+    width: 100%;
     gap: 0;
   }
 
   .nav-links a {
+    flex: 1;
+    flex-direction: column;
+    align-items: center;
+    gap: 2px;
     padding: 8px 10px;
-    font-size: 0.82rem;
+    font-size: 0.72rem;
+    border-radius: 0;
+  }
+
+  .page-shell {
+    padding-bottom: 64px;
   }
 
   /* カテゴリグリッド */

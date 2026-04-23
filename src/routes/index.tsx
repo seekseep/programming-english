@@ -1,79 +1,82 @@
-import { Link, createFileRoute } from '@tanstack/react-router'
+import { createFileRoute, useNavigate } from '@tanstack/react-router'
 import { useSave } from '#/context/SaveDataContext'
-import { stages } from '#/data'
-import { allWordEntries } from '#/lib/words'
-import { getMasteryLevel, MASTERY_LABELS } from '#/types'
+import { stages, getStageWords } from '#/data'
+import { getMasteryLevel  } from '#/types'
+import type {MasteryLevel} from '#/types';
+import { FeatureHeader } from '#/components/FeatureHeader'
 
 export const Route = createFileRoute('/')({ component: Home })
 
-function Home() {
-  const { data, avatarLevel, clearedStageCount } = useSave()
+const MASTERY_COLORS: Record<MasteryLevel, string> = {
+  unknown: 'var(--line)',
+  beginner: '#f7bd2f',
+  understood: '#e96b4a',
+  learned: '#2f6fd0',
+  master: '#338768',
+}
 
-  const studiedWords = Object.keys(data.wordHistory).length
-  const masteredWords = Object.values(data.wordHistory).filter(
-    (r) => getMasteryLevel(r.correctCount) === 'master',
-  ).length
+function Home() {
+  const { dataWord Book } = useSave()
+  const navigate = useNavigate()
 
   return (
     <main className="page-shell">
-      <section className="hero-panel">
-        <div className="hero-copy">
-          <p className="eyebrow">Programming English Quest</p>
-          <h1>英語で覚えるプログラミング</h1>
-          <p className="hero-text">
-            ステージをクリアしてポイントを稼ぎ、
-            ロボットを成長させよう。4つのモードで楽しく英単語を学べます。
-          </p>
-          <div className="hero-actions">
-            <Link to="/stages" className="primary-link">
-              ステージを選ぶ →
-            </Link>
-            <Link to="/words" className="ghost-link">
-              単語帳を見る
-            </Link>
-          </div>
-        </div>
-        <div className="hero-stats">
-          <div className="stat-card stat-card-accent">
-            <strong>{data.player.currentPoints}</strong>
-            <span className="stat-label">ポイント</span>
-          </div>
-          <div className="stat-card">
-            <strong>
-              {clearedStageCount}/{stages.length}
-            </strong>
-            <span className="stat-label">ステージクリア</span>
-          </div>
-        </div>
-      </section>
+      <FeatureHeader
+        title="ステージ一覧"　/>
 
       <section className="category-grid">
-        <div className="category-card">
-          <div
-            className="category-bar"
-            style={{ background: 'var(--accent)' }}
-          />
-          <h2>Lv.{avatarLevel}</h2>
-          <p>アバターレベル</p>
-        </div>
-        <div className="category-card">
-          <div
-            className="category-bar"
-            style={{ background: 'var(--word-javascript)' }}
-          />
-          <h2>
-            {studiedWords}/{allWordEntries.length}
-          </h2>
-          <p>学習済み単語</p>
-        </div>
-        <div className="category-card">
-          <div
-            className="category-bar"
-            style={{ background: 'var(--word-css)' }}
-          />
-          <h2>{masteredWords}</h2>
-          <p>{MASTERY_LABELS.master}した単語</p>
-        </div>
+        {stages.map((stage, i) => {
+          const isCleared = data.stageClears[stage.id]
+          const isUnlocked = i === 0 || data.stageClears[stages[i - 1].id]
+          const words = getStageWords(stage)
+
+          const masteryCounts: Record<MasteryLevel, number> = {
+            unknown: 0,
+            beginner: 0,
+            understood: 0,
+            learned: 0,
+            master: 0,
+          }
+          for (const w of words) {
+            const record = data.wordHistory[w.word]
+            const mastery = getMasteryLevel(record?.correctCount ?? 0)
+            masteryCounts[mastery]++
+          }
+
+          const studiedCount = words.length - masteryCounts.unknown
+
+          return (
+            <article
+              key={stage.id}
+              className={`category-card ${isUnlocked ? 'cursor-pointer' : 'opacity-40'}`}
+              onClick={() => isUnlocked && navigate({ to: '/stages/$stageId/play', params: { stageId: stage.id } })}
+            >
+              <div className="flex items-center justify-between">
+                <h2 className="text-lg font-bold">
+                  Stage {i + 1}
+                  {isCleared && ' ✓'}
+                </h2>
+                <span className="text-xs text-(--muted)">{studiedCount}/{words.length} 語学習</span>
+              </div>
+              <strong>{stage.name}</strong>
+
+              {/* 進捗バー */}
+              <div className="h-1.5 rounded-full bg-(--line) flex overflow-hidden">
+                {(['master', 'learned', 'understood', 'beginner'] as MasteryLevel[]).map((level) => {
+                  const pct = words.length ? (masteryCounts[level] / words.length) * 100 : 0
+                  if (pct === 0) return null
+                  return (
+                    <div
+                      key={level}
+                      className="h-full transition-[width] duration-300"
+                      style={{ width: `${pct}%`, background: MASTERY_COLORS[level] }}
+                    />
+                  )
+                })}
+              </div>
+            </article>
+          )
+        })}
       </section>
     </main>
   )

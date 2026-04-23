@@ -10,6 +10,7 @@ import vbWords from '../../data/words/vb.json'
 export type WordEntry = {
   word: string
   meaning: string
+  description: string
 }
 
 export type WordCategory = 'javascript' | 'html' | 'css' | 'sql' | 'java' | 'vb' | 'naming'

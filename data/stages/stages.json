@@ -3,128 +3,88 @@
     "id": "stage-1",
     "name": "変数と型",
     "description": "プログラミングの基礎となる変数や型に関する単語",
-    "words": {
-      "common": [
-        "string", "number", "boolean", "null", "undefined",
-        "integer", "double", "decimal", "byte", "long",
-        "array", "object", "value", "single", "numeric"
-      ],
-      "quiz": ["character"],
-      "pair": ["binary"],
-      "memory": ["wildcard"],
-      "slow": ["volatile"]
-    }
+    "words": [
+      "string", "number", "boolean", "null", "undefined",
+      "integer", "double", "decimal", "byte", "long",
+      "array", "object", "value", "single", "numeric",
+      "character", "binary", "wildcard", "volatile"
+    ]
   },
   {
     "id": "stage-2",
     "name": "制御構文",
     "description": "条件分岐やループなどの制御に関する単語",
-    "words": {
-      "common": [
-        "else", "case", "switch", "return", "break",
-        "continue", "loop", "each", "next", "until",
-        "every", "some", "step", "exit", "then"
-      ],
-      "quiz": ["default"],
-      "pair": ["await"],
-      "memory": ["pending"],
-      "slow": ["explicit"]
-    }
+    "words": [
+      "else", "case", "switch", "return", "break",
+      "continue", "loop", "each", "next", "until",
+      "every", "some", "step", "exit", "then",
+      "default", "await", "pending", "explicit"
+    ]
   },
   {
     "id": "stage-3",
     "name": "関数とクラス",
     "description": "関数やクラスの定義と操作に関する単語",
-    "words": {
-      "common": [
-        "function", "method", "class", "constructor", "parameter",
-        "argument", "instance", "interface", "extends", "implements",
-        "abstract", "final", "static", "override", "module"
-      ],
-      "quiz": ["generic"],
-      "pair": ["public"],
-      "memory": ["private"],
-      "slow": ["protected"]
-    }
+    "words": [
+      "function", "method", "class", "constructor", "parameter",
+      "argument", "instance", "interface", "extends", "implements",
+      "abstract", "final", "static", "override", "module",
+      "generic", "public", "private", "protected"
+    ]
   },
   {
     "id": "stage-4",
     "name": "データ構造",
     "description": "配列やマップなどのデータ構造に関する単語",
-    "words": {
-      "common": [
-        "list", "dictionary", "collection", "record", "index",
-        "filter", "reduce", "slice", "splice", "append",
-        "prepend", "remove", "contains", "sort", "split"
-      ],
-      "quiz": ["iterator"],
-      "pair": ["stream"],
-      "memory": ["predicate"],
-      "slow": ["comparable"]
-    }
+    "words": [
+      "list", "dictionary", "collection", "record", "index",
+      "filter", "reduce", "slice", "splice", "append",
+      "prepend", "remove", "contains", "sort", "split",
+      "iterator", "stream", "predicate", "comparable"
+    ]
   },
   {
     "id": "stage-5",
     "name": "開発ツールと設計",
     "description": "開発プロセスやデザインパターンに関する単語",
-    "words": {
-      "common": [
-        "commit", "rollback", "schema", "package", "import",
-        "export", "runtime", "parse", "validate", "format",
-        "convert", "assign", "handle", "dispatch", "render"
-      ],
-      "quiz": ["factory"],
-      "pair": ["builder"],
-      "memory": ["singleton"],
-      "slow": ["strategy"]
-    }
+    "words": [
+      "commit", "rollback", "schema", "package", "import",
+      "export", "runtime", "parse", "validate", "format",
+      "convert", "assign", "handle", "dispatch", "render",
+      "factory", "builder", "singleton", "strategy"
+    ]
   },
   {
     "id": "stage-6",
     "name": "エラーと例外",
     "description": "エラー処理や例外に関する単語",
-    "words": {
-      "common": [
-        "error", "exception", "throw", "catch", "finally",
-        "resolve", "reject", "promise", "prevent", "raise",
-        "deprecated", "constraint", "check", "restrict", "bound"
-      ],
-      "quiz": ["nullable"],
-      "pair": ["transient"],
-      "memory": ["synchronized"],
-      "slow": ["never"]
-    }
+    "words": [
+      "error", "exception", "throw", "catch", "finally",
+      "resolve", "reject", "promise", "prevent", "raise",
+      "deprecated", "constraint", "check", "restrict", "bound",
+      "nullable", "transient", "synchronized", "never"
+    ]
   },
   {
     "id": "stage-7",
     "name": "API・通信・データベース",
     "description": "API通信やデータベース操作に関する単語",
-    "words": {
-      "common": [
-        "request", "response", "fetch", "query", "select",
-        "insert", "update", "delete", "create", "join",
-        "where", "group", "order", "distinct", "transaction"
-      ],
-      "quiz": ["foreign"],
-      "pair": ["primary"],
-      "memory": ["cascade"],
-      "slow": ["reference"]
-    }
+    "words": [
+      "request", "response", "fetch", "query", "select",
+      "insert", "update", "delete", "create", "join",
+      "where", "group", "order", "distinct", "transaction",
+      "foreign", "primary", "cascade", "reference"
+    ]
   },
   {
     "id": "stage-8",
     "name": "UI・表示",
     "description": "画面表示やスタイルに関する単語",
-    "words": {
-      "common": [
-        "button", "input", "form", "label", "display",
-        "visible", "hidden", "position", "margin", "padding",
-        "border", "color", "background", "animation", "transition"
-      ],
-      "quiz": ["opacity"],
-      "pair": ["overflow"],
-      "memory": ["placeholder"],
-      "slow": ["transform"]
-    }
+    "words": [
+      "button", "input", "form", "label", "display",
+      "visible", "hidden", "position", "margin", "padding",
+      "border", "color", "background", "animation", "transition",
+      "opacity", "overflow", "placeholder", "transform"
+    ]
   }
 ]
