@@ -1,0 +1,17 @@
+{
+  "english": "break",
+  "japanese": "中断する",
+  "description": "繰り返し処理を途中で終わらせるための命令です。プログラミングでは、ループの中で条件を満たしたときに break を使って抜け出します。",
+  "example_natural": {
+    "english": "Use break to stop the loop when the value is found.",
+    "japanese": "値が見つかったらループを止めるために break を使います。"
+  },
+  "example_programming": {
+    "language": "JavaScript",
+    "body": "for (let i = 0; i < 10; i++) {\n  if (i === 5) {\n    break;\n  }\n  console.log(i);\n}"
+  },
+  "themes": [
+    "control_flow"
+  ],
+  "difficulty": 2
+}

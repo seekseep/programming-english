@@ -1,0 +1,17 @@
+{
+  "english": "type",
+  "japanese": "型",
+  "description": "値の種類を表す分類のことです。プログラミングでは、数値や文字列などの type を区別して正しく扱う必要があります。",
+  "example_natural": {
+    "english": "Please check the type of the variable.",
+    "japanese": "その変数の型を確認してください。"
+  },
+  "example_programming": {
+    "language": "JavaScript",
+    "body": "const value = 42;\nconst type = typeof value;\nconsole.log(type);"
+  },
+  "themes": [
+    "variables_and_types"
+  ],
+  "difficulty": 2
+}

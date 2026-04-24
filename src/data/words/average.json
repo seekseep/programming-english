@@ -1,0 +1,17 @@
+{
+  "english": "average",
+  "japanese": "平均",
+  "description": "数値の平均を表します。合計を個数で割って求め、データ全体の傾向を把握するためによく使われます。SQLでは AVG 関数として提供されます。",
+  "example_natural": {
+    "english": "What is the average score of the class?",
+    "japanese": "クラスの平均点は何点ですか。"
+  },
+  "example_programming": {
+    "language": "SQL",
+    "body": "SELECT AVG(score) AS average\nFROM exam_results\nWHERE class_id = 3;"
+  },
+  "themes": [
+    "numbers_and_math"
+  ],
+  "difficulty": 3
+}

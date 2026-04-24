@@ -1,0 +1,17 @@
+{
+  "english": "include",
+  "japanese": "取り込む",
+  "description": "includeは外部のファイルや機能をプログラムに取り込むことを意味します。tsconfig.jsonのincludeプロパティではコンパイル対象のファイルを指定します。言語によっては#includeなどの構文で他のソースを読み込みます。",
+  "example_natural": {
+    "english": "Include the source files from the src directory.",
+    "japanese": "srcディレクトリからソースファイルを取り込んでください。"
+  },
+  "example_programming": {
+    "language": "JavaScript",
+    "body": "// tsconfig.json\n{\n  \"include\": [\"src/**/*.ts\"],\n  \"exclude\": [\"node_modules\"]\n}"
+  },
+  "themes": [
+    "modules_and_imports"
+  ],
+  "difficulty": 8
+}

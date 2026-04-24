@@ -1,0 +1,17 @@
+{
+  "english": "parallel",
+  "japanese": "並列",
+  "description": "parallelは複数のタスクを同時刻に実行する「並列」を意味します。concurrentが切り替え実行を含む概念なのに対し、parallelは物理的な同時実行を指します。JavaScriptではPromise.allでI/Oを並列化する用法がよく知られます。",
+  "example_natural": {
+    "english": "We fetch the two resources in parallel to reduce latency.",
+    "japanese": "遅延を減らすために2つのリソースを並列で取得します。"
+  },
+  "example_programming": {
+    "language": "JavaScript",
+    "body": "// run two async tasks in parallel\nconst [user, orders] = await Promise.all([\n  fetchUser(),\n  fetchOrders(),\n]);"
+  },
+  "themes": [
+    "async_programming"
+  ],
+  "difficulty": 10
+}

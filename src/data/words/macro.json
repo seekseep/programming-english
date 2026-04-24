@@ -1,0 +1,17 @@
+{
+  "english": "macro",
+  "japanese": "マクロ",
+  "description": "macro は Excel で一連の操作を自動化するために記録・記述されたプログラムです。VBA ではモジュール内の Sub プロシージャがマクロとして実行できます。繰り返し行う作業をマクロ化すると、ボタンひとつで再実行できて効率が上がります。",
+  "example_natural": {
+    "english": "Run the macro to format the monthly report.",
+    "japanese": "月次レポートを整形するマクロを実行してください。"
+  },
+  "example_programming": {
+    "language": "Visual Basic",
+    "body": "' macro\nSub FormatReport()\n    Range(\"A1:D1\").Font.Bold = True\n    Columns(\"A:D\").AutoFit\nEnd Sub"
+  },
+  "themes": [
+    "excel_vba_basics"
+  ],
+  "difficulty": 7
+}

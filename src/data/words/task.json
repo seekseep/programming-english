@@ -1,0 +1,17 @@
+{
+  "english": "task",
+  "japanese": "タスク",
+  "description": "タスクは非同期に実行される仕事の単位です。JavaScriptのイベントループはタスクキューから順に処理を取り出して実行し、setTimeoutのコールバックやI/O完了時の処理がタスクとして積まれます。",
+  "example_natural": {
+    "english": "Run all fetch tasks in parallel and wait for them.",
+    "japanese": "すべての取得タスクを並行で実行して完了を待ってください。"
+  },
+  "example_programming": {
+    "language": "JavaScript",
+    "body": "const urls = ['/a', '/b', '/c'];\nconst tasks = urls.map(u => fetch(u));\nconst results = await Promise.all(tasks);"
+  },
+  "themes": [
+    "async_programming"
+  ],
+  "difficulty": 6
+}

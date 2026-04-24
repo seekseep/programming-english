@@ -1,0 +1,17 @@
+{
+  "english": "switch",
+  "japanese": "多方向分岐",
+  "description": "1つの値に応じて処理を切り替える多方向分岐の構文を表します。多くの if と else を並べるよりも読みやすく書けるのが利点です。",
+  "example_natural": {
+    "english": "Use a switch to handle each day of the week.",
+    "japanese": "曜日ごとの処理には switch 文を使ってください。"
+  },
+  "example_programming": {
+    "language": "Visual Basic",
+    "body": "Dim day As Integer\nday = 3\nSelect Case day ' switch-like\n    Case 1: Debug.Print \"Mon\"\n    Case 3: Debug.Print \"Wed\"\n    Case Else: Debug.Print \"?\"\nEnd Select"
+  },
+  "themes": [
+    "control_flow"
+  ],
+  "difficulty": 3
+}

@@ -1,0 +1,17 @@
+{
+  "english": "api",
+  "japanese": "API",
+  "description": "APIとはApplication Programming Interfaceの略で、アプリケーション同士がデータや機能をやり取りするための接続口です。Web APIではHTTPを通じてJSONなどの形式でリクエストとレスポンスをやり取りします。",
+  "example_natural": {
+    "english": "The app fetches user data from a public API.",
+    "japanese": "そのアプリは公開APIからユーザーデータを取得します。"
+  },
+  "example_programming": {
+    "language": "JavaScript",
+    "body": "const API_URL = 'https://api.example.com/users';\nconst response = await fetch(API_URL);\nconst users = await response.json();\nconsole.log(users);"
+  },
+  "themes": [
+    "http_and_api"
+  ],
+  "difficulty": 6
+}

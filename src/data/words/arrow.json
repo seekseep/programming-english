@@ -1,0 +1,17 @@
+{
+  "english": "arrow",
+  "japanese": "アロー（矢印）",
+  "description": "arrow は「矢印」を意味し、JavaScript では `=>` を使って書く短い関数構文「アロー関数」を指します。this を束縛せず、コールバックなどで簡潔に書けるのが特徴です。",
+  "example_natural": {
+    "english": "The arrow on the sign pointed to the exit.",
+    "japanese": "看板の矢印は出口を指していた。"
+  },
+  "example_programming": {
+    "language": "JavaScript",
+    "body": "// arrow\nconst square = (n) => n * n;\nconst evens = [1, 2, 3, 4].filter((n) => n % 2 === 0);\nconsole.log(square(5), evens);"
+  },
+  "themes": [
+    "functions_and_procedures"
+  ],
+  "difficulty": 9
+}

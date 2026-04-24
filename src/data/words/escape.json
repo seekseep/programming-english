@@ -1,0 +1,17 @@
+{
+  "english": "escape",
+  "japanese": "エスケープする",
+  "description": "文字列中で特別な意味を持つ文字を、そのままの文字として扱えるように変換する処理です。改行や引用符などを表現したり、URL に安全に含められる形に変えたりするときに使います。",
+  "example_natural": {
+    "english": "You need to escape the quotation marks inside the string.",
+    "japanese": "文字列の中にある引用符をエスケープする必要があります。"
+  },
+  "example_programming": {
+    "language": "JavaScript",
+    "body": "// escape\nconst raw = 'She said \"hello\".';\nconst safe = raw.replace(/\"/g, '\\\\\"');\nconsole.log(safe);\nconst encoded = encodeURIComponent(\"a&b=c\");"
+  },
+  "themes": [
+    "strings_and_text"
+  ],
+  "difficulty": 4
+}

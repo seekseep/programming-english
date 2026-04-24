@@ -1,0 +1,17 @@
+{
+  "english": "response",
+  "japanese": "レスポンス",
+  "description": "HTTPレスポンスはサーバーがクライアントに返す応答で、ステータスコード・ヘッダー・本文から構成されます。fetchが返すResponseオブジェクトから.json()などで本文を取り出します。",
+  "example_natural": {
+    "english": "Check the response status before reading the body.",
+    "japanese": "本文を読む前にレスポンスのステータスを確認してください。"
+  },
+  "example_programming": {
+    "language": "JavaScript",
+    "body": "const response = await fetch('/api/items');\nif (response.ok) {\n  const items = await response.json();\n  console.log(items);\n}"
+  },
+  "themes": [
+    "http_and_api"
+  ],
+  "difficulty": 6
+}

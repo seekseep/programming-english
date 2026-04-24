@@ -1,0 +1,17 @@
+{
+  "english": "not",
+  "japanese": "〜でない",
+  "description": "真偽値を反転させる論理演算子。プログラミングでは真を偽に、偽を真に変えるために使い、JavaScriptでは「!」、SQLでは「NOT」と書く。",
+  "example_natural": {
+    "english": "I am not tired.",
+    "japanese": "私は疲れていません。"
+  },
+  "example_programming": {
+    "language": "JavaScript",
+    "body": "// not\nconst isOpen = false;\nif (!isOpen) {\n  console.log('closed');\n}"
+  },
+  "themes": [
+    "operators"
+  ],
+  "difficulty": 1
+}

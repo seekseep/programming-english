@@ -1,0 +1,18 @@
+{
+  "english": "get",
+  "japanese": "取得する",
+  "description": "データを受け取ったり取り出したりすることです。プログラミングや HTTP では、サーバーから情報を取得する際に GET リクエストを使います。",
+  "example_natural": {
+    "english": "Send a GET request to get the user data.",
+    "japanese": "ユーザーデータを取得するために GET リクエストを送ります。"
+  },
+  "example_programming": {
+    "language": "JavaScript",
+    "body": "fetch(\"/api/users\", { method: \"GET\" })\n  .then((response) => response.json())\n  .then((data) => console.log(data));"
+  },
+  "themes": [
+    "basic_io",
+    "http_and_api"
+  ],
+  "difficulty": 2
+}

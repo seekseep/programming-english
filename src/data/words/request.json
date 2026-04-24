@@ -1,0 +1,17 @@
+{
+  "english": "request",
+  "japanese": "リクエスト",
+  "description": "HTTPリクエストはクライアントがサーバーに送信する要求で、メソッド・URL・ヘッダー・本文から構成されます。fetchやXMLHttpRequestで作成し、サーバーからのレスポンスを受け取ります。",
+  "example_natural": {
+    "english": "Send a POST request to create a new user.",
+    "japanese": "新しいユーザーを作成するためにPOSTリクエストを送ってください。"
+  },
+  "example_programming": {
+    "language": "JavaScript",
+    "body": "const request = new Request('/api/users', {\n  method: 'POST',\n  body: JSON.stringify({ name: 'Bob' })\n});\nconst res = await fetch(request);"
+  },
+  "themes": [
+    "http_and_api"
+  ],
+  "difficulty": 6
+}

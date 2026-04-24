@@ -1,0 +1,17 @@
+{
+  "english": "protected",
+  "japanese": "保護された",
+  "description": "protectedはそのクラスおよび派生クラスからのみアクセス可能なスコープを指定するキーワードです。VB.NETではProtectedで宣言したメンバーは、継承関係にあるクラスからは利用できますが、無関係の外部コードからは隠されます。",
+  "example_natural": {
+    "english": "A protected member is visible to subclasses only.",
+    "japanese": "protectedなメンバーは、サブクラスからのみ見えます。"
+  },
+  "example_programming": {
+    "language": "Visual Basic",
+    "body": "Public Class Animal\n    Protected name As String\n    Protected Sub SetName(n As String)\n        name = n\n    End Sub\nEnd Class"
+  },
+  "themes": [
+    "scope"
+  ],
+  "difficulty": 8
+}

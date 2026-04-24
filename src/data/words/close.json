@@ -1,0 +1,17 @@
+{
+  "english": "close",
+  "japanese": "閉じる",
+  "description": "close は開いたファイルやリソースを閉じて解放する操作です。書き込み後に閉じずにいるとバッファ内のデータが失われたり、他のプロセスから開けなくなったりします。VBA では Close #1 のようにファイル番号を指定します。",
+  "example_natural": {
+    "english": "Always close the file after you finish writing to it.",
+    "japanese": "書き込みが終わったら必ずファイルを閉じてください。"
+  },
+  "example_programming": {
+    "language": "Visual Basic",
+    "body": "Open \"C:\\data.txt\" For Output As #1\nPrint #1, \"Hello\"\nClose #1"
+  },
+  "themes": [
+    "file_io"
+  ],
+  "difficulty": 7
+}

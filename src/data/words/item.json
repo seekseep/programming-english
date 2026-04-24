@@ -1,0 +1,17 @@
+{
+  "english": "item",
+  "japanese": "項目",
+  "description": "リストや配列の中にある一つひとつのデータを指します。プログラミングでは、ループの中で item を取り出して処理するパターンがよく出てきます。",
+  "example_natural": {
+    "english": "Print each item in the shopping list.",
+    "japanese": "買い物リストの各項目を出力してください。"
+  },
+  "example_programming": {
+    "language": "JavaScript",
+    "body": "const list = [\"apple\", \"banana\", \"orange\"];\nfor (const item of list) {\n  console.log(item);\n}"
+  },
+  "themes": [
+    "collections"
+  ],
+  "difficulty": 2
+}

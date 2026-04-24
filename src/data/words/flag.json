@@ -1,0 +1,17 @@
+{
+  "english": "flag",
+  "japanese": "フラグ",
+  "description": "状態を表すための真偽値の変数のことです。プログラミングでは、処理を済ませたかどうかなどの目印として flag を使います。",
+  "example_natural": {
+    "english": "Use a flag to remember whether the user is logged in.",
+    "japanese": "ユーザーがログイン済みかどうかを覚えておくためにフラグを使います。"
+  },
+  "example_programming": {
+    "language": "Visual Basic",
+    "body": "Dim flag As Boolean\nflag = True\nIf flag Then\n    MsgBox \"Logged in\"\nEnd If"
+  },
+  "themes": [
+    "boolean_logic"
+  ],
+  "difficulty": 2
+}

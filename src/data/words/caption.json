@@ -1,0 +1,17 @@
+{
+  "english": "caption",
+  "japanese": "見出し文字列",
+  "description": "caption はコントロールに表示される見出しのテキストを指す言葉です。VB フォームでは Button や Label などのプロパティで、ユーザーに見える文言を設定するときに使います。実行時に変更してボタンの表示を動的に切り替えることもできます。",
+  "example_natural": {
+    "english": "Change the button caption to \"Cancel\" when the process starts.",
+    "japanese": "処理が始まったらボタンの見出しを「Cancel」に変更してください。"
+  },
+  "example_programming": {
+    "language": "Visual Basic",
+    "body": "Button1.Caption = \"OK\"\nLabel1.Caption = \"Name:\""
+  },
+  "themes": [
+    "vb_forms_controls"
+  ],
+  "difficulty": 7
+}

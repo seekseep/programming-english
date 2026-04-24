@@ -1,0 +1,17 @@
+{
+  "english": "workbook",
+  "japanese": "ブック",
+  "description": "workbook は Excel のファイル 1 つ分に相当し、複数のワークシートを含みます。VBA では Workbooks コレクションから名前で取得したり、ThisWorkbook で自分自身のブックを参照したりします。Workbooks.Open で別のブックを開けます。",
+  "example_natural": {
+    "english": "Open the sales workbook and save it as a new file.",
+    "japanese": "売上ブックを開いて、別名で保存してください。"
+  },
+  "example_programming": {
+    "language": "Visual Basic",
+    "body": "Dim wb As Workbook\nSet wb = Workbooks.Open(\"C:\\sales.xlsx\")\nwb.SaveAs \"C:\\sales_backup.xlsx\""
+  },
+  "themes": [
+    "excel_vba_basics"
+  ],
+  "difficulty": 7
+}

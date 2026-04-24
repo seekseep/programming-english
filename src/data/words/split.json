@@ -1,0 +1,17 @@
+{
+  "english": "split",
+  "japanese": "分割する",
+  "description": "文字列を区切り文字で分割して配列にする操作です。CSV の各項目を取り出したり、入力を単語単位に分けたりするときに使います。",
+  "example_natural": {
+    "english": "Split the sentence by spaces to get each word.",
+    "japanese": "各単語を得るために文をスペースで分割してください。"
+  },
+  "example_programming": {
+    "language": "JavaScript",
+    "body": "const sentence = \"learn programming english\";\nconst words = sentence.split(\" \");\nconsole.log(words.length);\nconsole.log(words[0]);"
+  },
+  "themes": [
+    "strings_and_text"
+  ],
+  "difficulty": 3
+}

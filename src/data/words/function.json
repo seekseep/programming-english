@@ -1,0 +1,17 @@
+{
+  "english": "function",
+  "japanese": "関数",
+  "description": "ひとまとまりの処理に名前をつけて、あとから呼び出せるようにしたもの。プログラミングでは引数を受け取り、結果を返す処理単位として使われる。",
+  "example_natural": {
+    "english": "This function adds two numbers.",
+    "japanese": "この関数は2つの数を足します。"
+  },
+  "example_programming": {
+    "language": "Visual Basic",
+    "body": "Function AddTwo(a As Integer, b As Integer) As Integer\n    AddTwo = a + b\nEnd Function"
+  },
+  "themes": [
+    "functions_and_procedures"
+  ],
+  "difficulty": 1
+}

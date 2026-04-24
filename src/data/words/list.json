@@ -1,0 +1,17 @@
+{
+  "english": "list",
+  "japanese": "リスト、一覧",
+  "description": "複数の要素を順番に並べた集合を表すデータ構造。プログラミングでは配列と似た使い方をし、要素の追加や削除ができる柔軟なコレクションとして扱われる。",
+  "example_natural": {
+    "english": "Make a list of your favorite books.",
+    "japanese": "好きな本のリストを作ってください。"
+  },
+  "example_programming": {
+    "language": "JavaScript",
+    "body": "const list = ['apple', 'banana', 'cherry'];\nconsole.log(list);"
+  },
+  "themes": [
+    "collections"
+  ],
+  "difficulty": 1
+}

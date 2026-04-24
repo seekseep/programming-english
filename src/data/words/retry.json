@@ -1,0 +1,17 @@
+{
+  "english": "retry",
+  "japanese": "再試行",
+  "description": "retryは失敗した処理をもう一度試みることを意味します。ネットワークエラーなど一時的な障害に対して、一定回数再試行することで処理の成功率を上げる堅牢なコードを書くことができます。",
+  "example_natural": {
+    "english": "Retry the API call up to three times on failure.",
+    "japanese": "失敗した場合、APIコールを最大3回まで再試行してください。"
+  },
+  "example_programming": {
+    "language": "JavaScript",
+    "body": "async function retry(fn, times = 3) {\n  for (let i = 0; i < times; i++) {\n    try { return await fn(); } catch (e) {}\n  }\n  throw new Error('all retries failed');\n}"
+  },
+  "themes": [
+    "error_handling"
+  ],
+  "difficulty": 8
+}

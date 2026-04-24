@@ -1,0 +1,17 @@
+{
+  "english": "less",
+  "japanese": "より小さい",
+  "description": "左の値が右の値より小さいかを比較する演算を表します。範囲の下限チェックやソートの判定などでよく使われます。",
+  "example_natural": {
+    "english": "Three is less than seven.",
+    "japanese": "3 は 7 より小さいです。"
+  },
+  "example_programming": {
+    "language": "Visual Basic",
+    "body": "Dim age As Integer\nage = 12\nIf age < 18 Then ' less than\n    Debug.Print \"minor\"\nEnd If"
+  },
+  "themes": [
+    "operators"
+  ],
+  "difficulty": 3
+}

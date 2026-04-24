@@ -1,0 +1,17 @@
+{
+  "english": "print",
+  "japanese": "出力する、表示する",
+  "description": "画面やコンソールに文字や値を表示することを指す語。プログラミングでは動作確認や結果の出力のためによく使われる基本的な操作。",
+  "example_natural": {
+    "english": "Please print the report.",
+    "japanese": "レポートを印刷してください。"
+  },
+  "example_programming": {
+    "language": "Visual Basic",
+    "body": "Debug.Print \"Hello, world!\""
+  },
+  "themes": [
+    "basic_io"
+  ],
+  "difficulty": 1
+}

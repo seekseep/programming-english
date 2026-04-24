@@ -1,0 +1,17 @@
+{
+  "english": "breakpoint",
+  "japanese": "ブレークポイント",
+  "description": "breakpointはデバッガでプログラムの実行を一時停止させるために仕込む目印です。停止中に変数の値やコールスタックを確認でき、原因調査に役立ちます。JavaScriptでは debugger 文で同様の効果が得られます。",
+  "example_natural": {
+    "english": "Set a breakpoint on this line and inspect the variables.",
+    "japanese": "この行にブレークポイントを設定して変数を確認してください。"
+  },
+  "example_programming": {
+    "language": "JavaScript",
+    "body": "function calculate(total) {\n  debugger; // breakpoint for the debugger\n  return total * 1.1;\n}"
+  },
+  "themes": [
+    "debugging_and_testing"
+  ],
+  "difficulty": 10
+}

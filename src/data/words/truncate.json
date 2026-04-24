@@ -1,0 +1,17 @@
+{
+  "english": "truncate",
+  "japanese": "切り捨てる",
+  "description": "truncate は「切り捨てる」という意味で、数値では小数部分を落として整数にする、文字列では指定の長さで打ち切る操作を指します。JavaScript では `Math.trunc()` が代表的です。",
+  "example_natural": {
+    "english": "The editor had to truncate the article to fit on one page.",
+    "japanese": "編集者は記事を1ページに収めるために切り詰めなければならなかった。"
+  },
+  "example_programming": {
+    "language": "JavaScript",
+    "body": "// truncate\nconsole.log(Math.trunc(4.7));\nconsole.log(Math.trunc(-4.7));\nconsole.log(\"hello world\".slice(0, 5));"
+  },
+  "themes": [
+    "numbers_and_math"
+  ],
+  "difficulty": 9
+}

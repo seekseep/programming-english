@@ -1,0 +1,17 @@
+{
+  "english": "divide",
+  "japanese": "割る、除算する",
+  "description": "数値を別の数値で割る演算。プログラミングでは記号「/」で表され、四則演算のひとつとして使われる。ゼロで割るとエラーになる点に注意が必要。",
+  "example_natural": {
+    "english": "Divide ten by two.",
+    "japanese": "10を2で割ってください。"
+  },
+  "example_programming": {
+    "language": "JavaScript",
+    "body": "// divide\nconst result = 10 / 2;\nconsole.log(result);"
+  },
+  "themes": [
+    "operators"
+  ],
+  "difficulty": 1
+}

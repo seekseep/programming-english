@@ -1,0 +1,17 @@
+{
+  "english": "greater",
+  "japanese": "より大きい",
+  "description": "左の値が右の値より大きいかを比較する演算を表します。条件分岐やループの終了判定など、数値の大小を比べる場面で頻繁に使われます。",
+  "example_natural": {
+    "english": "Ten is greater than five.",
+    "japanese": "10 は 5 より大きいです。"
+  },
+  "example_programming": {
+    "language": "Visual Basic",
+    "body": "Dim score As Integer\nscore = 72\nIf score > 60 Then ' greater than\n    Debug.Print \"pass\"\nEnd If"
+  },
+  "themes": [
+    "operators"
+  ],
+  "difficulty": 3
+}

@@ -1,0 +1,17 @@
+{
+  "english": "object",
+  "japanese": "オブジェクト",
+  "description": "関連するデータと処理をまとめたひとまとまりの値です。プロパティに値を保持し、メソッドで操作します。JavaScript ではキーと値の組を持つ基本的なデータ構造としても使われます。",
+  "example_natural": {
+    "english": "Create an object that stores the user's name and age.",
+    "japanese": "ユーザーの名前と年齢を保持するオブジェクトを作ってください。"
+  },
+  "example_programming": {
+    "language": "JavaScript",
+    "body": "// object\nconst user = { name: \"Alice\", age: 28 };\nuser.age += 1;\nconsole.log(user);"
+  },
+  "themes": [
+    "collections"
+  ],
+  "difficulty": 4
+}

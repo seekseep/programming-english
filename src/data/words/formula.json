@@ -1,0 +1,17 @@
+{
+  "english": "formula",
+  "japanese": "数式",
+  "description": "formula は Excel のセルに入力する計算式のことです。VBA では Range の Formula プロパティに \"=SUM(A1:A10)\" のような文字列を代入すると、Excel がそれを数式として解釈してくれます。Value を使うと数式ではなく値として扱われます。",
+  "example_natural": {
+    "english": "Set a formula in cell B1 that sums the values in column A.",
+    "japanese": "A 列の値を合計する数式を B1 セルに設定してください。"
+  },
+  "example_programming": {
+    "language": "Visual Basic",
+    "body": "Range(\"B1\").Formula = \"=SUM(A1:A10)\""
+  },
+  "themes": [
+    "excel_vba_basics"
+  ],
+  "difficulty": 7
+}

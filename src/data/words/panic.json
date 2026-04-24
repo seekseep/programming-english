@@ -1,0 +1,17 @@
+{
+  "english": "panic",
+  "japanese": "致命的エラー",
+  "description": "panicは回復不能な深刻なエラーが発生してプログラムが強制的に停止する状態を表します。GoやRustなどで使われる用語で、JavaScriptではthrow文で例外を投げて致命的な状況を示します。",
+  "example_natural": {
+    "english": "The program will panic when the database connection is lost.",
+    "japanese": "データベース接続が失われると、プログラムは致命的エラーになります。"
+  },
+  "example_programming": {
+    "language": "JavaScript",
+    "body": "function connect(db) {\n  if (!db) {\n    throw new Error('panic: database is null');\n  }\n  return db.open();\n}"
+  },
+  "themes": [
+    "error_handling"
+  ],
+  "difficulty": 8
+}

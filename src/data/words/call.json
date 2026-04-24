@@ -1,0 +1,17 @@
+{
+  "english": "call",
+  "japanese": "呼び出す",
+  "description": "関数や手続きを実行するように指示することです。プログラミングでは、定義したプロシージャを call で呼び出して処理を動かします。",
+  "example_natural": {
+    "english": "You need to call the function to see the result.",
+    "japanese": "結果を見るには、その関数を呼び出す必要があります。"
+  },
+  "example_programming": {
+    "language": "Visual Basic",
+    "body": "Sub ShowMessage()\n    MsgBox \"Hello\"\nEnd Sub\n\nCall ShowMessage"
+  },
+  "themes": [
+    "functions_and_procedures"
+  ],
+  "difficulty": 2
+}

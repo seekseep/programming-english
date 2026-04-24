@@ -1,0 +1,17 @@
+{
+  "english": "denormalize",
+  "japanese": "非正規化",
+  "description": "denormalizeは正規化されたテーブルを意図的に冗長化し、読み取り性能を向上させる手法です。結合を減らせる利点がありますが、更新時の整合性維持コストが増えます。分析用データベースやレポーティングで採用されることが多いです。",
+  "example_natural": {
+    "english": "We denormalize the schema to speed up the reporting queries.",
+    "japanese": "レポーティング用のクエリを高速化するためにスキーマを非正規化します。"
+  },
+  "example_programming": {
+    "language": "SQL",
+    "body": "-- denormalize: copy customer_name into orders\nALTER TABLE orders ADD COLUMN customer_name VARCHAR(100);\nUPDATE orders o\nSET customer_name = c.name\nFROM customers c WHERE o.customer_id = c.id;"
+  },
+  "themes": [
+    "database_concepts"
+  ],
+  "difficulty": 10
+}

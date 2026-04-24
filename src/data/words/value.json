@@ -1,0 +1,18 @@
+{
+  "english": "value",
+  "japanese": "値",
+  "description": "変数に入っているデータそのものを指す語。プログラミングでは数値や文字列などの具体的なデータを表し、変数名とペアで扱われる。",
+  "example_natural": {
+    "english": "The value of this coin is small.",
+    "japanese": "このコインの価値は小さいです。"
+  },
+  "example_programming": {
+    "language": "JavaScript",
+    "body": "const value = 42;\nconsole.log(value);"
+  },
+  "themes": [
+    "collections",
+    "variables_and_types"
+  ],
+  "difficulty": 1
+}

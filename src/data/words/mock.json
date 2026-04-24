@@ -1,0 +1,17 @@
+{
+  "english": "mock",
+  "japanese": "モック",
+  "description": "mockはテスト時に依存オブジェクトを置き換える偽の実装を指します。外部APIやデータベースなど副作用のある相手に対して、期待する呼び出しや戻り値を事前に定義できます。テスト対象だけを独立して検証できるのが利点です。",
+  "example_natural": {
+    "english": "We mock the network call so the test runs without a real server.",
+    "japanese": "実サーバーなしでテストが走るようにネットワーク呼び出しをモック化します。"
+  },
+  "example_programming": {
+    "language": "JavaScript",
+    "body": "test('loads user', async () => {\n  const fetchUser = jest.fn().mockResolvedValue({ id: 1, name: 'Ada' });\n  const user = await fetchUser();\n  expect(user.name).toBe('Ada');\n});"
+  },
+  "themes": [
+    "debugging_and_testing"
+  ],
+  "difficulty": 10
+}

@@ -1,0 +1,17 @@
+{
+  "english": "regex",
+  "japanese": "正規表現",
+  "description": "regex は regular expression の略で、「正規表現」と呼ばれる文字列のパターン記述方法です。メール形式の確認や文字列抽出・置換など、複雑な文字列処理を簡潔に書けます。",
+  "example_natural": {
+    "english": "A good regex cheat sheet can save hours of debugging.",
+    "japanese": "よい正規表現のチートシートは何時間ものデバッグ時間を節約してくれる。"
+  },
+  "example_programming": {
+    "language": "JavaScript",
+    "body": "// regex\nconst onlyDigits = /^\\d+$/;\nconsole.log(onlyDigits.test(\"12345\"));\nconsole.log(onlyDigits.test(\"12a45\"));"
+  },
+  "themes": [
+    "strings_and_text"
+  ],
+  "difficulty": 9
+}

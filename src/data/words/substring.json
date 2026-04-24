@@ -1,0 +1,17 @@
+{
+  "english": "substring",
+  "japanese": "部分文字列",
+  "description": "文字列の一部を、開始位置と長さや終了位置で切り出したものです。メールアドレスからドメインだけ取り出す、先頭の識別子だけ取り出すなど、文字列の部分を処理したいときに使います。",
+  "example_natural": {
+    "english": "Take the substring after the at sign to get the domain.",
+    "japanese": "アットマークの後ろの部分文字列を取り出して、ドメインを取得してください。"
+  },
+  "example_programming": {
+    "language": "JavaScript",
+    "body": "const title = \"JavaScript Essentials\";\nconst prefix = title.substring(0, 10);\nconsole.log(prefix);"
+  },
+  "themes": [
+    "strings_and_text"
+  ],
+  "difficulty": 4
+}

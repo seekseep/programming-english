@@ -1,0 +1,17 @@
+{
+  "english": "scope",
+  "japanese": "スコープ",
+  "description": "scopeは変数や関数が有効な範囲を指す概念です。グローバルスコープ、モジュールスコープ、関数スコープ、ブロックスコープなど階層的に管理され、名前の衝突や意図しないアクセスを防ぎます。",
+  "example_natural": {
+    "english": "The variable is out of scope outside the function.",
+    "japanese": "その変数は関数の外ではスコープ外になります。"
+  },
+  "example_programming": {
+    "language": "JavaScript",
+    "body": "function outer() {\n  let x = 10; // function scope\n  if (true) {\n    let y = 20; // block scope\n  }\n  // y is not accessible here\n}"
+  },
+  "themes": [
+    "scope"
+  ],
+  "difficulty": 8
+}

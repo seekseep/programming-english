@@ -1,0 +1,17 @@
+{
+  "english": "handle",
+  "japanese": "処理する",
+  "description": "handleはエラーやイベントなど発生した事象に対応して処理することを意味します。例外処理では想定される例外を適切にhandleすることで、プログラムの異常終了を防ぎます。",
+  "example_natural": {
+    "english": "We need to handle the network error gracefully.",
+    "japanese": "ネットワークエラーを適切に処理する必要があります。"
+  },
+  "example_programming": {
+    "language": "JavaScript",
+    "body": "function handleError(err) {\n  console.error('handled:', err.message);\n}\n\nfetch('/api').catch(handleError);"
+  },
+  "themes": [
+    "error_handling"
+  ],
+  "difficulty": 8
+}

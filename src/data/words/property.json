@@ -1,0 +1,17 @@
+{
+  "english": "property",
+  "japanese": "プロパティ",
+  "description": "オブジェクトやフォームのコントロールが持つ、個々の設定値や状態を表す項目です。Visual Basic ではボタンの Text や Enabled のように、画面部品の見た目や振る舞いを変えるために値を設定します。",
+  "example_natural": {
+    "english": "Change the Text property of the button to \"Save\".",
+    "japanese": "ボタンの Text プロパティを「保存」に変更してください。"
+  },
+  "example_programming": {
+    "language": "Visual Basic",
+    "body": "' property\nButton1.Text = \"Save\"\nButton1.Enabled = False\nLabel1.Text = \"Please wait...\""
+  },
+  "themes": [
+    "vb_forms_controls"
+  ],
+  "difficulty": 4
+}

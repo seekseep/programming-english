@@ -1,0 +1,17 @@
+{
+  "english": "upper",
+  "japanese": "大文字に変換する",
+  "description": "文字列をすべて大文字に変換する操作です。表示を整えたり、大文字小文字を無視して比較したりするときに使います。",
+  "example_natural": {
+    "english": "Show the country code in upper case.",
+    "japanese": "国コードを大文字で表示してください。"
+  },
+  "example_programming": {
+    "language": "SQL",
+    "body": "SELECT id, UPPER(country_code) AS code\nFROM users\nORDER BY id;"
+  },
+  "themes": [
+    "strings_and_text"
+  ],
+  "difficulty": 3
+}

@@ -1,0 +1,17 @@
+{
+  "english": "reject",
+  "japanese": "拒否する",
+  "description": "rejectはPromiseを失敗状態にする関数で、エラー情報を渡して呼び出します。rejectされたPromiseは.catchやtry/awaitで捕捉でき、非同期処理の失敗経路として使われます。",
+  "example_natural": {
+    "english": "Reject the promise if the input is invalid.",
+    "japanese": "入力が不正ならプロミスを拒否してください。"
+  },
+  "example_programming": {
+    "language": "JavaScript",
+    "body": "function validate(value) {\n  return new Promise((resolve, reject) => {\n    if (!value) reject(new Error('empty'));\n    else resolve(value);\n  });\n}"
+  },
+  "themes": [
+    "async_programming"
+  ],
+  "difficulty": 6
+}

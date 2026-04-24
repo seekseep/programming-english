@@ -1,0 +1,17 @@
+{
+  "english": "multiply",
+  "japanese": "掛ける、乗算する",
+  "description": "数値を掛け合わせる演算。プログラミングでは記号「*」で表され、四則演算のひとつとして使われる基本的な算術演算子。",
+  "example_natural": {
+    "english": "Multiply two by five.",
+    "japanese": "2に5を掛けてください。"
+  },
+  "example_programming": {
+    "language": "SQL",
+    "body": "-- multiply\nSELECT price * quantity\nFROM orders;"
+  },
+  "themes": [
+    "operators"
+  ],
+  "difficulty": 1
+}

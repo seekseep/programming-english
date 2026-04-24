@@ -1,0 +1,17 @@
+{
+  "english": "library",
+  "japanese": "ライブラリ",
+  "description": "libraryは再利用可能な関数やクラスをまとめたコードの集まりです。importやIncludeで読み込んで利用することで、ゼロから実装せずに既存の機能を活用できます。",
+  "example_natural": {
+    "english": "We use this library to parse JSON data.",
+    "japanese": "私たちはJSONデータを解析するためにこのライブラリを使います。"
+  },
+  "example_programming": {
+    "language": "Visual Basic",
+    "body": "' library\nImports System.IO\n\nPublic Sub ReadConfig()\n    Dim text As String = File.ReadAllText(\"config.txt\")\n    Debug.Print text\nEnd Sub"
+  },
+  "themes": [
+    "modules_and_imports"
+  ],
+  "difficulty": 8
+}

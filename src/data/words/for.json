@@ -1,0 +1,17 @@
+{
+  "english": "for",
+  "japanese": "繰り返す(for文)",
+  "description": "決められた回数だけ処理を繰り返すためのループ構文で使われる予約語。プログラミングでは「for i = 1 to 10」のように回数を指定して反復処理を書くのに使う。",
+  "example_natural": {
+    "english": "I waited for ten minutes.",
+    "japanese": "私は10分間待ちました。"
+  },
+  "example_programming": {
+    "language": "Visual Basic",
+    "body": "For i = 1 To 5\n    Debug.Print i\nNext i"
+  },
+  "themes": [
+    "control_flow"
+  ],
+  "difficulty": 1
+}

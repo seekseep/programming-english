@@ -1,0 +1,17 @@
+{
+  "english": "while",
+  "japanese": "〜の間、繰り返す",
+  "description": "条件が真の間だけ処理を繰り返すループ構文のキーワード。プログラミングでは回数が決まっていない繰り返し処理を書くときに使う。",
+  "example_natural": {
+    "english": "I read a book while I waited.",
+    "japanese": "待っている間、本を読みました。"
+  },
+  "example_programming": {
+    "language": "JavaScript",
+    "body": "let i = 0;\nwhile (i < 3) {\n  console.log(i);\n  i++;\n}"
+  },
+  "themes": [
+    "control_flow"
+  ],
+  "difficulty": 1
+}

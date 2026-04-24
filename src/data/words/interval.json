@@ -1,0 +1,17 @@
+{
+  "english": "interval",
+  "japanese": "間隔",
+  "description": "intervalは一定の時間間隔を表します。JavaScriptのsetIntervalは指定ミリ秒ごとにコールバックを繰り返し実行し、定期的なポーリングやUI更新に使われます。clearIntervalで停止します。",
+  "example_natural": {
+    "english": "Update the clock at a one-second interval.",
+    "japanese": "1秒間隔で時計を更新してください。"
+  },
+  "example_programming": {
+    "language": "JavaScript",
+    "body": "const id = setInterval(() => {\n  console.log(new Date().toISOString());\n}, 1000);\n// clearInterval(id);"
+  },
+  "themes": [
+    "async_programming"
+  ],
+  "difficulty": 6
+}

@@ -1,0 +1,72 @@
+[
+  {
+    "id": "stage-01",
+    "stage": 1,
+    "title": "はじめてのプログラミング",
+    "description": "print、入力、変数、比較など最初に触れる基本語彙",
+    "target_word_count": 30
+  },
+  {
+    "id": "stage-02",
+    "stage": 2,
+    "title": "基本の型と制御",
+    "description": "整数・文字列・ループなど基礎的な型と制御",
+    "target_word_count": 30
+  },
+  {
+    "id": "stage-03",
+    "stage": 3,
+    "title": "配列と文字列操作",
+    "description": "配列の追加・並び替えや文字列の加工",
+    "target_word_count": 30
+  },
+  {
+    "id": "stage-04",
+    "stage": 4,
+    "title": "関数とオブジェクト",
+    "description": "メソッド、オブジェクト、プロパティなど関数周りとデータ構造",
+    "target_word_count": 30
+  },
+  {
+    "id": "stage-05",
+    "stage": 5,
+    "title": "SQLとWeb基礎",
+    "description": "SELECT/INSERT、DOM要素、イベントリスナーなど実務のとっかかり",
+    "target_word_count": 30
+  },
+  {
+    "id": "stage-06",
+    "stage": 6,
+    "title": "集約と非同期",
+    "description": "GROUP BY/JOIN、Promise/async/awaitでデータとタイミングを扱う",
+    "target_word_count": 30
+  },
+  {
+    "id": "stage-07",
+    "stage": 7,
+    "title": "VBA・フォーム・ファイルIO",
+    "description": "Excel/VBフォーム、ファイル読み書きの実務語彙",
+    "target_word_count": 30
+  },
+  {
+    "id": "stage-08",
+    "stage": 8,
+    "title": "スコープと例外処理",
+    "description": "モジュール、可視性、try/catchなど構造寄りの語彙",
+    "target_word_count": 30
+  },
+  {
+    "id": "stage-09",
+    "stage": 9,
+    "title": "上級：高階関数とDB設計",
+    "description": "クロージャ、正規表現、スキーマ定義など抽象度の高い語彙",
+    "target_word_count": 30
+  },
+  {
+    "id": "stage-10",
+    "stage": 10,
+    "title": "最上級：並行処理とテスト",
+    "description": "トランザクション、ウィンドウ関数、並行性、テストフレームワーク",
+    "target_word_count": 30
+  }
+]

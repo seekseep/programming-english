@@ -1,0 +1,17 @@
+{
+  "english": "ceil",
+  "japanese": "切り上げ",
+  "description": "ceil は ceiling（天井）を縮めた名前で、数値を「より大きい最小の整数」に切り上げる関数を指します。Math.ceil(1.1) は 2 になります。",
+  "example_natural": {
+    "english": "The ceiling of this room is painted white.",
+    "japanese": "この部屋の天井は白く塗られている。"
+  },
+  "example_programming": {
+    "language": "JavaScript",
+    "body": "const pages = Math.ceil(25 / 10);\nconsole.log(pages);\nconsole.log(Math.ceil(-1.2));"
+  },
+  "themes": [
+    "numbers_and_math"
+  ],
+  "difficulty": 9
+}

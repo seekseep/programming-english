@@ -1,0 +1,17 @@
+{
+  "english": "promise",
+  "japanese": "プロミス",
+  "description": "PromiseはJavaScriptの非同期処理を表すオブジェクトで、pending・fulfilled・rejectedの状態を持ちます。.thenや.catchで結果を受け取ったり、awaitで解決値を取り出したりします。",
+  "example_natural": {
+    "english": "Return a promise that resolves with the user data.",
+    "japanese": "ユーザーデータで解決するプロミスを返してください。"
+  },
+  "example_programming": {
+    "language": "JavaScript",
+    "body": "const promise = new Promise((resolve, reject) => {\n  setTimeout(() => resolve('done'), 500);\n});\npromise.then(value => console.log(value));"
+  },
+  "themes": [
+    "async_programming"
+  ],
+  "difficulty": 6
+}

@@ -1,0 +1,17 @@
+{
+  "english": "file",
+  "japanese": "ファイル",
+  "description": "file はディスクに保存されたデータのまとまりで、名前とパスで特定されます。プログラムからは Open で開き、読み書き後に Close で閉じるのが基本的な流れです。サイズや作成日時などの属性を持ちます。",
+  "example_natural": {
+    "english": "Open the input file and read it line by line.",
+    "japanese": "入力ファイルを開いて 1 行ずつ読み込んでください。"
+  },
+  "example_programming": {
+    "language": "Visual Basic",
+    "body": "' file\nDim line As String\nOpen \"C:\\input.txt\" For Input As #1\nLine Input #1, line\nClose #1"
+  },
+  "themes": [
+    "file_io"
+  ],
+  "difficulty": 7
+}

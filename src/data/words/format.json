@@ -1,0 +1,17 @@
+{
+  "english": "format",
+  "japanese": "書式化する",
+  "description": "数値や日付を表示用の文字列に整える操作です。桁区切りや小数点以下の桁数、日付の表記などを指定できます。Visual Basic では Format 関数で書式を文字列で指定します。",
+  "example_natural": {
+    "english": "Format the price with a comma every three digits.",
+    "japanese": "価格を3桁ごとにカンマ区切りで書式化してください。"
+  },
+  "example_programming": {
+    "language": "Visual Basic",
+    "body": "Dim price As Double = 12345.6\nDim text As String = Format(price, \"#,##0.00\")\nDebug.Print text ' \"12,345.60\"\nDebug.Print Format(Now, \"yyyy/MM/dd\")"
+  },
+  "themes": [
+    "strings_and_text"
+  ],
+  "difficulty": 4
+}

@@ -1,0 +1,17 @@
+{
+  "english": "local",
+  "japanese": "ローカル",
+  "description": "localは関数やブロックの内部でのみ有効なスコープを指します。local変数は外部から参照できず、関数の実行が終わると解放されます。VBAではSub内でDimを使って宣言した変数がlocalになります。",
+  "example_natural": {
+    "english": "The counter is a local variable inside the function.",
+    "japanese": "カウンターは関数内のローカル変数です。"
+  },
+  "example_programming": {
+    "language": "Visual Basic",
+    "body": "Public Sub CountItems()\n    Dim localCount As Integer\n    localCount = 0\n    localCount = localCount + 1\nEnd Sub"
+  },
+  "themes": [
+    "scope"
+  ],
+  "difficulty": 8
+}

@@ -1,0 +1,17 @@
+{
+  "english": "fetch",
+  "japanese": "フェッチする",
+  "description": "fetchはJavaScriptの組み込み関数で、HTTPリクエストを送ってレスポンスを取得します。Promiseを返すため、awaitや.thenと組み合わせて非同期にデータを取得できます。",
+  "example_natural": {
+    "english": "Fetch the list of products from the API.",
+    "japanese": "APIから商品の一覧を取得してください。"
+  },
+  "example_programming": {
+    "language": "JavaScript",
+    "body": "const res = await fetch('https://api.example.com/products');\nconst products = await res.json();\nconsole.log(products.length);"
+  },
+  "themes": [
+    "async_programming"
+  ],
+  "difficulty": 6
+}

@@ -1,0 +1,17 @@
+{
+  "english": "unicode",
+  "japanese": "ユニコード",
+  "description": "Unicode は世界中の文字を統一的に扱うための文字コード体系です。各文字にコードポイント（U+XXXX）が割り当てられ、JavaScript では `\\u` エスケープや codePointAt で扱えます。",
+  "example_natural": {
+    "english": "Unicode allows us to display text from many languages at once.",
+    "japanese": "ユニコードのおかげで多言語のテキストを同時に表示できる。"
+  },
+  "example_programming": {
+    "language": "JavaScript",
+    "body": "// unicode\nconsole.log(\"\\u3042\");\nconsole.log(\"A\".codePointAt(0));\nconsole.log(String.fromCodePoint(0x1F600));"
+  },
+  "themes": [
+    "strings_and_text"
+  ],
+  "difficulty": 9
+}

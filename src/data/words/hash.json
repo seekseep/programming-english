@@ -1,0 +1,17 @@
+{
+  "english": "hash",
+  "japanese": "ハッシュ",
+  "description": "値から固定長の数値や文字列を計算する仕組み、またはそれを使ったコレクションを指します。キーから値を高速に取り出すハッシュテーブルや、整合性確認のためのハッシュ値の計算で使われます。",
+  "example_natural": {
+    "english": "The hash lets us look up the user's record quickly.",
+    "japanese": "ハッシュを使うと、ユーザーのレコードを素早く取り出せます。"
+  },
+  "example_programming": {
+    "language": "JavaScript",
+    "body": "const hash = new Map();\nhash.set(\"alice\", { score: 80 });\nhash.set(\"bob\", { score: 72 });\nconsole.log(hash.get(\"alice\").score);"
+  },
+  "themes": [
+    "collections"
+  ],
+  "difficulty": 4
+}

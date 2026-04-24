@@ -1,0 +1,17 @@
+{
+  "english": "package",
+  "japanese": "パッケージ",
+  "description": "packageは関連するモジュールやリソースをまとめて配布可能な単位にしたものです。JavaScriptではpackage.jsonでパッケージのメタデータや依存関係を管理し、npmを通じて公開・インストールします。",
+  "example_natural": {
+    "english": "Install the package with npm before running the app.",
+    "japanese": "アプリを実行する前に、npmでパッケージをインストールしてください。"
+  },
+  "example_programming": {
+    "language": "JavaScript",
+    "body": "// package.json\n{\n  \"name\": \"my-app\",\n  \"version\": \"1.0.0\",\n  \"main\": \"index.js\"\n}"
+  },
+  "themes": [
+    "modules_and_imports"
+  ],
+  "difficulty": 8
+}

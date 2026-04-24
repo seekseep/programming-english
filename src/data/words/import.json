@@ -1,0 +1,17 @@
+{
+  "english": "import",
+  "japanese": "インポート",
+  "description": "importは他のモジュールやライブラリから関数・変数・クラスを読み込むためのキーワードです。JavaScriptのESモジュールやVB.NETのImports文で外部コードを取り込みます。",
+  "example_natural": {
+    "english": "Import the utility function from the helpers module.",
+    "japanese": "helpersモジュールからユーティリティ関数をインポートしてください。"
+  },
+  "example_programming": {
+    "language": "JavaScript",
+    "body": "import { formatDate } from './helpers';\nimport React from 'react';\n\nconsole.log(formatDate(new Date()));"
+  },
+  "themes": [
+    "modules_and_imports"
+  ],
+  "difficulty": 8
+}

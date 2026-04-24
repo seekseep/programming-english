@@ -1,0 +1,17 @@
+{
+  "english": "button",
+  "japanese": "ボタン",
+  "description": "button はユーザーがクリックして操作を起動する UI 部品です。VB フォームでは Button コントロールの Click イベントに処理を記述し、Caption で表示テキストを指定します。Enabled で押下可能かを切り替えられます。",
+  "example_natural": {
+    "english": "Click the OK button to save the form.",
+    "japanese": "フォームを保存するには OK ボタンをクリックしてください。"
+  },
+  "example_programming": {
+    "language": "Visual Basic",
+    "body": "Private Sub Button1_Click()\n    MsgBox \"Saved!\"\nEnd Sub"
+  },
+  "themes": [
+    "vb_forms_controls"
+  ],
+  "difficulty": 7
+}

@@ -1,0 +1,17 @@
+{
+  "english": "open",
+  "japanese": "開く",
+  "description": "open はファイルを読み書きするためにプログラムから使える状態にする操作です。VBA では Open ステートメントでパス、モード、ファイル番号を指定してファイルを開きます。モードには Input、Output、Append などがあります。",
+  "example_natural": {
+    "english": "Open the CSV file for reading.",
+    "japanese": "CSV ファイルを読み込みモードで開いてください。"
+  },
+  "example_programming": {
+    "language": "Visual Basic",
+    "body": "Open \"C:\\data.csv\" For Input As #1\n' read operations here\nClose #1"
+  },
+  "themes": [
+    "file_io"
+  ],
+  "difficulty": 7
+}

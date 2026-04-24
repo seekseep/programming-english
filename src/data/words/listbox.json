@@ -1,0 +1,17 @@
+{
+  "english": "listbox",
+  "japanese": "リストボックス",
+  "description": "listbox は複数の項目を一覧表示して選択させる UI 部品です。VB フォームでは AddItem で項目を追加し、ListIndex で選択位置を取得します。MultiSelect プロパティを True にすれば複数選択も可能です。",
+  "example_natural": {
+    "english": "Add each sheet name to the listbox on the form.",
+    "japanese": "各シート名をフォームのリストボックスに追加してください。"
+  },
+  "example_programming": {
+    "language": "Visual Basic",
+    "body": "Dim ws As Worksheet\nFor Each ws In Worksheets\n    ListBox1.AddItem ws.Name\nNext ws"
+  },
+  "themes": [
+    "vb_forms_controls"
+  ],
+  "difficulty": 7
+}

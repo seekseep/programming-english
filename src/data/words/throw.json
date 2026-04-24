@@ -1,0 +1,17 @@
+{
+  "english": "throw",
+  "japanese": "投げる",
+  "description": "throwは例外を発生させるためのキーワードです。JavaScriptではthrow文で任意の値を例外として投げることができ、tryブロック内で実行された場合はcatchで捕捉されます。エラーオブジェクトを投げるのが一般的です。",
+  "example_natural": {
+    "english": "Throw an error when the user is not authorized.",
+    "japanese": "ユーザーが認可されていないときは、エラーを投げてください。"
+  },
+  "example_programming": {
+    "language": "JavaScript",
+    "body": "function divide(a, b) {\n  if (b === 0) {\n    throw new Error('division by zero');\n  }\n  return a / b;\n}"
+  },
+  "themes": [
+    "error_handling"
+  ],
+  "difficulty": 8
+}

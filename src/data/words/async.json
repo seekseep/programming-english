@@ -1,0 +1,17 @@
+{
+  "english": "async",
+  "japanese": "非同期",
+  "description": "asyncは非同期処理を表すキーワードで、関数宣言に付けるとその関数はPromiseを返します。async関数の内部ではawaitを使って非同期処理の完了を待つことができます。",
+  "example_natural": {
+    "english": "Use an async function to call the remote server.",
+    "japanese": "リモートサーバーを呼び出すには非同期関数を使います。"
+  },
+  "example_programming": {
+    "language": "JavaScript",
+    "body": "async function loadUser(id) {\n  const res = await fetch(`/users/${id}`);\n  return res.json();\n}"
+  },
+  "themes": [
+    "async_programming"
+  ],
+  "difficulty": 6
+}

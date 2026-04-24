@@ -1,0 +1,17 @@
+{
+  "english": "visible",
+  "japanese": "表示されている",
+  "description": "visible はコントロールが画面上に表示されるかどうかを示すプロパティです。True で表示、False で非表示になります。入力条件に応じて関連する項目だけを見せる、といった動的な UI 制御に使います。",
+  "example_natural": {
+    "english": "Hide the advanced options until the user checks the box.",
+    "japanese": "ユーザーがチェックを入れるまで詳細オプションを非表示にしてください。"
+  },
+  "example_programming": {
+    "language": "Visual Basic",
+    "body": "Frame1.Visible = False\nIf CheckBox1.Value = True Then\n    Frame1.Visible = True\nEnd If"
+  },
+  "themes": [
+    "vb_forms_controls"
+  ],
+  "difficulty": 7
+}

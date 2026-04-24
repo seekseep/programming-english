@@ -1,0 +1,18 @@
+{
+  "english": "key",
+  "japanese": "キー",
+  "description": "値を一意に識別するための項目です。辞書やハッシュではキーから値を取り出し、データベースではレコードを一意に示す列として使われます。主キーとして設定された列は重複が許されません。",
+  "example_natural": {
+    "english": "Every record in this table has a unique key.",
+    "japanese": "このテーブルのすべてのレコードには一意のキーがあります。"
+  },
+  "example_programming": {
+    "language": "SQL",
+    "body": "CREATE TABLE users (\n  user_id INTEGER PRIMARY KEY,\n  email   VARCHAR(255) NOT NULL UNIQUE\n);"
+  },
+  "themes": [
+    "collections",
+    "database_concepts"
+  ],
+  "difficulty": 4
+}

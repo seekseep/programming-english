@@ -1,0 +1,18 @@
+{
+  "english": "element",
+  "japanese": "要素",
+  "description": "集合や配列に含まれる 1 つ 1 つのデータや、HTML の中の各部品のことです。プログラミングでは、配列から element を取り出したり、DOM の element を操作したりします。",
+  "example_natural": {
+    "english": "Get the element with the id 'title' from the page.",
+    "japanese": "ページから id が 'title' の要素を取得してください。"
+  },
+  "example_programming": {
+    "language": "JavaScript",
+    "body": "const element = document.getElementById(\"title\");\nelement.textContent = \"Hello\";"
+  },
+  "themes": [
+    "collections",
+    "web_dom"
+  ],
+  "difficulty": 2
+}

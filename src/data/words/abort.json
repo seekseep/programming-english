@@ -1,0 +1,17 @@
+{
+  "english": "abort",
+  "japanese": "強制終了する",
+  "description": "abortは処理を途中で中断することを意味します。JavaScriptではAbortControllerを使って実行中のfetchリクエストなどを中断できます。エラー発生時や長時間かかる処理をキャンセルしたい場面で使われます。",
+  "example_natural": {
+    "english": "We must abort the request if the user closes the dialog.",
+    "japanese": "ユーザーがダイアログを閉じたら、リクエストを中断する必要があります。"
+  },
+  "example_programming": {
+    "language": "JavaScript",
+    "body": "const controller = new AbortController();\nfetch('/api/data', { signal: controller.signal })\n  .catch(err => console.log('aborted:', err));\ncontroller.abort();"
+  },
+  "themes": [
+    "error_handling"
+  ],
+  "difficulty": 8
+}

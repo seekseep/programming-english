@@ -1,0 +1,18 @@
+{
+  "english": "table",
+  "japanese": "テーブル",
+  "description": "table はデータベースでデータを表形式で保持する基本の単位です。列で項目の種類を、行で個々のレコードを表し、SELECT や INSERT などのクエリはテーブル名を対象に実行します。",
+  "example_natural": {
+    "english": "Create a products table with an id and a name column.",
+    "japanese": "id と name の列を持つ products テーブルを作成してください。"
+  },
+  "example_programming": {
+    "language": "SQL",
+    "body": "CREATE TABLE products (\n  id INTEGER PRIMARY KEY,\n  name TEXT NOT NULL\n);"
+  },
+  "themes": [
+    "database_concepts",
+    "sql_query_basics"
+  ],
+  "difficulty": 5
+}

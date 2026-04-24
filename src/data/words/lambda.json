@@ -1,0 +1,17 @@
+{
+  "english": "lambda",
+  "japanese": "ラムダ式",
+  "description": "lambda は無名関数を表す用語で、ラムダ計算に由来します。関数をその場で定義して値として渡すときに使われ、JavaScript ではアロー関数がこれに相当します。",
+  "example_natural": {
+    "english": "Lambda is the eleventh letter of the Greek alphabet.",
+    "japanese": "ラムダはギリシャ文字の11番目の字である。"
+  },
+  "example_programming": {
+    "language": "JavaScript",
+    "body": "// lambda\nconst numbers = [1, 2, 3, 4];\nconst total = numbers.reduce((acc, n) => acc + n, 0);\nconsole.log(total);"
+  },
+  "themes": [
+    "functions_and_procedures"
+  ],
+  "difficulty": 9
+}

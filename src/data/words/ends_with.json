@@ -1,0 +1,17 @@
+{
+  "english": "ends_with",
+  "japanese": "指定した文字列で終わる",
+  "description": "ある文字列が指定した末尾で終わっているかを判定する操作です。拡張子のチェックや、特定の語尾を持つデータの絞り込みに使われます。結果は真偽値で返ります。",
+  "example_natural": {
+    "english": "Check if the file name ends with a valid extension.",
+    "japanese": "ファイル名が正しい拡張子で終わっているかを確認してください。"
+  },
+  "example_programming": {
+    "language": "JavaScript",
+    "body": "const fileName = \"report.pdf\";\nif (fileName.endsWith(\".pdf\")) {\n  console.log(\"PDF file detected\");\n}"
+  },
+  "themes": [
+    "strings_and_text"
+  ],
+  "difficulty": 4
+}

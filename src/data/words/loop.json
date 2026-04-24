@@ -1,0 +1,17 @@
+{
+  "english": "loop",
+  "japanese": "繰り返し",
+  "description": "同じ処理を何度も繰り返すことです。プログラミングでは、for や while を使って loop を作り、配列の中身を順に処理したりします。",
+  "example_natural": {
+    "english": "The loop runs until the counter reaches ten.",
+    "japanese": "ループはカウンタが 10 になるまで動き続けます。"
+  },
+  "example_programming": {
+    "language": "Visual Basic",
+    "body": "Dim i As Integer\ni = 0\nDo While i < 10\n    i = i + 1\nLoop"
+  },
+  "themes": [
+    "control_flow"
+  ],
+  "difficulty": 2
+}

@@ -1,0 +1,17 @@
+{
+  "english": "variable",
+  "japanese": "変数",
+  "description": "値を入れておく箱のような仕組み。プログラミングでは名前を付けてデータを保存し、後からその名前を使って値を読み書きできる基本要素。",
+  "example_natural": {
+    "english": "The weather is variable today.",
+    "japanese": "今日の天気は変わりやすいです。"
+  },
+  "example_programming": {
+    "language": "Visual Basic",
+    "body": "' variable\nDim age As Integer\nage = 20"
+  },
+  "themes": [
+    "variables_and_types"
+  ],
+  "difficulty": 1
+}

@@ -1,0 +1,17 @@
+{
+  "english": "node",
+  "japanese": "ノード",
+  "description": "node は DOM ツリーを構成する個々の要素のことです。要素ノード、テキストノード、属性ノードなど種類があり、parentNode や childNodes を使って親子関係をたどって操作できます。",
+  "example_natural": {
+    "english": "Append a new node to the list element.",
+    "japanese": "リスト要素に新しいノードを追加してください。"
+  },
+  "example_programming": {
+    "language": "JavaScript",
+    "body": "// node\nconst list = document.querySelector('#items');\nconst item = document.createElement('li');\nitem.textContent = 'New item';\nlist.appendChild(item);"
+  },
+  "themes": [
+    "web_dom"
+  ],
+  "difficulty": 5
+}

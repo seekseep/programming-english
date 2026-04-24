@@ -1,0 +1,19 @@
+{
+  "english": "append",
+  "japanese": "末尾に追加する",
+  "description": "配列や文字列、DOMなどの末尾に要素を付け足す操作を指します。既存のデータを壊さずに、後ろに新しい値を書き加えるのが特徴です。",
+  "example_natural": {
+    "english": "Please append the new name to the list.",
+    "japanese": "新しい名前をリストの末尾に追加してください。"
+  },
+  "example_programming": {
+    "language": "JavaScript",
+    "body": "const names = [\"Alice\", \"Bob\"];\nfunction appendName(list, name) {\n  list.push(name);\n  return list;\n}\nappendName(names, \"Carol\");"
+  },
+  "themes": [
+    "collections",
+    "file_io",
+    "web_dom"
+  ],
+  "difficulty": 3
+}

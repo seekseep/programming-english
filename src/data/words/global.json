@@ -1,0 +1,17 @@
+{
+  "english": "global",
+  "japanese": "グローバル",
+  "description": "globalはプログラムのどこからでもアクセスできるスコープを指します。VBAではモジュールの先頭でGlobalやPublicを使って宣言された変数が全てのモジュールから参照可能になります。",
+  "example_natural": {
+    "english": "Avoid global variables because they make debugging harder.",
+    "japanese": "グローバル変数はデバッグを難しくするので避けましょう。"
+  },
+  "example_programming": {
+    "language": "Visual Basic",
+    "body": "Global AppName As String\n\nPublic Sub Init()\n    AppName = \"MyApp\"\nEnd Sub"
+  },
+  "themes": [
+    "scope"
+  ],
+  "difficulty": 8
+}

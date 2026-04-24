@@ -1,0 +1,17 @@
+{
+  "english": "having",
+  "japanese": "集約条件",
+  "description": "HAVINGはSQLでGROUP BYによる集約後の結果に条件を指定する句です。WHEREが集約前の行を絞るのに対し、HAVINGはCOUNTやSUMなどの集約値に対して絞り込みを行います。",
+  "example_natural": {
+    "english": "Show customers having more than ten orders.",
+    "japanese": "注文が10件より多い顧客を表示してください。"
+  },
+  "example_programming": {
+    "language": "SQL",
+    "body": "SELECT customer_id, COUNT(*) AS cnt\nFROM orders\nGROUP BY customer_id\nHAVING COUNT(*) > 10;"
+  },
+  "themes": [
+    "sql_aggregation"
+  ],
+  "difficulty": 6
+}

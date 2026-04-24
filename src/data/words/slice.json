@@ -1,0 +1,17 @@
+{
+  "english": "slice",
+  "japanese": "部分を切り出す",
+  "description": "文字列や配列の一部を開始位置と終了位置で指定して取り出す操作です。元のデータは変わらず、新しいデータとして返ります。ページ分割や特定の範囲だけを処理したいときに使います。",
+  "example_natural": {
+    "english": "Slice the first three items from the list.",
+    "japanese": "リストの最初の3つの項目を切り出してください。"
+  },
+  "example_programming": {
+    "language": "JavaScript",
+    "body": "const items = [\"a\", \"b\", \"c\", \"d\", \"e\"];\nconst head = items.slice(0, 3);\nconsole.log(head); // [\"a\", \"b\", \"c\"]"
+  },
+  "themes": [
+    "strings_and_text"
+  ],
+  "difficulty": 4
+}

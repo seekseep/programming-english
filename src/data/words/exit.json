@@ -1,0 +1,17 @@
+{
+  "english": "exit",
+  "japanese": "処理を抜ける",
+  "description": "ループやサブプロシージャを途中で終わらせる命令を指します。条件を満たしたら早めに処理を打ち切りたい場面で使います。",
+  "example_natural": {
+    "english": "Exit the loop when the target item is found.",
+    "japanese": "目的の要素が見つかったらループを抜けてください。"
+  },
+  "example_programming": {
+    "language": "Visual Basic",
+    "body": "Dim i As Long\nFor i = 1 To 100\n    If i = 10 Then Exit For\n    Debug.Print i\nNext i"
+  },
+  "themes": [
+    "control_flow"
+  ],
+  "difficulty": 3
+}

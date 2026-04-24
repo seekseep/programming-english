@@ -1,0 +1,18 @@
+{
+  "english": "select",
+  "japanese": "選択する",
+  "description": "select はデータを選び出すという意味で、SQL では SELECT 文がテーブルから必要な列や行を取り出す中心的な命令です。列の指定、条件による絞り込み、並び替えや結合などと組み合わせて使います。",
+  "example_natural": {
+    "english": "Select the name and price of every product.",
+    "japanese": "すべての商品の name と price を取得してください。"
+  },
+  "example_programming": {
+    "language": "SQL",
+    "body": "SELECT name, price\nFROM products;"
+  },
+  "themes": [
+    "excel_vba_basics",
+    "sql_query_basics"
+  ],
+  "difficulty": 5
+}

@@ -1,0 +1,18 @@
+{
+  "english": "exists",
+  "japanese": "存在する",
+  "description": "対象のファイルやデータが存在するかを判定する操作を指します。処理を始める前に対象の有無を確認して、無ければ作成するといった分岐でよく使われます。",
+  "example_natural": {
+    "english": "Check whether the file exists before reading it.",
+    "japanese": "読み込む前にそのファイルが存在するか確認してください。"
+  },
+  "example_programming": {
+    "language": "Visual Basic",
+    "body": "Dim path As String\npath = \"C:\\data\\log.txt\"\nIf Dir(path) <> \"\" Then ' file exists\n    Debug.Print \"found\"\nEnd If"
+  },
+  "themes": [
+    "boolean_logic",
+    "file_io"
+  ],
+  "difficulty": 3
+}

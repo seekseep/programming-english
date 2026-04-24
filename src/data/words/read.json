@@ -1,0 +1,18 @@
+{
+  "english": "read",
+  "japanese": "読み取る",
+  "description": "ファイルや入力からデータを取り込むことです。プログラミングでは、テキストファイルを開いて中身を read することでデータを取得します。",
+  "example_natural": {
+    "english": "The program will read the contents of the file.",
+    "japanese": "プログラムはファイルの中身を読み取ります。"
+  },
+  "example_programming": {
+    "language": "Visual Basic",
+    "body": "' read\nDim line As String\nOpen \"data.txt\" For Input As #1\nLine Input #1, line\nClose #1"
+  },
+  "themes": [
+    "basic_io",
+    "file_io"
+  ],
+  "difficulty": 2
+}

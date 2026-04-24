@@ -1,0 +1,18 @@
+{
+  "english": "repeat",
+  "japanese": "繰り返す",
+  "description": "同じ処理や同じ文字列を決まった回数だけ繰り返すことを表します。ループ構文の繰り返し、文字列を指定回数連結して区切り線を作るときなどに使われます。",
+  "example_natural": {
+    "english": "Repeat the dash character ten times to make a separator.",
+    "japanese": "ハイフンを10回繰り返して区切り線を作ってください。"
+  },
+  "example_programming": {
+    "language": "Visual Basic",
+    "body": "' repeat\nDim line As String\nline = New String(\"-\"c, 10)\nDebug.Print line\nFor i As Integer = 1 To 3\n    Debug.Print \"hello\"\nNext"
+  },
+  "themes": [
+    "control_flow",
+    "strings_and_text"
+  ],
+  "difficulty": 4
+}

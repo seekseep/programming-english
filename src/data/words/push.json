@@ -1,0 +1,17 @@
+{
+  "english": "push",
+  "japanese": "末尾に積む",
+  "description": "配列やスタックの末尾に要素を追加する操作です。追加したあとの長さを返すことが多く、順にデータを積んでいく場面で使います。",
+  "example_natural": {
+    "english": "Push the new value onto the stack.",
+    "japanese": "新しい値をスタックに積んでください。"
+  },
+  "example_programming": {
+    "language": "JavaScript",
+    "body": "const numbers = [1, 2];\nnumbers.push(3);\nnumbers.push(4, 5);\nconsole.log(numbers);"
+  },
+  "themes": [
+    "collections"
+  ],
+  "difficulty": 3
+}

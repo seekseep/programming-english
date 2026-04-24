@@ -1,0 +1,17 @@
+{
+  "english": "coverage",
+  "japanese": "カバレッジ",
+  "description": "coverageはテストがコードのどの部分を実行したかを示す指標で、「カバレッジ」と呼ばれます。行カバレッジや分岐カバレッジなど複数の種類があり、品質管理の目安になります。高ければ良いとは限らず、意味のあるテストかどうかが重要です。",
+  "example_natural": {
+    "english": "The test coverage report shows that 85% of the lines are covered.",
+    "japanese": "テストのカバレッジレポートによると、行の85%が網羅されています。"
+  },
+  "example_programming": {
+    "language": "JavaScript",
+    "body": "// run tests with coverage\n// $ jest --coverage\ntest('sum', () => {\n  expect(sum(1, 2)).toBe(3);\n});"
+  },
+  "themes": [
+    "debugging_and_testing"
+  ],
+  "difficulty": 10
+}

@@ -1,0 +1,18 @@
+{
+  "english": "boolean",
+  "japanese": "真偽値",
+  "description": "真(True)か偽(False)の2つの値だけを持つデータ型。条件分岐やフラグ管理に使われる基本的な型で、if文の判定結果などに使う。",
+  "example_natural": {
+    "english": "A boolean value is either true or false.",
+    "japanese": "真偽値はtrueかfalseのどちらかです。"
+  },
+  "example_programming": {
+    "language": "Visual Basic",
+    "body": "Dim isReady As Boolean\nisReady = True"
+  },
+  "themes": [
+    "boolean_logic",
+    "variables_and_types"
+  ],
+  "difficulty": 1
+}

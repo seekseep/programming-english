@@ -1,0 +1,18 @@
+{
+  "english": "document",
+  "japanese": "ドキュメント",
+  "description": "document はブラウザ上で開かれているページ全体を表すオブジェクトです。JavaScript から DOM を操作するための入口で、querySelector や getElementById などのメソッドを通じて要素にアクセスします。",
+  "example_natural": {
+    "english": "Get the title element from the document and log its text.",
+    "japanese": "ドキュメントからタイトル要素を取得して、そのテキストを出力してください。"
+  },
+  "example_programming": {
+    "language": "JavaScript",
+    "body": "const title = document.querySelector('h1');\nconsole.log(title.textContent);"
+  },
+  "themes": [
+    "comments_and_docs",
+    "web_dom"
+  ],
+  "difficulty": 5
+}

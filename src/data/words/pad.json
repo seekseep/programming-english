@@ -1,0 +1,17 @@
+{
+  "english": "pad",
+  "japanese": "桁を埋める",
+  "description": "文字列を指定した長さになるまで、先頭や末尾に特定の文字を足して埋める操作です。数値をゼロ埋めしてID を揃えたり、表示幅を揃えたりするときに使います。",
+  "example_natural": {
+    "english": "Pad the order number with zeros until it reaches six digits.",
+    "japanese": "注文番号が6桁になるまでゼロで桁を埋めてください。"
+  },
+  "example_programming": {
+    "language": "JavaScript",
+    "body": "const orderId = 42;\nconst padded = String(orderId).padStart(6, \"0\");\nconsole.log(padded); // \"000042\""
+  },
+  "themes": [
+    "strings_and_text"
+  ],
+  "difficulty": 4
+}

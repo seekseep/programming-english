@@ -1,0 +1,17 @@
+{
+  "english": "export",
+  "japanese": "エクスポート",
+  "description": "exportはモジュール内の変数や関数、クラスを他のモジュールから利用できるように外部に公開するキーワードです。JavaScriptではexport defaultや名前付きexportで値を公開します。",
+  "example_natural": {
+    "english": "Export the helper function so other files can use it.",
+    "japanese": "他のファイルから使えるように、ヘルパー関数をエクスポートしてください。"
+  },
+  "example_programming": {
+    "language": "JavaScript",
+    "body": "export function add(a, b) {\n  return a + b;\n}\n\nexport default class Calculator {}"
+  },
+  "themes": [
+    "modules_and_imports"
+  ],
+  "difficulty": 8
+}

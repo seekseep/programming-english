@@ -1,0 +1,17 @@
+{
+  "english": "dependency",
+  "japanese": "依存関係",
+  "description": "dependencyはあるモジュールやプロジェクトが動作するために必要とする別のライブラリやモジュールのことを指します。package.jsonのdependenciesに記述することで、npmなどのパッケージ管理ツールが自動的にインストールします。",
+  "example_natural": {
+    "english": "This project has lodash as a dependency.",
+    "japanese": "このプロジェクトは依存関係としてlodashを持っています。"
+  },
+  "example_programming": {
+    "language": "JavaScript",
+    "body": "// dependency\n// package.json\n{\n  \"dependencies\": {\n    \"lodash\": \"^4.17.21\"\n  }\n}"
+  },
+  "themes": [
+    "modules_and_imports"
+  ],
+  "difficulty": 8
+}

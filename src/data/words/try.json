@@ -1,0 +1,17 @@
+{
+  "english": "try",
+  "japanese": "試行",
+  "description": "tryは例外が発生する可能性のあるコードを囲むブロックです。tryブロック内でthrowされた例外は、続くcatchブロックで捕捉して処理できます。finallyと組み合わせて後処理を書くこともできます。",
+  "example_natural": {
+    "english": "Wrap the risky code inside a try block.",
+    "japanese": "危険なコードはtryブロックで囲んでください。"
+  },
+  "example_programming": {
+    "language": "JavaScript",
+    "body": "try {\n  const user = await fetchUser(id);\n  render(user);\n} catch (e) {\n  showError(e);\n}"
+  },
+  "themes": [
+    "error_handling"
+  ],
+  "difficulty": 8
+}

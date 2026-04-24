@@ -1,0 +1,17 @@
+{
+  "english": "replace",
+  "japanese": "置き換える",
+  "description": "文字列の中の特定の部分を別の文字列に置き換える操作です。元の文字列は変更されず、置き換えた結果を新しい文字列として返します。",
+  "example_natural": {
+    "english": "Replace every space with a hyphen.",
+    "japanese": "すべてのスペースをハイフンに置き換えてください。"
+  },
+  "example_programming": {
+    "language": "JavaScript",
+    "body": "const title = \"hello world example\";\nconst slug = title.replaceAll(\" \", \"-\");\nconsole.log(slug);"
+  },
+  "themes": [
+    "strings_and_text"
+  ],
+  "difficulty": 3
+}

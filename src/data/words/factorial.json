@@ -1,0 +1,17 @@
+{
+  "english": "factorial",
+  "japanese": "階乗",
+  "description": "factorial は「階乗」を意味し、n! = n × (n-1) × ... × 1 で定義される計算です。再帰やループの題材としてよく使われます。",
+  "example_natural": {
+    "english": "In math class we learned how to compute a factorial.",
+    "japanese": "数学の授業で私たちは階乗の計算方法を学んだ。"
+  },
+  "example_programming": {
+    "language": "JavaScript",
+    "body": "function factorial(n) {\n  return n <= 1 ? 1 : n * factorial(n - 1);\n}\nconsole.log(factorial(5));"
+  },
+  "themes": [
+    "numbers_and_math"
+  ],
+  "difficulty": 9
+}

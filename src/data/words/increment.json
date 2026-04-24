@@ -1,0 +1,17 @@
+{
+  "english": "increment",
+  "japanese": "増やすこと",
+  "description": "increment は「値を 1 増やす」操作を指します。多くの言語では `++` 演算子として用意されており、ループカウンタや ID の採番などで頻繁に使われます。",
+  "example_natural": {
+    "english": "She received a small annual increment in salary.",
+    "japanese": "彼女は毎年少額の昇給を受け取っていた。"
+  },
+  "example_programming": {
+    "language": "JavaScript",
+    "body": "// increment\nlet score = 0;\nfor (let i = 0; i < 5; i++) {\n  score++;\n}\nconsole.log(score);"
+  },
+  "themes": [
+    "operators"
+  ],
+  "difficulty": 9
+}

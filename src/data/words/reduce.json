@@ -1,0 +1,17 @@
+{
+  "english": "reduce",
+  "japanese": "集約する",
+  "description": "配列の要素を先頭から順に関数に渡し、一つの値にまとめる操作です。合計や最大値の算出、要素の連結など、複数の要素を一つの結果に集約したいときに使います。",
+  "example_natural": {
+    "english": "Reduce the array of prices to a single total.",
+    "japanese": "価格の配列を集約して、合計金額ひとつにまとめてください。"
+  },
+  "example_programming": {
+    "language": "JavaScript",
+    "body": "const prices = [120, 340, 80];\nconst total = prices.reduce((sum, p) => sum + p, 0);\nconsole.log(total); // 540"
+  },
+  "themes": [
+    "collections"
+  ],
+  "difficulty": 4
+}

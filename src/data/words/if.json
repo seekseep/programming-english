@@ -1,0 +1,17 @@
+{
+  "english": "if",
+  "japanese": "もし〜なら",
+  "description": "条件分岐を表すキーワード。プログラミングでは「もし条件が真なら〜する」という処理を書くときに使い、elseと組み合わせて使うことも多い。",
+  "example_natural": {
+    "english": "If it is sunny, we will go.",
+    "japanese": "もし晴れたら、私たちは行きます。"
+  },
+  "example_programming": {
+    "language": "Visual Basic",
+    "body": "If score >= 60 Then\n    Debug.Print \"Pass\"\nEnd If"
+  },
+  "themes": [
+    "control_flow"
+  ],
+  "difficulty": 1
+}

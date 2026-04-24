@@ -1,0 +1,17 @@
+{
+  "english": "spy",
+  "japanese": "スパイ",
+  "description": "spyはテストにおいて、既存の関数やメソッドの呼び出し状況を記録する仕組みです。mockと違い元の実装を置き換えずに観察できるため、副作用を維持したまま呼び出し回数や引数を検証できます。Jestではjest.spyOnが代表例です。",
+  "example_natural": {
+    "english": "The spy confirms that the logger was called with the right argument.",
+    "japanese": "スパイにより、ロガーが正しい引数で呼び出されたことが確認できます。"
+  },
+  "example_programming": {
+    "language": "JavaScript",
+    "body": "test('calls logger', () => {\n  const spy = jest.spyOn(console, 'log');\n  greet('Ada');\n  expect(spy).toHaveBeenCalledWith('Hello, Ada');\n});"
+  },
+  "themes": [
+    "debugging_and_testing"
+  ],
+  "difficulty": 10
+}

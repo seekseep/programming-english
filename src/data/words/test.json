@@ -1,0 +1,18 @@
+{
+  "english": "test",
+  "japanese": "テスト",
+  "description": "testはプログラムが期待どおり動作するかを自動的に確認するコードや手続きを指します。多くのテストフレームワークではtest関数にケース名と検証ロジックを渡して記述します。単体テスト・結合テスト・E2Eテストなど粒度の異なる種類があります。",
+  "example_natural": {
+    "english": "Write a test that covers both the success and failure paths.",
+    "japanese": "成功ケースと失敗ケースの両方を網羅するテストを書いてください。"
+  },
+  "example_programming": {
+    "language": "JavaScript",
+    "body": "test('adds two numbers', () => {\n  expect(add(2, 3)).toBe(5);\n});"
+  },
+  "themes": [
+    "boolean_logic",
+    "debugging_and_testing"
+  ],
+  "difficulty": 10
+}

@@ -1,0 +1,18 @@
+{
+  "english": "column",
+  "japanese": "列（カラム）",
+  "description": "column はテーブルの縦方向の要素で、同じ種類のデータを並べる単位です。SQL の SELECT 文ではどの列を取得するかを指定し、CREATE TABLE では列ごとにデータ型を定義します。",
+  "example_natural": {
+    "english": "Select only the name and email columns from the users table.",
+    "japanese": "users テーブルから name と email の列だけを取得してください。"
+  },
+  "example_programming": {
+    "language": "SQL",
+    "body": "-- column\nSELECT name, email\nFROM users\nWHERE active = 1;"
+  },
+  "themes": [
+    "database_concepts",
+    "sql_query_basics"
+  ],
+  "difficulty": 5
+}

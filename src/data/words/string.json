@@ -1,0 +1,18 @@
+{
+  "english": "string",
+  "japanese": "文字列",
+  "description": "文字が連なったデータを表す型。プログラミングでは名前や文章などのテキスト情報を扱うのに使われ、多くの言語ではダブルクォートで囲んで書く。",
+  "example_natural": {
+    "english": "Her name is a short string.",
+    "japanese": "彼女の名前は短い文字列です。"
+  },
+  "example_programming": {
+    "language": "JavaScript",
+    "body": "// string\nconst name = 'Alice';\nconsole.log(name);"
+  },
+  "themes": [
+    "strings_and_text",
+    "variables_and_types"
+  ],
+  "difficulty": 1
+}

@@ -1,0 +1,17 @@
+{
+  "english": "change",
+  "japanese": "変更イベント",
+  "description": "change はフォーム要素の値が確定的に変わったときに発火するイベントです。input 要素からフォーカスが外れたタイミングで発生し、入力内容の検証や連動する UI の更新に使われます。",
+  "example_natural": {
+    "english": "Run the validation function when the select box value changes.",
+    "japanese": "セレクトボックスの値が変わったら検証関数を実行してください。"
+  },
+  "example_programming": {
+    "language": "JavaScript",
+    "body": "const select = document.querySelector('#country');\nselect.addEventListener('change', (event) => {\n  console.log('selected:', event.target.value);\n});"
+  },
+  "themes": [
+    "events"
+  ],
+  "difficulty": 5
+}

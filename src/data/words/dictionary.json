@@ -1,0 +1,17 @@
+{
+  "english": "dictionary",
+  "japanese": "辞書",
+  "description": "キーと値のペアを格納するコレクションです。キーを使って値を素早く取り出すことができ、設定情報や集計結果の保持などに使われます。JavaScript ではオブジェクトや Map が同様の役割を担います。",
+  "example_natural": {
+    "english": "The dictionary stores each user's score by name.",
+    "japanese": "その辞書には名前をキーとして各ユーザーの得点が格納されています。"
+  },
+  "example_programming": {
+    "language": "JavaScript",
+    "body": "const dictionary = { alice: 80, bob: 72 };\ndictionary.carol = 95;\nconsole.log(dictionary.alice);\nconsole.log(Object.keys(dictionary).length);"
+  },
+  "themes": [
+    "collections"
+  ],
+  "difficulty": 4
+}

@@ -1,0 +1,17 @@
+{
+  "english": "procedure",
+  "japanese": "プロシージャ",
+  "description": "値を返さずに一連の処理をまとめた手続きです。Visual Basic の Sub がこれに相当し、関数のように呼び出して決まった処理を実行します。副作用のある処理をひとまとめにしたいときに使います。",
+  "example_natural": {
+    "english": "This procedure writes the log file and does not return a value.",
+    "japanese": "このプロシージャはログファイルに書き込み、値は返しません。"
+  },
+  "example_programming": {
+    "language": "Visual Basic",
+    "body": "' procedure\nSub WriteLog(message As String)\n    Debug.Print Now & \": \" & message\nEnd Sub\n\nCall WriteLog(\"started\")"
+  },
+  "themes": [
+    "functions_and_procedures"
+  ],
+  "difficulty": 4
+}

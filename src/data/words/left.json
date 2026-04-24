@@ -1,0 +1,17 @@
+{
+  "english": "left",
+  "japanese": "左（左結合）",
+  "description": "left は SQL の LEFT JOIN で使われ、左側のテーブルの行をすべて残しつつ、右側のテーブルで一致する行を結合します。右側に一致がなければ NULL が入るため、主となるテーブルを欠落させたくないときに使います。",
+  "example_natural": {
+    "english": "Use a left join so users without orders are still included.",
+    "japanese": "注文がないユーザーも含めたいので、左結合を使ってください。"
+  },
+  "example_programming": {
+    "language": "SQL",
+    "body": "SELECT users.name, orders.id\nFROM users\nLEFT JOIN orders ON users.id = orders.user_id;"
+  },
+  "themes": [
+    "sql_joins"
+  ],
+  "difficulty": 5
+}

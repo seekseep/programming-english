@@ -1,0 +1,17 @@
+{
+  "english": "rollback",
+  "japanese": "ロールバック",
+  "description": "rollbackはトランザクション中の変更をすべて取り消し、開始前の状態に戻す操作です。エラーが発生した際に中途半端な更新を残さないために実行します。COMMIT前にのみ可能で、データベースの一貫性を守る要となります。",
+  "example_natural": {
+    "english": "If the update fails, rollback the entire transaction.",
+    "japanese": "更新に失敗した場合はトランザクション全体をロールバックします。"
+  },
+  "example_programming": {
+    "language": "SQL",
+    "body": "BEGIN;\nUPDATE accounts SET balance = balance - 100 WHERE id = 1;\n-- error detected; undo the change\nROLLBACK;"
+  },
+  "themes": [
+    "database_concepts"
+  ],
+  "difficulty": 10
+}

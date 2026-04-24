@@ -1,0 +1,17 @@
+{
+  "english": "pop",
+  "japanese": "末尾から取り出す",
+  "description": "配列やスタックの末尾から要素を取り出して削除する操作です。取り出した値を戻り値として受け取り、元のコレクションは1つ短くなります。",
+  "example_natural": {
+    "english": "Pop the last item from the stack.",
+    "japanese": "スタックから最後の要素を取り出してください。"
+  },
+  "example_programming": {
+    "language": "JavaScript",
+    "body": "const stack = [1, 2, 3];\nconst last = stack.pop();\nconsole.log(last);\nconsole.log(stack);"
+  },
+  "themes": [
+    "collections"
+  ],
+  "difficulty": 3
+}

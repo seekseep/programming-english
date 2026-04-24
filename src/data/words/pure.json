@@ -1,0 +1,17 @@
+{
+  "english": "pure",
+  "japanese": "純粋な",
+  "description": "pure function（純粋関数）は、同じ入力に対して常に同じ出力を返し、副作用を持たない関数を指します。テストしやすく、関数型プログラミングで重視される性質です。",
+  "example_natural": {
+    "english": "The mountain stream had pure, cold water.",
+    "japanese": "その山の小川には澄んだ冷たい水が流れていた。"
+  },
+  "example_programming": {
+    "language": "JavaScript",
+    "body": "// pure\nconst add = (a, b) => a + b;\nconsole.log(add(2, 3));\nconsole.log(add(2, 3));"
+  },
+  "themes": [
+    "functions_and_procedures"
+  ],
+  "difficulty": 9
+}

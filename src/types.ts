@@ -1,17 +1,8 @@
-// --- 単語 ---
-export type Word = {
-  word: string
-  meaning: string
-  description: string
-}
+// src/types.ts
+// セーブデータ等、アプリ固有の型定義。
+// 単語・ステージ・テーマの型は src/data/types.ts で定義し、ここから re-export する。
 
-// --- ステージ ---
-export type Stage = {
-  id: string
-  name: string
-  description: string
-  words: string[]
-}
+export type { Word, Stage, Theme } from '#/data/types'
 
 // --- ロボット ---
 export type Robot = {

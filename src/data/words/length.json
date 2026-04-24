@@ -1,0 +1,18 @@
+{
+  "english": "length",
+  "japanese": "長さ",
+  "description": "文字列の文字数や、配列の要素数を表す値のことです。プログラミングでは、length を使って配列や文字列の大きさを調べます。",
+  "example_natural": {
+    "english": "The length of the array is five.",
+    "japanese": "その配列の長さは 5 です。"
+  },
+  "example_programming": {
+    "language": "JavaScript",
+    "body": "const numbers = [10, 20, 30, 40, 50];\nconst length = numbers.length;\nconsole.log(length);"
+  },
+  "themes": [
+    "collections",
+    "strings_and_text"
+  ],
+  "difficulty": 2
+}

@@ -1,0 +1,17 @@
+{
+  "english": "buffer",
+  "japanese": "バッファ",
+  "description": "buffer は入出力の速度差を吸収するために一時的にデータを溜めておくメモリ領域です。ファイル I/O では読み書きを一定量ごとにまとめて処理することで効率を上げます。処理完了時にはフラッシュして中身を確実に書き出します。",
+  "example_natural": {
+    "english": "Read the file into a buffer before processing each line.",
+    "japanese": "各行を処理する前に、ファイルをバッファに読み込んでください。"
+  },
+  "example_programming": {
+    "language": "JavaScript",
+    "body": "const fs = require('fs');\nconst buffer = fs.readFileSync('data.txt');\nconsole.log(buffer.toString('utf8'));"
+  },
+  "themes": [
+    "file_io"
+  ],
+  "difficulty": 7
+}

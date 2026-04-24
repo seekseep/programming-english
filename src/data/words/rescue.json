@@ -1,0 +1,17 @@
+{
+  "english": "rescue",
+  "japanese": "救済する",
+  "description": "rescueはRubyで例外を捕捉するためのキーワードで、他の言語のcatchに相当します。例外が発生した際に救済処理を行い、プログラムを続行させます。JavaScriptではcatch節で同等の役割を果たします。",
+  "example_natural": {
+    "english": "Rescue the exception and return a default value.",
+    "japanese": "例外を救済して、デフォルト値を返してください。"
+  },
+  "example_programming": {
+    "language": "JavaScript",
+    "body": "function rescueParse(text) {\n  try {\n    return JSON.parse(text);\n  } catch (e) {\n    return {};\n  }\n}"
+  },
+  "themes": [
+    "error_handling"
+  ],
+  "difficulty": 8
+}

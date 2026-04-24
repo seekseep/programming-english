@@ -1,0 +1,17 @@
+{
+  "english": "exception",
+  "japanese": "例外",
+  "description": "exceptionはプログラム実行中に発生する通常の処理の流れから外れた事象を表すオブジェクトです。throwで投げてcatchで捕捉することで、エラーを整然と処理できます。",
+  "example_natural": {
+    "english": "An exception will be thrown when the file is missing.",
+    "japanese": "ファイルが見つからないとき、例外が投げられます。"
+  },
+  "example_programming": {
+    "language": "JavaScript",
+    "body": "try {\n  loadConfig();\n} catch (exception) {\n  console.error('caught:', exception);\n}"
+  },
+  "themes": [
+    "error_handling"
+  ],
+  "difficulty": 8
+}

@@ -1,0 +1,18 @@
+{
+  "english": "flush",
+  "japanese": "フラッシュ",
+  "description": "flush はバッファに溜まっているデータを実際の出力先へ書き出す操作です。アプリが異常終了した場合でも、こまめに flush しておけばデータ損失を防げます。Close 時にも自動的にフラッシュされます。",
+  "example_natural": {
+    "english": "Flush the stream to make sure the log is written to disk.",
+    "japanese": "ログをディスクに確実に書き込むためにストリームをフラッシュしてください。"
+  },
+  "example_programming": {
+    "language": "JavaScript",
+    "body": "// flush\nconst stream = fs.createWriteStream('log.txt');\nstream.write('important log\\n');\nstream.end();"
+  },
+  "themes": [
+    "basic_io",
+    "file_io"
+  ],
+  "difficulty": 7
+}

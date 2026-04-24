@@ -1,0 +1,18 @@
+{
+  "english": "return",
+  "japanese": "返す、戻る",
+  "description": "関数から呼び出し元に値を返すためのキーワード。プログラミングではreturn文に続けて書いた値が関数の結果として返される。",
+  "example_natural": {
+    "english": "Please return the book tomorrow.",
+    "japanese": "その本を明日返してください。"
+  },
+  "example_programming": {
+    "language": "Visual Basic",
+    "body": "Function Square(n As Integer) As Integer\n    Return n * n\nEnd Function"
+  },
+  "themes": [
+    "control_flow",
+    "functions_and_procedures"
+  ],
+  "difficulty": 1
+}

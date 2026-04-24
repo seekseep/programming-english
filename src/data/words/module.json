@@ -1,0 +1,18 @@
+{
+  "english": "module",
+  "japanese": "モジュール",
+  "description": "moduleは関連する変数や関数をまとめた独立した単位です。VBAではModuleキーワードで標準モジュールを定義し、複数のプロシージャを整理して管理できます。コードの再利用性と保守性を高めます。",
+  "example_natural": {
+    "english": "Split the code into separate modules for clarity.",
+    "japanese": "分かりやすさのために、コードを別々のモジュールに分けましょう。"
+  },
+  "example_programming": {
+    "language": "Visual Basic",
+    "body": "Module MathHelpers\n    Public Function Square(ByVal n As Integer) As Integer\n        Return n * n\n    End Function\nEnd Module"
+  },
+  "themes": [
+    "modules_and_imports",
+    "scope"
+  ],
+  "difficulty": 8
+}

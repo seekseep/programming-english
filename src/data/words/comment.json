@@ -1,0 +1,17 @@
+{
+  "english": "comment",
+  "japanese": "コメント",
+  "description": "ソースコード中の注釈を指します。実行には影響せず、コードの意図や注意点を人間が読むために書き残す文です。",
+  "example_natural": {
+    "english": "Please add a comment that explains this loop.",
+    "japanese": "このループを説明するコメントを追加してください。"
+  },
+  "example_programming": {
+    "language": "Visual Basic",
+    "body": "Sub ShowTotal()\n    ' This comment explains the next line\n    Dim total As Long\n    total = 100 + 200\n    Debug.Print total\nEnd Sub"
+  },
+  "themes": [
+    "comments_and_docs"
+  ],
+  "difficulty": 3
+}

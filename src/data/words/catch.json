@@ -1,0 +1,18 @@
+{
+  "english": "catch",
+  "japanese": "捕捉する",
+  "description": "catchはtryブロック内で発生した例外を捕捉して処理するためのキーワードです。エラーをユーザーに通知したり、フォールバック処理を行ったりするために使われます。Promiseでは.catch()メソッドとしてエラー処理を記述できます。",
+  "example_natural": {
+    "english": "The catch block runs when an error is thrown inside try.",
+    "japanese": "catchブロックは、tryの中でエラーが投げられたときに実行されます。"
+  },
+  "example_programming": {
+    "language": "JavaScript",
+    "body": "try {\n  const data = JSON.parse(input);\n} catch (e) {\n  console.error('parse failed:', e.message);\n}"
+  },
+  "themes": [
+    "async_programming",
+    "error_handling"
+  ],
+  "difficulty": 8
+}

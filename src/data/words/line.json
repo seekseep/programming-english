@@ -1,0 +1,17 @@
+{
+  "english": "line",
+  "japanese": "テキスト行",
+  "description": "line はテキストファイルを改行で区切った 1 行分のデータです。VBA では Line Input #1, buffer で 1 行ずつ読み込み、EOF 関数でファイル終端を判定します。行単位で処理することで CSV やログをパースできます。",
+  "example_natural": {
+    "english": "Read the file one line at a time until the end.",
+    "japanese": "ファイルを末尾まで 1 行ずつ読み込んでください。"
+  },
+  "example_programming": {
+    "language": "Visual Basic",
+    "body": "Dim buf As String\nOpen \"C:\\log.txt\" For Input As #1\nDo Until EOF(1)\n    Line Input #1, buf\n    Debug.Print buf\nLoop\nClose #1"
+  },
+  "themes": [
+    "file_io"
+  ],
+  "difficulty": 7
+}

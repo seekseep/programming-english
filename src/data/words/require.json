@@ -1,0 +1,17 @@
+{
+  "english": "require",
+  "japanese": "要求する",
+  "description": "requireは他のモジュールを読み込んで利用するためのNode.jsの関数です。CommonJS形式のモジュールを同期的に読み込み、exportされた値を取得します。ES ModulesのimportがNode.jsで普及する前からの伝統的な書き方です。",
+  "example_natural": {
+    "english": "Use require to load the file system module in Node.",
+    "japanese": "Nodeでファイルシステムモジュールを読み込むにはrequireを使います。"
+  },
+  "example_programming": {
+    "language": "JavaScript",
+    "body": "const fs = require('fs');\nconst path = require('path');\n\nconst data = fs.readFileSync(path.join(__dirname, 'data.json'));"
+  },
+  "themes": [
+    "modules_and_imports"
+  ],
+  "difficulty": 8
+}

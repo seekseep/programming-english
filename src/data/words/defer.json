@@ -1,0 +1,17 @@
+{
+  "english": "defer",
+  "japanese": "遅延実行",
+  "description": "deferは処理を後の時点まで遅らせて実行することを意味します。JavaScriptではPromiseの解決を外部から行うdeferredパターンや、関数終了時に後片付けを予約する仕組みで現れます。リソース解放やクリーンアップ処理と相性が良い概念です。",
+  "example_natural": {
+    "english": "We defer the cleanup until after all requests have settled.",
+    "japanese": "すべてのリクエストが確定するまでクリーンアップを遅延実行します。"
+  },
+  "example_programming": {
+    "language": "JavaScript",
+    "body": "function defer() {\n  let resolve;\n  const promise = new Promise((r) => { resolve = r; });\n  return { promise, resolve };\n}"
+  },
+  "themes": [
+    "async_programming"
+  ],
+  "difficulty": 10
+}

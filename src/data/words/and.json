@@ -1,0 +1,17 @@
+{
+  "english": "and",
+  "japanese": "かつ、および",
+  "description": "「かつ」を意味する論理演算子。プログラミングでは2つの条件が両方とも真のときだけ全体が真になる。SQLのWHERE句で複数条件を組み合わせるときによく使う。",
+  "example_natural": {
+    "english": "I like apples and oranges.",
+    "japanese": "私はりんごとオレンジが好きです。"
+  },
+  "example_programming": {
+    "language": "SQL",
+    "body": "SELECT *\nFROM users\nWHERE age > 18 AND city = 'Tokyo';"
+  },
+  "themes": [
+    "operators"
+  ],
+  "difficulty": 1
+}

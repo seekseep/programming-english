@@ -1,0 +1,18 @@
+{
+  "english": "path",
+  "japanese": "パス",
+  "description": "path はファイルやフォルダの場所を示す文字列で、ドライブ名からファイル名までを区切り文字でつないで表します。絶対パスと相対パスがあり、ファイルを開くときはどちらかを指定します。VBA では ThisWorkbook.Path で現在のブックのフォルダパスを取得できます。",
+  "example_natural": {
+    "english": "Build the full path by combining the folder and file name.",
+    "japanese": "フォルダ名とファイル名をつなげて完全なパスを作成してください。"
+  },
+  "example_programming": {
+    "language": "Visual Basic",
+    "body": "Dim fullPath As String\nfullPath = ThisWorkbook.Path & \"\\output.csv\""
+  },
+  "themes": [
+    "file_io",
+    "http_and_api"
+  ],
+  "difficulty": 7
+}

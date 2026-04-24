@@ -1,0 +1,18 @@
+{
+  "english": "count",
+  "japanese": "数える、件数",
+  "description": "数を数えることや件数を表す語。SQLではCOUNT関数として使い、条件に合う行の数を取得する集計関数として使われる。",
+  "example_natural": {
+    "english": "Please count the number of students.",
+    "japanese": "生徒の人数を数えてください。"
+  },
+  "example_programming": {
+    "language": "SQL",
+    "body": "SELECT COUNT(*)\nFROM students;"
+  },
+  "themes": [
+    "numbers_and_math",
+    "sql_aggregation"
+  ],
+  "difficulty": 1
+}

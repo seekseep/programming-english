@@ -1,0 +1,18 @@
+{
+  "english": "write",
+  "japanese": "書き込む",
+  "description": "データをファイルやデータベースなどに保存することです。SQL では、INSERT 文でテーブルに新しい行を write します。",
+  "example_natural": {
+    "english": "Write the new user information into the table.",
+    "japanese": "新しいユーザー情報をテーブルに書き込んでください。"
+  },
+  "example_programming": {
+    "language": "SQL",
+    "body": "-- write\nINSERT INTO users (id, name)\nVALUES (1, 'Taro');"
+  },
+  "themes": [
+    "basic_io",
+    "file_io"
+  ],
+  "difficulty": 2
+}

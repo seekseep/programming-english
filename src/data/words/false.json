@@ -1,0 +1,17 @@
+{
+  "english": "false",
+  "japanese": "偽",
+  "description": "真偽値のうち「偽」を表す値。プログラミングでは条件が成り立たないときの結果として使われ、trueの反対の意味を持つ。",
+  "example_natural": {
+    "english": "That statement is false.",
+    "japanese": "その発言は誤りです。"
+  },
+  "example_programming": {
+    "language": "Visual Basic",
+    "body": "Dim isDone As Boolean\nisDone = False"
+  },
+  "themes": [
+    "boolean_logic"
+  ],
+  "difficulty": 1
+}

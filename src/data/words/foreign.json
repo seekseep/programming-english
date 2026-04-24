@@ -1,0 +1,17 @@
+{
+  "english": "foreign",
+  "japanese": "外部の",
+  "description": "foreign は「外部の」という意味で、データベースでは FOREIGN KEY（外部キー）として、他のテーブルの主キーを参照する制約を表します。テーブル間のリレーションを保証します。",
+  "example_natural": {
+    "english": "She studied several foreign languages in college.",
+    "japanese": "彼女は大学でいくつかの外国語を学んだ。"
+  },
+  "example_programming": {
+    "language": "SQL",
+    "body": "CREATE TABLE orders (\n  id INTEGER PRIMARY KEY,\n  user_id INTEGER NOT NULL,\n  total INTEGER,\n  FOREIGN KEY (user_id) REFERENCES users(id)\n);"
+  },
+  "themes": [
+    "database_concepts"
+  ],
+  "difficulty": 9
+}

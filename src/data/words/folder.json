@@ -1,0 +1,17 @@
+{
+  "english": "folder",
+  "japanese": "フォルダ",
+  "description": "folder はファイルや他のフォルダを入れてまとめるための入れ物で、ディレクトリとほぼ同じ意味です。VBA では FileSystemObject の GetFolder でフォルダを取得し、Files コレクションで中身を走査できます。",
+  "example_natural": {
+    "english": "Move the processed files to the archive folder.",
+    "japanese": "処理済みのファイルをアーカイブフォルダに移動してください。"
+  },
+  "example_programming": {
+    "language": "Visual Basic",
+    "body": "Dim fso As Object\nSet fso = CreateObject(\"Scripting.FileSystemObject\")\nSet folder = fso.GetFolder(\"C:\\reports\")"
+  },
+  "themes": [
+    "file_io"
+  ],
+  "difficulty": 7
+}

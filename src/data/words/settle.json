@@ -1,0 +1,17 @@
+{
+  "english": "settle",
+  "japanese": "確定",
+  "description": "settleはPromiseの状態がfulfilledまたはrejectedのいずれかに確定することを表します。Promise.allSettledを使えば、個々の成否に関わらず全Promiseの確定を待ち、結果をまとめて取得できます。エラーで止めたくない一括処理に有効です。",
+  "example_natural": {
+    "english": "We wait until all promises settle before rendering the page.",
+    "japanese": "すべてのPromiseが確定してからページを描画します。"
+  },
+  "example_programming": {
+    "language": "JavaScript",
+    "body": "const results = await Promise.allSettled([\n  fetch('/a'),\n  fetch('/b'),\n]);\nconst ok = results.filter((r) => r.status === 'fulfilled');"
+  },
+  "themes": [
+    "async_programming"
+  ],
+  "difficulty": 10
+}

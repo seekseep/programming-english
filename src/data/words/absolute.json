@@ -1,0 +1,17 @@
+{
+  "english": "absolute",
+  "japanese": "絶対値",
+  "description": "絶対値を求める操作を指し、数値の符号を取り除いた大きさを返します。差の大きさを比較したいときや距離を計算するときによく使われます。",
+  "example_natural": {
+    "english": "The absolute value of minus seven is seven.",
+    "japanese": "マイナス7の絶対値は7です。"
+  },
+  "example_programming": {
+    "language": "Visual Basic",
+    "body": "Dim diff As Double\ndiff = -12.5\nDim result As Double\nresult = Math.Abs(diff) ' absolute value\nDebug.Print result"
+  },
+  "themes": [
+    "numbers_and_math"
+  ],
+  "difficulty": 3
+}

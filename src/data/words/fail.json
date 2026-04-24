@@ -1,0 +1,17 @@
+{
+  "english": "fail",
+  "japanese": "失敗する",
+  "description": "failは処理が期待通りに完了せず失敗した状態を表します。ネットワーク障害やバリデーションエラーなどで発生し、適切な例外処理でログ出力や再試行を行う必要があります。",
+  "example_natural": {
+    "english": "The request may fail when the network is slow.",
+    "japanese": "ネットワークが遅いと、リクエストが失敗することがあります。"
+  },
+  "example_programming": {
+    "language": "JavaScript",
+    "body": "async function save(data) {\n  const res = await fetch('/api/save', { method: 'POST', body: data });\n  if (!res.ok) throw new Error('save did fail');\n}"
+  },
+  "themes": [
+    "error_handling"
+  ],
+  "difficulty": 8
+}

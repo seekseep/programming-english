@@ -1,0 +1,17 @@
+{
+  "english": "status",
+  "japanese": "状態",
+  "description": "HTTPのstatusはレスポンスの結果を表す3桁の数値コードです。200は成功、404は未検出、500はサーバーエラーなど、クライアントが処理の成否を判断するために使います。",
+  "example_natural": {
+    "english": "The server returned a status of 404 for the request.",
+    "japanese": "サーバーはそのリクエストに対して404のステータスを返しました。"
+  },
+  "example_programming": {
+    "language": "JavaScript",
+    "body": "const res = await fetch('/api/user/99');\nif (res.status === 404) {\n  console.log('user not found');\n}"
+  },
+  "themes": [
+    "http_and_api"
+  ],
+  "difficulty": 6
+}

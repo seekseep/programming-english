@@ -1,0 +1,17 @@
+{
+  "english": "display",
+  "japanese": "表示する",
+  "description": "画面に情報を見せることです。プログラミングでは、計算結果やメッセージを display する処理を書いて、利用者に内容を伝えます。",
+  "example_natural": {
+    "english": "The program will display a welcome message.",
+    "japanese": "プログラムは歓迎のメッセージを表示します。"
+  },
+  "example_programming": {
+    "language": "Visual Basic",
+    "body": "Sub Display()\n    MsgBox \"Welcome!\"\nEnd Sub\n\nCall Display"
+  },
+  "themes": [
+    "basic_io"
+  ],
+  "difficulty": 2
+}

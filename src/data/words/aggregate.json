@@ -1,0 +1,17 @@
+{
+  "english": "aggregate",
+  "japanese": "集約",
+  "description": "aggregateは複数の行の値をひとつの結果にまとめる集約演算を指します。SQLではSUMやAVG、COUNTなどの集約関数がこれに該当します。GROUP BY句やウィンドウ関数と組み合わせて用いられます。",
+  "example_natural": {
+    "english": "We aggregate the daily sales data into a monthly total.",
+    "japanese": "日次の売上データを月次の合計に集約します。"
+  },
+  "example_programming": {
+    "language": "SQL",
+    "body": "-- aggregate\nSELECT department, SUM(salary) AS total_salary\nFROM employees\nGROUP BY department;"
+  },
+  "themes": [
+    "sql_aggregation"
+  ],
+  "difficulty": 10
+}

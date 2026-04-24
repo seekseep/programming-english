@@ -1,0 +1,17 @@
+{
+  "english": "byte",
+  "japanese": "バイト",
+  "description": "コンピューターがデータを扱う基本単位で、通常 8 ビットからなります。プログラミングでは、小さな整数を表す型として byte を使うことがあります。",
+  "example_natural": {
+    "english": "One character of text often uses one byte of memory.",
+    "japanese": "文字 1 つは多くの場合、メモリを 1 バイト使います。"
+  },
+  "example_programming": {
+    "language": "Visual Basic",
+    "body": "Dim age As Byte\nage = 25\nMsgBox age"
+  },
+  "themes": [
+    "variables_and_types"
+  ],
+  "difficulty": 2
+}

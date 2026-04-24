@@ -1,0 +1,17 @@
+{
+  "english": "textbox",
+  "japanese": "テキストボックス",
+  "description": "textbox はユーザーに文字を入力させる UI 部品です。VB フォームでは Text プロパティで値の取得と設定ができ、Change イベントで入力中の変化を検知できます。MultiLine プロパティを True にすると複数行入力にもできます。",
+  "example_natural": {
+    "english": "Read the user name from the textbox and greet them.",
+    "japanese": "テキストボックスからユーザー名を読み取って挨拶してください。"
+  },
+  "example_programming": {
+    "language": "Visual Basic",
+    "body": "Dim userName As String\nuserName = TextBox1.Text\nMsgBox \"Hello, \" & userName"
+  },
+  "themes": [
+    "vb_forms_controls"
+  ],
+  "difficulty": 7
+}

@@ -1,0 +1,17 @@
+{
+  "english": "void",
+  "japanese": "戻り値なし",
+  "description": "関数やメソッドが値を返さないことを表します。画面表示やログ出力のように、何かを実行することが目的の処理で使われます。Visual Basic では Sub プロシージャが同様に値を返さない手続きです。",
+  "example_natural": {
+    "english": "This void procedure only prints the message to the screen.",
+    "japanese": "この戻り値なしのプロシージャは、画面にメッセージを表示するだけです。"
+  },
+  "example_programming": {
+    "language": "Visual Basic",
+    "body": "' void in VB is represented by a Sub (no return value)\nSub ShowMessage(text As String)\n    Debug.Print text\nEnd Sub\n\nCall ShowMessage(\"ready\")"
+  },
+  "themes": [
+    "functions_and_procedures"
+  ],
+  "difficulty": 4
+}

@@ -1,0 +1,17 @@
+{
+  "english": "form",
+  "japanese": "フォーム",
+  "description": "form はユーザー入力を受け付けるウィンドウで、Button や TextBox などのコントロールを配置する土台になります。VBA では UserForm を Show で表示し、Unload で閉じます。Initialize イベントに初期化処理を書きます。",
+  "example_natural": {
+    "english": "Show the login form when the workbook opens.",
+    "japanese": "ブックを開いたときにログインフォームを表示してください。"
+  },
+  "example_programming": {
+    "language": "Visual Basic",
+    "body": "Private Sub Workbook_Open()\n    UserForm1.Show\nEnd Sub"
+  },
+  "themes": [
+    "vb_forms_controls"
+  ],
+  "difficulty": 7
+}

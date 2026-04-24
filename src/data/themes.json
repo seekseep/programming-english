@@ -1,0 +1,102 @@
+{
+  "basic_io": {
+    "title": "入出力",
+    "description": "画面表示やユーザー入力など、プログラムが外界とやり取りするための語彙。print, input, log, output, display, message, alert など。"
+  },
+  "variables_and_types": {
+    "title": "変数と基本型",
+    "description": "値を保持する変数と基本的なデータ型に関する語彙。variable, constant, declare, assign, string, number, boolean, null など。"
+  },
+  "operators": {
+    "title": "演算子",
+    "description": "計算や比較、論理結合に使う演算子の語彙。plus, minus, multiply, divide, equal, not_equal, greater, less, and, or, not など。"
+  },
+  "control_flow": {
+    "title": "制御構造",
+    "description": "処理の流れを分岐・反復させる語彙。if, else, then, elseif, switch, case, loop, while, for, break, continue, exit など。"
+  },
+  "functions_and_procedures": {
+    "title": "関数とプロシージャ",
+    "description": "再利用可能な処理のかたまりと、その呼び出しに関する語彙。function, procedure, parameter, argument, return, call, invoke, sub など。"
+  },
+  "scope": {
+    "title": "スコープ",
+    "description": "変数や関数の可視範囲・寿命に関する語彙。local, global, public, private, module, shared など。"
+  },
+  "error_handling": {
+    "title": "エラー処理",
+    "description": "例外や失敗を扱う語彙。error, exception, try, catch, throw, finally, raise, handle など。"
+  },
+  "comments_and_docs": {
+    "title": "コメントと注釈",
+    "description": "コード内の説明やドキュメント化に関する語彙。comment, note, todo, tag, annotation, docstring など。"
+  },
+  "strings_and_text": {
+    "title": "文字列操作",
+    "description": "文字列の加工・検索・変換に関する語彙。concat, substring, length, upper, lower, split, trim, replace, match など。"
+  },
+  "numbers_and_math": {
+    "title": "数値と計算",
+    "description": "数値計算・集計に関する語彙。sum, average, count, max, min, round, floor, ceil, modulo, absolute など。"
+  },
+  "collections": {
+    "title": "配列とコレクション",
+    "description": "複数の値をまとめて扱うデータ構造の語彙。array, list, object, map, dictionary, key, value, index, length, push, pop など。"
+  },
+  "boolean_logic": {
+    "title": "真偽値の論理",
+    "description": "真偽判定に関する語彙。true, false, is, exists, valid, empty など。"
+  },
+  "sql_query_basics": {
+    "title": "SQL基礎",
+    "description": "SQLの基本クエリ語彙。select, from, where, insert, update, delete, values, into, set など。"
+  },
+  "sql_joins": {
+    "title": "SQL結合",
+    "description": "テーブル結合に関する語彙。join, inner, outer, left, right, on, using, cross など。"
+  },
+  "sql_aggregation": {
+    "title": "SQL集約と並び替え",
+    "description": "集約関数・グループ化・並び替えの語彙。group, having, count, sum, avg, distinct, order, asc, desc, limit など。"
+  },
+  "database_concepts": {
+    "title": "データベースの概念",
+    "description": "DBの構造や制約に関する語彙。table, row, column, record, schema, primary, foreign, key, index, constraint, null など。"
+  },
+  "web_dom": {
+    "title": "DOM操作",
+    "description": "ブラウザのDOMを操作する語彙。document, element, query, select, append, remove, class, attribute, innerHTML など。"
+  },
+  "events": {
+    "title": "イベント",
+    "description": "UIやブラウザのイベント処理に関する語彙。event, listener, click, submit, change, handler, trigger, prevent, dispatch など。"
+  },
+  "async_programming": {
+    "title": "非同期処理",
+    "description": "時間のかかる処理を扱う語彙。callback, promise, async, await, fetch, resolve, reject, then, catch, timeout など。"
+  },
+  "http_and_api": {
+    "title": "HTTPとAPI",
+    "description": "ネットワーク通信・API呼び出しの語彙。request, response, status, header, body, get, post, put, delete, endpoint, json など。"
+  },
+  "vb_forms_controls": {
+    "title": "VBフォームとコントロール",
+    "description": "Visual Basicのフォーム・UIコントロールの語彙。form, button, textbox, label, checkbox, combobox, listbox, click_event など。"
+  },
+  "excel_vba_basics": {
+    "title": "Excel VBA基礎",
+    "description": "Excel VBAで頻出する語彙。workbook, worksheet, range, cell, value, formula, macro, activate, select など。"
+  },
+  "file_io": {
+    "title": "ファイル入出力",
+    "description": "ファイル読み書き・パス操作の語彙。file, open, close, read, write, path, append, stream, buffer, encoding など。"
+  },
+  "debugging_and_testing": {
+    "title": "デバッグとテスト",
+    "description": "不具合対応とテストに関する語彙。bug, fix, test, assert, expect, mock, breakpoint, step, watch, coverage など。"
+  },
+  "modules_and_imports": {
+    "title": "モジュールと読み込み",
+    "description": "コードの分割と再利用に関する語彙。module, import, export, require, include, package, namespace, library など。"
+  }
+}

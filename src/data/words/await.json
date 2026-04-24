@@ -1,0 +1,17 @@
+{
+  "english": "await",
+  "japanese": "待機",
+  "description": "awaitはasync関数の中でPromiseの解決を待機するキーワードです。非同期処理を同期的に書けるため、コールバックのネストを避けられます。awaitで得た値は解決された値そのものです。",
+  "example_natural": {
+    "english": "Await the response before parsing the JSON body.",
+    "japanese": "JSON本文を解析する前にレスポンスを待機してください。"
+  },
+  "example_programming": {
+    "language": "JavaScript",
+    "body": "async function getProduct(id) {\n  const res = await fetch(`/api/products/${id}`);\n  const data = await res.json();\n  return data;\n}"
+  },
+  "themes": [
+    "async_programming"
+  ],
+  "difficulty": 6
+}

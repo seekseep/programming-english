@@ -1,0 +1,18 @@
+{
+  "english": "then",
+  "japanese": "その次に",
+  "description": "前の処理が終わった後に続けて行う処理を表します。JavaScript では Promise の成功時に呼ばれるコールバックを登録するメソッド名として使われます。",
+  "example_natural": {
+    "english": "Fetch the data, then show the result on the screen.",
+    "japanese": "データを取得し、そのあとで結果を画面に表示します。"
+  },
+  "example_programming": {
+    "language": "JavaScript",
+    "body": "fetch(\"/api/users\")\n  .then((response) => response.json())\n  .then((users) => console.log(users.length));"
+  },
+  "themes": [
+    "async_programming",
+    "control_flow"
+  ],
+  "difficulty": 3
+}

@@ -1,0 +1,17 @@
+{
+  "english": "bitwise",
+  "japanese": "ビット単位の",
+  "description": "bitwise は「ビット単位の」という意味で、整数の各ビットに対して AND・OR・XOR・NOT などを行う演算を指します。フラグ管理や低レベルな最適化でよく使われます。",
+  "example_natural": {
+    "english": "This chip performs bitwise operations very efficiently.",
+    "japanese": "このチップはビット単位の演算を非常に効率よく実行する。"
+  },
+  "example_programming": {
+    "language": "JavaScript",
+    "body": "// bitwise\nconst FLAG_READ = 0b0001;\nconst FLAG_WRITE = 0b0010;\nconst perms = FLAG_READ | FLAG_WRITE;\nconsole.log((perms & FLAG_READ) !== 0);"
+  },
+  "themes": [
+    "operators"
+  ],
+  "difficulty": 9
+}

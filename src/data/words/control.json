@@ -1,0 +1,17 @@
+{
+  "english": "control",
+  "japanese": "コントロール",
+  "description": "control はフォーム上に配置される UI 部品の総称です。Button、TextBox、Label などはすべてコントロールで、フォームの Controls コレクションから名前でアクセスできます。各コントロールは Name、Caption、Enabled などの共通プロパティを持ちます。",
+  "example_natural": {
+    "english": "Loop through every control on the form and disable it.",
+    "japanese": "フォーム上のすべてのコントロールをループで無効化してください。"
+  },
+  "example_programming": {
+    "language": "Visual Basic",
+    "body": "Dim ctl As Control\nFor Each ctl In Me.Controls\n    ctl.Enabled = False\nNext ctl"
+  },
+  "themes": [
+    "vb_forms_controls"
+  ],
+  "difficulty": 7
+}

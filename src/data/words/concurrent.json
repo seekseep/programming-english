@@ -1,0 +1,17 @@
+{
+  "english": "concurrent",
+  "japanese": "並行",
+  "description": "concurrentは複数のタスクを同時期に進行させる「並行」を表す言葉です。必ずしも同時刻に実行される並列（parallel）とは限らず、切り替えながら進める場合も含みます。非同期処理で複数のPromiseを同時に扱う場面などで用いられます。",
+  "example_natural": {
+    "english": "The server handles many concurrent requests using async functions.",
+    "japanese": "サーバーは非同期関数で多数の並行リクエストを処理します。"
+  },
+  "example_programming": {
+    "language": "JavaScript",
+    "body": "// run fetches concurrently\nconst urls = ['/a', '/b', '/c'];\nconst results = await Promise.all(urls.map((u) => fetch(u)));"
+  },
+  "themes": [
+    "async_programming"
+  ],
+  "difficulty": 10
+}

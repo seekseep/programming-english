@@ -1,0 +1,17 @@
+{
+  "english": "finally",
+  "japanese": "最終的に",
+  "description": "finallyはtry/catch構文の最後に置かれ、例外が発生しても発生しなくても必ず実行されるブロックです。リソースの解放や後片付けの処理に使われます。",
+  "example_natural": {
+    "english": "The finally block always runs to clean up resources.",
+    "japanese": "finallyブロックは、リソースを片付けるために必ず実行されます。"
+  },
+  "example_programming": {
+    "language": "JavaScript",
+    "body": "try {\n  await load();\n} catch (e) {\n  console.error(e);\n} finally {\n  hideSpinner();\n}"
+  },
+  "themes": [
+    "error_handling"
+  ],
+  "difficulty": 8
+}

@@ -1,0 +1,17 @@
+{
+  "english": "closure",
+  "japanese": "クロージャ",
+  "description": "closure（クロージャ）は、関数が定義されたときの外側のスコープにある変数を記憶し、後から参照できる仕組みです。プライベートな状態を持つカウンタやファクトリ関数を作るのに使われます。",
+  "example_natural": {
+    "english": "The shop announced its closure at the end of the month.",
+    "japanese": "その店は月末の閉店を告知した。"
+  },
+  "example_programming": {
+    "language": "JavaScript",
+    "body": "// closure\nfunction makeCounter() {\n  let count = 0;\n  return () => ++count;\n}\nconst next = makeCounter();\nconsole.log(next(), next(), next());"
+  },
+  "themes": [
+    "functions_and_procedures"
+  ],
+  "difficulty": 9
+}

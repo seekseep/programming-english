@@ -1,0 +1,17 @@
+{
+  "english": "each",
+  "japanese": "それぞれ",
+  "description": "コレクションの要素を一つずつ取り出して処理することを表します。ループ構文の For Each や forEach メソッドなどで使われ、配列やリストの全要素に同じ処理を適用したいときに便利です。",
+  "example_natural": {
+    "english": "Please print each item in the shopping list.",
+    "japanese": "買い物リストの各項目をそれぞれ表示してください。"
+  },
+  "example_programming": {
+    "language": "Visual Basic",
+    "body": "Dim items As String() = {\"apple\", \"banana\", \"cherry\"}\nFor Each item As String In items\n    Console.WriteLine(item)\nNext"
+  },
+  "themes": [
+    "collections"
+  ],
+  "difficulty": 4
+}

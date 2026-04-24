@@ -1,0 +1,17 @@
+{
+  "english": "power",
+  "japanese": "累乗",
+  "description": "power は数学用語で「累乗」を意味します。JavaScript では `Math.pow(x, y)` やべき乗演算子 `**` を使って x の y 乗を計算できます。",
+  "example_natural": {
+    "english": "The storm knocked out power across the whole town.",
+    "japanese": "嵐が町全体の電力を止めてしまった。"
+  },
+  "example_programming": {
+    "language": "JavaScript",
+    "body": "// power\nconsole.log(Math.pow(2, 10));\nconsole.log(3 ** 4);"
+  },
+  "themes": [
+    "numbers_and_math"
+  ],
+  "difficulty": 9
+}

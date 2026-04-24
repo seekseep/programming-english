@@ -2,7 +2,8 @@ import { createFileRoute, useNavigate } from '@tanstack/react-router'
 import { useState, useMemo } from 'react'
 import { useSave } from '#/context/SaveDataContext'
 import { FeatureHeader } from '#/components/FeatureHeader'
-import { allWordEntries } from '#/lib/words'
+import { allWords } from '#/data'
+import { ToggleGroup, ToggleGroupItem } from '#/components/ui/toggle-group'
 
 export const Route = createFileRoute('/words/')({
   component: WordsPage,
@@ -26,11 +27,16 @@ function WordsPage() {
   const [page, setPage] = useState(0)
 
   const { filtered, counts } = useMemo(() => {
-    const counts: Record<WordStatus, number> = { all: 0, correct: 0, encountered: 0, unknown: 0 }
-    const filtered: typeof allWordEntries = []
+    const counts: Record<WordStatus, number> = {
+      all: 0,
+      correct: 0,
+      encountered: 0,
+      unknown: 0,
+    }
+    const filtered: typeof allWords = []
 
-    for (const entry of allWordEntries) {
-      const record = data.wordHistory[entry.word]
+    for (const entry of allWords) {
+      const record = data.wordHistory[entry.english]
       const isCorrect = record && record.correctCount >= 1
       const isEncountered = !!record
 
@@ -41,7 +47,8 @@ function WordsPage() {
 
       if (filter === 'all') filtered.push(entry)
       else if (filter === 'correct' && isCorrect) filtered.push(entry)
-      else if (filter === 'encountered' && isEncountered && !isCorrect) filtered.push(entry)
+      else if (filter === 'encountered' && isEncountered && !isCorrect)
+        filtered.push(entry)
       else if (filter === 'unknown' && !isEncountered) filtered.push(entry)
     }
 
@@ -62,46 +69,55 @@ function WordsPage() {
         title="プログラミング英単語帳" />
 
       {/* フィルターチップ */}
-      <div className="flex flex-wrap gap-2 mb-4">
+      <ToggleGroup
+        className="flex flex-wrap gap-2 mb-4"
+        value={[filter]}
+        onValueChange={(value) => {
+          if (value.length > 0) {
+            handleFilterChange(value[value.length - 1] as WordStatus)
+          }
+        }}
+        spacing={2}
+      >
         {(Object.keys(STATUS_LABELS) as WordStatus[]).map((status) => (
-          <button
+          <ToggleGroupItem
             key={status}
-            type="button"
-            onClick={() => handleFilterChange(status)}
-            className={`rounded-full px-3 py-1.5 text-sm font-semibold border transition-colors ${
-              filter === status
-                ? 'border-(--accent) bg-[rgba(199,91,18,0.12)] text-(--accent)'
-                : 'border-(--line) bg-white/80 text-(--muted)'
-            }`}
+            value={status}
+            variant="outline"
+            size="sm"
+            className="rounded-full"
           >
             {STATUS_LABELS[status]}
             <span className="ml-1 text-xs opacity-70">{counts[status]}</span>
-          </button>
+          </ToggleGroupItem>
         ))}
-      </div>
+      </ToggleGroup>
 
       {/* 単語グリッド */}
       <div className="grid grid-cols-3 gap-2">
-        {pageWords.map(({ word }) => {
-          const record = data.wordHistory[word]
+        {pageWords.map(({ english }) => {
+          const record = data.wordHistory[english]
           const encountered = !!record
           const correct = record && record.correctCount >= 1
 
           return (
             <button
-              key={word}
+              key={english}
               type="button"
-              onClick={() => encountered && navigate({ to: '/words/$word', params: { word } })}
+              onClick={() =>
+                encountered &&
+                navigate({ to: '/words/$word', params: { word: english } })
+              }
               className={`rounded-xl border p-2 text-center text-sm font-semibold transition-colors ${
                 correct
-                  ? 'border-(--accent) bg-[rgba(199,91,18,0.06)] cursor-pointer'
+                  ? 'border-(--accent) bg-(--accent-bg) cursor-pointer'
                   : encountered
-                    ? 'border-(--line) bg-white/80 cursor-pointer'
-                    : 'border-(--line) bg-(--line) text-(--muted)'
+                    ? 'border-(--line) bg-(--card-bg) cursor-pointer'
+                    : 'border-(--line) bg-(--line) text-muted'
               }`}
               disabled={!encountered}
             >
-              {encountered ? word : '???'}
+              {encountered ? english : '???'}
             </button>
           )
         })}
@@ -118,7 +134,7 @@ function WordsPage() {
           >
             ←
           </button>
-          <span className="text-sm text-(--muted)">
+          <span className="text-sm text-muted">
             {page + 1} / {totalPages}
           </span>
           <button

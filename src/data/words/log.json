@@ -1,0 +1,18 @@
+{
+  "english": "log",
+  "japanese": "ログ",
+  "description": "プログラムの動作や状態を記録することや、その記録を指します。デバッグのために console.log などで値を log に出力します。",
+  "example_natural": {
+    "english": "Please log the value to check what is happening.",
+    "japanese": "何が起きているか確認するために、その値をログに出してください。"
+  },
+  "example_programming": {
+    "language": "JavaScript",
+    "body": "const name = \"Alice\";\nconsole.log(name);\nconsole.log(\"Login success\");"
+  },
+  "themes": [
+    "basic_io",
+    "numbers_and_math"
+  ],
+  "difficulty": 2
+}

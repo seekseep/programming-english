@@ -1,0 +1,18 @@
+{
+  "english": "row",
+  "japanese": "行",
+  "description": "row はテーブルの横方向の 1 件のデータを指します。各行は列ごとの値を持ち、SELECT 文の結果として複数の行が返され、WHERE 句で対象となる行を絞り込みます。",
+  "example_natural": {
+    "english": "Count how many rows are in the orders table.",
+    "japanese": "orders テーブルに何行あるか数えてください。"
+  },
+  "example_programming": {
+    "language": "SQL",
+    "body": "SELECT COUNT(*) AS row_count\nFROM orders;"
+  },
+  "themes": [
+    "database_concepts",
+    "sql_query_basics"
+  ],
+  "difficulty": 5
+}

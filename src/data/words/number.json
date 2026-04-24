@@ -1,0 +1,17 @@
+{
+  "english": "number",
+  "japanese": "数値",
+  "description": "数を表すデータ型。プログラミングでは整数や小数などの計算に使われる値を指し、JavaScriptではnumber型として扱う。",
+  "example_natural": {
+    "english": "Please write your phone number.",
+    "japanese": "電話番号を書いてください。"
+  },
+  "example_programming": {
+    "language": "JavaScript",
+    "body": "// number\nconst age = 25;\nconsole.log(typeof age);"
+  },
+  "themes": [
+    "variables_and_types"
+  ],
+  "difficulty": 1
+}

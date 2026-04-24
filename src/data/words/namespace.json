@@ -1,0 +1,18 @@
+{
+  "english": "namespace",
+  "japanese": "名前空間",
+  "description": "namespaceは型や関数などの識別子を整理するための仕組みで、名前の衝突を防ぎます。VB.NETではNamespaceキーワードで独自の名前空間を定義し、プロジェクト全体の構造を階層的に管理できます。",
+  "example_natural": {
+    "english": "Put the helper classes under the Utils namespace.",
+    "japanese": "ヘルパークラスをUtils名前空間の下に配置してください。"
+  },
+  "example_programming": {
+    "language": "Visual Basic",
+    "body": "Namespace Utils\n    Public Class Logger\n        Public Shared Sub Info(msg As String)\n            Console.WriteLine(msg)\n        End Sub\n    End Class\nEnd Namespace"
+  },
+  "themes": [
+    "modules_and_imports",
+    "scope"
+  ],
+  "difficulty": 8
+}

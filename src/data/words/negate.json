@@ -1,0 +1,18 @@
+{
+  "english": "negate",
+  "japanese": "符号を反転する",
+  "description": "negate は数値の符号を反転させる（プラスをマイナスに、またはその逆にする）ことを意味します。単項マイナス演算子 `-x` で実現でき、真偽値を否定する意味で使われることもあります。",
+  "example_natural": {
+    "english": "One careless mistake can negate all our hard work.",
+    "japanese": "たった一つの不注意な失敗が私たちの努力をすべて台無しにしかねない。"
+  },
+  "example_programming": {
+    "language": "JavaScript",
+    "body": "const negate = (n) => -n;\nconsole.log(negate(7));\nconsole.log(negate(-3));"
+  },
+  "themes": [
+    "numbers_and_math",
+    "operators"
+  ],
+  "difficulty": 9
+}

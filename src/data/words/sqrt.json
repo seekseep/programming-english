@@ -1,0 +1,17 @@
+{
+  "english": "sqrt",
+  "japanese": "平方根",
+  "description": "sqrt は square root の略で、平方根を求める関数を指します。JavaScript では `Math.sqrt(x)` で x の平方根が得られ、幾何学的距離の計算などで使われます。",
+  "example_natural": {
+    "english": "The square root of sixteen is four.",
+    "japanese": "16 の平方根は 4 である。"
+  },
+  "example_programming": {
+    "language": "JavaScript",
+    "body": "function distance(x, y) {\n  return Math.sqrt(x * x + y * y);\n}\nconsole.log(distance(3, 4));"
+  },
+  "themes": [
+    "numbers_and_math"
+  ],
+  "difficulty": 9
+}

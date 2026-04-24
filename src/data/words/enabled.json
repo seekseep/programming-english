@@ -1,0 +1,17 @@
+{
+  "english": "enabled",
+  "japanese": "有効",
+  "description": "enabled はコントロールが操作可能かどうかを表すプロパティです。True なら入力やクリックを受け付け、False なら灰色表示になって操作できなくなります。処理中は一時的に False にして二重起動を防ぐ使い方が一般的です。",
+  "example_natural": {
+    "english": "Disable the save button while the file is being written.",
+    "japanese": "ファイル書き込み中は保存ボタンを無効にしてください。"
+  },
+  "example_programming": {
+    "language": "Visual Basic",
+    "body": "Button1.Enabled = False\nCall SaveData\nButton1.Enabled = True"
+  },
+  "themes": [
+    "vb_forms_controls"
+  ],
+  "difficulty": 7
+}

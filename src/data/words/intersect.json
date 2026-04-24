@@ -1,0 +1,17 @@
+{
+  "english": "intersect",
+  "japanese": "共通部分",
+  "description": "INTERSECTはSQLで2つのクエリ結果の共通部分、つまり両方に現れる行のみを取得する集合演算子です。UNIONやEXCEPTと同じく、両側のSELECTでカラム数と型を合わせる必要があります。",
+  "example_natural": {
+    "english": "Find users who bought both product A and product B.",
+    "japanese": "商品Aと商品Bの両方を買ったユーザーを見つけてください。"
+  },
+  "example_programming": {
+    "language": "SQL",
+    "body": "SELECT user_id FROM orders WHERE product_id = 1\nINTERSECT\nSELECT user_id FROM orders WHERE product_id = 2;"
+  },
+  "themes": [
+    "sql_joins"
+  ],
+  "difficulty": 6
+}

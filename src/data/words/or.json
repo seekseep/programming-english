@@ -1,0 +1,17 @@
+{
+  "english": "or",
+  "japanese": "または",
+  "description": "「または」を意味する論理演算子。プログラミングでは2つの条件のうちどちらかが真なら全体が真になる。SQLのWHERE句で複数条件を組み合わせるときに使う。",
+  "example_natural": {
+    "english": "Would you like tea or coffee?",
+    "japanese": "お茶とコーヒー、どちらがよいですか？"
+  },
+  "example_programming": {
+    "language": "SQL",
+    "body": "SELECT *\nFROM users\nWHERE city = 'Tokyo' OR city = 'Osaka';"
+  },
+  "themes": [
+    "operators"
+  ],
+  "difficulty": 1
+}

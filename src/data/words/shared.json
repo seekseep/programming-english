@@ -1,0 +1,17 @@
+{
+  "english": "shared",
+  "japanese": "共有",
+  "description": "sharedはクラスの全インスタンスで共有されるメンバーを指定するVB.NETのキーワードです。他の多くの言語のstaticに相当し、インスタンスを生成せずにクラス名から直接アクセスできます。",
+  "example_natural": {
+    "english": "A shared field is common to all instances of the class.",
+    "japanese": "shared なフィールドはクラスの全インスタンスで共通です。"
+  },
+  "example_programming": {
+    "language": "Visual Basic",
+    "body": "Public Class Counter\n    Public Shared Total As Integer = 0\n    Public Shared Sub Increment()\n        Total = Total + 1\n    End Sub\nEnd Class"
+  },
+  "themes": [
+    "scope"
+  ],
+  "difficulty": 8
+}

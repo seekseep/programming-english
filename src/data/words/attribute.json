@@ -1,0 +1,18 @@
+{
+  "english": "attribute",
+  "japanese": "属性",
+  "description": "attribute はHTML要素に付与される属性のことです。id や class、href など、要素の性質や挙動を決める情報を保持します。JavaScript では getAttribute / setAttribute を使って取得・変更できます。",
+  "example_natural": {
+    "english": "Set the href attribute of the link to the new URL.",
+    "japanese": "リンクの href 属性を新しい URL に設定してください。"
+  },
+  "example_programming": {
+    "language": "JavaScript",
+    "body": "const link = document.querySelector('a');\nlink.setAttribute('href', 'https://example.com');\nconsole.log(link.getAttribute('href'));"
+  },
+  "themes": [
+    "database_concepts",
+    "web_dom"
+  ],
+  "difficulty": 5
+}

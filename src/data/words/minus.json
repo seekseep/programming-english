@@ -1,0 +1,17 @@
+{
+  "english": "minus",
+  "japanese": "引く、マイナス",
+  "description": "数値を引く演算や、負の数を表す語。プログラミングでは記号「-」で表され、四則演算のひとつとして使われる。",
+  "example_natural": {
+    "english": "Ten minus three equals seven.",
+    "japanese": "10引く3は7です。"
+  },
+  "example_programming": {
+    "language": "JavaScript",
+    "body": "// minus\nconst result = 10 - 3;\nconsole.log(result);"
+  },
+  "themes": [
+    "operators"
+  ],
+  "difficulty": 1
+}

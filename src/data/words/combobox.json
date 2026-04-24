@@ -1,0 +1,17 @@
+{
+  "english": "combobox",
+  "japanese": "コンボボックス",
+  "description": "combobox はドロップダウンのリストとテキスト入力欄を組み合わせた UI 部品です。VB フォームでは AddItem で項目を追加し、Text や ListIndex で選択値を取得します。候補から選ばせつつ自由入力も許容したい場面に向きます。",
+  "example_natural": {
+    "english": "Select your country from the combobox.",
+    "japanese": "コンボボックスから国を選択してください。"
+  },
+  "example_programming": {
+    "language": "Visual Basic",
+    "body": "ComboBox1.AddItem \"Japan\"\nComboBox1.AddItem \"USA\"\nComboBox1.ListIndex = 0"
+  },
+  "themes": [
+    "vb_forms_controls"
+  ],
+  "difficulty": 7
+}

@@ -1,0 +1,17 @@
+{
+  "english": "index_of",
+  "japanese": "位置を返す",
+  "description": "文字列や配列の中で、指定した値が最初に現れる位置を返す操作です。見つからなかった場合は -1 などの特別な値が返ります。検索した後に、その位置を使って部分文字列を取り出すときなどに使われます。",
+  "example_natural": {
+    "english": "Use index_of to find the position of the comma in the text.",
+    "japanese": "index_of を使って、テキスト中のカンマの位置を見つけてください。"
+  },
+  "example_programming": {
+    "language": "JavaScript",
+    "body": "const email = \"alice@example.com\";\nconst at = email.indexOf(\"@\");\nconst domain = email.substring(at + 1);\nconsole.log(domain);"
+  },
+  "themes": [
+    "strings_and_text"
+  ],
+  "difficulty": 4
+}

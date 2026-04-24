@@ -1,0 +1,17 @@
+{
+  "english": "static",
+  "japanese": "静的",
+  "description": "staticはインスタンスに属さず、クラスそのものに属するメンバーを表します。JavaScriptではclass内でstaticキーワードを付けて定義し、クラス名から直接呼び出せます。VBAではStatic変数は呼び出しをまたいで値を保持します。",
+  "example_natural": {
+    "english": "Call the static method directly on the class.",
+    "japanese": "クラスに対して直接、静的メソッドを呼び出します。"
+  },
+  "example_programming": {
+    "language": "JavaScript",
+    "body": "class MathUtils {\n  static square(n) {\n    return n * n;\n  }\n}\n\nconsole.log(MathUtils.square(5));"
+  },
+  "themes": [
+    "scope"
+  ],
+  "difficulty": 8
+}

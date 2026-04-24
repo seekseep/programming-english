@@ -1,0 +1,17 @@
+{
+  "english": "style",
+  "japanese": "スタイル",
+  "description": "style は要素の見た目を決める CSS プロパティの集まりで、DOM 要素の style プロパティから個別に設定できます。色や表示・非表示の切り替えなどを JavaScript から動的に変更する場面でよく使います。",
+  "example_natural": {
+    "english": "Change the style of the message element to make it red.",
+    "japanese": "メッセージ要素のスタイルを変えて赤色にしてください。"
+  },
+  "example_programming": {
+    "language": "JavaScript",
+    "body": "const message = document.querySelector('#message');\nmessage.style.color = 'red';\nmessage.style.fontWeight = 'bold';"
+  },
+  "themes": [
+    "web_dom"
+  ],
+  "difficulty": 5
+}

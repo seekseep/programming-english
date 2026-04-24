@@ -1,0 +1,17 @@
+{
+  "english": "anonymous",
+  "japanese": "無名の",
+  "description": "anonymous は「無名の」という意味で、プログラミングでは名前を持たない関数（無名関数）を指します。一度きりしか使わない処理をコールバックや即時実行で渡すときに使われます。",
+  "example_natural": {
+    "english": "The donor wished to remain anonymous.",
+    "japanese": "その寄付者は匿名のままでいたいと望んだ。"
+  },
+  "example_programming": {
+    "language": "JavaScript",
+    "body": "// anonymous\nconst doubled = [1, 2, 3].map(function (n) {\n  return n * 2;\n});\nconsole.log(doubled);"
+  },
+  "themes": [
+    "functions_and_procedures"
+  ],
+  "difficulty": 9
+}

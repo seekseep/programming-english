@@ -1,0 +1,17 @@
+{
+  "english": "json",
+  "japanese": "JSON",
+  "description": "JSONはJavaScript Object Notationの略で、キーと値のペアで構造化データを表すテキスト形式です。Web APIのリクエストやレスポンスの本文形式として広く使われます。",
+  "example_natural": {
+    "english": "Parse the response body as JSON.",
+    "japanese": "レスポンス本文をJSONとして解析してください。"
+  },
+  "example_programming": {
+    "language": "JavaScript",
+    "body": "const res = await fetch('/api/user/1');\nconst user = await res.json();\nconsole.log(user.name);"
+  },
+  "themes": [
+    "http_and_api"
+  ],
+  "difficulty": 6
+}

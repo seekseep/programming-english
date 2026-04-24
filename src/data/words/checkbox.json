@@ -1,0 +1,17 @@
+{
+  "english": "checkbox",
+  "japanese": "チェックボックス",
+  "description": "checkbox はオン・オフの 2 つの状態をユーザーに選ばせる UI 部品です。VB フォームでは CheckBox コントロールを配置し、Value や Checked プロパティで状態を取得・設定します。複数項目から独立に選択させたい場面で使います。",
+  "example_natural": {
+    "english": "Check the agreement checkbox before clicking Submit.",
+    "japanese": "送信する前に同意チェックボックスをオンにしてください。"
+  },
+  "example_programming": {
+    "language": "Visual Basic",
+    "body": "If CheckBox1.Value = True Then\n    MsgBox \"Agreed\"\nEnd If"
+  },
+  "themes": [
+    "vb_forms_controls"
+  ],
+  "difficulty": 7
+}

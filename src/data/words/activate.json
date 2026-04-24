@@ -1,0 +1,17 @@
+{
+  "english": "activate",
+  "japanese": "アクティブにする",
+  "description": "activate は対象を操作の中心にする、アクティブ状態にする操作です。Excel VBA では Worksheets や Range に対して Activate メソッドを呼び出して、そのシートやセルを選択状態にします。以降の省略された Range 操作はアクティブシートに対して実行されます。",
+  "example_natural": {
+    "english": "Activate the summary sheet before writing the results.",
+    "japanese": "結果を書き込む前にサマリーシートをアクティブにしてください。"
+  },
+  "example_programming": {
+    "language": "Visual Basic",
+    "body": "Worksheets(\"Summary\").Activate\nRange(\"A1\").Value = \"Report\""
+  },
+  "themes": [
+    "excel_vba_basics"
+  ],
+  "difficulty": 7
+}

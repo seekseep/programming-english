@@ -1,0 +1,17 @@
+{
+  "english": "lower",
+  "japanese": "小文字に変換する",
+  "description": "文字列をすべて小文字に変換する操作です。大文字小文字を無視して比較や検索を行いたいときによく使います。",
+  "example_natural": {
+    "english": "Convert the user name to lower case before comparing.",
+    "japanese": "比較する前にユーザー名を小文字に変換してください。"
+  },
+  "example_programming": {
+    "language": "SQL",
+    "body": "SELECT id, LOWER(email) AS email_lower\nFROM users\nWHERE LOWER(email) LIKE '%@example.com';"
+  },
+  "themes": [
+    "strings_and_text"
+  ],
+  "difficulty": 3
+}

@@ -1,0 +1,17 @@
+{
+  "english": "decrement",
+  "japanese": "減らすこと",
+  "description": "decrement は「値を 1 減らす」操作を表します。多くの言語では `--` 演算子として実装され、ループのカウンタを逆方向に進めるときなどに使われます。",
+  "example_natural": {
+    "english": "We observed a small decrement in temperature overnight.",
+    "japanese": "私たちは一晩で気温のわずかな低下を観測した。"
+  },
+  "example_programming": {
+    "language": "JavaScript",
+    "body": "// decrement\nlet lives = 3;\nwhile (lives > 0) {\n  console.log(`remaining: ${lives}`);\n  lives--;\n}"
+  },
+  "themes": [
+    "operators"
+  ],
+  "difficulty": 9
+}

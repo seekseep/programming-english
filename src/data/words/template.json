@@ -1,0 +1,17 @@
+{
+  "english": "template",
+  "japanese": "テンプレート",
+  "description": "template は「ひな形」を意味し、JavaScript ではバッククォートで囲むテンプレートリテラルとして知られます。`${式}` を使って文字列に値を埋め込めるため、連結より読みやすく書けます。",
+  "example_natural": {
+    "english": "I used a resume template to save time.",
+    "japanese": "私は時間を節約するために履歴書のテンプレートを使った。"
+  },
+  "example_programming": {
+    "language": "JavaScript",
+    "body": "// template\nconst name = \"Alice\";\nconst age = 30;\nconsole.log(`Hello, ${name}. You are ${age} years old.`);"
+  },
+  "themes": [
+    "strings_and_text"
+  ],
+  "difficulty": 9
+}

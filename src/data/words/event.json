@@ -1,0 +1,17 @@
+{
+  "english": "event",
+  "japanese": "イベント",
+  "description": "event はユーザーの操作やブラウザの状態変化をきっかけに発生する出来事です。click や change などの種類があり、addEventListener で受け取ったハンドラーの引数として event オブジェクトが渡されます。",
+  "example_natural": {
+    "english": "Prevent the default behavior of the event when the form is submitted.",
+    "japanese": "フォームが送信されたら、イベントのデフォルトの動作を止めてください。"
+  },
+  "example_programming": {
+    "language": "JavaScript",
+    "body": "const form = document.querySelector('form');\nform.addEventListener('submit', (event) => {\n  event.preventDefault();\n  console.log('submitted');\n});"
+  },
+  "themes": [
+    "events"
+  ],
+  "difficulty": 5
+}

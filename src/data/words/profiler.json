@@ -1,0 +1,17 @@
+{
+  "english": "profiler",
+  "japanese": "プロファイラ",
+  "description": "profilerはプログラムの実行時間やメモリ使用量を計測し、ボトルネックを特定するためのツールです。関数ごとの所要時間を視覚化し、最適化すべき箇所を絞り込む助けになります。ChromeのDevToolsやNode.jsの--prof などが代表例です。",
+  "example_natural": {
+    "english": "The profiler shows that parsing takes most of the execution time.",
+    "japanese": "プロファイラによると、実行時間の大部分はパース処理で占められています。"
+  },
+  "example_programming": {
+    "language": "JavaScript",
+    "body": "// use the built-in profiler\nconsole.profile('render');\nrenderPage();\nconsole.profileEnd('render');"
+  },
+  "themes": [
+    "debugging_and_testing"
+  ],
+  "difficulty": 10
+}

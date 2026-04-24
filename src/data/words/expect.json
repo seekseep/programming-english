@@ -1,0 +1,17 @@
+{
+  "english": "expect",
+  "japanese": "期待",
+  "description": "expectはテストフレームワークで期待値を宣言するための関数名として広く使われます。expect(value).toBe(expected)のようにマッチャーと組み合わせて検証を記述します。Jestなどで日常的に用いられる中心的なAPIです。",
+  "example_natural": {
+    "english": "We expect the function to return the total number of items.",
+    "japanese": "その関数が項目の総数を返すことを期待します。"
+  },
+  "example_programming": {
+    "language": "JavaScript",
+    "body": "test('multiplies numbers', () => {\n  expect(multiply(2, 3)).toBe(6);\n  expect(multiply(0, 5)).toBe(0);\n});"
+  },
+  "themes": [
+    "debugging_and_testing"
+  ],
+  "difficulty": 10
+}

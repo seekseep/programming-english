@@ -1,0 +1,17 @@
+{
+  "english": "text",
+  "japanese": "テキスト",
+  "description": "人が読める文字の並びのことです。プログラミングでは、ユーザーに見せるメッセージや入力された内容を text として扱います。",
+  "example_natural": {
+    "english": "Change the text of the button to 'Send'.",
+    "japanese": "ボタンの文字列を 'Send' に変更してください。"
+  },
+  "example_programming": {
+    "language": "JavaScript",
+    "body": "const button = document.getElementById(\"submitButton\");\nbutton.textContent = \"Send\";"
+  },
+  "themes": [
+    "strings_and_text"
+  ],
+  "difficulty": 2
+}

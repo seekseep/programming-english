@@ -1,0 +1,17 @@
+{
+  "english": "submit",
+  "japanese": "送信",
+  "description": "submit はフォームを送信する操作やイベントを指します。form 要素に submit イベントを登録しておくと、ユーザーが送信ボタンを押したときに検証や非同期送信などの処理を挿入できます。",
+  "example_natural": {
+    "english": "Validate the inputs before the form is submitted.",
+    "japanese": "フォームが送信される前に入力内容を検証してください。"
+  },
+  "example_programming": {
+    "language": "JavaScript",
+    "body": "const form = document.querySelector('#signup');\nform.addEventListener('submit', (event) => {\n  if (!form.checkValidity()) {\n    event.preventDefault();\n  }\n});"
+  },
+  "themes": [
+    "events"
+  ],
+  "difficulty": 5
+}

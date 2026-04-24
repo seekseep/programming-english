@@ -1,0 +1,17 @@
+{
+  "english": "handler",
+  "japanese": "ハンドラー",
+  "description": "handler はイベントが発生したときに呼び出される関数のことです。addEventListener に渡すコールバックがハンドラーで、受け取った event 情報を元にページを更新したり、データを送信したりします。",
+  "example_natural": {
+    "english": "Register a click handler for the button.",
+    "japanese": "ボタンにクリック用のハンドラーを登録してください。"
+  },
+  "example_programming": {
+    "language": "JavaScript",
+    "body": "// handler\nfunction handleClick(event) {\n  console.log('clicked:', event.target.id);\n}\ndocument.querySelector('#save').addEventListener('click', handleClick);"
+  },
+  "themes": [
+    "events"
+  ],
+  "difficulty": 5
+}

@@ -1,0 +1,18 @@
+{
+  "english": "tag",
+  "japanese": "タグ",
+  "description": "tag は HTML で要素の種類を表す目印で、div や p、a などの名前が付けられています。JavaScript からは tagName プロパティや getElementsByTagName で要素のタグ名を取得・検索できます。",
+  "example_natural": {
+    "english": "Get all elements with the p tag from the document.",
+    "japanese": "ドキュメントから p タグの要素をすべて取得してください。"
+  },
+  "example_programming": {
+    "language": "JavaScript",
+    "body": "// tag\nconst paragraphs = document.querySelectorAll('p');\nparagraphs.forEach((p) => {\n  console.log(p.textContent);\n});"
+  },
+  "themes": [
+    "comments_and_docs",
+    "web_dom"
+  ],
+  "difficulty": 5
+}

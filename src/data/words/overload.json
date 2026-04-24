@@ -1,0 +1,17 @@
+{
+  "english": "overload",
+  "japanese": "オーバーロード",
+  "description": "overload（オーバーロード）は、同じ名前の関数を引数の型や数を変えて複数定義し、呼び出し側に応じて使い分ける仕組みです。JavaScript には直接の文法がないため、引数を調べて処理を分岐する形で実装します。",
+  "example_natural": {
+    "english": "Do not overload the shelf with heavy books.",
+    "japanese": "重い本で棚に過剰な負担をかけないで。"
+  },
+  "example_programming": {
+    "language": "JavaScript",
+    "body": "// overload\nfunction area(a, b) {\n  if (b === undefined) return a * a;\n  return a * b;\n}\nconsole.log(area(5), area(3, 4));"
+  },
+  "themes": [
+    "functions_and_procedures"
+  ],
+  "difficulty": 9
+}

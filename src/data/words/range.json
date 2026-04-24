@@ -1,0 +1,17 @@
+{
+  "english": "range",
+  "japanese": "セル範囲",
+  "description": "range は Excel のセル 1 つまたは複数のまとまりを表すオブジェクトです。VBA では Range(\"A1:B10\") や Range(\"A1\") のように文字列でセル範囲を指定し、Value、Font、Interior などのプロパティでまとめて操作できます。",
+  "example_natural": {
+    "english": "Color the header range in light blue.",
+    "japanese": "ヘッダーのセル範囲を水色で塗りつぶしてください。"
+  },
+  "example_programming": {
+    "language": "Visual Basic",
+    "body": "Range(\"A1:D1\").Interior.Color = RGB(173, 216, 230)\nRange(\"A1:D1\").Font.Bold = True"
+  },
+  "themes": [
+    "excel_vba_basics"
+  ],
+  "difficulty": 7
+}

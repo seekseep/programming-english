@@ -1,0 +1,17 @@
+{
+  "english": "reverse",
+  "japanese": "逆順にする",
+  "description": "文字列や配列の並び順を反対にする操作です。回文の判定、新しい順での並び替えなどで使われます。元のデータを書き換える場合と、新しい値を返す場合があるので注意が必要です。",
+  "example_natural": {
+    "english": "Reverse the list so the newest entry comes first.",
+    "japanese": "最新の項目が先頭に来るように、リストを逆順にしてください。"
+  },
+  "example_programming": {
+    "language": "JavaScript",
+    "body": "const entries = [\"first\", \"second\", \"third\"];\nconst reversed = [...entries].reverse();\nconsole.log(reversed);"
+  },
+  "themes": [
+    "strings_and_text"
+  ],
+  "difficulty": 4
+}

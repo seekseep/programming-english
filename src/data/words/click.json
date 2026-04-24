@@ -1,0 +1,17 @@
+{
+  "english": "click",
+  "japanese": "クリック",
+  "description": "click はユーザーが要素をマウスでクリックしたり、タップしたときに発火するイベントです。ボタンやリンクへの操作を検知して処理を実行する、最も基本的な DOM イベントの一つです。",
+  "example_natural": {
+    "english": "Show a message when the user clicks the save button.",
+    "japanese": "ユーザーが保存ボタンをクリックしたらメッセージを表示してください。"
+  },
+  "example_programming": {
+    "language": "JavaScript",
+    "body": "const button = document.querySelector('#save');\nbutton.addEventListener('click', () => {\n  console.log('saved!');\n});"
+  },
+  "themes": [
+    "events"
+  ],
+  "difficulty": 5
+}

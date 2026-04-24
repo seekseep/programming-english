@@ -1,0 +1,17 @@
+{
+  "english": "entity",
+  "japanese": "エンティティ",
+  "description": "entityはデータモデリングにおいて、ユーザーや商品など現実世界の対象をあらわす概念上の単位です。関係データベースではテーブルとして実装され、属性の集合をもちます。ER図ではエンティティとその関係を設計段階で整理します。",
+  "example_natural": {
+    "english": "Each entity in the model is mapped to a database table.",
+    "japanese": "モデル内のそれぞれのエンティティはデータベースのテーブルに対応します。"
+  },
+  "example_programming": {
+    "language": "SQL",
+    "body": "-- entity: customer\nCREATE TABLE customers (\n  id INTEGER PRIMARY KEY,\n  name VARCHAR(100) NOT NULL,\n  email VARCHAR(255) UNIQUE\n);"
+  },
+  "themes": [
+    "database_concepts"
+  ],
+  "difficulty": 10
+}

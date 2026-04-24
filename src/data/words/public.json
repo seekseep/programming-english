@@ -1,0 +1,17 @@
+{
+  "english": "public",
+  "japanese": "パブリック",
+  "description": "publicはどこからでもアクセスできるスコープを指定するキーワードです。VBAではPublicで宣言した変数や関数は他のモジュールからも参照可能です。クラスの外部インターフェースを定義するのに使います。",
+  "example_natural": {
+    "english": "Public methods form the API of a class.",
+    "japanese": "publicなメソッドはクラスのAPIを構成します。"
+  },
+  "example_programming": {
+    "language": "Visual Basic",
+    "body": "Public Function AddNumbers(ByVal a As Integer, ByVal b As Integer) As Integer\n    AddNumbers = a + b\nEnd Function"
+  },
+  "themes": [
+    "scope"
+  ],
+  "difficulty": 8
+}

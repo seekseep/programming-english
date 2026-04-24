@@ -1,0 +1,17 @@
+{
+  "english": "id",
+  "japanese": "ID（識別子）",
+  "description": "id は HTML 要素を一意に識別するための属性です。ページ内で重複しない文字列を付けておくと、JavaScript から document.getElementById や querySelector で素早く要素を取得できます。",
+  "example_natural": {
+    "english": "Get the element with the id 'username' and focus it.",
+    "japanese": "id が 'username' の要素を取得してフォーカスしてください。"
+  },
+  "example_programming": {
+    "language": "JavaScript",
+    "body": "const input = document.getElementById('username');\ninput.focus();"
+  },
+  "themes": [
+    "web_dom"
+  ],
+  "difficulty": 5
+}

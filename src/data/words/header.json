@@ -1,0 +1,17 @@
+{
+  "english": "header",
+  "japanese": "ヘッダー",
+  "description": "HTTPヘッダーはリクエストやレスポンスに付随するメタ情報です。Content-Typeで本文の形式、Authorizationで認証情報、Acceptで受け入れ可能な形式などを指定します。",
+  "example_natural": {
+    "english": "Add an Authorization header to the request.",
+    "japanese": "リクエストに認証ヘッダーを追加してください。"
+  },
+  "example_programming": {
+    "language": "JavaScript",
+    "body": "const res = await fetch('/api/me', {\n  headers: {\n    'Authorization': 'Bearer ' + token,\n    'Accept': 'application/json'\n  }\n});"
+  },
+  "themes": [
+    "http_and_api"
+  ],
+  "difficulty": 6
+}

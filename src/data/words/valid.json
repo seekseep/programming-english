@@ -1,0 +1,17 @@
+{
+  "english": "valid",
+  "japanese": "妥当な",
+  "description": "入力や状態がルールを満たしていて正しく扱えることを表します。入力チェックの結果を Boolean で表現するときによく使われます。",
+  "example_natural": {
+    "english": "The password must be valid before you submit the form.",
+    "japanese": "フォームを送信する前にパスワードが妥当である必要があります。"
+  },
+  "example_programming": {
+    "language": "Visual Basic",
+    "body": "Function IsValid(name As String) As Boolean\n    IsValid = (Len(Trim(name)) > 0)\nEnd Function\n\nDebug.Print IsValid(\"Taro\")"
+  },
+  "themes": [
+    "boolean_logic"
+  ],
+  "difficulty": 3
+}

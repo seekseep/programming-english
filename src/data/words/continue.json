@@ -1,0 +1,17 @@
+{
+  "english": "continue",
+  "japanese": "次の繰り返しへ進む",
+  "description": "ループの現在の繰り返しをスキップして、次の繰り返しに進む命令です。プログラミングでは、特定の条件のときに処理を飛ばしたいときに continue を使います。",
+  "example_natural": {
+    "english": "Use continue to skip even numbers in the loop.",
+    "japanese": "ループの中で偶数を飛ばすには continue を使います。"
+  },
+  "example_programming": {
+    "language": "JavaScript",
+    "body": "for (let i = 0; i < 6; i++) {\n  if (i % 2 === 0) {\n    continue;\n  }\n  console.log(i);\n}"
+  },
+  "themes": [
+    "control_flow"
+  ],
+  "difficulty": 2
+}

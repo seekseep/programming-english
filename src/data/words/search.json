@@ -1,0 +1,17 @@
+{
+  "english": "search",
+  "japanese": "検索する",
+  "description": "文字列やデータの中から特定のパターンを探す操作を指します。見つかった位置やヒットした行を返すことで、目的の情報にたどり着きます。",
+  "example_natural": {
+    "english": "Search for rows whose title contains the keyword.",
+    "japanese": "タイトルにキーワードを含む行を検索してください。"
+  },
+  "example_programming": {
+    "language": "SQL",
+    "body": "-- search\nSELECT id, title\nFROM articles\nWHERE title LIKE '%sql%'\nORDER BY id;"
+  },
+  "themes": [
+    "strings_and_text"
+  ],
+  "difficulty": 3
+}

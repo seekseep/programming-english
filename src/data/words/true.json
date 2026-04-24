@@ -1,0 +1,17 @@
+{
+  "english": "true",
+  "japanese": "真",
+  "description": "真偽値のうち「真」を表す値。プログラミングでは条件が成り立つことを示し、falseの反対の意味を持つ基本的な値。",
+  "example_natural": {
+    "english": "His answer is true.",
+    "japanese": "彼の答えは正しいです。"
+  },
+  "example_programming": {
+    "language": "JavaScript",
+    "body": "const isReady = true;\nconsole.log(isReady);"
+  },
+  "themes": [
+    "boolean_logic"
+  ],
+  "difficulty": 1
+}

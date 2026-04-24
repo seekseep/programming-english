@@ -1,0 +1,17 @@
+{
+  "english": "label",
+  "japanese": "ラベル",
+  "description": "label はフォーム上に説明文やタイトルを表示するための読み取り専用コントロールです。入力欄の隣に配置してフィールド名を示したり、処理結果を表示したりするのに使います。Caption プロパティで表示テキストを変更します。",
+  "example_natural": {
+    "english": "Update the status label to show the current progress.",
+    "japanese": "現在の進捗を表示するように状態ラベルを更新してください。"
+  },
+  "example_programming": {
+    "language": "Visual Basic",
+    "body": "Label1.Caption = \"Processing...\"\nDoEvents"
+  },
+  "themes": [
+    "vb_forms_controls"
+  ],
+  "difficulty": 7
+}

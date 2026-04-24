@@ -1,0 +1,17 @@
+{
+  "english": "invoke",
+  "japanese": "発動する",
+  "description": "関数やメソッドを呼び出して実行することを表します。特に、オブジェクト越しにメソッドを実行したり、UI スレッドへ処理を依頼したりする文脈で使われる言葉です。",
+  "example_natural": {
+    "english": "Invoke the update method to refresh the display.",
+    "japanese": "表示を更新するために、更新メソッドを呼び出してください。"
+  },
+  "example_programming": {
+    "language": "Visual Basic",
+    "body": "Sub UpdateLabel(text As String)\n    Label1.Text = text\nEnd Sub\n\nMe.Invoke(New Action(Of String)(AddressOf UpdateLabel), \"done\")"
+  },
+  "themes": [
+    "functions_and_procedures"
+  ],
+  "difficulty": 4
+}

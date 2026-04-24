@@ -1,0 +1,17 @@
+{
+  "english": "parameter",
+  "japanese": "仮引数",
+  "description": "関数やメソッドを定義するときに受け取る値の名前のことです。呼び出しで渡される引数（argument）は、この parameter に代入されて使われます。",
+  "example_natural": {
+    "english": "This function takes a name as a parameter.",
+    "japanese": "この関数は名前を仮引数として受け取ります。"
+  },
+  "example_programming": {
+    "language": "Visual Basic",
+    "body": "Sub SayHello(parameter As String)\n    MsgBox \"Hello, \" & parameter\nEnd Sub\n\nCall SayHello(\"Hanako\")"
+  },
+  "themes": [
+    "functions_and_procedures"
+  ],
+  "difficulty": 2
+}

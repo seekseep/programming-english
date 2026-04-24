@@ -1,0 +1,17 @@
+{
+  "english": "array",
+  "japanese": "配列",
+  "description": "複数の値をまとめて1つの変数で扱うためのデータ構造。プログラミングでは同じ型の値を順番に並べて保持し、インデックス(添字)で各要素にアクセスする。",
+  "example_natural": {
+    "english": "The array has five numbers.",
+    "japanese": "その配列には5つの数値が入っています。"
+  },
+  "example_programming": {
+    "language": "Visual Basic",
+    "body": "' array\nDim numbers(2) As Integer\nnumbers(0) = 10\nnumbers(1) = 20\nnumbers(2) = 30"
+  },
+  "themes": [
+    "collections"
+  ],
+  "difficulty": 1
+}

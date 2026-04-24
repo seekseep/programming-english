@@ -1,0 +1,17 @@
+{
+  "english": "float",
+  "japanese": "浮動小数点数",
+  "description": "小数点を含む数を扱うための数値型の一つです。プログラミングや SQL では、身長や体重のような小数を float 型で保存します。",
+  "example_natural": {
+    "english": "The height column uses the float type.",
+    "japanese": "身長の列は float 型を使っています。"
+  },
+  "example_programming": {
+    "language": "SQL",
+    "body": "CREATE TABLE members (\n  id INT,\n  height FLOAT\n);"
+  },
+  "themes": [
+    "variables_and_types"
+  ],
+  "difficulty": 2
+}

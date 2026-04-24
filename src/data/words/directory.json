@@ -1,0 +1,17 @@
+{
+  "english": "directory",
+  "japanese": "ディレクトリ",
+  "description": "directory はファイルを入れて整理するためのフォルダのことです。VBA の Dir 関数はディレクトリ内のファイル名を順に取得でき、ファイル一覧を列挙する場面で使われます。MkDir でディレクトリを作成できます。",
+  "example_natural": {
+    "english": "Create a backup directory before copying the files.",
+    "japanese": "ファイルをコピーする前にバックアップ用のディレクトリを作成してください。"
+  },
+  "example_programming": {
+    "language": "Visual Basic",
+    "body": "' directory\nDim fileName As String\nfileName = Dir(\"C:\\reports\\*.xlsx\")\nDo While fileName <> \"\"\n    Debug.Print fileName\n    fileName = Dir\nLoop"
+  },
+  "themes": [
+    "file_io"
+  ],
+  "difficulty": 7
+}

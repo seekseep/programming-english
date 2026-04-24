@@ -1,0 +1,18 @@
+{
+  "english": "empty",
+  "japanese": "空の",
+  "description": "何も入っていない状態を表す言葉です。プログラミングでは、配列や文字列が empty かどうかを調べて処理を分けることがよくあります。",
+  "example_natural": {
+    "english": "Check if the list is empty before using it.",
+    "japanese": "使う前にリストが空かどうか確認してください。"
+  },
+  "example_programming": {
+    "language": "JavaScript",
+    "body": "const items = [];\nconst empty = items.length === 0;\nconsole.log(empty);"
+  },
+  "themes": [
+    "boolean_logic",
+    "collections"
+  ],
+  "difficulty": 2
+}

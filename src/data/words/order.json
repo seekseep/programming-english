@@ -1,0 +1,17 @@
+{
+  "english": "order",
+  "japanese": "並べ替え",
+  "description": "SQLのORDER BYは結果を指定カラムの値で並べ替える句です。ASCで昇順、DESCで降順を指定し、複数カラムを並べて優先順位付きの並べ替えもできます。",
+  "example_natural": {
+    "english": "Order the users by name and then by age.",
+    "japanese": "ユーザーを名前、次に年齢の順で並べ替えてください。"
+  },
+  "example_programming": {
+    "language": "SQL",
+    "body": "SELECT id, name, age\nFROM users\nORDER BY name ASC, age DESC;"
+  },
+  "themes": [
+    "sql_aggregation"
+  ],
+  "difficulty": 6
+}

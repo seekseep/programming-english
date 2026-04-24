@@ -1,0 +1,17 @@
+{
+  "english": "trim",
+  "japanese": "前後の空白を取り除く",
+  "description": "文字列の先頭と末尾にある空白や改行を取り除く操作を指します。ユーザー入力の整形や比較の前処理としてよく使われます。",
+  "example_natural": {
+    "english": "Trim the input before saving it.",
+    "japanese": "保存する前に入力の前後の空白を取り除いてください。"
+  },
+  "example_programming": {
+    "language": "JavaScript",
+    "body": "const raw = \"   hello world   \";\nconst clean = raw.trim();\nconsole.log(clean);\nconsole.log(clean.length);"
+  },
+  "themes": [
+    "strings_and_text"
+  ],
+  "difficulty": 3
+}

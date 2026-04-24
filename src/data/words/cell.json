@@ -1,0 +1,17 @@
+{
+  "english": "cell",
+  "japanese": "セル",
+  "description": "cell は Excel のワークシート上の 1 つのマス目を指します。VBA では Cells(row, column) や Range(\"A1\") で参照し、Value プロパティで値を読み書きします。セルは行と列の交差位置で特定されます。",
+  "example_natural": {
+    "english": "Write the total into the cell A1 of the summary sheet.",
+    "japanese": "サマリーシートの A1 セルに合計値を書き込んでください。"
+  },
+  "example_programming": {
+    "language": "Visual Basic",
+    "body": "Cells(1, 1).Value = \"Name\"\nCells(2, 1).Value = \"Alice\""
+  },
+  "themes": [
+    "excel_vba_basics"
+  ],
+  "difficulty": 7
+}

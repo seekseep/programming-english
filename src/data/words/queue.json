@@ -1,0 +1,17 @@
+{
+  "english": "queue",
+  "japanese": "キュー",
+  "description": "キューは先入れ先出し（FIFO）のデータ構造で、要素を末尾に追加し先頭から取り出します。JavaScriptではタスクキューやマイクロタスクキューがイベントループの中で非同期処理の実行順を管理します。",
+  "example_natural": {
+    "english": "Add the job to the queue and process it later.",
+    "japanese": "ジョブをキューに追加し、後で処理してください。"
+  },
+  "example_programming": {
+    "language": "JavaScript",
+    "body": "const queue = [];\nqueue.push({ id: 1, url: '/api/a' });\nqueue.push({ id: 2, url: '/api/b' });\nconst next = queue.shift();"
+  },
+  "themes": [
+    "async_programming"
+  ],
+  "difficulty": 6
+}

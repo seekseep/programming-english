@@ -1,0 +1,17 @@
+{
+  "english": "argument",
+  "japanese": "引数",
+  "description": "関数やメソッドを呼び出すときに渡す値のこと。プログラミングでは、関数の動作に必要なデータを引数として受け渡します。",
+  "example_natural": {
+    "english": "Please pass the user name as an argument.",
+    "japanese": "ユーザー名を引数として渡してください。"
+  },
+  "example_programming": {
+    "language": "Visual Basic",
+    "body": "Sub Greet(argument As String)\n    MsgBox \"Hello, \" & argument\nEnd Sub\n\nCall Greet(\"Taro\")"
+  },
+  "themes": [
+    "functions_and_procedures"
+  ],
+  "difficulty": 2
+}

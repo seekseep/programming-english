@@ -1,0 +1,17 @@
+{
+  "english": "avg",
+  "japanese": "平均（SQL関数）",
+  "description": "AVGはSQLの集約関数で、指定した数値カラムの平均値を計算します。GROUP BYと組み合わせてグループごとの平均を求めたり、WHERE句で絞り込んだ範囲の平均を得たりします。",
+  "example_natural": {
+    "english": "Calculate the average order amount per customer.",
+    "japanese": "顧客ごとの注文金額の平均を計算してください。"
+  },
+  "example_programming": {
+    "language": "SQL",
+    "body": "SELECT customer_id, AVG(total) AS avg_total\nFROM orders\nGROUP BY customer_id\nORDER BY avg_total DESC;"
+  },
+  "themes": [
+    "sql_aggregation"
+  ],
+  "difficulty": 6
+}

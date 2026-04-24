@@ -1,0 +1,17 @@
+{
+  "english": "raise",
+  "japanese": "発生させる",
+  "description": "raiseは例外やエラーを意図的に発生させることを意味します。VBAではErr.Raiseメソッドでカスタムエラーを発生させ、呼び出し元でOn Error構文やTry/Catchで処理できます。",
+  "example_natural": {
+    "english": "Raise an error when the input is invalid.",
+    "japanese": "入力が不正なときはエラーを発生させてください。"
+  },
+  "example_programming": {
+    "language": "Visual Basic",
+    "body": "Public Sub CheckAge(ByVal age As Integer)\n    If age < 0 Then\n        Err.Raise 5, \"CheckAge\", \"age must be positive\"\n    End If\nEnd Sub"
+  },
+  "themes": [
+    "error_handling"
+  ],
+  "difficulty": 8
+}

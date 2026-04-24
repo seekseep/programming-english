@@ -1,0 +1,19 @@
+{
+  "english": "set",
+  "japanese": "設定する",
+  "description": "変数や列などに値を入れることです。SQL の UPDATE 文では、SET 句を使って新しい値を指定します。",
+  "example_natural": {
+    "english": "Please set the price of this product to 500.",
+    "japanese": "この商品の価格を 500 に設定してください。"
+  },
+  "example_programming": {
+    "language": "SQL",
+    "body": "UPDATE products\nSET price = 500\nWHERE id = 1;"
+  },
+  "themes": [
+    "collections",
+    "sql_query_basics",
+    "variables_and_types"
+  ],
+  "difficulty": 2
+}

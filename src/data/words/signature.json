@@ -1,0 +1,17 @@
+{
+  "english": "signature",
+  "japanese": "シグネチャ",
+  "description": "signature（シグネチャ）は関数名・引数の型や数・戻り値の型など、関数の「形」を示す情報です。オーバーロード時の区別や API 仕様の記述に使われます。",
+  "example_natural": {
+    "english": "Please put your signature at the bottom of the contract.",
+    "japanese": "契約書の末尾に署名をお願いします。"
+  },
+  "example_programming": {
+    "language": "JavaScript",
+    "body": "// signature\n/**\n * @param {number} a\n * @param {number} b\n * @returns {number}\n */\nfunction add(a, b) {\n  return a + b;\n}"
+  },
+  "themes": [
+    "functions_and_procedures"
+  ],
+  "difficulty": 9
+}

@@ -1,0 +1,18 @@
+{
+  "english": "alias",
+  "japanese": "別名",
+  "description": "列やテーブルに別名を付ける仕組みです。長い名前を短くしたり、集計結果にわかりやすい見出しを付けたりするときに使います。SQLでは AS キーワードで指定します。",
+  "example_natural": {
+    "english": "We gave the column a short alias for readability.",
+    "japanese": "読みやすさのために、その列に短い別名を付けました。"
+  },
+  "example_programming": {
+    "language": "SQL",
+    "body": "-- alias\nSELECT u.name AS user_name, COUNT(*) AS total\nFROM users AS u\nGROUP BY u.name;"
+  },
+  "themes": [
+    "modules_and_imports",
+    "sql_query_basics"
+  ],
+  "difficulty": 4
+}

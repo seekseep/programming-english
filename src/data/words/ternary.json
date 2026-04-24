@@ -1,0 +1,17 @@
+{
+  "english": "ternary",
+  "japanese": "三項の",
+  "description": "ternary は「三項の」という意味で、プログラミングでは `条件 ? 値1 : 値2` の形を取る三項演算子を指します。if 文を短い式で書きたいときに使われます。",
+  "example_natural": {
+    "english": "The star system has a ternary arrangement of three suns.",
+    "japanese": "その星系は三つの太陽からなる三重構造になっている。"
+  },
+  "example_programming": {
+    "language": "JavaScript",
+    "body": "// ternary\nconst score = 72;\nconst grade = score >= 60 ? \"pass\" : \"fail\";\nconsole.log(grade);"
+  },
+  "themes": [
+    "operators"
+  ],
+  "difficulty": 9
+}

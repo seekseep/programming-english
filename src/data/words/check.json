@@ -1,0 +1,17 @@
+{
+  "english": "check",
+  "japanese": "確認する",
+  "description": "値や状態が期待どおりかを確かめる操作を指します。条件分岐の前に入力値を確認したり、処理結果が正しいかを検査する場面で使われます。",
+  "example_natural": {
+    "english": "Check whether the number is positive before using it.",
+    "japanese": "使う前にその数が正かどうか確認してください。"
+  },
+  "example_programming": {
+    "language": "Visual Basic",
+    "body": "Function CheckPositive(value As Integer) As Boolean\n    CheckPositive = (value > 0)\nEnd Function\n\nDebug.Print CheckPositive(10)"
+  },
+  "themes": [
+    "boolean_logic"
+  ],
+  "difficulty": 3
+}

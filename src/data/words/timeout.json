@@ -1,0 +1,17 @@
+{
+  "english": "timeout",
+  "japanese": "タイムアウト",
+  "description": "タイムアウトは一定時間経過後に処理を実行したり中断したりする仕組みです。JavaScriptのsetTimeoutは指定ミリ秒後にコールバックを一度だけ実行し、通信の制限時間設定などにも使われます。",
+  "example_natural": {
+    "english": "Abort the request if it exceeds the timeout.",
+    "japanese": "リクエストがタイムアウトを超えたら中断してください。"
+  },
+  "example_programming": {
+    "language": "JavaScript",
+    "body": "const controller = new AbortController();\nsetTimeout(() => controller.abort(), 3000);\nconst res = await fetch('/api/slow', { signal: controller.signal });"
+  },
+  "themes": [
+    "async_programming"
+  ],
+  "difficulty": 6
+}

@@ -1,0 +1,17 @@
+{
+  "english": "race",
+  "japanese": "レース",
+  "description": "raceは複数の非同期処理を競わせ、最初に確定したものの結果を採用する考え方です。JavaScriptではPromise.raceがその典型で、タイムアウト付き処理を実装する際に重宝します。競合状態（race condition）という別の意味にも注意が必要です。",
+  "example_natural": {
+    "english": "We race the fetch against a timeout to avoid hanging forever.",
+    "japanese": "永久に待たないように、フェッチとタイムアウトをレースさせます。"
+  },
+  "example_programming": {
+    "language": "JavaScript",
+    "body": "const timeout = new Promise((_, reject) =>\n  setTimeout(() => reject(new Error('timeout')), 3000),\n);\nconst data = await Promise.race([fetch('/api'), timeout]);"
+  },
+  "themes": [
+    "async_programming"
+  ],
+  "difficulty": 10
+}

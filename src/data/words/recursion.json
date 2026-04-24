@@ -1,0 +1,17 @@
+{
+  "english": "recursion",
+  "japanese": "再帰",
+  "description": "recursion（再帰）は、関数が自分自身を呼び出しながら問題を小さな部分問題に分割して解く手法です。階乗、ツリー探索、クイックソートなどで使われ、終了条件（基底ケース）が欠かせません。",
+  "example_natural": {
+    "english": "The painting uses recursion, with smaller copies of itself inside.",
+    "japanese": "その絵画は内部に自身の縮小版を含む再帰的な構図を用いている。"
+  },
+  "example_programming": {
+    "language": "JavaScript",
+    "body": "// recursion\nfunction sum(n) {\n  if (n === 0) return 0;\n  return n + sum(n - 1);\n}\nconsole.log(sum(10));"
+  },
+  "themes": [
+    "functions_and_procedures"
+  ],
+  "difficulty": 9
+}

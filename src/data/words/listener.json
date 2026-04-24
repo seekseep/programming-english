@@ -1,0 +1,17 @@
+{
+  "english": "listener",
+  "japanese": "リスナー",
+  "description": "listener は特定のイベントを待ち受けて、発生したときに処理を実行する仕組みです。JavaScript では addEventListener で要素に登録し、不要になれば removeEventListener で解除します。",
+  "example_natural": {
+    "english": "Add a listener that runs when the window is resized.",
+    "japanese": "ウィンドウのサイズが変わったときに動くリスナーを追加してください。"
+  },
+  "example_programming": {
+    "language": "JavaScript",
+    "body": "window.addEventListener('resize', () => {\n  console.log('width:', window.innerWidth);\n});"
+  },
+  "themes": [
+    "events"
+  ],
+  "difficulty": 5
+}

@@ -1,0 +1,18 @@
+{
+  "english": "contains",
+  "japanese": "含む",
+  "description": "ある値が別の値に含まれているかを調べる操作です。文字列の部分一致や、配列に目的の要素があるかを確認するときによく使います。",
+  "example_natural": {
+    "english": "This sentence contains the word programming.",
+    "japanese": "この文には programming という単語が含まれています。"
+  },
+  "example_programming": {
+    "language": "JavaScript",
+    "body": "const tags = [\"js\", \"vb\", \"sql\"];\nfunction contains(list, target) {\n  return list.includes(target);\n}\nconsole.log(contains(tags, \"sql\"));"
+  },
+  "themes": [
+    "collections",
+    "strings_and_text"
+  ],
+  "difficulty": 3
+}

@@ -1,0 +1,18 @@
+{
+  "english": "concat",
+  "japanese": "連結する",
+  "description": "文字列や配列をつなげて1つにまとめる操作です。元の値を変えずに、新しいつながった結果を返すことが多いのが特徴です。",
+  "example_natural": {
+    "english": "Concat the first name and the last name with a space.",
+    "japanese": "名と姓をスペースで連結してください。"
+  },
+  "example_programming": {
+    "language": "JavaScript",
+    "body": "const first = \"Taro\";\nconst last = \"Yamada\";\nconst fullName = first.concat(\" \", last);\nconsole.log(fullName);"
+  },
+  "themes": [
+    "operators",
+    "strings_and_text"
+  ],
+  "difficulty": 3
+}

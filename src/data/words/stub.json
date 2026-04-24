@@ -1,0 +1,17 @@
+{
+  "english": "stub",
+  "japanese": "スタブ",
+  "description": "stubはテスト用に事前に決めた戻り値を返すだけの単純な置き換え実装を指します。呼び出しの検証はせず、テスト対象が正しく依存先を扱えるかを確認する際に利用します。mockよりも検証機能が弱い代わりにシンプルです。",
+  "example_natural": {
+    "english": "We replace the API client with a stub that returns fixed data.",
+    "japanese": "APIクライアントを固定データを返すスタブに置き換えます。"
+  },
+  "example_programming": {
+    "language": "JavaScript",
+    "body": "test('uses stubbed client', () => {\n  const apiStub = { getUser: () => ({ id: 1, name: 'Ada' }) };\n  expect(loadProfile(apiStub).name).toBe('Ada');\n});"
+  },
+  "themes": [
+    "debugging_and_testing"
+  ],
+  "difficulty": 10
+}

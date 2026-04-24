@@ -1,0 +1,18 @@
+{
+  "english": "yield",
+  "japanese": "ヤィールド",
+  "description": "yieldはジェネレータ関数の中で値を呼び出し側に一つずつ返しつつ、処理を中断・再開するキーワードです。JavaScriptではfunction*と組み合わせて遅延評価やイテレータを実装できます。非同期処理でもasync iteratorと共に頻繁に使われます。",
+  "example_natural": {
+    "english": "The generator can yield each value lazily, one at a time.",
+    "japanese": "ジェネレータは値を一つずつ遅延して yield で返せます。"
+  },
+  "example_programming": {
+    "language": "JavaScript",
+    "body": "async function* pages(url) {\n  let next = url;\n  while (next) {\n    const res = await fetch(next).then((r) => r.json());\n    yield res.items;\n    next = res.nextUrl;\n  }\n}"
+  },
+  "themes": [
+    "async_programming",
+    "functions_and_procedures"
+  ],
+  "difficulty": 10
+}

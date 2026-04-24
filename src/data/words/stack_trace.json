@@ -1,0 +1,17 @@
+{
+  "english": "stack_trace",
+  "japanese": "スタックトレース",
+  "description": "stack traceはエラーが発生した際に、そこに至るまでの関数呼び出しの履歴を表示する情報です。JavaScriptではErrorオブジェクトのstackプロパティで参照でき、デバッグの際にエラー原因の特定に役立ちます。",
+  "example_natural": {
+    "english": "Check the stack trace to find where the error was thrown.",
+    "japanese": "スタックトレースを確認して、エラーが投げられた場所を見つけましょう。"
+  },
+  "example_programming": {
+    "language": "JavaScript",
+    "body": "// stack_trace\ntry {\n  doSomething();\n} catch (e) {\n  console.error('stack trace:\\n' + e.stack);\n}"
+  },
+  "themes": [
+    "error_handling"
+  ],
+  "difficulty": 8
+}

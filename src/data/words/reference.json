@@ -1,0 +1,17 @@
+{
+  "english": "reference",
+  "japanese": "参照",
+  "description": "値そのものではなく、値が保存されている場所を指し示すものです。参照を使ってオブジェクトを渡すと、呼び出し先で内容を変更すると元のオブジェクトにも反映されます。",
+  "example_natural": {
+    "english": "The variable holds a reference to the same list.",
+    "japanese": "その変数は同じリストへの参照を保持しています。"
+  },
+  "example_programming": {
+    "language": "Visual Basic",
+    "body": "' reference\nSub AddItem(ByRef list As List(Of String), value As String)\n    list.Add(value)\nEnd Sub\n\nDim names As New List(Of String)\nAddItem(names, \"Alice\")"
+  },
+  "themes": [
+    "variables_and_types"
+  ],
+  "difficulty": 4
+}

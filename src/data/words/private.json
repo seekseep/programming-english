@@ -1,0 +1,17 @@
+{
+  "english": "private",
+  "japanese": "プライベート",
+  "description": "privateはそのモジュールやクラスの内部からのみアクセスできるスコープを指定するキーワードです。VBAではPrivateを使って、外部から見えない変数やプロシージャを定義します。カプセル化を実現する重要な仕組みです。",
+  "example_natural": {
+    "english": "Mark the helper function as private so it is not exposed.",
+    "japanese": "ヘルパー関数は外部に公開されないよう、privateにしてください。"
+  },
+  "example_programming": {
+    "language": "Visual Basic",
+    "body": "Private Sub ValidateInput(ByVal value As String)\n    If Len(value) = 0 Then\n        Err.Raise 5, , \"empty value\"\n    End If\nEnd Sub"
+  },
+  "themes": [
+    "scope"
+  ],
+  "difficulty": 8
+}

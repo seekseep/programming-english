@@ -1,0 +1,17 @@
+{
+  "english": "body",
+  "japanese": "本文",
+  "description": "HTTPのbodyはリクエストやレスポンスで送受信されるデータ本体を指します。POSTやPUTではJSONなどの形式でデータをbodyに含めて送信し、レスポンスのbodyから結果データを取り出します。",
+  "example_natural": {
+    "english": "Send the user data in the request body as JSON.",
+    "japanese": "リクエスト本文にユーザーデータをJSONで送信してください。"
+  },
+  "example_programming": {
+    "language": "JavaScript",
+    "body": "await fetch('/api/users', {\n  method: 'POST',\n  headers: { 'Content-Type': 'application/json' },\n  body: JSON.stringify({ name: 'Alice' })\n});"
+  },
+  "themes": [
+    "http_and_api"
+  ],
+  "difficulty": 6
+}

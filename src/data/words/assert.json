@@ -1,0 +1,17 @@
+{
+  "english": "assert",
+  "japanese": "表明",
+  "description": "assertはある条件が真であることを宣言し、違反した場合にエラーを発生させる仕組みです。テストコードでは期待した結果と実際の結果を比較するために使われます。デバッグ時の前提条件チェックにも利用されます。",
+  "example_natural": {
+    "english": "We assert that the returned value equals the expected result.",
+    "japanese": "戻り値が期待した結果と等しいことを表明します。"
+  },
+  "example_programming": {
+    "language": "JavaScript",
+    "body": "import assert from 'node:assert';\n\ntest('adds numbers', () => {\n  assert.strictEqual(add(2, 3), 5);\n});"
+  },
+  "themes": [
+    "debugging_and_testing"
+  ],
+  "difficulty": 10
+}

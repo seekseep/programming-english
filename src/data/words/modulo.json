@@ -1,0 +1,18 @@
+{
+  "english": "modulo",
+  "japanese": "剰余",
+  "description": "modulo は「剰余（割り算の余り）」を意味し、多くの言語で `%` 演算子として提供されます。偶数判定や周期的な処理、ハッシュの分配などによく使われます。",
+  "example_natural": {
+    "english": "In math, 7 modulo 3 equals 1.",
+    "japanese": "数学では 7 を 3 で割った余りは 1 になる。"
+  },
+  "example_programming": {
+    "language": "JavaScript",
+    "body": "// modulo\nfor (let i = 1; i <= 10; i++) {\n  if (i % 2 === 0) {\n    console.log(`${i} is even`);\n  }\n}"
+  },
+  "themes": [
+    "numbers_and_math",
+    "operators"
+  ],
+  "difficulty": 9
+}

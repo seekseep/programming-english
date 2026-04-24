@@ -1,0 +1,17 @@
+{
+  "english": "worksheet",
+  "japanese": "ワークシート",
+  "description": "worksheet はブックの中にある 1 枚のシートで、行と列でできた表を保持します。VBA では Worksheets(\"Sheet1\") のように名前やインデックスで参照し、Range や Cells を使ってセルを操作します。Add メソッドで新しいシートを追加できます。",
+  "example_natural": {
+    "english": "Add a new worksheet named \"Summary\" to the workbook.",
+    "japanese": "ブックに「Summary」という名前の新しいワークシートを追加してください。"
+  },
+  "example_programming": {
+    "language": "Visual Basic",
+    "body": "Dim ws As Worksheet\nSet ws = Worksheets.Add\nws.Name = \"Summary\""
+  },
+  "themes": [
+    "excel_vba_basics"
+  ],
+  "difficulty": 7
+}

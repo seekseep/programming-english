@@ -1,0 +1,17 @@
+{
+  "english": "sort",
+  "japanese": "並べ替える",
+  "description": "配列やリストの要素を特定の順序に並べ替える操作です。昇順や降順、または独自の比較関数を使って並べます。",
+  "example_natural": {
+    "english": "Sort the numbers in ascending order.",
+    "japanese": "数値を昇順に並べ替えてください。"
+  },
+  "example_programming": {
+    "language": "JavaScript",
+    "body": "const numbers = [5, 2, 9, 1];\nnumbers.sort((a, b) => a - b);\nconsole.log(numbers);"
+  },
+  "themes": [
+    "collections"
+  ],
+  "difficulty": 3
+}

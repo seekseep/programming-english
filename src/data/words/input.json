@@ -1,0 +1,17 @@
+{
+  "english": "input",
+  "japanese": "入力",
+  "description": "プログラムに外から与えるデータのこと。キーボードやファイルなどから受け取る値を指し、ユーザーの操作や他のシステムからのデータを処理に使う。",
+  "example_natural": {
+    "english": "Please input your name.",
+    "japanese": "あなたの名前を入力してください。"
+  },
+  "example_programming": {
+    "language": "Visual Basic",
+    "body": "Dim name As String\nname = InputBox(\"Enter your name\")"
+  },
+  "themes": [
+    "basic_io"
+  ],
+  "difficulty": 1
+}

@@ -1,0 +1,17 @@
+{
+  "english": "output",
+  "japanese": "出力",
+  "description": "プログラムが処理結果を外に出すことや、その結果のことです。画面への表示やファイルへの書き込みなど、さまざまな output の方法があります。",
+  "example_natural": {
+    "english": "Check the output on the screen after running the program.",
+    "japanese": "プログラムを実行した後、画面の出力を確認してください。"
+  },
+  "example_programming": {
+    "language": "Visual Basic",
+    "body": "Dim output As String\noutput = \"Result: 42\"\nDebug.Print output"
+  },
+  "themes": [
+    "basic_io"
+  ],
+  "difficulty": 2
+}

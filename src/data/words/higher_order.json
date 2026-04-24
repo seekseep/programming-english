@@ -1,0 +1,17 @@
+{
+  "english": "higher_order",
+  "japanese": "高階の",
+  "description": "higher-order（高階）とは、関数を引数に取ったり関数を戻り値にしたりする関数の性質を指します。map・filter・reduce などは代表的な高階関数です。",
+  "example_natural": {
+    "english": "This analysis requires higher-order thinking skills.",
+    "japanese": "この分析にはより高次の思考スキルが必要だ。"
+  },
+  "example_programming": {
+    "language": "JavaScript",
+    "body": "// higher_order\nfunction multiplier(factor) {\n  return (n) => n * factor;\n}\nconst triple = multiplier(3);\nconsole.log([1, 2, 3].map(triple));"
+  },
+  "themes": [
+    "functions_and_procedures"
+  ],
+  "difficulty": 9
+}

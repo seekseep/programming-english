@@ -1,0 +1,17 @@
+{
+  "english": "encoding",
+  "japanese": "文字エンコーディング",
+  "description": "encoding は文字をバイト列に変換する方式を指します。ファイルの読み書きでエンコーディングを誤ると文字化けが発生します。UTF-8 や Shift_JIS など、扱うファイルに合わせて正しい指定を行うことが重要です。",
+  "example_natural": {
+    "english": "Make sure the file is saved with UTF-8 encoding.",
+    "japanese": "ファイルが UTF-8 エンコーディングで保存されていることを確認してください。"
+  },
+  "example_programming": {
+    "language": "JavaScript",
+    "body": "const fs = require('fs');\nconst text = fs.readFileSync('data.txt', { encoding: 'utf-8' });\nconsole.log(text);"
+  },
+  "themes": [
+    "file_io"
+  ],
+  "difficulty": 7
+}

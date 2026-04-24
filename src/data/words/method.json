@@ -1,0 +1,18 @@
+{
+  "english": "method",
+  "japanese": "メソッド",
+  "description": "オブジェクトに属する関数のことです。そのオブジェクトが持つデータを操作したり、関連する処理を実行するために呼び出します。HTTP の文脈では GET や POST のようなリクエストの種類も指します。",
+  "example_natural": {
+    "english": "Call the save method after the user clicks the button.",
+    "japanese": "ユーザーがボタンを押したら、保存メソッドを呼び出してください。"
+  },
+  "example_programming": {
+    "language": "JavaScript",
+    "body": "// method\nconst user = {\n  name: \"Alice\",\n  greet() {\n    return `Hello, ${this.name}!`;\n  }\n};\nconsole.log(user.greet());"
+  },
+  "themes": [
+    "functions_and_procedures",
+    "http_and_api"
+  ],
+  "difficulty": 4
+}

@@ -1,0 +1,17 @@
+{
+  "english": "map",
+  "japanese": "対応させる",
+  "description": "配列の各要素に同じ関数を適用し、新しい配列を作る操作です。また、キーと値の対応を表すデータ構造を指すこともあります。元の配列は変更されず、変換後の要素が並んだ新しい配列が得られます。",
+  "example_natural": {
+    "english": "Map each price to the price including tax.",
+    "japanese": "それぞれの価格を税込み価格に対応させてください。"
+  },
+  "example_programming": {
+    "language": "JavaScript",
+    "body": "const prices = [100, 250, 480];\nconst withTax = prices.map(p => Math.round(p * 1.1));\nconsole.log(withTax);"
+  },
+  "themes": [
+    "collections"
+  ],
+  "difficulty": 4
+}

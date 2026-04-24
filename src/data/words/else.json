@@ -1,0 +1,17 @@
+{
+  "english": "else",
+  "japanese": "そうでなければ",
+  "description": "if文の条件が偽のときに実行する処理を示すキーワード。プログラミングでは「それ以外の場合」の分岐処理を書くために使う。",
+  "example_natural": {
+    "english": "If it rains, stay home; else, go outside.",
+    "japanese": "雨なら家にいて、そうでなければ外に出ましょう。"
+  },
+  "example_programming": {
+    "language": "JavaScript",
+    "body": "if (x > 0) {\n  console.log('positive');\n} else {\n  console.log('not positive');\n}"
+  },
+  "themes": [
+    "control_flow"
+  ],
+  "difficulty": 1
+}

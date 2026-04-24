@@ -1,0 +1,17 @@
+{
+  "english": "constant",
+  "japanese": "定数",
+  "description": "一度決めた値を変更できない値のことです。プログラミングでは、円周率や税率など変わらない値を constant として定義します。",
+  "example_natural": {
+    "english": "The tax rate is stored as a constant in the program.",
+    "japanese": "税率はプログラム内で定数として保存されています。"
+  },
+  "example_programming": {
+    "language": "Visual Basic",
+    "body": "' constant\nConst TaxRate As Double = 0.1\nDim price As Double\nprice = 1000 * (1 + TaxRate)\nMsgBox price"
+  },
+  "themes": [
+    "variables_and_types"
+  ],
+  "difficulty": 2
+}

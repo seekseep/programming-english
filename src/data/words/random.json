@@ -1,0 +1,17 @@
+{
+  "english": "random",
+  "japanese": "乱数",
+  "description": "ランダムな値を生成する操作を指します。抽選やテストデータ作成、ゲームの挙動など、毎回異なる結果が必要な場面で使われます。",
+  "example_natural": {
+    "english": "Generate a random number between one and six.",
+    "japanese": "1 から 6 までの乱数を生成してください。"
+  },
+  "example_programming": {
+    "language": "Visual Basic",
+    "body": "Randomize\nDim dice As Integer\ndice = Int(Rnd() * 6) + 1 ' random 1..6\nDebug.Print dice"
+  },
+  "themes": [
+    "numbers_and_math"
+  ],
+  "difficulty": 3
+}

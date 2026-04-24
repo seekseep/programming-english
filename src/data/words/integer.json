@@ -1,0 +1,17 @@
+{
+  "english": "integer",
+  "japanese": "整数",
+  "description": "小数を含まない数値のことです。プログラミングや SQL では、個数や ID などの値を integer 型で保存します。",
+  "example_natural": {
+    "english": "The age column stores an integer value.",
+    "japanese": "年齢の列は整数値を保存します。"
+  },
+  "example_programming": {
+    "language": "SQL",
+    "body": "CREATE TABLE users (\n  id INTEGER,\n  age INTEGER\n);"
+  },
+  "themes": [
+    "variables_and_types"
+  ],
+  "difficulty": 2
+}

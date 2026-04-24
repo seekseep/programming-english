@@ -1,28 +1,28 @@
 import { createFileRoute, useNavigate } from '@tanstack/react-router'
 import { useSave } from '#/context/SaveDataContext'
 import { stages, getStageWords } from '#/data'
-import { getMasteryLevel  } from '#/types'
-import type {MasteryLevel} from '#/types';
+import { getMasteryLevel } from '#/types'
+import type { MasteryLevel } from '#/types'
 import { FeatureHeader } from '#/components/FeatureHeader'
+import { cn } from '#/lib/utils'
 
 export const Route = createFileRoute('/')({ component: Home })
 
-const MASTERY_COLORS: Record<MasteryLevel, string> = {
-  unknown: 'var(--line)',
-  beginner: '#f7bd2f',
-  understood: '#e96b4a',
-  learned: '#2f6fd0',
-  master: '#338768',
+const MASTERY_BG_CLASS: Record<MasteryLevel, string> = {
+  unknown: '',
+  beginner: 'bg-(--mastery-beginner)',
+  understood: 'bg-(--mastery-understood)',
+  learned: 'bg-(--mastery-learned)',
+  master: 'bg-(--mastery-master)',
 }
 
 function Home() {
-  const { dataWord Book } = useSave()
+  const { data } = useSave()
   const navigate = useNavigate()
 
   return (
     <main className="page-shell">
-      <FeatureHeader
-        title="ステージ一覧"　/>
+      <FeatureHeader title="ステージ一覧" />
 
       <section className="category-grid">
         {stages.map((stage, i) => {
@@ -38,7 +38,7 @@ function Home() {
             master: 0,
           }
           for (const w of words) {
-            const record = data.wordHistory[w.word]
+            const record = data.wordHistory[w.english]
             const mastery = getMasteryLevel(record?.correctCount ?? 0)
             masteryCounts[mastery]++
           }
@@ -49,27 +49,42 @@ function Home() {
             <article
               key={stage.id}
               className={`category-card ${isUnlocked ? 'cursor-pointer' : 'opacity-40'}`}
-              onClick={() => isUnlocked && navigate({ to: '/stages/$stageId/play', params: { stageId: stage.id } })}
+              onClick={() =>
+                isUnlocked &&
+                navigate({
+                  to: '/stages/$stageId/play',
+                  params: { stageId: stage.id },
+                })
+              }
             >
               <div className="flex items-center justify-between">
                 <h2 className="text-lg font-bold">
-                  Stage {i + 1}
+                  Stage {stage.stage}
                   {isCleared && ' ✓'}
                 </h2>
-                <span className="text-xs text-(--muted)">{studiedCount}/{words.length} 語学習</span>
+                <span className="text-xs text-muted">
+                  {studiedCount}/{words.length} 語学習
+                </span>
               </div>
-              <strong>{stage.name}</strong>
+              <strong>{stage.title}</strong>
+              {stage.description && (
+                <p className="text-xs text-muted mt-1">{stage.description}</p>
+              )}
 
               {/* 進捗バー */}
-              <div className="h-1.5 rounded-full bg-(--line) flex overflow-hidden">
-                {(['master', 'learned', 'understood', 'beginner'] as MasteryLevel[]).map((level) => {
-                  const pct = words.length ? (masteryCounts[level] / words.length) * 100 : 0
+              <div className="h-1.5 rounded-full bg-(--line) flex overflow-hidden mt-2">
+                {(
+                  ['master', 'learned', 'understood', 'beginner'] as Array<MasteryLevel>
+                ).map((level) => {
+                  const pct = words.length
+                    ? (masteryCounts[level] / words.length) * 100
+                    : 0
                   if (pct === 0) return null
                   return (
                     <div
                       key={level}
-                      className="h-full transition-[width] duration-300"
-                      style={{ width: `${pct}%`, background: MASTERY_COLORS[level] }}
+                      className={cn('h-full transition-[width] duration-300', MASTERY_BG_CLASS[level])}
+                      style={{ width: `${pct}%` }}
                     />
                   )
                 })}
