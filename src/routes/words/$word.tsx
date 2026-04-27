@@ -16,26 +16,24 @@ function WordDetailPage() {
   const entry = getWord(wordParam)
   if (!entry) return <div className="page-shell">単語が見つかりません</div>
 
-  const record: WordRecord | null = data.wordHistory[entry.english] ?? null
-  const correct = record != null && record.correctCount >= 1
+  const record = data.wordHistory[entry.english]
+  const correct = record.correctCount >= 1
 
   return (
     <main className="page-shell">
       <FeatureHeader eyebrow="Word Detail" title={entry.english} />
 
       <div className="flex flex-col gap-4">
-        {record != null && (
-          <div className="flex gap-6 text-sm">
-            <div>
-              <span className="text-muted-foreground">正答: </span>
-              <strong>{record.correctCount}</strong>
-            </div>
-            <div>
-              <span className="text-muted-foreground">誤答: </span>
-              <strong>{record.incorrectCount}</strong>
-            </div>
+        <div className="flex gap-6 text-sm">
+          <div>
+            <span className="text-muted-foreground">正答: </span>
+            <strong>{record.correctCount}</strong>
           </div>
-        )}
+          <div>
+            <span className="text-muted-foreground">誤答: </span>
+            <strong>{record.incorrectCount}</strong>
+          </div>
+        </div>
 
         <div className="rounded-2xl border border-(--line) bg-white/80 p-5 space-y-4">
           <div>

@@ -1,15 +1,14 @@
 import { createFileRoute, useNavigate } from '@tanstack/react-router'
-import { useState, useMemo } from 'react'
+import { useState } from 'react'
 import { useSave } from '#/context/SaveDataContext'
 import { FeatureHeader } from '#/components/FeatureHeader'
-import { allWords } from '#/data'
 import { ToggleGroup, ToggleGroupItem } from '#/components/ui/toggle-group'
+import type { WordStatus } from '#/hooks/useFilteredWords'
+import { useFilteredWords } from '#/hooks/useFilteredWords'
 
 export const Route = createFileRoute('/words/')({
   component: WordsPage,
 })
-
-type WordStatus = 'all' | 'correct' | 'encountered' | 'unknown'
 
 const STATUS_LABELS: Record<WordStatus, string> = {
   all: 'すべて',
@@ -26,34 +25,7 @@ function WordsPage() {
   const [filter, setFilter] = useState<WordStatus>('all')
   const [page, setPage] = useState(0)
 
-  const { filtered, counts } = useMemo(() => {
-    const counts: Record<WordStatus, number> = {
-      all: 0,
-      correct: 0,
-      encountered: 0,
-      unknown: 0,
-    }
-    const filtered: typeof allWords = []
-
-    for (const entry of allWords) {
-      const record = data.wordHistory[entry.english]
-      const isCorrect = record && record.correctCount >= 1
-      const isEncountered = !!record
-
-      counts.all++
-      if (isCorrect) counts.correct++
-      else if (isEncountered) counts.encountered++
-      else counts.unknown++
-
-      if (filter === 'all') filtered.push(entry)
-      else if (filter === 'correct' && isCorrect) filtered.push(entry)
-      else if (filter === 'encountered' && isEncountered && !isCorrect)
-        filtered.push(entry)
-      else if (filter === 'unknown' && !isEncountered) filtered.push(entry)
-    }
-
-    return { filtered, counts }
-  }, [data.wordHistory, filter])
+  const { filtered, counts } = useFilteredWords(data.wordHistory, filter)
 
   const totalPages = Math.ceil(filtered.length / PER_PAGE)
   const pageWords = filtered.slice(page * PER_PAGE, (page + 1) * PER_PAGE)
@@ -97,26 +69,23 @@ function WordsPage() {
         {pageWords.map(({ english }) => {
           const record = data.wordHistory[english]
           const encountered = !!record
-          const correct = record && record.correctCount >= 1
+          const correct = record.correctCount >= 1
 
           return (
             <button
               key={english}
               type="button"
               onClick={() =>
-                encountered &&
                 navigate({ to: '/words/$word', params: { word: english } })
               }
               className={`rounded-xl border p-2 text-center text-sm font-semibold transition-colors ${
                 correct
-                  ? 'border-(--accent) bg-(--accent-bg) cursor-pointer'
-                  : encountered
-                    ? 'border-(--line) bg-(--card-bg) cursor-pointer'
-                    : 'border-(--line) bg-(--line) text-muted-foreground'
+                  ? 'border-accent bg-(--accent-bg) cursor-pointer'
+                  : 'border-(--line) bg-(--card-bg) cursor-pointer'
               }`}
               disabled={!encountered}
             >
-              {encountered ? english : '???'}
+              {english}
             </button>
           )
         })}
