@@ -64,7 +64,7 @@ export function WordDrawer({ word, onClose }: Props) {
             <DrawerFooter className="px-0 pt-6 pb-0">
               <DrawerClose
                 onClick={onClose}
-                className="w-full py-3 rounded-xl font-bold text-base bg-(--primary) text-white cursor-pointer"
+                className="w-full py-3 rounded-xl font-bold text-base bg-primary text-white cursor-pointer"
               >
                 閉じる
               </DrawerClose>

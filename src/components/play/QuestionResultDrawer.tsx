@@ -71,7 +71,7 @@ export function QuestionResultDrawer({ word, isCorrect, onNext }: Props) {
               <button
                 type="button"
                 onClick={() => setShowCode((v) => !v)}
-                className="cursor-pointer flex items-center gap-2 text-sm font-medium text-(--accent)"
+                className="cursor-pointer flex items-center gap-2 text-sm font-medium text-accent"
               >
                 {showCode ? <ChevronUp size={16} /> : <ChevronDown size={16} />}
                 プログラミングの例を見る
