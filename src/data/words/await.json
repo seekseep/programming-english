@@ -6,12 +6,28 @@
     "english": "Await the response before parsing the JSON body.",
     "japanese": "JSON本文を解析する前にレスポンスを待機してください。"
   },
-  "example_programming": {
-    "language": "JavaScript",
-    "body": "async function getProduct(id) {\n  const res = await fetch(`/api/products/${id}`);\n  const data = await res.json();\n  return data;\n}"
-  },
-  "themes": [
-    "async_programming"
+  "example_programming": [
+    {
+      "language": "JavaScript",
+      "body": "async function getProduct(id) {\n  const res = await fetch(`/api/products/${id}`);\n  const data = await res.json();\n  return data;\n}"
+    },
+    {
+      "language": "Visual Basic",
+      "body": "Public Async Function GetProductAsync(id As Integer) As Task(Of Product)\n    Dim res = Await client.GetAsync($\"/api/products/{id}\")\n    Dim data = Await res.Content.ReadAsAsync(Of Product)()\n    Return data\nEnd Function"
+    },
+    {
+      "language": "Python",
+      "body": "async def get_product(id):\n    async with aiohttp.ClientSession() as session:\n        res = await session.get(f'/api/products/{id}')\n        data = await res.json()\n        return data"
+    },
+    {
+      "language": "Java",
+      "body": "public Product getProduct(int id) throws Exception {\n    CompletableFuture<String> future = client.getAsync(\"/api/products/\" + id);\n    String data = future.get();\n    return parseJson(data);\n}"
+    },
+    {
+      "language": "SQL",
+      "body": "WAITFOR DELAY '00:00:05';\nSELECT * FROM products WHERE id = @id;\nSELECT 'await complete' AS status;"
+    }
   ],
+  "themes": ["async_programming"],
   "difficulty": 6
 }

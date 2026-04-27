@@ -6,12 +6,28 @@
     "english": "Commit the transaction after all updates succeed.",
     "japanese": "すべての更新が成功したらトランザクションをコミットします。"
   },
-  "example_programming": {
-    "language": "SQL",
-    "body": "BEGIN;\nUPDATE accounts SET balance = balance - 100 WHERE id = 1;\nUPDATE accounts SET balance = balance + 100 WHERE id = 2;\nCOMMIT;"
-  },
-  "themes": [
-    "database_concepts"
+  "example_programming": [
+    {
+      "language": "SQL",
+      "body": "BEGIN;\nUPDATE accounts SET balance = balance - 100 WHERE id = 1;\nUPDATE accounts SET balance = balance + 100 WHERE id = 2;\nCOMMIT;"
+    },
+    {
+      "language": "JavaScript",
+      "body": "async function commit(data) {\n  const tx = db.transaction('store');\n  const os = tx.objectStore('store');\n  os.add(data);\n  return tx.commit();\n}"
+    },
+    {
+      "language": "Python",
+      "body": "import sqlite3\nconn = sqlite3.connect('db.sqlite')\ncur = conn.cursor()\ncur.execute('INSERT INTO users VALUES (1, \"Alice\")')\nconn.commit()\nconn.close()"
+    },
+    {
+      "language": "Java",
+      "body": "Connection conn = DriverManager.getConnection(\"jdbc:...\");\nconn.setAutoCommit(false);\nStatement stmt = conn.createStatement();\nstmt.execute(\"INSERT INTO users VALUES (1, 'Alice')\");\nconn.commit();"
+    },
+    {
+      "language": "Visual Basic",
+      "body": "Dim conn As ADODB.Connection\nconn.Open \"Provider=SQLOLEDB;...\"\nconn.Execute \"BEGIN TRANSACTION\"\nconn.Execute \"UPDATE accounts ...\"\nconn.Execute \"COMMIT\""
+    }
   ],
+  "themes": ["database_concepts"],
   "difficulty": 10
 }

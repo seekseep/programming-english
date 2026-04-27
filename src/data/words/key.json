@@ -6,13 +6,28 @@
     "english": "Every record in this table has a unique key.",
     "japanese": "このテーブルのすべてのレコードには一意のキーがあります。"
   },
-  "example_programming": {
-    "language": "SQL",
-    "body": "CREATE TABLE users (\n  user_id INTEGER PRIMARY KEY,\n  email   VARCHAR(255) NOT NULL UNIQUE\n);"
-  },
-  "themes": [
-    "collections",
-    "database_concepts"
+  "example_programming": [
+    {
+      "language": "SQL",
+      "body": "CREATE TABLE users (\n  user_id INTEGER PRIMARY KEY,\n  email   VARCHAR(255) NOT NULL UNIQUE\n);"
+    },
+    {
+      "language": "JavaScript",
+      "body": "const obj = {key: 'value'};\nfor (const key in obj) {\n  console.log(key);\n}"
+    },
+    {
+      "language": "Python",
+      "body": "data = {'key': 'value', 'name': 'Alice'}\nfor key in data:\n    print(key, data[key])"
+    },
+    {
+      "language": "Java",
+      "body": "Map<String, String> map = new HashMap<>();\nmap.put(\"key\", \"value\");\nfor (String key : map.keySet()) {\n  System.out.println(key);\n}"
+    },
+    {
+      "language": "Visual Basic",
+      "body": "Dim dict As New Dictionary(Of String, String)\ndict.Add(\"key\", \"value\")\nFor Each key In dict.Keys\n    Debug.Print key\nNext"
+    }
   ],
+  "themes": ["collections", "database_concepts"],
   "difficulty": 4
 }

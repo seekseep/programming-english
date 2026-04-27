@@ -6,12 +6,28 @@
     "english": "Check the output on the screen after running the program.",
     "japanese": "プログラムを実行した後、画面の出力を確認してください。"
   },
-  "example_programming": {
-    "language": "Visual Basic",
-    "body": "Dim output As String\noutput = \"Result: 42\"\nDebug.Print output"
-  },
-  "themes": [
-    "basic_io"
+  "example_programming": [
+    {
+      "language": "Visual Basic",
+      "body": "Dim output As String\noutput = \"Result: 42\"\nDebug.Print output"
+    },
+    {
+      "language": "JavaScript",
+      "body": "const output = \"Result: 42\";\nconsole.log(output);"
+    },
+    {
+      "language": "Python",
+      "body": "output = \"Result: 42\"\nprint(output)"
+    },
+    {
+      "language": "Java",
+      "body": "String output = \"Result: 42\";\nSystem.out.println(output);"
+    },
+    {
+      "language": "SQL",
+      "body": "SELECT 'Result: 42' AS output;"
+    }
   ],
+  "themes": ["basic_io"],
   "difficulty": 2
 }

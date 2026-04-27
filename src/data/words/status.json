@@ -6,12 +6,28 @@
     "english": "The server returned a status of 404 for the request.",
     "japanese": "サーバーはそのリクエストに対して404のステータスを返しました。"
   },
-  "example_programming": {
-    "language": "JavaScript",
-    "body": "const res = await fetch('/api/user/99');\nif (res.status === 404) {\n  console.log('user not found');\n}"
-  },
-  "themes": [
-    "http_and_api"
+  "example_programming": [
+    {
+      "language": "JavaScript",
+      "body": "const res = await fetch('/api/user/99');\nif (res.status === 404) {\n  console.log('user not found');\n}"
+    },
+    {
+      "language": "Visual Basic",
+      "body": "Dim client As New HttpClient()\nDim response As HttpResponseMessage = Await client.GetAsync(\"/api/user/99\")\nIf response.StatusCode = 404 Then\n    MsgBox \"user not found\"\nEnd If"
+    },
+    {
+      "language": "Python",
+      "body": "import requests\nres = requests.get('/api/user/99')\nif res.status_code == 404:\n    print('user not found')"
+    },
+    {
+      "language": "Java",
+      "body": "HttpResponse<String> res = HttpClient.newHttpClient()\n    .send(HttpRequest.newBuilder().uri(URI.create(\"/api/user/99\")).build(),\n    HttpResponse.BodyHandlers.ofString());\nif (res.statusCode() == 404) {\n    System.out.println(\"user not found\");\n}"
+    },
+    {
+      "language": "SQL",
+      "body": "SELECT status, COUNT(*) as count FROM requests GROUP BY status;"
+    }
   ],
+  "themes": ["http_and_api"],
   "difficulty": 6
 }

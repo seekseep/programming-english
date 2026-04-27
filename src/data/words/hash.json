@@ -6,12 +6,28 @@
     "english": "The hash lets us look up the user's record quickly.",
     "japanese": "ハッシュを使うと、ユーザーのレコードを素早く取り出せます。"
   },
-  "example_programming": {
-    "language": "JavaScript",
-    "body": "const hash = new Map();\nhash.set(\"alice\", { score: 80 });\nhash.set(\"bob\", { score: 72 });\nconsole.log(hash.get(\"alice\").score);"
-  },
-  "themes": [
-    "collections"
+  "example_programming": [
+    {
+      "language": "JavaScript",
+      "body": "const hash = new Map();\nhash.set(\"alice\", { score: 80 });\nhash.set(\"bob\", { score: 72 });\nconsole.log(hash.get(\"alice\").score);"
+    },
+    {
+      "language": "Python",
+      "body": "hash_dict = {}\nhash_dict['alice'] = {'score': 80}\nhash_dict['bob'] = {'score': 72}\nprint(hash_dict['alice']['score'])"
+    },
+    {
+      "language": "Visual Basic",
+      "body": "Dim hash As New Dictionary\nhash.Add \"alice\", 80\nhash.Add \"bob\", 72\nDebug.Print hash(\"alice\")"
+    },
+    {
+      "language": "Java",
+      "body": "Map<String, Integer> hash = new HashMap<>();\nhash.put(\"alice\", 80);\nhash.put(\"bob\", 72);\nSystem.out.println(hash.get(\"alice\"));"
+    },
+    {
+      "language": "SQL",
+      "body": "SELECT MD5('password') AS hash_value;"
+    }
   ],
+  "themes": ["collections"],
   "difficulty": 4
 }

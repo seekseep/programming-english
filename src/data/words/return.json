@@ -6,13 +6,28 @@
     "english": "Please return the book tomorrow.",
     "japanese": "その本を明日返してください。"
   },
-  "example_programming": {
-    "language": "Visual Basic",
-    "body": "Function Square(n As Integer) As Integer\n    Return n * n\nEnd Function"
-  },
-  "themes": [
-    "control_flow",
-    "functions_and_procedures"
+  "example_programming": [
+    {
+      "language": "Visual Basic",
+      "body": "Function Square(n As Integer) As Integer\n    Return n * n\nEnd Function"
+    },
+    {
+      "language": "JavaScript",
+      "body": "function square(n) {\n    return n * n;\n}\nconsole.log(square(5));"
+    },
+    {
+      "language": "Python",
+      "body": "def square(n):\n    return n * n\nprint(square(5))"
+    },
+    {
+      "language": "Java",
+      "body": "public static int square(int n) {\n    return n * n;\n}\nint result = square(5);"
+    },
+    {
+      "language": "SQL",
+      "body": "CREATE FUNCTION square(n INT) RETURNS INT\nRETURN n * n;"
+    }
   ],
+  "themes": ["control_flow", "functions_and_procedures"],
   "difficulty": 1
 }

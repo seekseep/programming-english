@@ -6,12 +6,28 @@
     "english": "We fetch the two resources in parallel to reduce latency.",
     "japanese": "遅延を減らすために2つのリソースを並列で取得します。"
   },
-  "example_programming": {
-    "language": "JavaScript",
-    "body": "// run two async tasks in parallel\nconst [user, orders] = await Promise.all([\n  fetchUser(),\n  fetchOrders(),\n]);"
-  },
-  "themes": [
-    "async_programming"
+  "example_programming": [
+    {
+      "language": "JavaScript",
+      "body": "// run two async tasks in parallel\nconst [user, orders] = await Promise.all([\n  fetchUser(),\n  fetchOrders(),\n]);"
+    },
+    {
+      "language": "Visual Basic",
+      "body": "Dim task1 As Task = Task.Run(Sub() FetchUser())\nDim task2 As Task = Task.Run(Sub() FetchOrders())\nTask.WaitAll(task1, task2)\nDim results As Task(Of Object)() = {Task.Run(Of Object)(Function() FetchUser())}\nTask.WaitAll(CType(results, Task()))"
+    },
+    {
+      "language": "Python",
+      "body": "import asyncio\nasync def fetch_parallel():\n    user = await fetch_user()\n    orders = await fetch_orders()\n    return user, orders\nresult = asyncio.run(fetch_parallel())"
+    },
+    {
+      "language": "Java",
+      "body": "ExecutorService executor = Executors.newFixedThreadPool(2);\nFuture<User> userFuture = executor.submit(() -> fetchUser());\nFuture<List<Order>> ordersFuture = executor.submit(() -> fetchOrders());\nUser user = userFuture.get();\nList<Order> orders = ordersFuture.get();"
+    },
+    {
+      "language": "SQL",
+      "body": "SELECT u.*, o.* FROM users u\nJOIN (SELECT * FROM orders) o ON u.id = o.user_id\nWHERE u.status = 'active';"
+    }
   ],
+  "themes": ["async_programming"],
   "difficulty": 10
 }

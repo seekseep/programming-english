@@ -6,12 +6,28 @@
     "english": "Multiply two by five.",
     "japanese": "2に5を掛けてください。"
   },
-  "example_programming": {
-    "language": "SQL",
-    "body": "-- multiply\nSELECT price * quantity\nFROM orders;"
-  },
-  "themes": [
-    "operators"
+  "example_programming": [
+    {
+      "language": "SQL",
+      "body": "-- multiply\nSELECT price * quantity\nFROM orders;"
+    },
+    {
+      "language": "JavaScript",
+      "body": "const a = 5;\nconst b = 3;\nconst result = a * b;\nconsole.log(result);"
+    },
+    {
+      "language": "Python",
+      "body": "a = 5\nb = 3\nresult = a * b\nprint(result)"
+    },
+    {
+      "language": "Java",
+      "body": "int a = 5;\nint b = 3;\nint result = a * b;\nSystem.out.println(result);"
+    },
+    {
+      "language": "Visual Basic",
+      "body": "Dim a As Integer = 5\nDim b As Integer = 3\nDim result As Integer = a * b\nMsgBox result"
+    }
   ],
+  "themes": ["operators"],
   "difficulty": 1
 }

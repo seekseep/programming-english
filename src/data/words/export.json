@@ -6,12 +6,28 @@
     "english": "Export the helper function so other files can use it.",
     "japanese": "他のファイルから使えるように、ヘルパー関数をエクスポートしてください。"
   },
-  "example_programming": {
-    "language": "JavaScript",
-    "body": "export function add(a, b) {\n  return a + b;\n}\n\nexport default class Calculator {}"
-  },
-  "themes": [
-    "modules_and_imports"
+  "example_programming": [
+    {
+      "language": "JavaScript",
+      "body": "export function add(a, b) {\n  return a + b;\n}\nexport default class Calculator {}"
+    },
+    {
+      "language": "Visual Basic",
+      "body": "Public Function Add(a As Integer, b As Integer) As Integer\n    Add = a + b\nEnd Function"
+    },
+    {
+      "language": "Python",
+      "body": "def add(a, b):\n    return a + b\n\nif __name__ == '__main__':\n    print(add(1, 2))"
+    },
+    {
+      "language": "Java",
+      "body": "public class Calculator {\n    public static int add(int a, int b) {\n        return a + b;\n    }\n}"
+    },
+    {
+      "language": "SQL",
+      "body": "SELECT * INTO export_table FROM original_table;"
+    }
   ],
+  "themes": ["modules_and_imports"],
   "difficulty": 8
 }

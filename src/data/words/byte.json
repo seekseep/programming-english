@@ -6,12 +6,28 @@
     "english": "One character of text often uses one byte of memory.",
     "japanese": "文字 1 つは多くの場合、メモリを 1 バイト使います。"
   },
-  "example_programming": {
-    "language": "Visual Basic",
-    "body": "Dim age As Byte\nage = 25\nMsgBox age"
-  },
-  "themes": [
-    "variables_and_types"
+  "example_programming": [
+    {
+      "language": "Visual Basic",
+      "body": "Dim age As Byte\nage = 25\nMsgBox age"
+    },
+    {
+      "language": "JavaScript",
+      "body": "const byte = 25;\nconst bytes = Buffer.alloc(1);\nbytes[0] = byte;\nconsole.log(bytes[0]);"
+    },
+    {
+      "language": "Python",
+      "body": "import struct\nbyte = 25\npacked = struct.pack('B', byte)\nprint(packed.hex())"
+    },
+    {
+      "language": "Java",
+      "body": "byte age = 25;\nByte byteObj = age;\nSystem.out.println(byteObj);"
+    },
+    {
+      "language": "SQL",
+      "body": "DECLARE @byte TINYINT = 25;\nSELECT @byte AS byte_value;"
+    }
   ],
+  "themes": ["variables_and_types"],
   "difficulty": 2
 }

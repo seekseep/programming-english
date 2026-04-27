@@ -6,12 +6,28 @@
     "english": "Add a new worksheet named \"Summary\" to the workbook.",
     "japanese": "ブックに「Summary」という名前の新しいワークシートを追加してください。"
   },
-  "example_programming": {
-    "language": "Visual Basic",
-    "body": "Dim ws As Worksheet\nSet ws = Worksheets.Add\nws.Name = \"Summary\""
-  },
-  "themes": [
-    "excel_vba_basics"
+  "example_programming": [
+    {
+      "language": "Visual Basic",
+      "body": "Dim ws As Worksheet\nSet ws = Worksheets.Add\nws.Name = \"Summary\""
+    },
+    {
+      "language": "Python",
+      "body": "import openpyxl\nwb = openpyxl.Workbook()\nws = wb.create_sheet(\"Summary\")\nws['A1'] = 'Summary Data'\nwb.save('workbook.xlsx')"
+    },
+    {
+      "language": "JavaScript",
+      "body": "const XLSX = require('xlsx');\nconst wb = XLSX.utils.book_new();\nconst ws = XLSX.utils.aoa_to_sheet([['Summary Data']]);\nXLSX.utils.book_append_sheet(wb, ws, 'Summary');\nXLSX.writeFile(wb, 'workbook.xlsx');"
+    },
+    {
+      "language": "Java",
+      "body": "Workbook wb = new XSSFWorkbook();\nSheet ws = wb.createSheet(\"Summary\");\nRow row = ws.createRow(0);\nCell cell = row.createCell(0);\ncell.setCellValue(\"Summary Data\");"
+    },
+    {
+      "language": "SQL",
+      "body": "CREATE TABLE worksheet_summary (\n  id INT PRIMARY KEY,\n  title VARCHAR(255),\n  sheet_name VARCHAR(50)\n);\nINSERT INTO worksheet_summary VALUES (1, 'Summary Data', 'Summary');"
+    }
   ],
+  "themes": ["excel_vba_basics"],
   "difficulty": 7
 }

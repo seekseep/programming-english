@@ -6,12 +6,28 @@
     "english": "Limit the result to the top five products.",
     "japanese": "結果を上位5件の商品に制限してください。"
   },
-  "example_programming": {
-    "language": "SQL",
-    "body": "SELECT id, name, price\nFROM products\nORDER BY price DESC\nLIMIT 5;"
-  },
-  "themes": [
-    "sql_aggregation"
+  "example_programming": [
+    {
+      "language": "SQL",
+      "body": "SELECT id, name, price\nFROM products\nORDER BY price DESC\nLIMIT 5;"
+    },
+    {
+      "language": "JavaScript",
+      "body": "const items = [1, 2, 3, 4, 5, 6, 7, 8, 9, 10];\nconst limited = items.slice(0, 5);\nconsole.log(limited);"
+    },
+    {
+      "language": "Python",
+      "body": "items = list(range(1, 11))\nlimited = items[:5]\nprint(limited)"
+    },
+    {
+      "language": "Java",
+      "body": "List<Integer> items = Arrays.asList(1,2,3,4,5,6,7,8,9,10);\nList<Integer> limited = items.stream().limit(5).collect(Collectors.toList());"
+    },
+    {
+      "language": "Visual Basic",
+      "body": "Dim items As New List(Of Integer) From {1,2,3,4,5,6,7,8,9,10}\nDim limited = items.Take(5).ToList()\nFor Each n In limited\n    Debug.Print n\nNext"
+    }
   ],
+  "themes": ["sql_aggregation"],
   "difficulty": 6
 }

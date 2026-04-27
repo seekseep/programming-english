@@ -6,12 +6,28 @@
     "english": "We defer the cleanup until after all requests have settled.",
     "japanese": "すべてのリクエストが確定するまでクリーンアップを遅延実行します。"
   },
-  "example_programming": {
-    "language": "JavaScript",
-    "body": "function defer() {\n  let resolve;\n  const promise = new Promise((r) => { resolve = r; });\n  return { promise, resolve };\n}"
-  },
-  "themes": [
-    "async_programming"
+  "example_programming": [
+    {
+      "language": "JavaScript",
+      "body": "function defer() {\n  let resolve;\n  const promise = new Promise((r) => { resolve = r; });\n  return { promise, resolve };\n}"
+    },
+    {
+      "language": "Visual Basic",
+      "body": "Sub ProcessWithDefer()\n    OnError GoTo DeferError\n    Call DoWork\n    Exit Sub\n    DeferError: Call CleanUp\nEnd Sub"
+    },
+    {
+      "language": "Python",
+      "body": "import atexit\ndef cleanup():\n    print('deferred cleanup')\natexit.register(cleanup)\nprint('main execution')"
+    },
+    {
+      "language": "Java",
+      "body": "Runtime.getRuntime().addShutdownHook(new Thread(() -> {\n    System.out.println(\"deferred cleanup\");\n}));"
+    },
+    {
+      "language": "SQL",
+      "body": "BEGIN TRANSACTION;\nSAVEPOINT deferred_point;\nUPDATE accounts SET balance = 100;\nROLLBACK TO deferred_point;\nCOMMIT;"
+    }
   ],
+  "themes": ["async_programming"],
   "difficulty": 10
 }

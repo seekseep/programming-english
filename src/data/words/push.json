@@ -6,12 +6,28 @@
     "english": "Push the new value onto the stack.",
     "japanese": "新しい値をスタックに積んでください。"
   },
-  "example_programming": {
-    "language": "JavaScript",
-    "body": "const numbers = [1, 2];\nnumbers.push(3);\nnumbers.push(4, 5);\nconsole.log(numbers);"
-  },
-  "themes": [
-    "collections"
+  "example_programming": [
+    {
+      "language": "JavaScript",
+      "body": "const numbers = [1, 2];\nnumbers.push(3);\nnumbers.push(4, 5);\nconsole.log(numbers);"
+    },
+    {
+      "language": "Visual Basic",
+      "body": "Dim numbers As List(Of Integer) = New List(Of Integer) From {1, 2}\nnumbers.Add(3)\nnumbers.Add(4)"
+    },
+    {
+      "language": "Python",
+      "body": "numbers = [1, 2]\nnumbers.append(3)\nnumbers.extend([4, 5])\nprint(numbers)"
+    },
+    {
+      "language": "Java",
+      "body": "List<Integer> numbers = new ArrayList<>();\nnumbers.add(1);\nnumbers.add(2);\nnumbers.push(3);"
+    },
+    {
+      "language": "SQL",
+      "body": "INSERT INTO stack_data (value) VALUES (3), (4), (5);"
+    }
   ],
+  "themes": ["collections"],
   "difficulty": 3
 }

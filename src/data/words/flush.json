@@ -6,13 +6,28 @@
     "english": "Flush the stream to make sure the log is written to disk.",
     "japanese": "ログをディスクに確実に書き込むためにストリームをフラッシュしてください。"
   },
-  "example_programming": {
-    "language": "JavaScript",
-    "body": "// flush\nconst stream = fs.createWriteStream('log.txt');\nstream.write('important log\\n');\nstream.end();"
-  },
-  "themes": [
-    "basic_io",
-    "file_io"
+  "example_programming": [
+    {
+      "language": "JavaScript",
+      "body": "// flush\nconst stream = fs.createWriteStream('log.txt');\nstream.write('important log\\n');\nstream.end();"
+    },
+    {
+      "language": "Python",
+      "body": "import sys\nprint('important log', flush=True)\nsys.stdout.flush()"
+    },
+    {
+      "language": "Visual Basic",
+      "body": "Open \"log.txt\" For Output As #1\nPrint #1, \"important log\"\nClose #1"
+    },
+    {
+      "language": "Java",
+      "body": "PrintWriter pw = new PrintWriter(new FileWriter(\"log.txt\"));\npw.println(\"important log\");\npw.flush();\npw.close();"
+    },
+    {
+      "language": "SQL",
+      "body": "FLUSH PRIVILEGES;\nFLUSH TABLES;"
+    }
   ],
+  "themes": ["basic_io", "file_io"],
   "difficulty": 7
 }

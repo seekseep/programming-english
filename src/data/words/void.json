@@ -6,12 +6,28 @@
     "english": "This void procedure only prints the message to the screen.",
     "japanese": "この戻り値なしのプロシージャは、画面にメッセージを表示するだけです。"
   },
-  "example_programming": {
-    "language": "Visual Basic",
-    "body": "' void in VB is represented by a Sub (no return value)\nSub ShowMessage(text As String)\n    Debug.Print text\nEnd Sub\n\nCall ShowMessage(\"ready\")"
-  },
-  "themes": [
-    "functions_and_procedures"
+  "example_programming": [
+    {
+      "language": "Visual Basic",
+      "body": "' void in VB is represented by a Sub (no return value)\nSub ShowMessage(text As String)\n    Debug.Print text\nEnd Sub\n\nCall ShowMessage(\"ready\")"
+    },
+    {
+      "language": "Python",
+      "body": "def show_message(text):\n  print(text)\n\nshow_message(\"ready\")"
+    },
+    {
+      "language": "JavaScript",
+      "body": "function showMessage(text) {\n  console.log(text);\n}\nshowMessage(\"ready\");"
+    },
+    {
+      "language": "Java",
+      "body": "public void showMessage(String text) {\n  System.out.println(text);\n}\nshowMessage(\"ready\");"
+    },
+    {
+      "language": "SQL",
+      "body": "CREATE PROCEDURE show_message @text NVARCHAR(MAX) AS\nPRINT @text;\nEXEC show_message 'ready';"
+    }
   ],
+  "themes": ["functions_and_procedures"],
   "difficulty": 4
 }

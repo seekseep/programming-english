@@ -6,12 +6,28 @@
     "english": "Pad the order number with zeros until it reaches six digits.",
     "japanese": "注文番号が6桁になるまでゼロで桁を埋めてください。"
   },
-  "example_programming": {
-    "language": "JavaScript",
-    "body": "const orderId = 42;\nconst padded = String(orderId).padStart(6, \"0\");\nconsole.log(padded); // \"000042\""
-  },
-  "themes": [
-    "strings_and_text"
+  "example_programming": [
+    {
+      "language": "JavaScript",
+      "body": "const orderId = 42;\nconst padded = String(orderId).padStart(6, \"0\");\nconsole.log(padded); // \"000042\""
+    },
+    {
+      "language": "Visual Basic",
+      "body": "Dim orderId As Integer = 42\nDim padded As String = Format(orderId, \"000000\")\nDebug.Print padded"
+    },
+    {
+      "language": "Python",
+      "body": "order_id = 42\npadded = str(order_id).zfill(6)\nprint(padded)"
+    },
+    {
+      "language": "Java",
+      "body": "int orderId = 42;\nString padded = String.format(\"%06d\", orderId);\nSystem.out.println(padded);"
+    },
+    {
+      "language": "SQL",
+      "body": "SELECT LPAD(42, 6, '0') AS padded;"
+    }
   ],
+  "themes": ["strings_and_text"],
   "difficulty": 4
 }

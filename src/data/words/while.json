@@ -6,12 +6,28 @@
     "english": "I read a book while I waited.",
     "japanese": "待っている間、本を読みました。"
   },
-  "example_programming": {
-    "language": "JavaScript",
-    "body": "let i = 0;\nwhile (i < 3) {\n  console.log(i);\n  i++;\n}"
-  },
-  "themes": [
-    "control_flow"
+  "example_programming": [
+    {
+      "language": "JavaScript",
+      "body": "let i = 0;\nwhile (i < 3) {\n  console.log(i);\n  i++;\n}"
+    },
+    {
+      "language": "Python",
+      "body": "i = 0\nwhile i < 3:\n  print(i)\n  i += 1"
+    },
+    {
+      "language": "Java",
+      "body": "int i = 0;\nwhile (i < 3) {\n  System.out.println(i);\n  i++;\n}"
+    },
+    {
+      "language": "Visual Basic",
+      "body": "Dim i As Integer = 0\nWhile i < 3\n  Debug.Print i\n  i = i + 1\nWend"
+    },
+    {
+      "language": "SQL",
+      "body": "DECLARE @i INT = 0;\nWHILE @i < 3\nBEGIN\n  PRINT @i;\n  SET @i = @i + 1;\nEND"
+    }
   ],
+  "themes": ["control_flow"],
   "difficulty": 1
 }

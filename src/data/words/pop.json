@@ -6,12 +6,28 @@
     "english": "Pop the last item from the stack.",
     "japanese": "スタックから最後の要素を取り出してください。"
   },
-  "example_programming": {
-    "language": "JavaScript",
-    "body": "const stack = [1, 2, 3];\nconst last = stack.pop();\nconsole.log(last);\nconsole.log(stack);"
-  },
-  "themes": [
-    "collections"
+  "example_programming": [
+    {
+      "language": "JavaScript",
+      "body": "const stack = [1, 2, 3];\nconst last = stack.pop();\nconsole.log(last);\nconsole.log(stack);"
+    },
+    {
+      "language": "Visual Basic",
+      "body": "Dim stack As List(Of Integer) = New List(Of Integer) From {1, 2, 3}\nDim last As Integer = stack(stack.Count - 1)\nstack.RemoveAt(stack.Count - 1)"
+    },
+    {
+      "language": "Python",
+      "body": "stack = [1, 2, 3]\nlast = stack.pop()\nprint(last)\nprint(stack)"
+    },
+    {
+      "language": "Java",
+      "body": "Stack<Integer> stack = new Stack<>();\nstack.push(1); stack.push(2); stack.push(3);\nint last = stack.pop();\nSystem.out.println(last);"
+    },
+    {
+      "language": "SQL",
+      "body": "DELETE FROM stack WHERE id = (SELECT MAX(id) FROM stack) RETURNING value;"
+    }
   ],
+  "themes": ["collections"],
   "difficulty": 3
 }

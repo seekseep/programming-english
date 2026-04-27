@@ -6,13 +6,28 @@
     "english": "Check whether the file exists before reading it.",
     "japanese": "読み込む前にそのファイルが存在するか確認してください。"
   },
-  "example_programming": {
-    "language": "Visual Basic",
-    "body": "Dim path As String\npath = \"C:\\data\\log.txt\"\nIf Dir(path) <> \"\" Then ' file exists\n    Debug.Print \"found\"\nEnd If"
-  },
-  "themes": [
-    "boolean_logic",
-    "file_io"
+  "example_programming": [
+    {
+      "language": "JavaScript",
+      "body": "const fs = require('fs');\nif (fs.existsSync('./file.txt')) {\n  console.log('file exists');\n}"
+    },
+    {
+      "language": "Visual Basic",
+      "body": "Dim path As String\npath = \"C:\\data\\log.txt\"\nIf Dir(path) <> \"\" Then\n    Debug.Print \"found\"\nEnd If"
+    },
+    {
+      "language": "Python",
+      "body": "import os\nif os.path.exists('./file.txt'):\n    print('file exists')"
+    },
+    {
+      "language": "Java",
+      "body": "File f = new File(\"./file.txt\");\nif (f.exists()) {\n    System.out.println(\"exists\");\n}"
+    },
+    {
+      "language": "SQL",
+      "body": "SELECT EXISTS(SELECT 1 FROM users WHERE id = 1);"
+    }
   ],
+  "themes": ["boolean_logic", "file_io"],
   "difficulty": 3
 }

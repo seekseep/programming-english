@@ -65,8 +65,7 @@ function WordsPage() {
 
   return (
     <main className="page-shell">
-      <FeatureHeader
-        title="プログラミング英単語帳" />
+      <FeatureHeader title="プログラミング英単語帳" />
 
       {/* フィルターチップ */}
       <ToggleGroup
@@ -113,7 +112,7 @@ function WordsPage() {
                   ? 'border-(--accent) bg-(--accent-bg) cursor-pointer'
                   : encountered
                     ? 'border-(--line) bg-(--card-bg) cursor-pointer'
-                    : 'border-(--line) bg-(--line) text-muted'
+                    : 'border-(--line) bg-(--line) text-muted-foreground'
               }`}
               disabled={!encountered}
             >
@@ -134,7 +133,7 @@ function WordsPage() {
           >
             ←
           </button>
-          <span className="text-sm text-muted">
+          <span className="text-sm text-muted-foreground">
             {page + 1} / {totalPages}
           </span>
           <button

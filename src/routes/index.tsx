@@ -62,19 +62,26 @@ function Home() {
                   Stage {stage.stage}
                   {isCleared && ' ✓'}
                 </h2>
-                <span className="text-xs text-muted">
+                <span className="text-xs text-muted-foreground">
                   {studiedCount}/{words.length} 語学習
                 </span>
               </div>
               <strong>{stage.title}</strong>
               {stage.description && (
-                <p className="text-xs text-muted mt-1">{stage.description}</p>
+                <p className="text-xs text-muted-foreground mt-1">
+                  {stage.description}
+                </p>
               )}
 
               {/* 進捗バー */}
               <div className="h-1.5 rounded-full bg-(--line) flex overflow-hidden mt-2">
                 {(
-                  ['master', 'learned', 'understood', 'beginner'] as Array<MasteryLevel>
+                  [
+                    'master',
+                    'learned',
+                    'understood',
+                    'beginner',
+                  ] as Array<MasteryLevel>
                 ).map((level) => {
                   const pct = words.length
                     ? (masteryCounts[level] / words.length) * 100
@@ -83,7 +90,10 @@ function Home() {
                   return (
                     <div
                       key={level}
-                      className={cn('h-full transition-[width] duration-300', MASTERY_BG_CLASS[level])}
+                      className={cn(
+                        'h-full transition-[width] duration-300',
+                        MASTERY_BG_CLASS[level],
+                      )}
                       style={{ width: `${pct}%` }}
                     />
                   )

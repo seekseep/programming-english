@@ -6,12 +6,28 @@
     "english": "Check whether the number is positive before using it.",
     "japanese": "使う前にその数が正かどうか確認してください。"
   },
-  "example_programming": {
-    "language": "Visual Basic",
-    "body": "Function CheckPositive(value As Integer) As Boolean\n    CheckPositive = (value > 0)\nEnd Function\n\nDebug.Print CheckPositive(10)"
-  },
-  "themes": [
-    "boolean_logic"
+  "example_programming": [
+    {
+      "language": "Visual Basic",
+      "body": "Function CheckPositive(value As Integer) As Boolean\n    CheckPositive = (value > 0)\nEnd Function\n\nDebug.Print CheckPositive(10)"
+    },
+    {
+      "language": "JavaScript",
+      "body": "function check(n) { return n > 0; }\nif (check(5)) console.log('ok');"
+    },
+    {
+      "language": "Python",
+      "body": "def check(value):\n  return value > 0\nprint(check(10))"
+    },
+    {
+      "language": "Java",
+      "body": "boolean check(int value) {\n  return value > 0;\n}\nSystem.out.println(check(5));"
+    },
+    {
+      "language": "SQL",
+      "body": "SELECT * FROM data\nWHERE 1=1 AND status IS NOT NULL;"
+    }
   ],
+  "themes": ["boolean_logic"],
   "difficulty": 3
 }

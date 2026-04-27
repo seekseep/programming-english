@@ -6,13 +6,28 @@
     "english": "What is the max score?",
     "japanese": "最高得点はいくつですか？"
   },
-  "example_programming": {
-    "language": "SQL",
-    "body": "SELECT MAX(score)\nFROM exams;"
-  },
-  "themes": [
-    "numbers_and_math",
-    "sql_aggregation"
+  "example_programming": [
+    {
+      "language": "SQL",
+      "body": "SELECT MAX(score)\nFROM exams;"
+    },
+    {
+      "language": "JavaScript",
+      "body": "const scores = [85, 92, 78, 95];\nconst max = Math.max(...scores);\nconsole.log(max);"
+    },
+    {
+      "language": "Python",
+      "body": "scores = [85, 92, 78, 95]\nmax_score = max(scores)\nprint(max_score)"
+    },
+    {
+      "language": "Java",
+      "body": "int[] scores = {85, 92, 78, 95};\nint max = java.util.Arrays.stream(scores).max().orElse(0);\nSystem.out.println(max);"
+    },
+    {
+      "language": "Visual Basic",
+      "body": "Dim scores() As Integer = {85, 92, 78, 95}\nDim max_val As Integer = Application.WorksheetFunction.Max(scores)\nMsgBox max_val"
+    }
   ],
+  "themes": ["numbers_and_math", "sql_aggregation"],
   "difficulty": 1
 }

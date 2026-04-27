@@ -6,12 +6,28 @@
     "english": "The ceiling of this room is painted white.",
     "japanese": "この部屋の天井は白く塗られている。"
   },
-  "example_programming": {
-    "language": "JavaScript",
-    "body": "const pages = Math.ceil(25 / 10);\nconsole.log(pages);\nconsole.log(Math.ceil(-1.2));"
-  },
-  "themes": [
-    "numbers_and_math"
+  "example_programming": [
+    {
+      "language": "JavaScript",
+      "body": "const pages = Math.ceil(25 / 10);\nconsole.log(pages);\nconsole.log(Math.ceil(-1.2));"
+    },
+    {
+      "language": "Python",
+      "body": "import math\nresult = math.ceil(5.2)\nprint(result)\nprint(math.ceil(-3.1))"
+    },
+    {
+      "language": "Java",
+      "body": "double x = 2.3;\nlong result = Math.round(Math.ceil(x));\nSystem.out.println(result);"
+    },
+    {
+      "language": "Visual Basic",
+      "body": "Function Ceiling(val As Double) As Long\n    Ceiling = Int(val) + If(val <> Int(val), 1, 0)\nEnd Function\nMsgBox Ceiling(3.2)"
+    },
+    {
+      "language": "SQL",
+      "body": "SELECT CEILING(25.1) AS result,\n       CEILING(-2.3) AS neg_ceil\nFROM (VALUES (1)) AS dummy(x);"
+    }
   ],
+  "themes": ["numbers_and_math"],
   "difficulty": 9
 }

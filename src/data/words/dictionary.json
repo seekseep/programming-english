@@ -6,12 +6,28 @@
     "english": "The dictionary stores each user's score by name.",
     "japanese": "その辞書には名前をキーとして各ユーザーの得点が格納されています。"
   },
-  "example_programming": {
-    "language": "JavaScript",
-    "body": "const dictionary = { alice: 80, bob: 72 };\ndictionary.carol = 95;\nconsole.log(dictionary.alice);\nconsole.log(Object.keys(dictionary).length);"
-  },
-  "themes": [
-    "collections"
+  "example_programming": [
+    {
+      "language": "JavaScript",
+      "body": "const dictionary = { alice: 80, bob: 72 };\ndictionary.carol = 95;\nconsole.log(dictionary.alice);\nconsole.log(Object.keys(dictionary).length);"
+    },
+    {
+      "language": "Visual Basic",
+      "body": "Dim dictionary As Object\nSet dictionary = CreateObject(\"Scripting.Dictionary\")\ndictionary.Add \"alice\", 80\ndictionary.Add \"bob\", 72\nMsgBox dictionary(\"alice\")"
+    },
+    {
+      "language": "Python",
+      "body": "dictionary = {'alice': 80, 'bob': 72}\ndictionary['carol'] = 95\nprint(dictionary['alice'])\nprint(len(dictionary))"
+    },
+    {
+      "language": "Java",
+      "body": "Map<String, Integer> dictionary = new HashMap<>();\ndictionary.put(\"alice\", 80);\ndictionary.put(\"bob\", 72);\nSystem.out.println(dictionary.get(\"alice\"));"
+    },
+    {
+      "language": "SQL",
+      "body": "CREATE TABLE dictionary (\n  key VARCHAR(50),\n  value INT\n);\nINSERT INTO dictionary VALUES ('alice', 80), ('bob', 72);"
+    }
   ],
+  "themes": ["collections"],
   "difficulty": 4
 }

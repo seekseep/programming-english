@@ -6,12 +6,28 @@
     "english": "I used a resume template to save time.",
     "japanese": "私は時間を節約するために履歴書のテンプレートを使った。"
   },
-  "example_programming": {
-    "language": "JavaScript",
-    "body": "// template\nconst name = \"Alice\";\nconst age = 30;\nconsole.log(`Hello, ${name}. You are ${age} years old.`);"
-  },
-  "themes": [
-    "strings_and_text"
+  "example_programming": [
+    {
+      "language": "JavaScript",
+      "body": "// template\nconst name = \"Alice\";\nconst age = 30;\nconsole.log(`Hello, ${name}. You are ${age} years old.`);"
+    },
+    {
+      "language": "Visual Basic",
+      "body": "Dim name As String = \"Alice\"\nDim age As Integer = 30\nMsgBox $\"Hello, {name}. You are {age} years old.\""
+    },
+    {
+      "language": "Python",
+      "body": "name = \"Alice\"\nage = 30\nprint(f\"Hello, {name}. You are {age} years old.\")"
+    },
+    {
+      "language": "Java",
+      "body": "String name = \"Alice\";\nint age = 30;\nString template = String.format(\"Hello, %s. You are %d years old.\", name, age);"
+    },
+    {
+      "language": "SQL",
+      "body": "SELECT CONCAT('Hello, ', name, '. You are ', age, ' years old.') AS template\nFROM users WHERE name = 'Alice';"
+    }
   ],
+  "themes": ["strings_and_text"],
   "difficulty": 9
 }

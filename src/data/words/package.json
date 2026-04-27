@@ -6,10 +6,28 @@
     "english": "Install the package with npm before running the app.",
     "japanese": "アプリを実行する前に、npmでパッケージをインストールしてください。"
   },
-  "example_programming": {
-    "language": "JavaScript",
-    "body": "// package.json\n{\n  \"name\": \"my-app\",\n  \"version\": \"1.0.0\",\n  \"main\": \"index.js\"\n}"
-  },
+  "example_programming": [
+    {
+      "language": "JavaScript",
+      "body": "// package.json\n{\n  \"name\": \"my-app\",\n  \"version\": \"1.0.0\",\n  \"main\": \"index.js\"\n}"
+    },
+    {
+      "language": "Visual Basic",
+      "body": "' VB.NET package reference\nImports NuGet.Frameworks\nPublic Class PackageInfo\n    Public Property Name As String\n    Public Property Version As String\nEnd Class"
+    },
+    {
+      "language": "Python",
+      "body": "import importlib.metadata\npackage = importlib.metadata.distribution('numpy')\nprint(f\"Package: {package.name}, Version: {package.version}\")"
+    },
+    {
+      "language": "Java",
+      "body": "import org.apache.maven.model.Model;\nimport org.apache.maven.model.io.xpp3.MavenXpp3Reader;\npublic class Package { public String name; public String version; }"
+    },
+    {
+      "language": "SQL",
+      "body": "CREATE TABLE packages (\n  id INT PRIMARY KEY,\n  name VARCHAR(100),\n  version VARCHAR(20)\n);"
+    }
+  ],
   "themes": [
     "modules_and_imports"
   ],

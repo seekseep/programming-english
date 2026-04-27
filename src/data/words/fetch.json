@@ -6,12 +6,28 @@
     "english": "Fetch the list of products from the API.",
     "japanese": "APIから商品の一覧を取得してください。"
   },
-  "example_programming": {
-    "language": "JavaScript",
-    "body": "const res = await fetch('https://api.example.com/products');\nconst products = await res.json();\nconsole.log(products.length);"
-  },
-  "themes": [
-    "async_programming"
+  "example_programming": [
+    {
+      "language": "JavaScript",
+      "body": "const res = await fetch('https://api.example.com/products');\nconst products = await res.json();\nconsole.log(products.length);"
+    },
+    {
+      "language": "Python",
+      "body": "import requests\nresponse = requests.get('https://api.example.com/products')\nproducts = response.json()\nprint(len(products))"
+    },
+    {
+      "language": "Visual Basic",
+      "body": "Dim request As Object\nSet request = CreateObject(\"MSXML2.XMLHTTP\")\nCall request.Open(\"GET\", \"https://api.example.com/products\")\nCall request.Send()"
+    },
+    {
+      "language": "Java",
+      "body": "HttpClient client = HttpClient.newHttpClient();\nHttpRequest request = HttpRequest.newBuilder()\n  .uri(new URI(\"https://api.example.com/products\"))\n  .build();\nHttpResponse response = client.send(request, HttpResponse.BodyHandlers.ofString());"
+    },
+    {
+      "language": "SQL",
+      "body": "SELECT id, name, price\nFROM products\nFETCH FIRST 10 ROWS ONLY;"
+    }
   ],
+  "themes": ["async_programming"],
   "difficulty": 6
 }

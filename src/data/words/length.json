@@ -6,13 +6,28 @@
     "english": "The length of the array is five.",
     "japanese": "その配列の長さは 5 です。"
   },
-  "example_programming": {
-    "language": "JavaScript",
-    "body": "const numbers = [10, 20, 30, 40, 50];\nconst length = numbers.length;\nconsole.log(length);"
-  },
-  "themes": [
-    "collections",
-    "strings_and_text"
+  "example_programming": [
+    {
+      "language": "JavaScript",
+      "body": "const numbers = [10, 20, 30, 40, 50];\nconst length = numbers.length;\nconsole.log(length);"
+    },
+    {
+      "language": "Python",
+      "body": "items = [10, 20, 30, 40, 50]\nlength = len(items)\nprint(f\"Length: {length}\")"
+    },
+    {
+      "language": "Java",
+      "body": "int[] numbers = {10, 20, 30, 40, 50};\nint length = numbers.length;\nSystem.out.println(length);"
+    },
+    {
+      "language": "Visual Basic",
+      "body": "Dim numbers() As Integer = {10, 20, 30, 40, 50}\nDim length As Integer = numbers.Length\nDebug.Print length"
+    },
+    {
+      "language": "SQL",
+      "body": "SELECT id, LENGTH(name) AS name_length FROM users;"
+    }
   ],
+  "themes": ["collections", "strings_and_text"],
   "difficulty": 2
 }

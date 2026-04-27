@@ -6,12 +6,28 @@
     "english": "The test coverage report shows that 85% of the lines are covered.",
     "japanese": "テストのカバレッジレポートによると、行の85%が網羅されています。"
   },
-  "example_programming": {
-    "language": "JavaScript",
-    "body": "// run tests with coverage\n// $ jest --coverage\ntest('sum', () => {\n  expect(sum(1, 2)).toBe(3);\n});"
-  },
-  "themes": [
-    "debugging_and_testing"
+  "example_programming": [
+    {
+      "language": "JavaScript",
+      "body": "test('sum', () => {\n  expect(sum(1, 2)).toBe(3);\n});"
+    },
+    {
+      "language": "Python",
+      "body": "import pytest\ndef test_coverage():\n  assert sum([1, 2, 3]) == 6\n  result = process(True)\n  assert result is not None"
+    },
+    {
+      "language": "Java",
+      "body": "@Test\npublic void testCoverage() {\n  assertTrue(method(5) > 0);\n  assertFalse(method(-1) > 0);\n}"
+    },
+    {
+      "language": "Visual Basic",
+      "body": "Public Sub TestCoverage()\n  Assert.AreEqual(True, MyFunction(10))\n  Assert.AreEqual(False, MyFunction(-5))\nEnd Sub"
+    },
+    {
+      "language": "SQL",
+      "body": "SELECT COUNT(*) AS coverage\nFROM test_results\nWHERE test_passed = 1;"
+    }
   ],
+  "themes": ["debugging_and_testing"],
   "difficulty": 10
 }

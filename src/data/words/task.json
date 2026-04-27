@@ -6,12 +6,28 @@
     "english": "Run all fetch tasks in parallel and wait for them.",
     "japanese": "すべての取得タスクを並行で実行して完了を待ってください。"
   },
-  "example_programming": {
-    "language": "JavaScript",
-    "body": "const urls = ['/a', '/b', '/c'];\nconst tasks = urls.map(u => fetch(u));\nconst results = await Promise.all(tasks);"
-  },
-  "themes": [
-    "async_programming"
+  "example_programming": [
+    {
+      "language": "JavaScript",
+      "body": "const urls = ['/a', '/b', '/c'];\nconst tasks = urls.map(u => fetch(u));\nconst results = await Promise.all(tasks);"
+    },
+    {
+      "language": "Visual Basic",
+      "body": "Dim task As Task = Task.Run(Sub()\n    For i = 1 To 3\n        DoSomething()\n    Next\nEnd Sub)\nAwait task"
+    },
+    {
+      "language": "Python",
+      "body": "import asyncio\nasync def fetch_data(url):\n    return await fetch(url)\ntasks = [fetch_data(url) for url in ['/a', '/b', '/c']]\nresults = await asyncio.gather(*tasks)"
+    },
+    {
+      "language": "Java",
+      "body": "List<Future<String>> tasks = new ArrayList<>();\nfor (String url : urls) {\n    tasks.add(executor.submit(() -> fetch(url)));\n}\nfor (Future<String> task : tasks) {\n    String result = task.get();\n}"
+    },
+    {
+      "language": "SQL",
+      "body": "CREATE TABLE tasks (\n    task_id INT PRIMARY KEY,\n    status VARCHAR(50),\n    result TEXT\n);\nUPDATE tasks SET status = 'completed' WHERE task_id IN (1, 2, 3);"
+    }
   ],
+  "themes": ["async_programming"],
   "difficulty": 6
 }

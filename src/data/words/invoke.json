@@ -6,12 +6,28 @@
     "english": "Invoke the update method to refresh the display.",
     "japanese": "表示を更新するために、更新メソッドを呼び出してください。"
   },
-  "example_programming": {
-    "language": "Visual Basic",
-    "body": "Sub UpdateLabel(text As String)\n    Label1.Text = text\nEnd Sub\n\nMe.Invoke(New Action(Of String)(AddressOf UpdateLabel), \"done\")"
-  },
-  "themes": [
-    "functions_and_procedures"
+  "example_programming": [
+    {
+      "language": "Visual Basic",
+      "body": "Sub UpdateLabel(text As String)\n    Label1.Text = text\nEnd Sub\n\nMe.Invoke(New Action(Of String)(AddressOf UpdateLabel), \"done\")"
+    },
+    {
+      "language": "JavaScript",
+      "body": "const func = () => console.log(\"invoked\");\nfunc.call(this);"
+    },
+    {
+      "language": "Python",
+      "body": "def update(msg):\n    print(msg)\n\nupdate.__call__(\"invoke method\")"
+    },
+    {
+      "language": "Java",
+      "body": "Method invoke = String.class.getMethod(\"length\");\nString str = \"hello\";\nint result = (Integer) invoke.invoke(str);"
+    },
+    {
+      "language": "SQL",
+      "body": "CALL stored_procedure_invoke('param1', 'param2');"
+    }
   ],
+  "themes": ["functions_and_procedures"],
   "difficulty": 4
 }

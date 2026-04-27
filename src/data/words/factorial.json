@@ -6,12 +6,28 @@
     "english": "In math class we learned how to compute a factorial.",
     "japanese": "数学の授業で私たちは階乗の計算方法を学んだ。"
   },
-  "example_programming": {
-    "language": "JavaScript",
-    "body": "function factorial(n) {\n  return n <= 1 ? 1 : n * factorial(n - 1);\n}\nconsole.log(factorial(5));"
-  },
-  "themes": [
-    "numbers_and_math"
+  "example_programming": [
+    {
+      "language": "JavaScript",
+      "body": "function factorial(n) {\n  return n <= 1 ? 1 : n * factorial(n - 1);\n}\nconsole.log(factorial(5));"
+    },
+    {
+      "language": "Visual Basic",
+      "body": "Function Factorial(n As Integer) As Long\n    If n <= 1 Then\n        Factorial = 1\n    Else\n        Factorial = n * Factorial(n - 1)\n    End If\nEnd Function"
+    },
+    {
+      "language": "Python",
+      "body": "def factorial(n):\n    return 1 if n <= 1 else n * factorial(n - 1)\n\nprint(factorial(5))"
+    },
+    {
+      "language": "Java",
+      "body": "public static long factorial(int n) {\n    return n <= 1 ? 1 : n * factorial(n - 1);\n}\nSystem.out.println(factorial(5));"
+    },
+    {
+      "language": "SQL",
+      "body": "WITH RECURSIVE fact AS (\n  SELECT 1 AS n, 1 AS factorial\n  UNION ALL\n  SELECT n + 1, factorial * (n + 1) FROM fact WHERE n < 5\n) SELECT * FROM fact;"
+    }
   ],
+  "themes": ["numbers_and_math"],
   "difficulty": 9
 }

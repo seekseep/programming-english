@@ -6,12 +6,28 @@
     "english": "The absolute value of minus seven is seven.",
     "japanese": "マイナス7の絶対値は7です。"
   },
-  "example_programming": {
-    "language": "Visual Basic",
-    "body": "Dim diff As Double\ndiff = -12.5\nDim result As Double\nresult = Math.Abs(diff) ' absolute value\nDebug.Print result"
-  },
-  "themes": [
-    "numbers_and_math"
+  "example_programming": [
+    {
+      "language": "Visual Basic",
+      "body": "Dim diff As Double\ndiff = -12.5\nDim result As Double\nresult = Math.Abs(diff) ' absolute value\nDebug.Print result"
+    },
+    {
+      "language": "JavaScript",
+      "body": "const num = -42;\nconst absolute = Math.abs(num);\nconsole.log(absolute);"
+    },
+    {
+      "language": "Python",
+      "body": "num = -42\nabsolute = abs(num)\nprint(absolute)"
+    },
+    {
+      "language": "Java",
+      "body": "int num = -42;\nint absolute = Math.abs(num);\nSystem.out.println(absolute);"
+    },
+    {
+      "language": "SQL",
+      "body": "SELECT ABS(-42) AS absolute;"
+    }
   ],
+  "themes": ["numbers_and_math"],
   "difficulty": 3
 }

@@ -1,4 +1,5 @@
 import { Highlight, themes } from 'prism-react-renderer'
+import type { Token } from 'prism-react-renderer'
 
 /**
  * データ上の language 値を prism-react-renderer にバンドルされた言語名に変換する。
@@ -23,6 +24,7 @@ const prismLanguageMap: Record<string, string> = {
   c: 'c',
   'objective-c': 'objectivec',
   objectivec: 'objectivec',
+  java: 'plain',
   graphql: 'graphql',
   markdown: 'markdown',
   xml: 'xml',
@@ -35,9 +37,52 @@ export function toPrismLanguage(language: string): string {
 type Props = {
   code: string
   language: string
+  highlightWord?: string
 }
 
-export function CodeBlock({ code, language }: Props) {
+function renderToken(
+  token: Token,
+  props: Record<string, unknown>,
+  highlightWord: string | undefined,
+  key: number,
+) {
+  if (!highlightWord) {
+    return <span key={key} {...props} />
+  }
+
+  const text = token.content
+  const regex = new RegExp(
+    `(${highlightWord.replace(/[.*+?^${}()|[\]\\]/g, '\\$&')})`,
+    'gi',
+  )
+  const parts = text.split(regex)
+
+  if (parts.length === 1) {
+    return <span key={key} {...props} />
+  }
+
+  return (
+    <span key={key}>
+      {parts.map((part, i) =>
+        regex.test(part) ? (
+          <mark
+            key={i}
+            className="bg-yellow-300/80 text-yellow-950 rounded px-0.5 font-bold"
+            style={{ textDecoration: 'underline', textUnderlineOffset: '2px' }}
+          >
+            {part}
+          </mark>
+        ) : (
+          <span key={i} {...props} style={{ ...(props.style as object) }}>
+            {part}
+          </span>
+        ),
+      )}
+    </span>
+  )
+}
+
+export function CodeBlock({ code, language, highlightWord }: Props) {
   const lang = toPrismLanguage(language)
 
   return (
@@ -49,9 +94,10 @@ export function CodeBlock({ code, language }: Props) {
         >
           {tokens.map((line, i) => (
             <div key={i} {...getLineProps({ line })}>
-              {line.map((token, key) => (
-                <span key={key} {...getTokenProps({ token })} />
-              ))}
+              {line.map((token, key) => {
+                const tokenProps = getTokenProps({ token })
+                return renderToken(token, tokenProps, highlightWord, key)
+              })}
             </div>
           ))}
         </pre>

@@ -6,12 +6,28 @@
     "english": "Lambda is the eleventh letter of the Greek alphabet.",
     "japanese": "ラムダはギリシャ文字の11番目の字である。"
   },
-  "example_programming": {
-    "language": "JavaScript",
-    "body": "// lambda\nconst numbers = [1, 2, 3, 4];\nconst total = numbers.reduce((acc, n) => acc + n, 0);\nconsole.log(total);"
-  },
-  "themes": [
-    "functions_and_procedures"
+  "example_programming": [
+    {
+      "language": "JavaScript",
+      "body": "// lambda\nconst numbers = [1, 2, 3, 4];\nconst total = numbers.reduce((acc, n) => acc + n, 0);\nconsole.log(total);"
+    },
+    {
+      "language": "Python",
+      "body": "numbers = [1, 2, 3, 4]\nsquared = list(map(lambda x: x**2, numbers))\nprint(squared)"
+    },
+    {
+      "language": "Java",
+      "body": "List<Integer> nums = Arrays.asList(1, 2, 3, 4);\nInteger sum = nums.stream().reduce(0, (a, b) -> a + b);\nSystem.out.println(sum);"
+    },
+    {
+      "language": "Visual Basic",
+      "body": "Dim numbers As New List(Of Integer) From {1, 2, 3, 4}\nDim doubled = numbers.Select(Function(x) x * 2).ToList()\nFor Each n In doubled\n    Debug.Print n\nNext"
+    },
+    {
+      "language": "SQL",
+      "body": "SELECT id, CASE WHEN status = 'active' THEN 1 ELSE 0 END AS is_active FROM users;"
+    }
   ],
+  "themes": ["functions_and_procedures"],
   "difficulty": 9
 }

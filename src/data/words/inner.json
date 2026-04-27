@@ -6,12 +6,28 @@
     "english": "Use an inner join to get users who actually placed an order.",
     "japanese": "実際に注文したユーザーを取得するために内部結合を使ってください。"
   },
-  "example_programming": {
-    "language": "SQL",
-    "body": "SELECT users.name, orders.id\nFROM users\nINNER JOIN orders ON users.id = orders.user_id;"
-  },
-  "themes": [
-    "sql_joins"
+  "example_programming": [
+    {
+      "language": "SQL",
+      "body": "SELECT users.name, orders.id\nFROM users\nINNER JOIN orders ON users.id = orders.user_id;"
+    },
+    {
+      "language": "JavaScript",
+      "body": "const users = [{id: 1, name: 'Alice'}];\nconst orders = [{user_id: 1, amount: 100}];\nconst inner = users.filter(u => orders.some(o => o.user_id === u.id));\nconsole.log(inner);"
+    },
+    {
+      "language": "Python",
+      "body": "import pandas as pd\nusers = pd.DataFrame({'id': [1, 2], 'name': ['Alice', 'Bob']})\norders = pd.DataFrame({'user_id': [1], 'amount': [100]})\ninner_result = pd.merge(users, orders, left_on='id', right_on='user_id', how='inner')"
+    },
+    {
+      "language": "Java",
+      "body": "List<User> users = Arrays.asList(new User(1, \"Alice\"));\nList<Order> orders = Arrays.asList(new Order(1, 100));\nList<User> inner = users.stream()\n  .filter(u -> orders.stream().anyMatch(o -> o.userId == u.id))\n  .collect(Collectors.toList());"
+    },
+    {
+      "language": "Visual Basic",
+      "body": "' INNER join simulation\nDim matches As New Collection\nFor Each usr In users\n    For Each ord In orders\n        If usr.id = ord.user_id Then\n            matches.Add usr.name\n        End If\n    Next\nNext"
+    }
   ],
+  "themes": ["sql_joins"],
   "difficulty": 5
 }

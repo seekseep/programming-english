@@ -6,12 +6,28 @@
     "english": "We expect the function to return the total number of items.",
     "japanese": "その関数が項目の総数を返すことを期待します。"
   },
-  "example_programming": {
-    "language": "JavaScript",
-    "body": "test('multiplies numbers', () => {\n  expect(multiply(2, 3)).toBe(6);\n  expect(multiply(0, 5)).toBe(0);\n});"
-  },
-  "themes": [
-    "debugging_and_testing"
+  "example_programming": [
+    {
+      "language": "JavaScript",
+      "body": "test('multiplies numbers', () => {\n  expect(multiply(2, 3)).toBe(6);\n  expect(multiply(0, 5)).toBe(0);\n});"
+    },
+    {
+      "language": "Visual Basic",
+      "body": "Function TestMultiply()\n    Dim result As Integer = Multiply(2, 3)\n    If result <> 6 Then Debug.Print \"expect failed\"\nEnd Function"
+    },
+    {
+      "language": "Python",
+      "body": "def test_multiply():\n    assert multiply(2, 3) == 6\n    assert multiply(0, 5) == 0"
+    },
+    {
+      "language": "Java",
+      "body": "public void testMultiply() {\n    assertEquals(6, multiply(2, 3));\n    assertEquals(0, multiply(0, 5));\n}"
+    },
+    {
+      "language": "SQL",
+      "body": "SELECT CASE WHEN multiply(2, 3) = 6 THEN 1 ELSE 0 END AS expect;"
+    }
   ],
+  "themes": ["debugging_and_testing"],
   "difficulty": 10
 }

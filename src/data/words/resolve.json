@@ -6,12 +6,28 @@
     "english": "Resolve the promise with the fetched data.",
     "japanese": "取得したデータでプロミスを解決してください。"
   },
-  "example_programming": {
-    "language": "JavaScript",
-    "body": "function delay(ms) {\n  return new Promise(resolve => {\n    setTimeout(() => resolve('ok'), ms);\n  });\n}"
-  },
-  "themes": [
-    "async_programming"
+  "example_programming": [
+    {
+      "language": "JavaScript",
+      "body": "function delay(ms) {\n  return new Promise(resolve => {\n    setTimeout(() => resolve('ok'), ms);\n  });\n}"
+    },
+    {
+      "language": "Python",
+      "body": "import asyncio\nasync def delay(ms):\n    await asyncio.sleep(ms / 1000)\n    return 'ok'\nawait delay(1000)"
+    },
+    {
+      "language": "Java",
+      "body": "CompletableFuture<String> future = new CompletableFuture<>();\nfuture.complete(\"ok\");\nString result = future.get();"
+    },
+    {
+      "language": "Visual Basic",
+      "body": "Dim task As Task(Of String) = Task.Delay(1000).ContinueWith(Function(t) \"ok\")\nDim result = Await task"
+    },
+    {
+      "language": "SQL",
+      "body": "SELECT CAST(1 AS INT) AS resolve_status\nWHERE 1 = 1 LIMIT 1;"
+    }
   ],
+  "themes": ["async_programming"],
   "difficulty": 6
 }

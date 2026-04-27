@@ -6,12 +6,28 @@
     "english": "The variable is out of scope outside the function.",
     "japanese": "その変数は関数の外ではスコープ外になります。"
   },
-  "example_programming": {
-    "language": "JavaScript",
-    "body": "function outer() {\n  let x = 10; // function scope\n  if (true) {\n    let y = 20; // block scope\n  }\n  // y is not accessible here\n}"
-  },
-  "themes": [
-    "scope"
+  "example_programming": [
+    {
+      "language": "JavaScript",
+      "body": "function outer() {\n  let x = 10; // function scope\n  if (true) {\n    let y = 20; // block scope\n  }\n  // y is not accessible here\n}"
+    },
+    {
+      "language": "Python",
+      "body": "def outer():\n    x = 10  # function scope\n    if True:\n        y = 20  # block scope in other languages, but not Python\n    print(y)  # accessible in Python\nouter()"
+    },
+    {
+      "language": "Java",
+      "body": "public static void outer() {\n    int x = 10; // function scope\n    if (true) {\n        int y = 20; // block scope\n    }\n    // y is not accessible here\n}"
+    },
+    {
+      "language": "Visual Basic",
+      "body": "Sub outer()\n    Dim x As Integer = 10\n    If True Then\n        Dim y As Integer = 20\n    End If\nEnd Sub"
+    },
+    {
+      "language": "SQL",
+      "body": "CREATE PROCEDURE test AS\nDECLARE @x INT = 10;\nIF 1 = 1\n    DECLARE @y INT = 20;\n-- scope ends\nEND;"
+    }
   ],
+  "themes": ["scope"],
   "difficulty": 8
 }

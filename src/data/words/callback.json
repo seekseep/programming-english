@@ -6,13 +6,28 @@
     "english": "Pass a callback that runs after the file is read.",
     "japanese": "ファイル読み込み後に実行されるコールバックを渡してください。"
   },
-  "example_programming": {
-    "language": "JavaScript",
-    "body": "setTimeout(function callback() {\n  console.log('done');\n}, 1000);"
-  },
-  "themes": [
-    "async_programming",
-    "functions_and_procedures"
+  "example_programming": [
+    {
+      "language": "JavaScript",
+      "body": "setTimeout(function callback() {\n  console.log('done');\n}, 1000);"
+    },
+    {
+      "language": "Visual Basic",
+      "body": "Delegate Sub CallbackDelegate()\nSub ExecuteWithCallback(callback As CallbackDelegate)\n    System.Threading.Thread.Sleep(1000)\n    callback()\nEnd Sub\nCall ExecuteWithCallback(Sub() MsgBox(\"done\"))"
+    },
+    {
+      "language": "Python",
+      "body": "import time\ndef execute_with_callback(callback):\n    time.sleep(1)\n    callback()\nexecute_with_callback(lambda: print('done'))"
+    },
+    {
+      "language": "Java",
+      "body": "public interface Callback {\n    void onComplete();\n}\npublic void executeWithCallback(Callback callback) {\n    callback.onComplete();\n}\nexecuteWithCallback(() -> System.out.println(\"done\"));"
+    },
+    {
+      "language": "SQL",
+      "body": "CREATE PROCEDURE ExecuteWithCallback @result NVARCHAR(MAX) OUTPUT AS\nBEGIN\n    WAITFOR DELAY '00:00:01';\n    SET @result = 'done';\nEND;\nDECLARE @output NVARCHAR(MAX);\nEXEC ExecuteWithCallback @output OUTPUT;\nSELECT @output;"
+    }
   ],
+  "themes": ["async_programming", "functions_and_procedures"],
   "difficulty": 6
 }

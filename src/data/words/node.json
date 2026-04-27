@@ -6,12 +6,28 @@
     "english": "Append a new node to the list element.",
     "japanese": "リスト要素に新しいノードを追加してください。"
   },
-  "example_programming": {
-    "language": "JavaScript",
-    "body": "// node\nconst list = document.querySelector('#items');\nconst item = document.createElement('li');\nitem.textContent = 'New item';\nlist.appendChild(item);"
-  },
-  "themes": [
-    "web_dom"
+  "example_programming": [
+    {
+      "language": "JavaScript",
+      "body": "// node\nconst list = document.querySelector('#items');\nconst item = document.createElement('li');\nitem.textContent = 'New item';\nlist.appendChild(item);"
+    },
+    {
+      "language": "Python",
+      "body": "class TreeNode:\n    def __init__(self, val):\n        self.value = val\n        self.left = None\n        self.right = None\nnode = TreeNode(10)"
+    },
+    {
+      "language": "Java",
+      "body": "class Node {\n    int value;\n    Node left, right;\n    Node(int val) { this.value = val; }\n}\nNode node = new Node(10);"
+    },
+    {
+      "language": "Visual Basic",
+      "body": "Public Class TreeNode\n    Public Value As Integer\n    Public LeftNode As TreeNode\n    Public RightNode As TreeNode\nEnd Class\nDim node As New TreeNode With {.Value = 10}"
+    },
+    {
+      "language": "SQL",
+      "body": "SELECT id, parent_id, value\nFROM tree_nodes\nWHERE parent_id IS NOT NULL\nORDER BY id;"
+    }
   ],
+  "themes": ["web_dom"],
   "difficulty": 5
 }

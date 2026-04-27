@@ -1,4 +1,11 @@
-import { createContext, useContext, useReducer, useRef, useEffect, useCallback } from 'react'
+import {
+  createContext,
+  useContext,
+  useReducer,
+  useRef,
+  useEffect,
+  useCallback,
+} from 'react'
 import type { ReactNode } from 'react'
 import { useNavigate } from '@tanstack/react-router'
 import { useSave } from '#/context/SaveDataContext'
@@ -32,7 +39,9 @@ export function PlayProvider({ stageId, children }: Props) {
 
   // 初回アニメーション
   useEffect(() => {
-    requestAnimationFrame(() => dispatch({ type: 'SET_PHASE', phase: 'visible' }))
+    requestAnimationFrame(() =>
+      dispatch({ type: 'SET_PHASE', phase: 'visible' }),
+    )
   }, [])
 
   // ブラウザバック・リロード時の確認
@@ -61,7 +70,12 @@ export function PlayProvider({ stageId, children }: Props) {
         incorrectRef.current.push(currentWord.english)
       }
 
-      dispatch({ type: 'SELECT_ANSWER', japanese, isCorrect, word: currentWord })
+      dispatch({
+        type: 'SELECT_ANSWER',
+        japanese,
+        isCorrect,
+        word: currentWord,
+      })
       setTimeout(() => dispatch({ type: 'SHOW_RESULT_DRAWER' }), 600)
     },
     [state.selected, currentWord],
@@ -93,9 +107,15 @@ export function PlayProvider({ stageId, children }: Props) {
     }
 
     const nextWord = state.queue[nextIndex]
-    dispatch({ type: 'GO_NEXT', nextIndex, nextChoices: getChoices(nextWord, allWords) })
+    dispatch({
+      type: 'GO_NEXT',
+      nextIndex,
+      nextChoices: getChoices(nextWord, allWords),
+    })
     setTimeout(() => {
-      requestAnimationFrame(() => dispatch({ type: 'SET_PHASE', phase: 'visible' }))
+      requestAnimationFrame(() =>
+        dispatch({ type: 'SET_PHASE', phase: 'visible' }),
+      )
     }, 300)
   }, [state.currentIndex, state.queue, finishGame])
 

@@ -6,12 +6,28 @@
     "english": "The painting uses recursion, with smaller copies of itself inside.",
     "japanese": "その絵画は内部に自身の縮小版を含む再帰的な構図を用いている。"
   },
-  "example_programming": {
-    "language": "JavaScript",
-    "body": "// recursion\nfunction sum(n) {\n  if (n === 0) return 0;\n  return n + sum(n - 1);\n}\nconsole.log(sum(10));"
-  },
-  "themes": [
-    "functions_and_procedures"
+  "example_programming": [
+    {
+      "language": "JavaScript",
+      "body": "// recursion\nfunction sum(n) {\n  if (n === 0) return 0;\n  return n + sum(n - 1);\n}\nconsole.log(sum(10));"
+    },
+    {
+      "language": "Python",
+      "body": "def factorial(n):\n    if n <= 1:\n        return 1\n    return n * factorial(n - 1)\nprint(factorial(5))"
+    },
+    {
+      "language": "Java",
+      "body": "public static int fibonacci(int n) {\n    if (n <= 1) return n;\n    return fibonacci(n - 1) + fibonacci(n - 2);\n}\nint result = fibonacci(7);"
+    },
+    {
+      "language": "Visual Basic",
+      "body": "Function Factorial(n As Integer) As Integer\n    If n <= 1 Then Return 1\n    Return n * Factorial(n - 1)\nEnd Function"
+    },
+    {
+      "language": "SQL",
+      "body": "WITH RECURSIVE numbers AS (\n  SELECT 1 AS n\n  UNION ALL\n  SELECT n + 1 FROM numbers WHERE n < 5\n) SELECT * FROM numbers;"
+    }
   ],
+  "themes": ["functions_and_procedures"],
   "difficulty": 9
 }

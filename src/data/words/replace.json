@@ -6,12 +6,28 @@
     "english": "Replace every space with a hyphen.",
     "japanese": "すべてのスペースをハイフンに置き換えてください。"
   },
-  "example_programming": {
-    "language": "JavaScript",
-    "body": "const title = \"hello world example\";\nconst slug = title.replaceAll(\" \", \"-\");\nconsole.log(slug);"
-  },
-  "themes": [
-    "strings_and_text"
+  "example_programming": [
+    {
+      "language": "JavaScript",
+      "body": "const title = \"hello world example\";\nconst slug = title.replaceAll(\" \", \"-\");\nconsole.log(slug);"
+    },
+    {
+      "language": "Python",
+      "body": "title = \"hello world example\"\nslug = title.replace(\" \", \"-\")\nprint(slug)"
+    },
+    {
+      "language": "Java",
+      "body": "String title = \"hello world example\";\nString slug = title.replace(\" \", \"-\");\nSystem.out.println(slug);"
+    },
+    {
+      "language": "Visual Basic",
+      "body": "Dim title As String = \"hello world example\"\nDim slug As String = title.Replace(\" \", \"-\")\nDebug.Print(slug)"
+    },
+    {
+      "language": "SQL",
+      "body": "SELECT REPLACE('hello world example', ' ', '-') AS slug;"
+    }
   ],
+  "themes": ["strings_and_text"],
   "difficulty": 3
 }

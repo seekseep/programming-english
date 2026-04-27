@@ -6,12 +6,28 @@
     "english": "Please put your signature at the bottom of the contract.",
     "japanese": "契約書の末尾に署名をお願いします。"
   },
-  "example_programming": {
-    "language": "JavaScript",
-    "body": "// signature\n/**\n * @param {number} a\n * @param {number} b\n * @returns {number}\n */\nfunction add(a, b) {\n  return a + b;\n}"
-  },
-  "themes": [
-    "functions_and_procedures"
+  "example_programming": [
+    {
+      "language": "JavaScript",
+      "body": "// signature\n/**\n * @param {number} a\n * @param {number} b\n * @returns {number}\n */\nfunction add(a, b) {\n  return a + b;\n}"
+    },
+    {
+      "language": "Visual Basic",
+      "body": "Public Function Add(a As Integer, b As Integer) As Integer\n    Return a + b\nEnd Function"
+    },
+    {
+      "language": "Python",
+      "body": "def add(a: int, b: int) -> int:\n    return a + b"
+    },
+    {
+      "language": "Java",
+      "body": "public static int add(int a, int b) {\n    return a + b;\n}"
+    },
+    {
+      "language": "SQL",
+      "body": "CREATE FUNCTION add_numbers(a INT, b INT)\nRETURNS INT AS\nBEGIN\n  RETURN a + b;\nEND;"
+    }
   ],
+  "themes": ["functions_and_procedures"],
   "difficulty": 9
 }

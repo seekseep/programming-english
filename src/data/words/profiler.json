@@ -6,12 +6,28 @@
     "english": "The profiler shows that parsing takes most of the execution time.",
     "japanese": "プロファイラによると、実行時間の大部分はパース処理で占められています。"
   },
-  "example_programming": {
-    "language": "JavaScript",
-    "body": "// use the built-in profiler\nconsole.profile('render');\nrenderPage();\nconsole.profileEnd('render');"
-  },
-  "themes": [
-    "debugging_and_testing"
+  "example_programming": [
+    {
+      "language": "JavaScript",
+      "body": "// use the built-in profiler\nconsole.profile('render');\nrenderPage();\nconsole.profileEnd('render');"
+    },
+    {
+      "language": "Visual Basic",
+      "body": "Dim sw As System.Diagnostics.Stopwatch = System.Diagnostics.Stopwatch.StartNew()\nRenderPage()\nsw.Stop()\nDebug.Print \"Profiler: \" & sw.ElapsedMilliseconds & \"ms\""
+    },
+    {
+      "language": "Python",
+      "body": "import cProfile\nimport pstats\nprofiler = cProfile.Profile()\nprofiler.enable()\nrender_page()\nprofiler.disable()\nstats = pstats.Stats(profiler)"
+    },
+    {
+      "language": "Java",
+      "body": "long start = System.currentTimeMillis();\nrenderPage();\nlong end = System.currentTimeMillis();\nSystem.out.println(\"Profiler: \" + (end - start) + \"ms\");"
+    },
+    {
+      "language": "SQL",
+      "body": "EXPLAIN ANALYZE\nSELECT COUNT(*) FROM large_table WHERE active = 1;"
+    }
   ],
+  "themes": ["debugging_and_testing"],
   "difficulty": 10
 }

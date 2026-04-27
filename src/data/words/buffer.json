@@ -6,12 +6,28 @@
     "english": "Read the file into a buffer before processing each line.",
     "japanese": "各行を処理する前に、ファイルをバッファに読み込んでください。"
   },
-  "example_programming": {
-    "language": "JavaScript",
-    "body": "const fs = require('fs');\nconst buffer = fs.readFileSync('data.txt');\nconsole.log(buffer.toString('utf8'));"
-  },
-  "themes": [
-    "file_io"
+  "example_programming": [
+    {
+      "language": "JavaScript",
+      "body": "const fs = require('fs');\nconst buffer = fs.readFileSync('data.txt');\nconsole.log(buffer.toString('utf8'));"
+    },
+    {
+      "language": "Visual Basic",
+      "body": "Dim buffer As New Byte(1023) {}\nDim stream As New FileStream(\"data.txt\", FileMode.Open)\nstream.Read(buffer, 0, buffer.Length)\nstream.Close()"
+    },
+    {
+      "language": "Python",
+      "body": "with open('data.txt', 'rb') as f:\n    buffer = f.read(1024)\n    print(buffer.decode('utf8'))"
+    },
+    {
+      "language": "Java",
+      "body": "FileInputStream fis = new FileInputStream(\"data.txt\");\nbyte[] buffer = new byte[1024];\nint bytesRead = fis.read(buffer);\nfis.close();"
+    },
+    {
+      "language": "SQL",
+      "body": "DECLARE @buffer VARBINARY(MAX);\nREADFILE 'data.txt' INTO @buffer;\nSELECT CONVERT(VARCHAR(MAX), @buffer) AS buffer_content;"
+    }
   ],
+  "themes": ["file_io"],
   "difficulty": 7
 }

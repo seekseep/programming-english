@@ -6,12 +6,28 @@
     "english": "Select your country from the combobox.",
     "japanese": "コンボボックスから国を選択してください。"
   },
-  "example_programming": {
-    "language": "Visual Basic",
-    "body": "ComboBox1.AddItem \"Japan\"\nComboBox1.AddItem \"USA\"\nComboBox1.ListIndex = 0"
-  },
-  "themes": [
-    "vb_forms_controls"
+  "example_programming": [
+    {
+      "language": "Visual Basic",
+      "body": "ComboBox1.AddItem \"Japan\"\nComboBox1.AddItem \"USA\"\nComboBox1.ListIndex = 0"
+    },
+    {
+      "language": "JavaScript",
+      "body": "const combobox = document.querySelector('select');\ncombobox.innerHTML = '<option>Japan</option><option>USA</option>';\ncombobox.value = 'Japan';"
+    },
+    {
+      "language": "Python",
+      "body": "from tkinter import ttk\ncb = ttk.Combobox(root, values=['Japan', 'USA'])\ncb.set('Japan')\ncb.pack()"
+    },
+    {
+      "language": "Java",
+      "body": "String[] items = {\"Japan\", \"USA\", \"China\"};\nJComboBox<String> combobox = new JComboBox<>(items);\ncombobox.setSelectedIndex(0);"
+    },
+    {
+      "language": "SQL",
+      "body": "CREATE TABLE combobox_values (\n  id INT,\n  item VARCHAR(50)\n);\nINSERT INTO combobox_values VALUES (1, 'Japan'), (2, 'USA');"
+    }
   ],
+  "themes": ["vb_forms_controls"],
   "difficulty": 7
 }

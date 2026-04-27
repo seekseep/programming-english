@@ -6,12 +6,28 @@
     "english": "I am not tired.",
     "japanese": "私は疲れていません。"
   },
-  "example_programming": {
-    "language": "JavaScript",
-    "body": "// not\nconst isOpen = false;\nif (!isOpen) {\n  console.log('closed');\n}"
-  },
-  "themes": [
-    "operators"
+  "example_programming": [
+    {
+      "language": "JavaScript",
+      "body": "// not\nconst isOpen = false;\nif (!isOpen) {\n  console.log('closed');\n}"
+    },
+    {
+      "language": "Python",
+      "body": "is_open = False\nif not is_open:\n    print('closed')"
+    },
+    {
+      "language": "Java",
+      "body": "boolean isOpen = false;\nif (!isOpen) {\n    System.out.println(\"closed\");\n}"
+    },
+    {
+      "language": "Visual Basic",
+      "body": "Dim isOpen As Boolean = False\nIf Not isOpen Then\n    MsgBox \"closed\"\nEnd If"
+    },
+    {
+      "language": "SQL",
+      "body": "SELECT * FROM items\nWHERE NOT status = 'closed'\nOR NOT is_active;"
+    }
   ],
+  "themes": ["operators"],
   "difficulty": 1
 }

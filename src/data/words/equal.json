@@ -6,12 +6,28 @@
     "english": "Two plus three is equal to five.",
     "japanese": "2足す3は5に等しい。"
   },
-  "example_programming": {
-    "language": "SQL",
-    "body": "-- equal\nSELECT name\nFROM users\nWHERE id = 1;"
-  },
-  "themes": [
-    "operators"
+  "example_programming": [
+    {
+      "language": "JavaScript",
+      "body": "if (a === b) {\n  console.log(\"equal\");\n}"
+    },
+    {
+      "language": "Visual Basic",
+      "body": "If a = b Then\n    Debug.Print \"equal\"\nEnd If"
+    },
+    {
+      "language": "Python",
+      "body": "if a == b:\n    print(\"equal\")"
+    },
+    {
+      "language": "Java",
+      "body": "if (a == b) {\n    System.out.println(\"equal\");\n}"
+    },
+    {
+      "language": "SQL",
+      "body": "SELECT name\nFROM users\nWHERE id = 1;"
+    }
   ],
+  "themes": ["operators"],
   "difficulty": 1
 }

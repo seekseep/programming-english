@@ -6,12 +6,28 @@
     "english": "Create an object that stores the user's name and age.",
     "japanese": "ユーザーの名前と年齢を保持するオブジェクトを作ってください。"
   },
-  "example_programming": {
-    "language": "JavaScript",
-    "body": "// object\nconst user = { name: \"Alice\", age: 28 };\nuser.age += 1;\nconsole.log(user);"
-  },
-  "themes": [
-    "collections"
+  "example_programming": [
+    {
+      "language": "JavaScript",
+      "body": "// object\nconst user = { name: \"Alice\", age: 28 };\nuser.age += 1;\nconsole.log(user);"
+    },
+    {
+      "language": "Python",
+      "body": "class User:\n    def __init__(self, name, age):\n        self.name = name\n        self.age = age\nuser = User(\"Alice\", 28)"
+    },
+    {
+      "language": "Java",
+      "body": "class User {\n    String name;\n    int age;\n    User(String name, int age) {\n        this.name = name;\n        this.age = age;\n    }\n}"
+    },
+    {
+      "language": "Visual Basic",
+      "body": "Public Class User\n    Public Name As String\n    Public Age As Integer\n    Sub New(n As String, a As Integer)\n        Name = n\n        Age = a\n    End Sub\nEnd Class"
+    },
+    {
+      "language": "SQL",
+      "body": "SELECT id, name, age FROM users;\nUPDATE users SET age = age + 1 WHERE id = 1;"
+    }
   ],
+  "themes": ["collections"],
   "difficulty": 4
 }

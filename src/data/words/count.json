@@ -6,13 +6,28 @@
     "english": "Please count the number of students.",
     "japanese": "生徒の人数を数えてください。"
   },
-  "example_programming": {
-    "language": "SQL",
-    "body": "SELECT COUNT(*)\nFROM students;"
-  },
-  "themes": [
-    "numbers_and_math",
-    "sql_aggregation"
+  "example_programming": [
+    {
+      "language": "SQL",
+      "body": "SELECT COUNT(*)\nFROM students;"
+    },
+    {
+      "language": "JavaScript",
+      "body": "const count = array.length;\nconst filtered = array.filter(x => x > 5).length;"
+    },
+    {
+      "language": "Python",
+      "body": "items = [1, 2, 3]\ncount = len(items)"
+    },
+    {
+      "language": "Java",
+      "body": "int count = list.size();\nint filtered = (int) list.stream().filter(x -> x > 5).count();"
+    },
+    {
+      "language": "Visual Basic",
+      "body": "Dim count As Integer = UBound(array) + 1"
+    }
   ],
+  "themes": ["numbers_and_math", "sql_aggregation"],
   "difficulty": 1
 }

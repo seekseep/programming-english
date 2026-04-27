@@ -6,12 +6,28 @@
     "english": "Show the tail of the log to see the most recent events.",
     "japanese": "最新のイベントを確認するために、ログの末尾を表示してください。"
   },
-  "example_programming": {
-    "language": "SQL",
-    "body": "SELECT *\nFROM event_log\nORDER BY logged_at DESC\nLIMIT 10; -- tail of the log"
-  },
-  "themes": [
-    "collections"
+  "example_programming": [
+    {
+      "language": "SQL",
+      "body": "SELECT *\nFROM event_log\nORDER BY logged_at DESC\nLIMIT 10; -- tail of the log"
+    },
+    {
+      "language": "JavaScript",
+      "body": "const arr = [1, 2, 3, 4, 5];\nconst tail = arr.slice(-3);\nconsole.log(tail);"
+    },
+    {
+      "language": "Visual Basic",
+      "body": "Dim arr As Integer() = {1, 2, 3, 4, 5}\nDim tail As Integer() = arr.Skip(arr.Length - 3).ToArray()"
+    },
+    {
+      "language": "Python",
+      "body": "arr = [1, 2, 3, 4, 5]\ntail = arr[-3:]\nprint(tail)"
+    },
+    {
+      "language": "Java",
+      "body": "int[] arr = {1, 2, 3, 4, 5};\nint[] tail = Arrays.copyOfRange(arr, arr.length - 3, arr.length);"
+    }
   ],
+  "themes": ["collections"],
   "difficulty": 4
 }

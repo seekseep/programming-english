@@ -6,12 +6,28 @@
     "english": "This function takes a name as a parameter.",
     "japanese": "この関数は名前を仮引数として受け取ります。"
   },
-  "example_programming": {
-    "language": "Visual Basic",
-    "body": "Sub SayHello(parameter As String)\n    MsgBox \"Hello, \" & parameter\nEnd Sub\n\nCall SayHello(\"Hanako\")"
-  },
-  "themes": [
-    "functions_and_procedures"
+  "example_programming": [
+    {
+      "language": "Visual Basic",
+      "body": "Sub SayHello(parameter As String)\n    MsgBox \"Hello, \" & parameter\nEnd Sub\n\nCall SayHello(\"Hanako\")"
+    },
+    {
+      "language": "JavaScript",
+      "body": "function sayHello(parameter) {\n  console.log(`Hello, ${parameter}`);\n}\nsayHello(\"Hanako\");"
+    },
+    {
+      "language": "Python",
+      "body": "def say_hello(parameter):\n    print(f\"Hello, {parameter}\")\nsay_hello(\"Hanako\")"
+    },
+    {
+      "language": "Java",
+      "body": "public void sayHello(String parameter) {\n    System.out.println(\"Hello, \" + parameter);\n}\nsayHello(\"Hanako\");"
+    },
+    {
+      "language": "SQL",
+      "body": "CREATE PROCEDURE SayHello(@parameter VARCHAR(50))\nAS\nBEGIN\n  PRINT 'Hello, ' + @parameter;\nEND;"
+    }
   ],
+  "themes": ["functions_and_procedures"],
   "difficulty": 2
 }

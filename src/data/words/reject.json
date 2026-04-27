@@ -6,12 +6,28 @@
     "english": "Reject the promise if the input is invalid.",
     "japanese": "入力が不正ならプロミスを拒否してください。"
   },
-  "example_programming": {
-    "language": "JavaScript",
-    "body": "function validate(value) {\n  return new Promise((resolve, reject) => {\n    if (!value) reject(new Error('empty'));\n    else resolve(value);\n  });\n}"
-  },
-  "themes": [
-    "async_programming"
+  "example_programming": [
+    {
+      "language": "JavaScript",
+      "body": "function validate(value) {\n  return new Promise((resolve, reject) => {\n    if (!value) reject(new Error('empty'));\n    else resolve(value);\n  });\n}"
+    },
+    {
+      "language": "Python",
+      "body": "def reject_items(items):\n    return [x for x in items if x != 'bad']\nresult = reject_items(['good', 'bad', 'good'])"
+    },
+    {
+      "language": "Java",
+      "body": "List<String> items = Arrays.asList(\"good\", \"bad\", \"good\");\nList<String> filtered = items.stream()\n    .filter(x -> !x.equals(\"bad\")).collect(Collectors.toList());"
+    },
+    {
+      "language": "Visual Basic",
+      "body": "Dim items As List(Of String) = New List(Of String) From {\"good\", \"bad\"}\nDim rejected = items.Where(Function(x) x <> \"bad\").ToList()\nFor Each item In rejected\n    Debug.Print(item)\nNext"
+    },
+    {
+      "language": "SQL",
+      "body": "SELECT * FROM items\nWHERE status != 'reject'\nAND status != 'cancelled';"
+    }
   ],
+  "themes": ["async_programming"],
   "difficulty": 6
 }

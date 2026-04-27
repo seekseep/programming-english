@@ -6,12 +6,28 @@
     "english": "We assert that the returned value equals the expected result.",
     "japanese": "戻り値が期待した結果と等しいことを表明します。"
   },
-  "example_programming": {
-    "language": "JavaScript",
-    "body": "import assert from 'node:assert';\n\ntest('adds numbers', () => {\n  assert.strictEqual(add(2, 3), 5);\n});"
-  },
-  "themes": [
-    "debugging_and_testing"
+  "example_programming": [
+    {
+      "language": "JavaScript",
+      "body": "import assert from 'node:assert';\n\ntest('adds numbers', () => {\n  assert.strictEqual(add(2, 3), 5);\n});"
+    },
+    {
+      "language": "Visual Basic",
+      "body": "Public Sub TestAdd()\n    Debug.Assert add(2, 3) = 5, \"assert failed\"\nEnd Sub"
+    },
+    {
+      "language": "Python",
+      "body": "def test_add():\n    assert add(2, 3) == 5, \"assert failed\"\ntest_add()"
+    },
+    {
+      "language": "Java",
+      "body": "public void testAdd() {\n    assert add(2, 3) == 5 : \"assert failed\";\n}"
+    },
+    {
+      "language": "SQL",
+      "body": "DECLARE @result INT = 5;\nASSERT @result = 5;\nPRINT 'assert passed';"
+    }
   ],
+  "themes": ["debugging_and_testing"],
   "difficulty": 10
 }

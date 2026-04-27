@@ -6,12 +6,28 @@
     "english": "Rescue the exception and return a default value.",
     "japanese": "例外を救済して、デフォルト値を返してください。"
   },
-  "example_programming": {
-    "language": "JavaScript",
-    "body": "function rescueParse(text) {\n  try {\n    return JSON.parse(text);\n  } catch (e) {\n    return {};\n  }\n}"
-  },
-  "themes": [
-    "error_handling"
+  "example_programming": [
+    {
+      "language": "JavaScript",
+      "body": "function rescueParse(text) {\n  try {\n    return JSON.parse(text);\n  } catch (e) {\n    return {};\n  }\n}"
+    },
+    {
+      "language": "Python",
+      "body": "def rescue_parse(text):\n    try:\n        return json.loads(text)\n    except:\n        return {}\nresult = rescue_parse(invalid_json)"
+    },
+    {
+      "language": "Java",
+      "body": "public static Object rescueParse(String text) {\n    try {\n        return new JSONObject(text);\n    } catch (JSONException e) {\n        return new JSONObject();\n    }\n}"
+    },
+    {
+      "language": "Visual Basic",
+      "body": "Function RescueParse(text As String) As Object\n    Try\n        Return JsonConvert.DeserializeObject(text)\n    Catch\n        Return New Object()\n    End Try\nEnd Function"
+    },
+    {
+      "language": "SQL",
+      "body": "SELECT COALESCE(CAST(JSON_VALUE(data, '$.id') AS INT), 0) AS rescue_id\nFROM records;"
+    }
   ],
+  "themes": ["error_handling"],
   "difficulty": 8
 }

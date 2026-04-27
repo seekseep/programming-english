@@ -6,12 +6,28 @@
     "english": "Use continue to skip even numbers in the loop.",
     "japanese": "ループの中で偶数を飛ばすには continue を使います。"
   },
-  "example_programming": {
-    "language": "JavaScript",
-    "body": "for (let i = 0; i < 6; i++) {\n  if (i % 2 === 0) {\n    continue;\n  }\n  console.log(i);\n}"
-  },
-  "themes": [
-    "control_flow"
+  "example_programming": [
+    {
+      "language": "JavaScript",
+      "body": "for (let i = 0; i < 6; i++) {\n  if (i % 2 === 0) {\n    continue;\n  }\n  console.log(i);\n}"
+    },
+    {
+      "language": "Python",
+      "body": "for i in range(6):\n  if i % 2 == 0:\n    continue\n  print(i)"
+    },
+    {
+      "language": "Java",
+      "body": "for (int i = 0; i < 6; i++) {\n  if (i % 2 == 0) continue;\n  System.out.println(i);\n}"
+    },
+    {
+      "language": "Visual Basic",
+      "body": "For i = 0 To 5\n  If i Mod 2 = 0 Then\n    Continue For\n  End If\n  Debug.Print i\nNext i"
+    },
+    {
+      "language": "SQL",
+      "body": "DECLARE @i INT = 0;\nWHILE @i < 6\nBEGIN\n  IF @i % 2 = 0\n    BEGIN\n      SET @i = @i + 1;\n      CONTINUE;\n    END\n  SET @i = @i + 1;\nEND;"
+    }
   ],
+  "themes": ["control_flow"],
   "difficulty": 2
 }

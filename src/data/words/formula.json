@@ -6,12 +6,28 @@
     "english": "Set a formula in cell B1 that sums the values in column A.",
     "japanese": "A 列の値を合計する数式を B1 セルに設定してください。"
   },
-  "example_programming": {
-    "language": "Visual Basic",
-    "body": "Range(\"B1\").Formula = \"=SUM(A1:A10)\""
-  },
-  "themes": [
-    "excel_vba_basics"
+  "example_programming": [
+    {
+      "language": "Visual Basic",
+      "body": "Range(\"B1\").Formula = \"=SUM(A1:A10)\""
+    },
+    {
+      "language": "JavaScript",
+      "body": "const a = [1, 2, 3, 4, 5];\nconst sum = a.reduce((acc, val) => acc + val, 0);\nconsole.log(sum);"
+    },
+    {
+      "language": "Python",
+      "body": "a = [1, 2, 3, 4, 5]\nsum_formula = sum(a)\nprint(sum_formula)"
+    },
+    {
+      "language": "Java",
+      "body": "int[] a = {1, 2, 3, 4, 5};\nint sum = 0;\nfor (int val : a) {\n  sum += val;\n}\nSystem.out.println(sum);"
+    },
+    {
+      "language": "SQL",
+      "body": "SELECT SUM(amount) AS total_sum\nFROM transactions;"
+    }
   ],
+  "themes": ["excel_vba_basics"],
   "difficulty": 7
 }

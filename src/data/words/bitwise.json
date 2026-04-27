@@ -6,12 +6,28 @@
     "english": "This chip performs bitwise operations very efficiently.",
     "japanese": "このチップはビット単位の演算を非常に効率よく実行する。"
   },
-  "example_programming": {
-    "language": "JavaScript",
-    "body": "// bitwise\nconst FLAG_READ = 0b0001;\nconst FLAG_WRITE = 0b0010;\nconst perms = FLAG_READ | FLAG_WRITE;\nconsole.log((perms & FLAG_READ) !== 0);"
-  },
-  "themes": [
-    "operators"
+  "example_programming": [
+    {
+      "language": "JavaScript",
+      "body": "// bitwise\nconst FLAG_READ = 0b0001;\nconst FLAG_WRITE = 0b0010;\nconst perms = FLAG_READ | FLAG_WRITE;\nconsole.log((perms & FLAG_READ) !== 0);"
+    },
+    {
+      "language": "Visual Basic",
+      "body": "Const FLAG_READ As Byte = 1\nConst FLAG_WRITE As Byte = 2\nDim perms As Byte = FLAG_READ Or FLAG_WRITE\nDim result As Boolean = (perms And FLAG_READ) <> 0"
+    },
+    {
+      "language": "Python",
+      "body": "FLAG_READ = 0b0001\nFLAG_WRITE = 0b0010\nperms = FLAG_READ | FLAG_WRITE\nresult = (perms & FLAG_READ) != 0\nprint(result)"
+    },
+    {
+      "language": "Java",
+      "body": "int FLAG_READ = 0b0001;\nint FLAG_WRITE = 0b0010;\nint perms = FLAG_READ | FLAG_WRITE;\nboolean result = (perms & FLAG_READ) != 0;\nSystem.out.println(result);"
+    },
+    {
+      "language": "SQL",
+      "body": "DECLARE @FLAG_READ INT = 1;\nDECLARE @FLAG_WRITE INT = 2;\nDECLARE @perms INT = @FLAG_READ | @FLAG_WRITE;\nSELECT CASE WHEN (@perms & @FLAG_READ) <> 0 THEN 1 ELSE 0 END AS result;"
+    }
   ],
+  "themes": ["operators"],
   "difficulty": 9
 }

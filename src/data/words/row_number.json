@@ -6,12 +6,28 @@
     "english": "Use ROW_NUMBER to assign a sequence number to each row per group.",
     "japanese": "グループごとに各行へ連番を振るためROW_NUMBERを使います。"
   },
-  "example_programming": {
-    "language": "SQL",
-    "body": "SELECT order_id, customer_id,\n       ROW_NUMBER() OVER (PARTITION BY customer_id ORDER BY ordered_at) AS seq\nFROM orders;"
-  },
-  "themes": [
-    "sql_aggregation"
+  "example_programming": [
+    {
+      "language": "SQL",
+      "body": "SELECT order_id, customer_id,\n       ROW_NUMBER() OVER (PARTITION BY customer_id ORDER BY ordered_at) AS seq\nFROM orders;"
+    },
+    {
+      "language": "JavaScript",
+      "body": "const orders = [{id: 1, cid: 100}, {id: 2, cid: 100}];\nconst numbered = orders.map((o, i) => ({...o, row_number: i + 1}));\nconsole.log(numbered);"
+    },
+    {
+      "language": "Python",
+      "body": "import pandas as pd\norders = pd.DataFrame({'id': [1, 2], 'customer_id': [100, 100]})\norders['row_number'] = orders.groupby('customer_id').cumcount() + 1\nprint(orders)"
+    },
+    {
+      "language": "Java",
+      "body": "List<Map> orders = new ArrayList<>();\nfor (int i = 0; i < orders.size(); i++) {\n    orders.get(i).put(\"row_number\", i + 1);\n}"
+    },
+    {
+      "language": "Visual Basic",
+      "body": "Dim orders As New List(Of Dictionary(Of String, Integer))\nFor i As Integer = 0 To orders.Count - 1\n    orders(i)(\"row_number\") = i + 1\nNext"
+    }
   ],
+  "themes": ["sql_aggregation"],
   "difficulty": 10
 }

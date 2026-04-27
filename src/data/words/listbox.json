@@ -6,12 +6,28 @@
     "english": "Add each sheet name to the listbox on the form.",
     "japanese": "各シート名をフォームのリストボックスに追加してください。"
   },
-  "example_programming": {
-    "language": "Visual Basic",
-    "body": "Dim ws As Worksheet\nFor Each ws In Worksheets\n    ListBox1.AddItem ws.Name\nNext ws"
-  },
-  "themes": [
-    "vb_forms_controls"
+  "example_programming": [
+    {
+      "language": "Visual Basic",
+      "body": "Dim ws As Worksheet\nFor Each ws In Worksheets\n    ListBox1.AddItem ws.Name\nNext ws"
+    },
+    {
+      "language": "JavaScript",
+      "body": "const listbox = document.getElementById('mylist');\nconst option = document.createElement('option');\noption.text = 'Item';\nlistbox.add(option);"
+    },
+    {
+      "language": "Python",
+      "body": "from tkinter import Tk, Listbox\nroot = Tk()\nlistbox = Listbox(root)\nlistbox.insert(0, 'apple')\nlistbox.insert(1, 'banana')\nlistbox.pack()"
+    },
+    {
+      "language": "Java",
+      "body": "JListbox<String> listbox = new JListbox<>();\nlistbox.add(\"apple\");\nlistbox.add(\"banana\");\npanel.add(listbox);"
+    },
+    {
+      "language": "SQL",
+      "body": "SELECT value FROM listbox_items WHERE active = 1 ORDER BY order_id;"
+    }
   ],
+  "themes": ["vb_forms_controls"],
   "difficulty": 7
 }

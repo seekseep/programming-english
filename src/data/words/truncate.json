@@ -6,12 +6,28 @@
     "english": "The editor had to truncate the article to fit on one page.",
     "japanese": "編集者は記事を1ページに収めるために切り詰めなければならなかった。"
   },
-  "example_programming": {
-    "language": "JavaScript",
-    "body": "// truncate\nconsole.log(Math.trunc(4.7));\nconsole.log(Math.trunc(-4.7));\nconsole.log(\"hello world\".slice(0, 5));"
-  },
-  "themes": [
-    "numbers_and_math"
+  "example_programming": [
+    {
+      "language": "JavaScript",
+      "body": "// truncate\nconsole.log(Math.trunc(4.7));\nconsole.log(Math.trunc(-4.7));\nconsole.log(\"hello world\".slice(0, 5));"
+    },
+    {
+      "language": "Python",
+      "body": "import math\nvalue = 4.7\ntruncate_result = math.trunc(value)\nprint(truncate_result)\ntext = \"hello world\"\ntruncate_text = text[:5]\nprint(truncate_text)"
+    },
+    {
+      "language": "Java",
+      "body": "double value = 4.7;\nlong truncate_result = (long) value;\nSystem.out.println(truncate_result);\nString text = \"hello world\";\nString truncate_text = text.substring(0, 5);\nSystem.out.println(truncate_text);"
+    },
+    {
+      "language": "Visual Basic",
+      "body": "Dim value As Double = 4.7\nDim truncate_result As Integer = Int(value)\nDebug.Print truncate_result\nDim text As String = \"hello world\"\nDim truncate_text As String = Left(text, 5)\nDebug.Print truncate_text"
+    },
+    {
+      "language": "SQL",
+      "body": "SELECT TRUNCATE(4.7, 0) AS truncate_result,\n       SUBSTRING('hello world', 1, 5) AS truncate_text;"
+    }
   ],
+  "themes": ["numbers_and_math"],
   "difficulty": 9
 }

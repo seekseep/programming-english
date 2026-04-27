@@ -6,12 +6,28 @@
     "english": "What is the average score of the class?",
     "japanese": "クラスの平均点は何点ですか。"
   },
-  "example_programming": {
-    "language": "SQL",
-    "body": "SELECT AVG(score) AS average\nFROM exam_results\nWHERE class_id = 3;"
-  },
-  "themes": [
-    "numbers_and_math"
+  "example_programming": [
+    {
+      "language": "SQL",
+      "body": "SELECT AVG(score) AS average\nFROM exam_results\nWHERE class_id = 3;"
+    },
+    {
+      "language": "JavaScript",
+      "body": "const scores = [80, 90, 70, 85];\nconst average = scores.reduce((a, b) => a + b) / scores.length;\nconsole.log(average);"
+    },
+    {
+      "language": "Visual Basic",
+      "body": "Dim scores() As Double = {80, 90, 70, 85}\nDim average As Double = scores.Average()\nMsgBox average"
+    },
+    {
+      "language": "Python",
+      "body": "import statistics\nscores = [80, 90, 70, 85]\naverage = statistics.mean(scores)\nprint(average)"
+    },
+    {
+      "language": "Java",
+      "body": "double[] scores = {80, 90, 70, 85};\ndouble average = Arrays.stream(scores).average().orElse(0);\nSystem.out.println(average);"
+    }
   ],
+  "themes": ["numbers_and_math"],
   "difficulty": 3
 }

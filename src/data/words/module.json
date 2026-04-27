@@ -6,13 +6,28 @@
     "english": "Split the code into separate modules for clarity.",
     "japanese": "分かりやすさのために、コードを別々のモジュールに分けましょう。"
   },
-  "example_programming": {
-    "language": "Visual Basic",
-    "body": "Module MathHelpers\n    Public Function Square(ByVal n As Integer) As Integer\n        Return n * n\n    End Function\nEnd Module"
-  },
-  "themes": [
-    "modules_and_imports",
-    "scope"
+  "example_programming": [
+    {
+      "language": "Visual Basic",
+      "body": "Module MathHelpers\n    Public Function Square(ByVal n As Integer) As Integer\n        Return n * n\n    End Function\nEnd Module"
+    },
+    {
+      "language": "JavaScript",
+      "body": "export const module = {\n  add: (a, b) => a + b,\n  multiply: (a, b) => a * b\n};\nimport { module } from './math';"
+    },
+    {
+      "language": "Python",
+      "body": "import math\nfrom math import module\nresult = module.sqrt(16)\nprint(result)"
+    },
+    {
+      "language": "Java",
+      "body": "package utils.module;\npublic class Math {\n    public static int add(int a, int b) {\n        return a + b;\n    }\n}"
+    },
+    {
+      "language": "SQL",
+      "body": "CREATE MODULE math_module AS\nBEGIN\n    CREATE FUNCTION add(a INT, b INT) RETURNS INT\n    AS SELECT a + b;\nEND;"
+    }
   ],
+  "themes": ["modules_and_imports", "scope"],
   "difficulty": 8
 }

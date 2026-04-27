@@ -6,12 +6,28 @@
     "english": "The request may fail when the network is slow.",
     "japanese": "ネットワークが遅いと、リクエストが失敗することがあります。"
   },
-  "example_programming": {
-    "language": "JavaScript",
-    "body": "async function save(data) {\n  const res = await fetch('/api/save', { method: 'POST', body: data });\n  if (!res.ok) throw new Error('save did fail');\n}"
-  },
-  "themes": [
-    "error_handling"
+  "example_programming": [
+    {
+      "language": "JavaScript",
+      "body": "async function save(data) {\n  const res = await fetch('/api/save', { method: 'POST', body: data });\n  if (!res.ok) throw new Error('save did fail');\n}"
+    },
+    {
+      "language": "Python",
+      "body": "def save(data):\n  try:\n    response = requests.post('/api/save', json=data)\n    response.raise_for_status()\n  except requests.RequestException:\n    print('Request will fail')"
+    },
+    {
+      "language": "Visual Basic",
+      "body": "Sub SaveData(data As String)\n  On Error GoTo ErrorHandler\n  Call PostRequest(data)\n  Exit Sub\nErrorHandler:\n  MsgBox \"Operation will fail\"\nEnd Sub"
+    },
+    {
+      "language": "Java",
+      "body": "public void save(String data) throws IOException {\n  try {\n    HttpResponse response = client.send(request);\n  } catch (IOException e) {\n    System.out.println(\"Request may fail\");\n    throw e;\n  }\n}"
+    },
+    {
+      "language": "SQL",
+      "body": "BEGIN TRANSACTION;\nUPDATE records SET status = 'fail'\nWHERE id = 1;\nCOMMIT;"
+    }
   ],
+  "themes": ["error_handling"],
   "difficulty": 8
 }

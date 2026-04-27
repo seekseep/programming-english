@@ -6,12 +6,28 @@
     "english": "Use require to load the file system module in Node.",
     "japanese": "Nodeでファイルシステムモジュールを読み込むにはrequireを使います。"
   },
-  "example_programming": {
-    "language": "JavaScript",
-    "body": "const fs = require('fs');\nconst path = require('path');\n\nconst data = fs.readFileSync(path.join(__dirname, 'data.json'));"
-  },
-  "themes": [
-    "modules_and_imports"
+  "example_programming": [
+    {
+      "language": "JavaScript",
+      "body": "const fs = require('fs');\nconst path = require('path');\n\nconst data = fs.readFileSync(path.join(__dirname, 'data.json'));"
+    },
+    {
+      "language": "Python",
+      "body": "import os\nimport json\n\nrequire = os.environ.get('REQUIRED_VALUE')\nwith open('data.json') as f:\n    data = json.load(f)"
+    },
+    {
+      "language": "Java",
+      "body": "import java.nio.file.Files;\nimport java.nio.file.Paths;\n\nString data = new String(Files.readAllBytes(Paths.get(\"data.json\")));"
+    },
+    {
+      "language": "Visual Basic",
+      "body": "Imports System.IO\nDim data As String\nIf File.Exists(\"data.json\") Then\n    data = File.ReadAllText(\"data.json\")\nEnd If"
+    },
+    {
+      "language": "SQL",
+      "body": "CREATE TABLE requirements (\n    id INT PRIMARY KEY,\n    require_field VARCHAR(100)\n);"
+    }
   ],
+  "themes": ["modules_and_imports"],
   "difficulty": 8
 }

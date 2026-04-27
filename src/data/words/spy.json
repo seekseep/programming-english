@@ -6,12 +6,28 @@
     "english": "The spy confirms that the logger was called with the right argument.",
     "japanese": "スパイにより、ロガーが正しい引数で呼び出されたことが確認できます。"
   },
-  "example_programming": {
-    "language": "JavaScript",
-    "body": "test('calls logger', () => {\n  const spy = jest.spyOn(console, 'log');\n  greet('Ada');\n  expect(spy).toHaveBeenCalledWith('Hello, Ada');\n});"
-  },
-  "themes": [
-    "debugging_and_testing"
+  "example_programming": [
+    {
+      "language": "JavaScript",
+      "body": "test('calls logger', () => {\n  const spy = jest.spyOn(console, 'log');\n  greet('Ada');\n  expect(spy).toHaveBeenCalledWith('Hello, Ada');\n});"
+    },
+    {
+      "language": "Visual Basic",
+      "body": "Public Class TestSpy\n    Private callCount As Integer = 0\n    Public Sub LogSpy(message As String)\n        callCount += 1\n    End Sub\nEnd Class"
+    },
+    {
+      "language": "Python",
+      "body": "from unittest.mock import Mock\nspy = Mock()\ngreet('Ada')\nspy.assert_called_with('Hello, Ada')"
+    },
+    {
+      "language": "Java",
+      "body": "import org.mockito.Mockito;\nLogger spy = Mockito.spy(new Logger());\ngreet(spy, \"Ada\");\nMockito.verify(spy).log(\"Hello, Ada\");"
+    },
+    {
+      "language": "SQL",
+      "body": "CREATE TABLE call_spy (\n  call_id INT AUTO_INCREMENT PRIMARY KEY,\n  function_name VARCHAR(255),\n  args TEXT\n);\nINSERT INTO call_spy (function_name, args) VALUES ('greet', 'Ada');"
+    }
   ],
+  "themes": ["debugging_and_testing"],
   "difficulty": 10
 }

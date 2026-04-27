@@ -6,12 +6,28 @@
     "english": "The counter is a local variable inside the function.",
     "japanese": "カウンターは関数内のローカル変数です。"
   },
-  "example_programming": {
-    "language": "Visual Basic",
-    "body": "Public Sub CountItems()\n    Dim localCount As Integer\n    localCount = 0\n    localCount = localCount + 1\nEnd Sub"
-  },
-  "themes": [
-    "scope"
+  "example_programming": [
+    {
+      "language": "Visual Basic",
+      "body": "Public Sub CountItems()\n    Dim localCount As Integer\n    localCount = 0\n    localCount = localCount + 1\nEnd Sub"
+    },
+    {
+      "language": "JavaScript",
+      "body": "function process() {\n  let localVar = 10;\n  for (let i = 0; i < 5; i++) {\n    localVar += i;\n  }\n  return localVar;\n}"
+    },
+    {
+      "language": "Python",
+      "body": "def calculate():\n    local_sum = 0\n    for i in range(1, 6):\n        local_sum += i\n    return local_sum"
+    },
+    {
+      "language": "Java",
+      "body": "public int compute() {\n    int localValue = 20;\n    for (int i = 0; i < 3; i++) {\n        localValue -= i;\n    }\n    return localValue;\n}"
+    },
+    {
+      "language": "SQL",
+      "body": "CREATE PROCEDURE sp_demo AS\nBEGIN\n    DECLARE @localNum INT;\n    SET @localNum = 100;\n    SELECT @localNum;\nEND;"
+    }
   ],
+  "themes": ["scope"],
   "difficulty": 8
 }

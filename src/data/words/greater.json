@@ -6,12 +6,28 @@
     "english": "Ten is greater than five.",
     "japanese": "10 は 5 より大きいです。"
   },
-  "example_programming": {
-    "language": "Visual Basic",
-    "body": "Dim score As Integer\nscore = 72\nIf score > 60 Then ' greater than\n    Debug.Print \"pass\"\nEnd If"
-  },
-  "themes": [
-    "operators"
+  "example_programming": [
+    {
+      "language": "Visual Basic",
+      "body": "Dim score As Integer\nscore = 72\nIf score > 60 Then ' greater than\n    Debug.Print \"pass\"\nEnd If"
+    },
+    {
+      "language": "JavaScript",
+      "body": "const score = 72;\nif (score > 60) {\n  console.log('pass');\n}"
+    },
+    {
+      "language": "Python",
+      "body": "score = 72\nif score > 60:\n  print('pass')"
+    },
+    {
+      "language": "Java",
+      "body": "int score = 72;\nif (score > 60) {\n  System.out.println(\"pass\");\n}"
+    },
+    {
+      "language": "SQL",
+      "body": "SELECT * FROM scores WHERE score > 60;"
+    }
   ],
+  "themes": ["operators"],
   "difficulty": 3
 }

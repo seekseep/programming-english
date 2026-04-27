@@ -6,12 +6,28 @@
     "english": "I like apples and oranges.",
     "japanese": "私はりんごとオレンジが好きです。"
   },
-  "example_programming": {
-    "language": "SQL",
-    "body": "SELECT *\nFROM users\nWHERE age > 18 AND city = 'Tokyo';"
-  },
-  "themes": [
-    "operators"
+  "example_programming": [
+    {
+      "language": "SQL",
+      "body": "SELECT *\nFROM users\nWHERE age > 18 AND city = 'Tokyo';"
+    },
+    {
+      "language": "JavaScript",
+      "body": "if (age > 18 && city === 'Tokyo') {\n  console.log('Eligible');\n}"
+    },
+    {
+      "language": "Visual Basic",
+      "body": "If age > 18 And city = \"Tokyo\" Then\n    MsgBox \"Eligible\"\nEnd If"
+    },
+    {
+      "language": "Python",
+      "body": "if age > 18 and city == 'Tokyo':\n    print('Eligible')"
+    },
+    {
+      "language": "Java",
+      "body": "if (age > 18 && city.equals(\"Tokyo\")) {\n    System.out.println(\"Eligible\");\n}"
+    }
   ],
+  "themes": ["operators"],
   "difficulty": 1
 }

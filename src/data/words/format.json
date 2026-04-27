@@ -6,12 +6,28 @@
     "english": "Format the price with a comma every three digits.",
     "japanese": "価格を3桁ごとにカンマ区切りで書式化してください。"
   },
-  "example_programming": {
-    "language": "Visual Basic",
-    "body": "Dim price As Double = 12345.6\nDim text As String = Format(price, \"#,##0.00\")\nDebug.Print text ' \"12,345.60\"\nDebug.Print Format(Now, \"yyyy/MM/dd\")"
-  },
-  "themes": [
-    "strings_and_text"
+  "example_programming": [
+    {
+      "language": "Visual Basic",
+      "body": "Dim price As Double = 12345.6\nDim text As String = Format(price, \"#,##0.00\")\nDebug.Print text ' \"12,345.60\"\nDebug.Print Format(Now, \"yyyy/MM/dd\")"
+    },
+    {
+      "language": "JavaScript",
+      "body": "const price = 12345.6;\nconst formatted = price.toLocaleString('ja-JP', { style: 'currency', currency: 'JPY' });\nconsole.log(formatted);"
+    },
+    {
+      "language": "Python",
+      "body": "price = 12345.6\nformatted = f'{price:,.2f}'\nprint(formatted)"
+    },
+    {
+      "language": "Java",
+      "body": "double price = 12345.6;\nDecimalFormat df = new DecimalFormat(\"#,##0.00\");\nString formatted = df.format(price);\nSystem.out.println(formatted);"
+    },
+    {
+      "language": "SQL",
+      "body": "SELECT FORMAT(12345.6, '###,###.00') AS formatted_price;"
+    }
   ],
+  "themes": ["strings_and_text"],
   "difficulty": 4
 }

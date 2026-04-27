@@ -6,12 +6,28 @@
     "english": "Open the sales workbook and save it as a new file.",
     "japanese": "売上ブックを開いて、別名で保存してください。"
   },
-  "example_programming": {
-    "language": "Visual Basic",
-    "body": "Dim wb As Workbook\nSet wb = Workbooks.Open(\"C:\\sales.xlsx\")\nwb.SaveAs \"C:\\sales_backup.xlsx\""
-  },
-  "themes": [
-    "excel_vba_basics"
+  "example_programming": [
+    {
+      "language": "Visual Basic",
+      "body": "Dim wb As Workbook\nSet wb = Workbooks.Open(\"C:\\sales.xlsx\")\nwb.SaveAs \"C:\\sales_backup.xlsx\""
+    },
+    {
+      "language": "Python",
+      "body": "import openpyxl\nwb = openpyxl.load_workbook('sales.xlsx')\nwb.save('sales_backup.xlsx')"
+    },
+    {
+      "language": "JavaScript",
+      "body": "const XLSX = require('xlsx');\nconst wb = XLSX.readFile('sales.xlsx');\nXLSX.writeFile(wb, 'sales_backup.xlsx');"
+    },
+    {
+      "language": "Java",
+      "body": "Workbook wb = WorkbookFactory.create(new File(\"sales.xlsx\"));\nFileOutputStream out = new FileOutputStream(\"sales_backup.xlsx\");\nwb.write(out);\nwb.close();"
+    },
+    {
+      "language": "SQL",
+      "body": "-- Export workbook data\nSELECT * INTO sales_backup FROM sales;\nSELECT * INTO customers_backup FROM customers;"
+    }
   ],
+  "themes": ["excel_vba_basics"],
   "difficulty": 7
 }

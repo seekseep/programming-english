@@ -6,14 +6,28 @@
     "english": "Delete all orders that were cancelled last year.",
     "japanese": "去年キャンセルされた注文をすべて削除してください。"
   },
-  "example_programming": {
-    "language": "SQL",
-    "body": "DELETE FROM orders\nWHERE status = 'cancelled'\n  AND created_at < '2025-01-01';"
-  },
-  "themes": [
-    "file_io",
-    "http_and_api",
-    "sql_query_basics"
+  "example_programming": [
+    {
+      "language": "JavaScript",
+      "body": "const items = [1, 2, 3, 4, 5];\nitems.splice(2, 1);\nconsole.log(items);"
+    },
+    {
+      "language": "Visual Basic",
+      "body": "Dim items As New Collection\nitems.Add \"apple\"\nitems.Remove 1"
+    },
+    {
+      "language": "Python",
+      "body": "items = [1, 2, 3, 4]\ndel items[1]\nprint(items)"
+    },
+    {
+      "language": "Java",
+      "body": "List<Integer> items = new ArrayList<>();\nitems.add(10);\nitems.remove(0);"
+    },
+    {
+      "language": "SQL",
+      "body": "DELETE FROM orders\nWHERE status = 'cancelled'\n  AND created_at < '2025-01-01';"
+    }
   ],
+  "themes": ["file_io", "http_and_api", "sql_query_basics"],
   "difficulty": 5
 }

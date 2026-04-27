@@ -6,12 +6,28 @@
     "english": "The app fetches user data from a public API.",
     "japanese": "そのアプリは公開APIからユーザーデータを取得します。"
   },
-  "example_programming": {
-    "language": "JavaScript",
-    "body": "const API_URL = 'https://api.example.com/users';\nconst response = await fetch(API_URL);\nconst users = await response.json();\nconsole.log(users);"
-  },
-  "themes": [
-    "http_and_api"
+  "example_programming": [
+    {
+      "language": "JavaScript",
+      "body": "const API_URL = 'https://api.example.com/users';\nconst response = await fetch(API_URL);\nconst users = await response.json();\nconsole.log(users);"
+    },
+    {
+      "language": "Visual Basic",
+      "body": "Dim http As New MSXML2.XMLHTTP60\nhttp.Open \"GET\", \"https://api.example.com/users\", False\nhttp.send\nDim response As String = http.responseText"
+    },
+    {
+      "language": "Python",
+      "body": "import requests\nAPI_URL = 'https://api.example.com/users'\nresponse = requests.get(API_URL)\nusers = response.json()\nprint(users)"
+    },
+    {
+      "language": "Java",
+      "body": "URL api = new URL(\"https://api.example.com/users\");\nHttpURLConnection conn = (HttpURLConnection) api.openConnection();\nint status = conn.getResponseCode();\nBufferedReader br = new BufferedReader(new InputStreamReader(conn.getInputStream()));"
+    },
+    {
+      "language": "SQL",
+      "body": "EXEC sp_OACreate 'MSXML2.XMLHTTP', @api OUT;\nEXEC sp_OAMethod @api, 'Open', NULL, 'GET', 'https://api.example.com/users', 0;\nEXEC sp_OAMethod @api, 'send';"
+    }
   ],
+  "themes": ["http_and_api"],
   "difficulty": 6
 }

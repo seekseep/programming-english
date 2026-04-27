@@ -6,12 +6,28 @@
     "english": "Validate the inputs before the form is submitted.",
     "japanese": "フォームが送信される前に入力内容を検証してください。"
   },
-  "example_programming": {
-    "language": "JavaScript",
-    "body": "const form = document.querySelector('#signup');\nform.addEventListener('submit', (event) => {\n  if (!form.checkValidity()) {\n    event.preventDefault();\n  }\n});"
-  },
-  "themes": [
-    "events"
+  "example_programming": [
+    {
+      "language": "JavaScript",
+      "body": "const form = document.querySelector('#signup');\nform.addEventListener('submit', (event) => {\n  if (!form.checkValidity()) {\n    event.preventDefault();\n  }\n});"
+    },
+    {
+      "language": "Visual Basic",
+      "body": "Private Sub btnSubmit_Click() Handles btnSubmit.Click\n    If Not ValidateForm() Then\n        Exit Sub\n    End If\n    SendForm()\nEnd Sub"
+    },
+    {
+      "language": "Python",
+      "body": "from flask import Flask, request\n@app.route('/signup', methods=['POST'])\ndef submit():\n    if not validate_form(request.form):\n        return 'Invalid', 400\n    return 'Submitted', 200"
+    },
+    {
+      "language": "Java",
+      "body": "form.setOnSubmit(e -> {\n    if (!validateForm()) {\n        e.preventDefault();\n    }\n});"
+    },
+    {
+      "language": "SQL",
+      "body": "INSERT INTO submissions (user_id, data, submitted_at)\nVALUES (?, ?, NOW());"
+    }
   ],
+  "themes": ["events"],
   "difficulty": 5
 }

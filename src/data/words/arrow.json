@@ -6,12 +6,28 @@
     "english": "The arrow on the sign pointed to the exit.",
     "japanese": "看板の矢印は出口を指していた。"
   },
-  "example_programming": {
-    "language": "JavaScript",
-    "body": "// arrow\nconst square = (n) => n * n;\nconst evens = [1, 2, 3, 4].filter((n) => n % 2 === 0);\nconsole.log(square(5), evens);"
-  },
-  "themes": [
-    "functions_and_procedures"
+  "example_programming": [
+    {
+      "language": "JavaScript",
+      "body": "// arrow\nconst square = (n) => n * n;\nconst evens = [1, 2, 3, 4].filter((n) => n % 2 === 0);\nconsole.log(square(5), evens);"
+    },
+    {
+      "language": "Visual Basic",
+      "body": "Dim square As Func(Of Integer, Integer) = Function(n) n * n\nDim result = square(5)\nMsgBox result"
+    },
+    {
+      "language": "Python",
+      "body": "square = lambda n: n * n\nevens = list(filter(lambda n: n % 2 == 0, [1, 2, 3, 4]))\nprint(square(5), evens)"
+    },
+    {
+      "language": "Java",
+      "body": "Function<Integer, Integer> square = n -> n * n;\nList<Integer> evens = Arrays.asList(1, 2, 3, 4).stream()\n  .filter(n -> n % 2 == 0).collect(Collectors.toList());"
+    },
+    {
+      "language": "SQL",
+      "body": "SELECT CASE WHEN num % 2 = 0 THEN num ELSE NULL END AS even\nFROM numbers\nWHERE num IN (1, 2, 3, 4);"
+    }
   ],
+  "themes": ["functions_and_procedures"],
   "difficulty": 9
 }

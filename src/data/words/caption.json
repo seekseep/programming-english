@@ -6,12 +6,28 @@
     "english": "Change the button caption to \"Cancel\" when the process starts.",
     "japanese": "処理が始まったらボタンの見出しを「Cancel」に変更してください。"
   },
-  "example_programming": {
-    "language": "Visual Basic",
-    "body": "Button1.Caption = \"OK\"\nLabel1.Caption = \"Name:\""
-  },
-  "themes": [
-    "vb_forms_controls"
+  "example_programming": [
+    {
+      "language": "Visual Basic",
+      "body": "Button1.Caption = \"OK\"\nLabel1.Caption = \"Name:\""
+    },
+    {
+      "language": "JavaScript",
+      "body": "document.querySelector('#btn').textContent = 'Submit';\ndocument.querySelector('h2').innerText = 'Welcome';"
+    },
+    {
+      "language": "Python",
+      "body": "label = tk.Label(root, text='Name')\nbutton = tk.Button(root, text='Click')\nlabel.pack()\nbutton.pack()"
+    },
+    {
+      "language": "Java",
+      "body": "JButton btn = new JButton(\"OK\");\nJLabel label = new JLabel(\"Name:\");\nframe.add(btn);\nframe.add(label);"
+    },
+    {
+      "language": "SQL",
+      "body": "UPDATE ui_components SET caption = 'Submit' WHERE id = 1;"
+    }
   ],
+  "themes": ["vb_forms_controls"],
   "difficulty": 7
 }

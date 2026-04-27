@@ -6,12 +6,28 @@
     "english": "Please print the report.",
     "japanese": "レポートを印刷してください。"
   },
-  "example_programming": {
-    "language": "Visual Basic",
-    "body": "Debug.Print \"Hello, world!\""
-  },
-  "themes": [
-    "basic_io"
+  "example_programming": [
+    {
+      "language": "Visual Basic",
+      "body": "Debug.Print \"Hello, world!\""
+    },
+    {
+      "language": "JavaScript",
+      "body": "console.log(\"Hello, world!\");"
+    },
+    {
+      "language": "Python",
+      "body": "print(\"Hello, world!\")"
+    },
+    {
+      "language": "Java",
+      "body": "System.out.println(\"Hello, world!\");"
+    },
+    {
+      "language": "SQL",
+      "body": "SELECT 'Hello, world!' AS message;"
+    }
   ],
+  "themes": ["basic_io"],
   "difficulty": 1
 }

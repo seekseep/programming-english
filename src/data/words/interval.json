@@ -6,12 +6,28 @@
     "english": "Update the clock at a one-second interval.",
     "japanese": "1秒間隔で時計を更新してください。"
   },
-  "example_programming": {
-    "language": "JavaScript",
-    "body": "const id = setInterval(() => {\n  console.log(new Date().toISOString());\n}, 1000);\n// clearInterval(id);"
-  },
-  "themes": [
-    "async_programming"
+  "example_programming": [
+    {
+      "language": "JavaScript",
+      "body": "const id = setInterval(() => {\n  console.log(new Date().toISOString());\n}, 1000);\n// clearInterval(id);"
+    },
+    {
+      "language": "Python",
+      "body": "import time\ninterval = 2\nwhile True:\n    print(\"Every interval\")\n    time.sleep(interval)"
+    },
+    {
+      "language": "Java",
+      "body": "Timer interval = new Timer();\ninterval.scheduleAtFixedRate(new TimerTask() {\n  public void run() { System.out.println(\"Interval\"); }\n}, 0, 1000);"
+    },
+    {
+      "language": "Visual Basic",
+      "body": "Dim interval As Integer = 1000\nTimer1.Interval = interval\nTimer1.Enabled = True"
+    },
+    {
+      "language": "SQL",
+      "body": "SELECT DATE_ADD(created, INTERVAL 1 DAY) AS next_date FROM events;"
+    }
   ],
+  "themes": ["async_programming"],
   "difficulty": 6
 }

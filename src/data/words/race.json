@@ -6,12 +6,28 @@
     "english": "We race the fetch against a timeout to avoid hanging forever.",
     "japanese": "永久に待たないように、フェッチとタイムアウトをレースさせます。"
   },
-  "example_programming": {
-    "language": "JavaScript",
-    "body": "const timeout = new Promise((_, reject) =>\n  setTimeout(() => reject(new Error('timeout')), 3000),\n);\nconst data = await Promise.race([fetch('/api'), timeout]);"
-  },
-  "themes": [
-    "async_programming"
+  "example_programming": [
+    {
+      "language": "JavaScript",
+      "body": "const timeout = new Promise((_, reject) =>\n  setTimeout(() => reject(new Error('timeout')), 3000),\n);\nconst data = await Promise.race([fetch('/api'), timeout]);"
+    },
+    {
+      "language": "Visual Basic",
+      "body": "Dim tasks = New Task() { Task.Run(Sub() FetchData()), Task.Delay(3000) }\nDim completedTask = Task.WaitAny(tasks)\nIf completedTask = 1 Then Debug.Print \"timeout in race\""
+    },
+    {
+      "language": "Python",
+      "body": "import asyncio\ntasks = [fetch_data(), asyncio.sleep(3)]\ndone, pending = await asyncio.wait(tasks, return_when=asyncio.FIRST_COMPLETED)\nfor task in pending: task.cancel()"
+    },
+    {
+      "language": "Java",
+      "body": "ExecutorService exec = Executors.newFixedThreadPool(2);\nFuture<String> f1 = exec.submit(() -> fetchData());\nFuture<String> f2 = exec.submit(() -> { Thread.sleep(3000); throw new TimeoutException(\"race\"); });\nString winner = CompletableFuture.anyOf(f1, f2).get().toString();"
+    },
+    {
+      "language": "SQL",
+      "body": "SELECT FIRST(CASE WHEN status = 'done' THEN result END) AS race_result\nFROM race_events\nORDER BY timestamp ASC;"
+    }
   ],
+  "themes": ["async_programming"],
   "difficulty": 10
 }

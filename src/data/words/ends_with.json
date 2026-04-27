@@ -6,12 +6,28 @@
     "english": "Check if the file name ends with a valid extension.",
     "japanese": "ファイル名が正しい拡張子で終わっているかを確認してください。"
   },
-  "example_programming": {
-    "language": "JavaScript",
-    "body": "const fileName = \"report.pdf\";\nif (fileName.endsWith(\".pdf\")) {\n  console.log(\"PDF file detected\");\n}"
-  },
-  "themes": [
-    "strings_and_text"
+  "example_programming": [
+    {
+      "language": "JavaScript",
+      "body": "const fileName = \"report.pdf\";\nif (fileName.endsWith(\".pdf\")) {\n  console.log(\"PDF file detected\");\n}"
+    },
+    {
+      "language": "Visual Basic",
+      "body": "Dim fileName As String = \"report.pdf\"\nIf Right(fileName, 4) = \".pdf\" Then\n    Debug.Print \"PDF\"\nEnd If"
+    },
+    {
+      "language": "Python",
+      "body": "fileName = \"report.pdf\"\nif fileName.endswith(\".pdf\"):\n    print(\"PDF file detected\")"
+    },
+    {
+      "language": "Java",
+      "body": "String fileName = \"report.pdf\";\nif (fileName.endsWith(\".pdf\")) {\n    System.out.println(\"PDF file\");\n}"
+    },
+    {
+      "language": "SQL",
+      "body": "SELECT * FROM files WHERE name LIKE '%.pdf';"
+    }
   ],
+  "themes": ["strings_and_text"],
   "difficulty": 4
 }

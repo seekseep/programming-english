@@ -6,12 +6,28 @@
     "english": "Show a message box to confirm that the data was saved.",
     "japanese": "データが保存されたことを確認するメッセージボックスを表示してください。"
   },
-  "example_programming": {
-    "language": "Visual Basic",
-    "body": "' message_box\nDim result As VbMsgBoxResult\nresult = MsgBox(\"Save changes?\", vbYesNo)\nIf result = vbYes Then Call SaveData"
-  },
-  "themes": [
-    "vb_forms_controls"
+  "example_programming": [
+    {
+      "language": "Visual Basic",
+      "body": "' message_box\nDim result As VbMsgBoxResult\nresult = MsgBox(\"Save changes?\", vbYesNo)\nIf result = vbYes Then Call SaveData"
+    },
+    {
+      "language": "JavaScript",
+      "body": "const response = window.confirm('Delete this item?');\nif (response) {\n  console.log('Item deleted');\n} else {\n  console.log('Cancelled');\n}"
+    },
+    {
+      "language": "Python",
+      "body": "from tkinter import simpledialog, messagebox\nroot = None\nmessagebox.showinfo('Alert', 'Operation complete')\nresponse = messagebox.askyesno('Confirm', 'Continue?')"
+    },
+    {
+      "language": "Java",
+      "body": "int result = JOptionPane.showConfirmDialog(null, \"Proceed?\");\nif (result == JOptionPane.YES_OPTION) {\n    System.out.println(\"Proceeding\");\n}"
+    },
+    {
+      "language": "SQL",
+      "body": "DECLARE @response INT;\nEXEC sp_OACreate 'WScript.Shell', @obj OUTPUT;\nEXEC sp_OAMethod @obj, 'Popup', @response OUTPUT, 'Confirm?';"
+    }
   ],
+  "themes": ["vb_forms_controls"],
   "difficulty": 7
 }

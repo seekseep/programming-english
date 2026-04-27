@@ -6,12 +6,28 @@
     "english": "The program will panic when the database connection is lost.",
     "japanese": "データベース接続が失われると、プログラムは致命的エラーになります。"
   },
-  "example_programming": {
-    "language": "JavaScript",
-    "body": "function connect(db) {\n  if (!db) {\n    throw new Error('panic: database is null');\n  }\n  return db.open();\n}"
-  },
-  "themes": [
-    "error_handling"
+  "example_programming": [
+    {
+      "language": "JavaScript",
+      "body": "function connect(db) {\n  if (!db) {\n    throw new Error('panic: database is null');\n  }\n  return db.open();\n}"
+    },
+    {
+      "language": "Visual Basic",
+      "body": "Public Sub Connect(db As Object)\n    If db Is Nothing Then\n        Err.Raise 1001, \"Connect\", \"panic: database is null\"\n    End If\nEnd Sub"
+    },
+    {
+      "language": "Python",
+      "body": "def connect(db):\n    if db is None:\n        raise RuntimeError('panic: database is null')\n    return db.open()"
+    },
+    {
+      "language": "Java",
+      "body": "public void connect(Database db) {\n    if (db == null) {\n        throw new RuntimeException(\"panic: database is null\");\n    }\n}"
+    },
+    {
+      "language": "SQL",
+      "body": "CREATE TRIGGER panic_check BEFORE INSERT ON transactions\nFOR EACH ROW\nBEGIN\n  IF NEW.db_id IS NULL THEN\n    SIGNAL SQLSTATE '45000' SET MESSAGE_TEXT = 'panic: invalid db';\n  END IF;\nEND;"
+    }
   ],
+  "themes": ["error_handling"],
   "difficulty": 8
 }

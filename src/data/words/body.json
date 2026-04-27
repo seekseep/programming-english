@@ -6,12 +6,28 @@
     "english": "Send the user data in the request body as JSON.",
     "japanese": "リクエスト本文にユーザーデータをJSONで送信してください。"
   },
-  "example_programming": {
-    "language": "JavaScript",
-    "body": "await fetch('/api/users', {\n  method: 'POST',\n  headers: { 'Content-Type': 'application/json' },\n  body: JSON.stringify({ name: 'Alice' })\n});"
-  },
-  "themes": [
-    "http_and_api"
+  "example_programming": [
+    {
+      "language": "JavaScript",
+      "body": "await fetch('/api/users', {\n  method: 'POST',\n  headers: { 'Content-Type': 'application/json' },\n  body: JSON.stringify({ name: 'Alice' })\n});"
+    },
+    {
+      "language": "Visual Basic",
+      "body": "Dim request As HttpRequestMessage = New HttpRequestMessage(HttpMethod.Post, \"/api/users\")\nrequest.Content = New StringContent(JsonConvert.SerializeObject(New With {.name = \"Alice\"}), Encoding.UTF8, \"application/json\")\nDim response = Await client.SendAsync(request)"
+    },
+    {
+      "language": "Python",
+      "body": "import requests\nbody = {'name': 'Alice'}\nresponse = requests.post('/api/users', json=body)\nprint(response.status_code)"
+    },
+    {
+      "language": "Java",
+      "body": "String body = \"{\\\"name\\\":\\\"Alice\\\"}\";\nHttpPost post = new HttpPost(\"/api/users\");\npost.setEntity(new StringEntity(body, ContentType.APPLICATION_JSON));\nHttpResponse response = client.execute(post);"
+    },
+    {
+      "language": "SQL",
+      "body": "DECLARE @body NVARCHAR(MAX) = '{\"name\":\"Alice\"}';\nEXEC sp_OACreate 'MSXML2.XMLHTTP', @http OUT;\nEXEC sp_OAMethod @http, 'Open', NULL, 'POST', '/api/users', 0;\nEXEC sp_OAMethod @http, 'setRequestHeader', NULL, 'Content-Type', 'application/json';\nEXEC sp_OAMethod @http, 'send', NULL, @body;"
+    }
   ],
+  "themes": ["http_and_api"],
   "difficulty": 6
 }

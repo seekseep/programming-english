@@ -6,12 +6,28 @@
     "english": "Return the name and score as a single tuple.",
     "japanese": "名前と点数をひとつの組にまとめて返してください。"
   },
-  "example_programming": {
-    "language": "Visual Basic",
-    "body": "Function GetResult() As Tuple(Of String, Integer)\n    Return Tuple.Create(\"Alice\", 95)\nEnd Function\n\nDim r = GetResult()\nDebug.Print(r.Item1 & \":\" & r.Item2)"
-  },
-  "themes": [
-    "collections"
+  "example_programming": [
+    {
+      "language": "Visual Basic",
+      "body": "Function GetResult() As Tuple(Of String, Integer)\n    Return Tuple.Create(\"Alice\", 95)\nEnd Function\n\nDim r = GetResult()\nDebug.Print(r.Item1 & \":\" & r.Item2)"
+    },
+    {
+      "language": "Python",
+      "body": "def get_result():\n  return (\"Alice\", 95)\n\ntuple_result = get_result()\nprint(tuple_result[0], tuple_result[1])"
+    },
+    {
+      "language": "JavaScript",
+      "body": "function getResult() {\n  return [\"Alice\", 95];\n}\nconst [name, score] = getResult();\nconsole.log(name, score);"
+    },
+    {
+      "language": "Java",
+      "body": "class Pair<A, B> {\n  A first; B second;\n}\nPair<String, Integer> result = new Pair<>();\nresult.first = \"Alice\";\nresult.second = 95;"
+    },
+    {
+      "language": "SQL",
+      "body": "SELECT 'Alice' AS name, 95 AS score\nUNION ALL\nSELECT name, score FROM student_scores;"
+    }
   ],
+  "themes": ["collections"],
   "difficulty": 4
 }

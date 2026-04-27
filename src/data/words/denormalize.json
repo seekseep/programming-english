@@ -6,12 +6,28 @@
     "english": "We denormalize the schema to speed up the reporting queries.",
     "japanese": "レポーティング用のクエリを高速化するためにスキーマを非正規化します。"
   },
-  "example_programming": {
-    "language": "SQL",
-    "body": "-- denormalize: copy customer_name into orders\nALTER TABLE orders ADD COLUMN customer_name VARCHAR(100);\nUPDATE orders o\nSET customer_name = c.name\nFROM customers c WHERE o.customer_id = c.id;"
-  },
-  "themes": [
-    "database_concepts"
+  "example_programming": [
+    {
+      "language": "JavaScript",
+      "body": "const orders = [{id: 1, customerId: 10}];\nconst customers = [{id: 10, name: 'Alice'}];\nconst denormalize = (o) => ({...o, customerName: 'Alice'});\nconsole.log(denormalize(orders[0]));"
+    },
+    {
+      "language": "Visual Basic",
+      "body": "Sub DenormalizeData()\n    Dim rs As Object\n    Set rs = CreateObject(\"ADODB.Recordset\")\n    rs.AddNew Array(\"id\", \"name\"), Array(1, \"denormalize\")\nEnd Sub"
+    },
+    {
+      "language": "Python",
+      "body": "orders = [{'id': 1, 'cust_id': 10}]\ncustomers = {'10': 'Alice'}\nfor order in orders:\n    order['cust_name'] = customers['10']"
+    },
+    {
+      "language": "Java",
+      "body": "class Order {\n    int id, customerId;\n    String customerName;\n}"
+    },
+    {
+      "language": "SQL",
+      "body": "ALTER TABLE orders ADD COLUMN customer_name VARCHAR(100);\nUPDATE orders o\nSET customer_name = c.name\nFROM customers c WHERE o.customer_id = c.id;"
+    }
   ],
+  "themes": ["database_concepts"],
   "difficulty": 10
 }

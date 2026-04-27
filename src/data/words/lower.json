@@ -6,12 +6,28 @@
     "english": "Convert the user name to lower case before comparing.",
     "japanese": "比較する前にユーザー名を小文字に変換してください。"
   },
-  "example_programming": {
-    "language": "SQL",
-    "body": "SELECT id, LOWER(email) AS email_lower\nFROM users\nWHERE LOWER(email) LIKE '%@example.com';"
-  },
-  "themes": [
-    "strings_and_text"
+  "example_programming": [
+    {
+      "language": "SQL",
+      "body": "SELECT id, LOWER(email) AS email_lower\nFROM users\nWHERE LOWER(email) LIKE '%@example.com';"
+    },
+    {
+      "language": "JavaScript",
+      "body": "const text = \"HELLO World\";\nconst lower = text.toLowerCase();\nconsole.log(lower);"
+    },
+    {
+      "language": "Python",
+      "body": "text = \"PYTHON Programming\"\nlower = text.lower()\nprint(lower)"
+    },
+    {
+      "language": "Java",
+      "body": "String text = \"JAVA Example\";\nString lower = text.toLowerCase();\nSystem.out.println(lower);"
+    },
+    {
+      "language": "Visual Basic",
+      "body": "Dim text As String = \"VB PROGRAM\"\nDim lower As String = LCase(text)\nMsgBox lower"
+    }
   ],
+  "themes": ["strings_and_text"],
   "difficulty": 3
 }

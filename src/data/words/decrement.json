@@ -6,12 +6,28 @@
     "english": "We observed a small decrement in temperature overnight.",
     "japanese": "私たちは一晩で気温のわずかな低下を観測した。"
   },
-  "example_programming": {
-    "language": "JavaScript",
-    "body": "// decrement\nlet lives = 3;\nwhile (lives > 0) {\n  console.log(`remaining: ${lives}`);\n  lives--;\n}"
-  },
-  "themes": [
-    "operators"
+  "example_programming": [
+    {
+      "language": "JavaScript",
+      "body": "let lives = 3;\nwhile (lives > 0) {\n  console.log(`remaining: ${lives}`);\n  lives--;\n}"
+    },
+    {
+      "language": "Python",
+      "body": "count = 5\nwhile count > 0:\n  print(f'remaining: {count}')\n  count -= 1"
+    },
+    {
+      "language": "Java",
+      "body": "int lives = 3;\nwhile (lives > 0) {\n  System.out.println(\"remaining: \" + lives);\n  lives--;\n}"
+    },
+    {
+      "language": "Visual Basic",
+      "body": "Dim lives As Integer = 3\nWhile lives > 0\n  Debug.Print \"remaining: \" & lives\n  lives = lives - 1\nWend"
+    },
+    {
+      "language": "SQL",
+      "body": "DECLARE @counter INT = 5;\nWHILE @counter > 0\nBEGIN\n  PRINT 'remaining: ' + CAST(@counter AS VARCHAR);\n  SET @counter = @counter - 1;\nEND;"
+    }
   ],
+  "themes": ["operators"],
   "difficulty": 9
 }

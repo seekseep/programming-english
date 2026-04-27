@@ -6,12 +6,28 @@
     "english": "Public methods form the API of a class.",
     "japanese": "publicなメソッドはクラスのAPIを構成します。"
   },
-  "example_programming": {
-    "language": "Visual Basic",
-    "body": "Public Function AddNumbers(ByVal a As Integer, ByVal b As Integer) As Integer\n    AddNumbers = a + b\nEnd Function"
-  },
-  "themes": [
-    "scope"
+  "example_programming": [
+    {
+      "language": "Visual Basic",
+      "body": "Public Function AddNumbers(ByVal a As Integer, ByVal b As Integer) As Integer\n    AddNumbers = a + b\nEnd Function"
+    },
+    {
+      "language": "JavaScript",
+      "body": "export function addNumbers(a, b) {\n  return a + b;\n}\nconsole.log(addNumbers(2, 3));"
+    },
+    {
+      "language": "Python",
+      "body": "def add_numbers(a, b):\n    return a + b\nprint(add_numbers(2, 3))"
+    },
+    {
+      "language": "Java",
+      "body": "public class Calculator {\n    public int addNumbers(int a, int b) {\n        return a + b;\n    }\n}"
+    },
+    {
+      "language": "SQL",
+      "body": "CREATE FUNCTION public.add_numbers(a INT, b INT) RETURNS INT AS\n'SELECT $1 + $2;' LANGUAGE SQL;"
+    }
   ],
+  "themes": ["scope"],
   "difficulty": 8
 }

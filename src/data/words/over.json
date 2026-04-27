@@ -6,12 +6,28 @@
     "english": "The OVER clause defines the window for the aggregate function.",
     "japanese": "OVER句は集約関数に適用するウィンドウを定義します。"
   },
-  "example_programming": {
-    "language": "SQL",
-    "body": "SELECT employee_id, salary,\n       AVG(salary) OVER (PARTITION BY department ORDER BY hired_at) AS dept_avg\nFROM employees;"
-  },
-  "themes": [
-    "sql_aggregation"
+  "example_programming": [
+    {
+      "language": "SQL",
+      "body": "SELECT employee_id, salary,\n       AVG(salary) OVER (PARTITION BY department ORDER BY hired_at) AS dept_avg\nFROM employees;"
+    },
+    {
+      "language": "JavaScript",
+      "body": "const data = [{id: 1, dept: 'A', salary: 1000}, {id: 2, dept: 'A', salary: 1200}];\ndata.forEach((row, idx) => {\n  const deptAvg = data.filter(r => r.dept === row.dept).reduce((sum, r) => sum + r.salary, 0) / data.filter(r => r.dept === row.dept).length;\n  row.dept_avg = deptAvg;\n});\nconsole.log(data);"
+    },
+    {
+      "language": "Visual Basic",
+      "body": "Dim data As Variant\ndata = Array(Array(1, \"A\", 1000), Array(2, \"A\", 1200), Array(3, \"B\", 900))\nDim row As Variant, i As Integer\nFor i = LBound(data) To UBound(data)\n    Debug.Print \"over: \" & data(i)(0)\nNext"
+    },
+    {
+      "language": "Python",
+      "body": "import pandas as pd\ndf = pd.DataFrame({'id': [1, 2, 3], 'dept': ['A', 'A', 'B'], 'salary': [1000, 1200, 900]})\ndf['dept_avg'] = df.groupby('dept')['salary'].transform('mean')\nprint(df)"
+    },
+    {
+      "language": "Java",
+      "body": "import java.util.*;\nMap<String, Double> deptAvg = new HashMap<>();\nList<Integer> salaries = new ArrayList<>();\nfor (String dept : new String[]{\"A\", \"A\", \"B\"}) {\n  deptAvg.put(dept, 1000.0);\n}\nSystem.out.println(deptAvg);"
+    }
   ],
+  "themes": ["sql_aggregation"],
   "difficulty": 10
 }

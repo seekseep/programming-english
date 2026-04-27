@@ -6,12 +6,28 @@
     "english": "Ten minus three equals seven.",
     "japanese": "10引く3は7です。"
   },
-  "example_programming": {
-    "language": "JavaScript",
-    "body": "// minus\nconst result = 10 - 3;\nconsole.log(result);"
-  },
-  "themes": [
-    "operators"
+  "example_programming": [
+    {
+      "language": "JavaScript",
+      "body": "// minus\nconst result = 10 - 3;\nconsole.log(result);"
+    },
+    {
+      "language": "Visual Basic",
+      "body": "Dim a As Integer = 10\nDim b As Integer = 3\nDim result As Integer = a - b\nMsgBox result"
+    },
+    {
+      "language": "Python",
+      "body": "a = 10\nb = 3\nresult = a - b\nprint(result)"
+    },
+    {
+      "language": "Java",
+      "body": "int a = 10;\nint b = 3;\nint result = a - b;\nSystem.out.println(result);"
+    },
+    {
+      "language": "SQL",
+      "body": "SELECT 10 - 3 AS result;\nSELECT price - discount AS final_price FROM items;"
+    }
   ],
+  "themes": ["operators"],
   "difficulty": 1
 }

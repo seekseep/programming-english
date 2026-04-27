@@ -6,13 +6,28 @@
     "english": "Call the save method after the user clicks the button.",
     "japanese": "ユーザーがボタンを押したら、保存メソッドを呼び出してください。"
   },
-  "example_programming": {
-    "language": "JavaScript",
-    "body": "// method\nconst user = {\n  name: \"Alice\",\n  greet() {\n    return `Hello, ${this.name}!`;\n  }\n};\nconsole.log(user.greet());"
-  },
-  "themes": [
-    "functions_and_procedures",
-    "http_and_api"
+  "example_programming": [
+    {
+      "language": "JavaScript",
+      "body": "// method\nconst user = {\n  name: \"Alice\",\n  greet() {\n    return `Hello, ${this.name}!`;\n  }\n};\nconsole.log(user.greet());"
+    },
+    {
+      "language": "Visual Basic",
+      "body": "Public Class User\n    Public Function GetName() As String\n        Return \"John\"\n    End Function\nEnd Class\nDim user As New User\nMsgBox user.GetName()"
+    },
+    {
+      "language": "Python",
+      "body": "class User:\n    def greet(self):\n        return \"Hello, User!\"\nuser = User()\nprint(user.greet())"
+    },
+    {
+      "language": "Java",
+      "body": "class User {\n    public String greet() {\n        return \"Hello, User!\";\n    }\n}\nUser user = new User();\nSystem.out.println(user.greet());"
+    },
+    {
+      "language": "SQL",
+      "body": "SELECT id, email FROM users;\nCALL sp_user_method('Alice');"
+    }
   ],
+  "themes": ["functions_and_procedures", "http_and_api"],
   "difficulty": 4
 }

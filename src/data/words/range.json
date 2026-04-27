@@ -6,12 +6,28 @@
     "english": "Color the header range in light blue.",
     "japanese": "ヘッダーのセル範囲を水色で塗りつぶしてください。"
   },
-  "example_programming": {
-    "language": "Visual Basic",
-    "body": "Range(\"A1:D1\").Interior.Color = RGB(173, 216, 230)\nRange(\"A1:D1\").Font.Bold = True"
-  },
-  "themes": [
-    "excel_vba_basics"
+  "example_programming": [
+    {
+      "language": "Visual Basic",
+      "body": "Range(\"A1:D1\").Interior.Color = RGB(173, 216, 230)\nRange(\"A1:D1\").Font.Bold = True"
+    },
+    {
+      "language": "JavaScript",
+      "body": "const range = document.querySelectorAll('A1:D1');\nrange.forEach(cell => {\n  cell.style.backgroundColor = 'lightblue';\n  cell.style.fontWeight = 'bold';\n});"
+    },
+    {
+      "language": "Python",
+      "body": "from openpyxl.styles import PatternFill, Font\nws = workbook.active\nfor row in ws['A1:D1']:\n    for cell in row:\n        cell.fill = PatternFill(fgColor='ADD8E6')\n        cell.font = Font(bold=True)"
+    },
+    {
+      "language": "Java",
+      "body": "XSSFSheet sheet = workbook.getSheetAt(0);\nfor (int i = 0; i <= 3; i++) {\n    Cell cell = sheet.getRow(0).getCell(i);\n    cell.getCellStyle().setFillForegroundColor(new XSSFColor());\n}"
+    },
+    {
+      "language": "SQL",
+      "body": "SELECT cell_range, background_color, font_weight\nFROM excel_formatting\nWHERE cell_range = 'A1:D1';"
+    }
   ],
+  "themes": ["excel_vba_basics"],
   "difficulty": 7
 }

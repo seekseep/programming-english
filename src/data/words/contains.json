@@ -6,13 +6,28 @@
     "english": "This sentence contains the word programming.",
     "japanese": "この文には programming という単語が含まれています。"
   },
-  "example_programming": {
-    "language": "JavaScript",
-    "body": "const tags = [\"js\", \"vb\", \"sql\"];\nfunction contains(list, target) {\n  return list.includes(target);\n}\nconsole.log(contains(tags, \"sql\"));"
-  },
-  "themes": [
-    "collections",
-    "strings_and_text"
+  "example_programming": [
+    {
+      "language": "JavaScript",
+      "body": "const tags = [\"js\", \"vb\", \"sql\"];\nfunction contains(list, target) {\n  return list.includes(target);\n}\nconsole.log(contains(tags, \"sql\"));"
+    },
+    {
+      "language": "Python",
+      "body": "tags = [\"js\", \"vb\", \"sql\"]\nif \"sql\" in tags:\n  print(\"contains: sql\")"
+    },
+    {
+      "language": "Java",
+      "body": "List<String> tags = Arrays.asList(\"js\", \"vb\", \"sql\");\nif (tags.contains(\"sql\")) {\n  System.out.println(\"contains: sql\");\n}"
+    },
+    {
+      "language": "Visual Basic",
+      "body": "Dim tags As String = \"js,vb,sql\"\nIf InStr(tags, \"sql\") > 0 Then\n  MsgBox \"contains: sql\"\nEnd If"
+    },
+    {
+      "language": "SQL",
+      "body": "SELECT * FROM tags\nWHERE tags LIKE '%sql%';"
+    }
   ],
+  "themes": ["collections", "strings_and_text"],
   "difficulty": 3
 }

@@ -6,12 +6,28 @@
     "english": "Write the total into the cell A1 of the summary sheet.",
     "japanese": "サマリーシートの A1 セルに合計値を書き込んでください。"
   },
-  "example_programming": {
-    "language": "Visual Basic",
-    "body": "Cells(1, 1).Value = \"Name\"\nCells(2, 1).Value = \"Alice\""
-  },
-  "themes": [
-    "excel_vba_basics"
+  "example_programming": [
+    {
+      "language": "Visual Basic",
+      "body": "Cells(1, 1).Value = \"Name\"\nCells(2, 1).Value = \"Alice\""
+    },
+    {
+      "language": "JavaScript",
+      "body": "const cell = document.querySelector('td');\ncell.textContent = 'data';\nconst table = document.createElement('table');\nconst row = table.insertRow();\nconst cell_elem = row.insertCell(0);"
+    },
+    {
+      "language": "Python",
+      "body": "import openpyxl\nwb = openpyxl.load_workbook('data.xlsx')\nws = wb.active\nws['A1'].value = 'Header'\nws['A2'].value = 'Value'"
+    },
+    {
+      "language": "Java",
+      "body": "JTable table = new JTable(2, 3);\ntable.setValueAt(\"Header\", 0, 0);\ntable.setValueAt(\"Data\", 1, 0);\nframe.add(table);"
+    },
+    {
+      "language": "SQL",
+      "body": "CREATE TABLE spreadsheet (\n  cell_id INT,\n  row INT,\n  col INT,\n  value TEXT\n);"
+    }
   ],
+  "themes": ["excel_vba_basics"],
   "difficulty": 7
 }

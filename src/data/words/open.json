@@ -6,12 +6,28 @@
     "english": "Open the CSV file for reading.",
     "japanese": "CSV ファイルを読み込みモードで開いてください。"
   },
-  "example_programming": {
-    "language": "Visual Basic",
-    "body": "Open \"C:\\data.csv\" For Input As #1\n' read operations here\nClose #1"
-  },
-  "themes": [
-    "file_io"
+  "example_programming": [
+    {
+      "language": "Visual Basic",
+      "body": "Open \"C:\\data.csv\" For Input As #1\n' read operations here\nClose #1"
+    },
+    {
+      "language": "JavaScript",
+      "body": "fetch('data.csv')\n  .then(response => response.text())\n  .then(data => console.log(data))\n  .catch(error => console.error(error));"
+    },
+    {
+      "language": "Python",
+      "body": "with open('data.csv', 'r') as f:\n    data = f.read()\n    print(data)"
+    },
+    {
+      "language": "Java",
+      "body": "try (java.io.FileReader file = new java.io.FileReader(\"data.csv\")) {\n    char[] buffer = new char[1024];\n    file.read(buffer);\n} catch (java.io.IOException e) {}"
+    },
+    {
+      "language": "SQL",
+      "body": "OPEN cursor_name;\nFETCH cursor_name INTO variable;\nCLOSE cursor_name;"
+    }
   ],
+  "themes": ["file_io"],
   "difficulty": 7
 }

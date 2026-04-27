@@ -6,13 +6,28 @@
     "english": "Get the element with the id 'title' from the page.",
     "japanese": "ページから id が 'title' の要素を取得してください。"
   },
-  "example_programming": {
-    "language": "JavaScript",
-    "body": "const element = document.getElementById(\"title\");\nelement.textContent = \"Hello\";"
-  },
-  "themes": [
-    "collections",
-    "web_dom"
+  "example_programming": [
+    {
+      "language": "JavaScript",
+      "body": "const element = document.getElementById(\"title\");\nelement.textContent = \"Hello\";"
+    },
+    {
+      "language": "Visual Basic",
+      "body": "Dim elem As Object\nSet elem = CreateObject(\"htmlfile\").CreateElement(\"div\")"
+    },
+    {
+      "language": "Python",
+      "body": "elements = [1, 2, 3]\nfirst_element = elements[0]\nprint(first_element)"
+    },
+    {
+      "language": "Java",
+      "body": "Element elem = doc.createElement(\"div\");\nelem.setTextContent(\"Hello\");"
+    },
+    {
+      "language": "SQL",
+      "body": "SELECT element FROM dom WHERE id = 1;"
+    }
   ],
+  "themes": ["collections", "web_dom"],
   "difficulty": 2
 }

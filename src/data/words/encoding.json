@@ -6,12 +6,28 @@
     "english": "Make sure the file is saved with UTF-8 encoding.",
     "japanese": "ファイルが UTF-8 エンコーディングで保存されていることを確認してください。"
   },
-  "example_programming": {
-    "language": "JavaScript",
-    "body": "const fs = require('fs');\nconst text = fs.readFileSync('data.txt', { encoding: 'utf-8' });\nconsole.log(text);"
-  },
-  "themes": [
-    "file_io"
+  "example_programming": [
+    {
+      "language": "JavaScript",
+      "body": "const fs = require('fs');\nconst text = fs.readFileSync('data.txt', { encoding: 'utf-8' });\nconsole.log(text);"
+    },
+    {
+      "language": "Visual Basic",
+      "body": "Dim stream As Object\nSet stream = CreateObject(\"ADODB.Stream\")\nstream.Charset = \"utf-8\""
+    },
+    {
+      "language": "Python",
+      "body": "with open('data.txt', encoding='utf-8') as f:\n    text = f.read()\n    print(text)"
+    },
+    {
+      "language": "Java",
+      "body": "String text = new String(bytes, StandardCharsets.UTF_8);\nSystem.out.println(text);"
+    },
+    {
+      "language": "SQL",
+      "body": "SELECT CONVERT(text USING utf8) AS encoding FROM files;"
+    }
   ],
+  "themes": ["file_io"],
   "difficulty": 7
 }

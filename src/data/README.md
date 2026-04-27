@@ -12,25 +12,27 @@
 
 ```ts
 export type Word = {
-  english: string                 // 見出し語。小文字スネーク or 単語そのまま（例: "array", "pure_function"）
-  japanese: string                // 単語の意味（日本語）
-  description: string             // 説明（日本語）。どういう文脈で使われるかまで含める
+  english: string // 見出し語。小文字スネーク or 単語そのまま（例: "array", "pure_function"）
+  japanese: string // 単語の意味（日本語）
+  description: string // 説明（日本語）。どういう文脈で使われるかまで含める
   example_natural: {
-    english: string               // 単語を使った自然な例文
-    japanese: string              // その日本語訳
+    english: string // 単語を使った自然な例文
+    japanese: string // その日本語訳
   }
-  example_programming: {
-    language: string              // 例: "Visual Basic", "JavaScript", "SQL"
-    body: string                  // 単語が登場するコード片
-  }
-  themes: Array<string>           // 所属テーマ ID（themes.json のキー）。複数可
-  difficulty: number              // 1..10。この値がそのまま所属ステージ番号になる（§3.3 参照）
+  example_programming: // プログラミング例。単一オブジェクト（旧形式）または配列（新形式）
+    | { language: string; body: string }
+    | Array<{ language: string; body: string }>
+  // ※ 旧形式（単一オブジェクト）は Zod の transform で自動的に配列に変換される
+  // ※ 新規作成時は配列形式を推奨
+  themes: Array<string> // 所属テーマ ID（themes.json のキー）。複数可
+  difficulty: number // 1..10。この値がそのまま所属ステージ番号になる（§3.3 参照）
 }
 ```
 
 `stages` フィールドは持たない。ステージは `difficulty` から一意に決まる（`stage === difficulty`）ため、重複管理を避ける。
 
 補足:
+
 - `english` はファイル名にそのまま使う。スペースは `_` に置換、常に小文字。例: `pure_function.json`。
 - `description` は「使われる場面」を含める。`japanese` が1語訳なのに対し、こちらは文脈込みの解説。
 - `example_programming.language` は **Visual Basic / JavaScript / SQL を中心に**分散させる（この3言語で全体の8割以上を占めるイメージ）。単語の性質と合わない場合のみ他言語を選ぶ。
@@ -105,9 +107,9 @@ src/data/
 
 ```json
 [
-  { "stage": 1,  "title": "はじめてのプログラミング", "target_word_count": 30 },
-  { "stage": 2,  "title": "データをあつかう",         "target_word_count": 30 },
-  { "stage": 3,  "title": "...",                     "target_word_count": 30 }
+  { "stage": 1, "title": "はじめてのプログラミング", "target_word_count": 30 },
+  { "stage": 2, "title": "データをあつかう", "target_word_count": 30 },
+  { "stage": 3, "title": "...", "target_word_count": 30 }
   // ... stage 10 まで
 ]
 ```
@@ -121,10 +123,10 @@ src/data/
 
 ```json
 [
-  { "english": "print",    "difficulty": 1, "themes": ["basic_io"] },
+  { "english": "print", "difficulty": 1, "themes": ["basic_io"] },
   { "english": "variable", "difficulty": 1, "themes": ["variables_and_types"] },
-  { "english": "array",    "difficulty": 3, "themes": ["collections"] },
-  { "english": "promise",  "difficulty": 8, "themes": ["async_programming"] }
+  { "english": "array", "difficulty": 3, "themes": ["collections"] },
+  { "english": "promise", "difficulty": 8, "themes": ["async_programming"] }
 ]
 ```
 
@@ -191,14 +193,14 @@ src/data/
 
 ### 並列に切る粒度
 
-| フェーズ | 並列単位 | 並列数の目安 |
-| --- | --- | --- |
-| フェーズ2: テーマごとの候補列挙 | テーマ1件 | テーマ数（3〜10） |
-| フェーズ3: 重複除去 | — | 直列（親が単独で実行） |
-| フェーズ4: 難易度割り当て | — | 直列（横並び比較が必要なので親が単独で実行） |
-| フェーズ5: 4パート生成 | 単語チャンク or 単語×パート | チャンク数（5〜10）※or 単語数×4 |
-| フェーズ6: 統合 | 単語1件 | 基本は直列でよい（I/O のみ） |
-| フェーズ7: 検証 | ファイル1件 | 直列でよい |
+| フェーズ                        | 並列単位                    | 並列数の目安                                 |
+| ------------------------------- | --------------------------- | -------------------------------------------- |
+| フェーズ2: テーマごとの候補列挙 | テーマ1件                   | テーマ数（3〜10）                            |
+| フェーズ3: 重複除去             | —                           | 直列（親が単独で実行）                       |
+| フェーズ4: 難易度割り当て       | —                           | 直列（横並び比較が必要なので親が単独で実行） |
+| フェーズ5: 4パート生成          | 単語チャンク or 単語×パート | チャンク数（5〜10）※or 単語数×4              |
+| フェーズ6: 統合                 | 単語1件                     | 基本は直列でよい（I/O のみ）                 |
+| フェーズ7: 検証                 | ファイル1件                 | 直列でよい                                   |
 
 ### フェーズ2の並列発火テンプレート
 
@@ -298,7 +300,7 @@ src/data/
 ```json
 {
   "all_candidates": [
-    { "english": "log",    "themes": ["basic_io"] },
+    { "english": "log", "themes": ["basic_io"] },
     { "english": "output", "themes": ["basic_io"] }
   ],
   "already_in_vocabulary": ["print", "input"]
@@ -367,11 +369,13 @@ src/data/
 冪等化: 各パートファイルが**既に存在すれば再生成しない**。これにより失敗したパートだけをリトライできる。
 
 並行化の指針:
+
 - 単語リストをチャンク（例: 5単語ずつ）に切り、チャンクごとに Task を1つ発火。
 - 各 Task は担当チャンク内の単語について、不足している4パートを順に生成してファイルへ書き出す。
 - さらに加速したい場合、「1単語 × 4パート」で4タスク並列も可能。ただし Task オーバーヘッドがあるので、通常は「チャンク単位」の並列で十分。
 
 各 Task に渡す情報:
+
 - 対象単語リスト（`english` の配列）
 - 各単語のテーマとステージ（文脈として使う）
 - 出力パス規則（`.cache/parts/<english>/<part>.json`）
@@ -431,11 +435,13 @@ const modules = import.meta.glob<Word>('./words/*.json', {
 
 export const words: Array<Word> = Object.values(modules)
 
-export const wordsByStage: Record<number, Array<Word>> =
-  words.reduce((acc, w) => {
+export const wordsByStage: Record<number, Array<Word>> = words.reduce(
+  (acc, w) => {
     ;(acc[w.difficulty] ??= []).push(w)
     return acc
-  }, {} as Record<number, Array<Word>>)
+  },
+  {} as Record<number, Array<Word>>,
+)
 ```
 
 `types.ts` に `Word` 型を切り出しておき、生成フェーズでもこの型を参照する。
@@ -458,6 +464,7 @@ Claude が作業を再開するときは、常にこの順で動く。
 9. **フェーズ7** で検証し、問題があればそのパートだけキャッシュを消してフェーズ5からやり直す。
 
 停止ルール:
+
 - ステージの `target_word_count` を満たしたら一旦停止してユーザーに見せる。
 - パート生成で不自然な出力（言語指定が欠ける、日本語訳が英語のまま等）を見つけたら、その単語のキャッシュを削除してやり直し、根本原因（プロンプト不足）をこのドキュメントに追記する。
 
@@ -486,6 +493,7 @@ Claude が作業を再開するときは、常にこの順で動く。
 ユーザーがこの中から採用テーマを選ぶ。選定後に `themes.json` を書き出す。
 
 **基礎系**
+
 - `basic_io` — 入出力（print, input, log, output, display, message, alert）
 - `variables_and_types` — 変数と基本型（variable, constant, declare, string, number, boolean, null）
 - `operators` — 演算子（plus, minus, equal, compare, and, or, not, greater, less）
@@ -496,29 +504,34 @@ Claude が作業を再開するときは、常にこの順で動く。
 - `comments_and_docs` — コメント・注釈（comment, note, todo, tag, annotation）
 
 **データ操作系**
+
 - `strings_and_text` — 文字列操作（concat, substring, length, upper, lower, split, trim, replace）
 - `numbers_and_math` — 数値計算（sum, average, count, max, min, round, floor, modulo）
 - `collections` — 配列・コレクション（array, list, object, key, value, index, length）
 - `boolean_logic` — 真偽値の論理（true, false, is, exists, valid）
 
 **SQL / データベース系**
+
 - `sql_query_basics` — SQL基礎（select, from, where, insert, update, delete, values）
 - `sql_joins` — SQL結合（join, inner, outer, left, right, on, using）
 - `sql_aggregation` — SQL集約（group, having, count, sum, avg, distinct, order, asc, desc）
 - `database_concepts` — DB概念（table, row, column, record, schema, primary, foreign, key, index）
 
 **Web / JavaScript 系**
+
 - `web_dom` — DOM操作（document, element, query, select, append, remove, class, attribute）
 - `events` — イベント（event, listener, click, submit, change, handler, trigger）
 - `async_programming` — 非同期（callback, promise, async, await, fetch, resolve, reject）
 - `http_and_api` — HTTP/API（request, response, status, header, body, get, post, endpoint, json）
 
 **Visual Basic / Office 系**
+
 - `vb_forms_controls` — VBフォーム/コントロール（form, button, textbox, label, checkbox）
 - `excel_vba_basics` — Excel VBA（workbook, worksheet, range, cell, value, formula, macro）
 - `file_io` — ファイル入出力（file, open, close, read, write, path, append, stream）
 
 **開発プロセス系**
+
 - `debugging_and_testing` — デバッグ・テスト（bug, fix, test, assert, expect, mock, breakpoint）
 - `modules_and_imports` — モジュール・読み込み（module, import, export, require, include）
 

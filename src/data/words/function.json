@@ -6,12 +6,28 @@
     "english": "This function adds two numbers.",
     "japanese": "この関数は2つの数を足します。"
   },
-  "example_programming": {
-    "language": "Visual Basic",
-    "body": "Function AddTwo(a As Integer, b As Integer) As Integer\n    AddTwo = a + b\nEnd Function"
-  },
-  "themes": [
-    "functions_and_procedures"
+  "example_programming": [
+    {
+      "language": "Visual Basic",
+      "body": "Function AddTwo(a As Integer, b As Integer) As Integer\n    AddTwo = a + b\nEnd Function"
+    },
+    {
+      "language": "JavaScript",
+      "body": "function addTwo(a, b) {\n  return a + b;\n}\nconsole.log(addTwo(2, 3));"
+    },
+    {
+      "language": "Python",
+      "body": "def add_two(a, b):\n  return a + b\nprint(add_two(2, 3))"
+    },
+    {
+      "language": "Java",
+      "body": "static int addTwo(int a, int b) {\n  return a + b;\n}\nSystem.out.println(addTwo(2, 3));"
+    },
+    {
+      "language": "SQL",
+      "body": "CREATE FUNCTION AddTwo(a INT, b INT)\nRETURNS INT\nRETURN a + b;"
+    }
   ],
+  "themes": ["functions_and_procedures"],
   "difficulty": 1
 }

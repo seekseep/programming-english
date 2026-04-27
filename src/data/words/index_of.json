@@ -6,12 +6,28 @@
     "english": "Use index_of to find the position of the comma in the text.",
     "japanese": "index_of を使って、テキスト中のカンマの位置を見つけてください。"
   },
-  "example_programming": {
-    "language": "JavaScript",
-    "body": "const email = \"alice@example.com\";\nconst at = email.indexOf(\"@\");\nconst domain = email.substring(at + 1);\nconsole.log(domain);"
-  },
-  "themes": [
-    "strings_and_text"
+  "example_programming": [
+    {
+      "language": "JavaScript",
+      "body": "const email = \"alice@example.com\";\nconst at = email.indexOf(\"@\");\nconst domain = email.substring(at + 1);\nconsole.log(domain);"
+    },
+    {
+      "language": "Python",
+      "body": "text = \"hello world\"\nindex_of_w = text.find('w')\nprint(f\"Position: {index_of_w}\")"
+    },
+    {
+      "language": "Java",
+      "body": "String str = \"hello world\";\nint index_of = str.indexOf('o');\nSystem.out.println(\"Index: \" + index_of);"
+    },
+    {
+      "language": "Visual Basic",
+      "body": "Dim text As String = \"hello world\"\nDim index_of As Integer = InStr(text, \"w\")\nDebug.Print \"Index of: \" & index_of"
+    },
+    {
+      "language": "SQL",
+      "body": "SELECT INSTR(email, '@') AS index_of FROM users LIMIT 5;"
+    }
   ],
+  "themes": ["strings_and_text"],
   "difficulty": 4
 }

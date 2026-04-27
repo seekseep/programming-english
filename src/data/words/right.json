@@ -6,12 +6,28 @@
     "english": "Use a right join to list all orders, even those with missing users.",
     "japanese": "ユーザー情報がない注文も含めてすべて一覧にするために右結合を使ってください。"
   },
-  "example_programming": {
-    "language": "SQL",
-    "body": "SELECT users.name, orders.id\nFROM users\nRIGHT JOIN orders ON users.id = orders.user_id;"
-  },
-  "themes": [
-    "sql_joins"
+  "example_programming": [
+    {
+      "language": "SQL",
+      "body": "SELECT users.name, orders.id\nFROM users\nRIGHT JOIN orders ON users.id = orders.user_id;"
+    },
+    {
+      "language": "JavaScript",
+      "body": "const orders = [{id: 1, user_id: 100}, {id: 2, user_id: 200}];\nconst users = [{id: 100, name: 'Alice'}];\nconst right = orders.map(o => ({\n  order_id: o.id,\n  user_name: users.find(u => u.id === o.user_id)?.name || null\n}));"
+    },
+    {
+      "language": "Python",
+      "body": "import pandas as pd\norders = pd.DataFrame({'id': [1, 2], 'user_id': [100, 200]})\nusers = pd.DataFrame({'id': [100], 'name': ['Alice']})\nright_join = orders.merge(users, left_on='user_id', right_on='id', how='right')"
+    },
+    {
+      "language": "Java",
+      "body": "List<Map> orders = List.of(\n  Map.of(\"id\", 1, \"user_id\", 100),\n  Map.of(\"id\", 2, \"user_id\", 200)\n);\nList<Map> users = List.of(Map.of(\"id\", 100, \"name\", \"Alice\"));"
+    },
+    {
+      "language": "Visual Basic",
+      "body": "Dim orders As New List(Of (id As Int, user_id As Int))\nDim users As New List(Of (id As Int, name As String))\nDim rightJoin = orders.GroupJoin(users, Function(o) o.user_id, Function(u) u.id, Function(o, u) o).ToList()"
+    }
   ],
+  "themes": ["sql_joins"],
   "difficulty": 5
 }

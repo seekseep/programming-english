@@ -6,12 +6,28 @@
     "english": "Parse the response body as JSON.",
     "japanese": "レスポンス本文をJSONとして解析してください。"
   },
-  "example_programming": {
-    "language": "JavaScript",
-    "body": "const res = await fetch('/api/user/1');\nconst user = await res.json();\nconsole.log(user.name);"
-  },
-  "themes": [
-    "http_and_api"
+  "example_programming": [
+    {
+      "language": "JavaScript",
+      "body": "const res = await fetch('/api/user/1');\nconst user = await res.json();\nconsole.log(user.name);"
+    },
+    {
+      "language": "Python",
+      "body": "import json\ndata = '{\"name\": \"Alice\", \"age\": 30}'\nobj = json.loads(data)\nprint(obj['name'])"
+    },
+    {
+      "language": "Java",
+      "body": "import org.json.JSONObject;\nString json = \"{\\\"name\\\":\\\"Alice\\\"}\";\nJSONObject obj = new JSONObject(json);\nSystem.out.println(obj.getString(\"name\"));"
+    },
+    {
+      "language": "Visual Basic",
+      "body": "Dim json As String = \"{\\\"name\\\":\\\"Alice\\\"}\"\nDim obj As Object = JsonConvert.DeserializeObject(json)\nDebug.Print obj.name"
+    },
+    {
+      "language": "SQL",
+      "body": "SELECT JSON_EXTRACT(data, '$.name') AS name FROM users LIMIT 1;"
+    }
   ],
+  "themes": ["http_and_api"],
   "difficulty": 6
 }

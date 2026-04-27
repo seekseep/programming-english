@@ -1,13 +1,23 @@
-
-@import "tailwindcss";
-@import "tw-animate-css";
-@import "shadcn/tailwind.css";
+@import 'tailwindcss';
+@import 'tw-animate-css';
+@import 'shadcn/tailwind.css';
 
 @keyframes feedback {
-  0% { opacity: 0; transform: scale(0.5); }
-  30% { opacity: 1; transform: scale(1.1); }
-  50% { transform: scale(1); }
-  100% { opacity: 0; transform: scale(1.2); }
+  0% {
+    opacity: 0;
+    transform: scale(0.5);
+  }
+  30% {
+    opacity: 1;
+    transform: scale(1.1);
+  }
+  50% {
+    transform: scale(1);
+  }
+  100% {
+    opacity: 0;
+    transform: scale(1.2);
+  }
 }
 
 :root {
@@ -47,6 +57,8 @@
   --muted-foreground: oklch(0.556 0 0);
   --accent-foreground: oklch(0.205 0 0);
   --destructive: oklch(0.577 0.245 27.325);
+  --popover: oklch(1 0 0);
+  --popover-foreground: oklch(0.145 0 0);
   --border: oklch(0.922 0 0);
   --input: oklch(0.922 0 0);
   --ring: oklch(0.708 0 0);
@@ -65,19 +77,23 @@ body,
 
 html {
   background:
-    radial-gradient(circle at top left, rgba(255, 222, 149, 0.8), transparent 28%),
-    radial-gradient(circle at bottom right, rgba(233, 107, 74, 0.16), transparent 24%),
+    radial-gradient(
+      circle at top left,
+      rgba(255, 222, 149, 0.8),
+      transparent 28%
+    ),
+    radial-gradient(
+      circle at bottom right,
+      rgba(233, 107, 74, 0.16),
+      transparent 24%
+    ),
     linear-gradient(180deg, #fbf8f1 0%, #f4ecdc 100%);
 }
 
 body {
   margin: 0;
   color: var(--ink);
-  font-family:
-    "Avenir Next",
-    "Hiragino Sans",
-    "Yu Gothic",
-    sans-serif;
+  font-family: 'Avenir Next', 'Hiragino Sans', 'Yu Gothic', sans-serif;
 }
 
 body::before {
@@ -88,7 +104,7 @@ body::before {
     linear-gradient(rgba(199, 91, 18, 0.04) 1px, transparent 1px),
     linear-gradient(90deg, rgba(199, 91, 18, 0.04) 1px, transparent 1px);
   background-size: 32px 32px;
-  content: "";
+  content: '';
   pointer-events: none;
 }
 
@@ -148,7 +164,7 @@ input {
   background: rgba(199, 91, 18, 0.08);
 }
 
-.nav-links a[data-status="active"] {
+.nav-links a[data-status='active'] {
   background: rgba(199, 91, 18, 0.12);
   color: var(--accent);
 }
@@ -275,7 +291,11 @@ input {
 
 .stat-card-accent {
   background:
-    linear-gradient(140deg, rgba(247, 189, 47, 0.35), rgba(255, 249, 239, 0.82)),
+    linear-gradient(
+      140deg,
+      rgba(247, 189, 47, 0.35),
+      rgba(255, 249, 239, 0.82)
+    ),
     rgba(255, 255, 255, 0.78);
 }
 
@@ -346,7 +366,11 @@ input {
 }
 
 .chip-active {
-  border-color: color-mix(in srgb, var(--chip-accent, var(--accent)) 40%, white);
+  border-color: color-mix(
+    in srgb,
+    var(--chip-accent, var(--accent)) 40%,
+    white
+  );
   background: color-mix(in srgb, var(--chip-accent, var(--accent)) 14%, white);
 }
 
@@ -527,6 +551,29 @@ input {
   }
 }
 
+/* 言語切替タブ */
+.lang-switcher {
+  background: rgba(199, 91, 18, 0.1);
+  border-radius: 12px;
+  padding: 3px;
+  height: auto;
+}
+
+.lang-switcher-tab {
+  color: var(--ink);
+  font-weight: 600;
+  font-size: 0.85rem;
+  border-radius: 9px;
+  padding: 6px 12px;
+  transition: all 140ms ease;
+}
+
+.lang-switcher-tab[data-active] {
+  background: var(--accent) !important;
+  color: #fff !important;
+  box-shadow: none;
+}
+
 @theme inline {
   --color-ring: var(--ring);
   --color-input: var(--input);
@@ -535,13 +582,15 @@ input {
   --color-accent-foreground: var(--accent-foreground);
   --color-accent: var(--accent);
   --color-muted-foreground: var(--muted-foreground);
-  --color-muted: var(--muted);
+  --color-muted: oklch(0.97 0 0);
   --color-secondary-foreground: var(--secondary-foreground);
   --color-secondary: var(--secondary);
   --color-primary-foreground: var(--primary-foreground);
   --color-primary: var(--primary);
   --color-foreground: var(--foreground);
   --color-background: var(--background);
+  --color-popover: var(--popover);
+  --color-popover-foreground: var(--popover-foreground);
   --radius-sm: calc(var(--radius) * 0.6);
   --radius-md: calc(var(--radius) * 0.8);
   --radius-lg: var(--radius);
@@ -550,4 +599,3 @@ input {
   --radius-3xl: calc(var(--radius) * 2.2);
   --radius-4xl: calc(var(--radius) * 2.6);
 }
-

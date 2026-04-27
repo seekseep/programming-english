@@ -6,12 +6,28 @@
     "english": "In logic, xor is true only when the inputs differ.",
     "japanese": "論理学では、xor は入力が異なるときだけ真になる。"
   },
-  "example_programming": {
-    "language": "JavaScript",
-    "body": "// xor\nconsole.log(0b1010 ^ 0b1100);\nlet flag = 1;\nflag ^= 1;\nconsole.log(flag);"
-  },
-  "themes": [
-    "operators"
+  "example_programming": [
+    {
+      "language": "JavaScript",
+      "body": "// xor\nconsole.log(0b1010 ^ 0b1100);\nlet flag = 1;\nflag ^= 1;\nconsole.log(flag);"
+    },
+    {
+      "language": "Python",
+      "body": "result = 0b1010 ^ 0b1100\nprint(result)\nflag = 1\nflag ^= 1\nprint(flag)"
+    },
+    {
+      "language": "Java",
+      "body": "int result = 0b1010 ^ 0b1100;\nSystem.out.println(result);\nint flag = 1;\nflag ^= 1;\nSystem.out.println(flag);"
+    },
+    {
+      "language": "Visual Basic",
+      "body": "Dim result As Integer = 10 Xor 12\nDebug.Print result\nDim flag As Integer = 1\nflag = flag Xor 1\nDebug.Print flag"
+    },
+    {
+      "language": "SQL",
+      "body": "SELECT 0b1010 ^ 0b1100 AS xor_result,\n       1 ^ 1 AS flag_toggled;"
+    }
   ],
+  "themes": ["operators"],
   "difficulty": 9
 }

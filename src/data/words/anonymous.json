@@ -6,12 +6,28 @@
     "english": "The donor wished to remain anonymous.",
     "japanese": "その寄付者は匿名のままでいたいと望んだ。"
   },
-  "example_programming": {
-    "language": "JavaScript",
-    "body": "// anonymous\nconst doubled = [1, 2, 3].map(function (n) {\n  return n * 2;\n});\nconsole.log(doubled);"
-  },
-  "themes": [
-    "functions_and_procedures"
+  "example_programming": [
+    {
+      "language": "JavaScript",
+      "body": "// anonymous\nconst doubled = [1, 2, 3].map(function (n) {\n  return n * 2;\n});\nconsole.log(doubled);"
+    },
+    {
+      "language": "Visual Basic",
+      "body": "Array.ForEach(numbers, Sub(n As Integer) _\n    Console.WriteLine(n * 2) _\n)"
+    },
+    {
+      "language": "Python",
+      "body": "doubled = list(map(lambda n: n * 2, [1, 2, 3]))\nprint(doubled)"
+    },
+    {
+      "language": "Java",
+      "body": "IntStream.of(1, 2, 3)\n  .map(n -> n * 2)\n  .forEach(System.out::println);"
+    },
+    {
+      "language": "SQL",
+      "body": "CREATE PROCEDURE AnonymousProc @val INT AS\nBEGIN\n  SELECT @val * 2 AS doubled;\nEND;\nEXEC AnonymousProc 5;"
+    }
   ],
+  "themes": ["functions_and_procedures"],
   "difficulty": 9
 }

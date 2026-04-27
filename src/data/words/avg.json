@@ -6,12 +6,28 @@
     "english": "Calculate the average order amount per customer.",
     "japanese": "顧客ごとの注文金額の平均を計算してください。"
   },
-  "example_programming": {
-    "language": "SQL",
-    "body": "SELECT customer_id, AVG(total) AS avg_total\nFROM orders\nGROUP BY customer_id\nORDER BY avg_total DESC;"
-  },
-  "themes": [
-    "sql_aggregation"
+  "example_programming": [
+    {
+      "language": "SQL",
+      "body": "SELECT customer_id, AVG(total) AS avg_total\nFROM orders\nGROUP BY customer_id\nORDER BY avg_total DESC;"
+    },
+    {
+      "language": "JavaScript",
+      "body": "const orders = [{cid: 1, total: 100}, {cid: 1, total: 200}, {cid: 2, total: 150}];\nconst avg = orders.reduce((acc, o) => {\n  acc[o.cid] = (acc[o.cid] || 0) + o.total;\n  return acc;\n}, {});"
+    },
+    {
+      "language": "Visual Basic",
+      "body": "Dim orders = {New With {.cid = 1, .total = 100}, New With {.cid = 1, .total = 200}}\nDim avg = orders.GroupBy(Function(o) o.cid).Select(Function(g) New With {.cid = g.Key, .avg = g.Average(Function(o) o.total)})"
+    },
+    {
+      "language": "Python",
+      "body": "from itertools import groupby\norders = [(1, 100), (1, 200), (2, 150)]\navg = {k: sum(v for _, v in g) / len(list(g)) for k, g in groupby(sorted(orders), key=lambda x: x[0])}"
+    },
+    {
+      "language": "Java",
+      "body": "Map<Integer, Double> avg = orders.stream()\n  .collect(Collectors.groupingBy(\n    Order::getCustomerId,\n    Collectors.averagingDouble(Order::getTotal)\n  ));"
+    }
   ],
+  "themes": ["sql_aggregation"],
   "difficulty": 6
 }

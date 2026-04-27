@@ -6,12 +6,28 @@
     "english": "Always close the file after you finish writing to it.",
     "japanese": "書き込みが終わったら必ずファイルを閉じてください。"
   },
-  "example_programming": {
-    "language": "Visual Basic",
-    "body": "Open \"C:\\data.txt\" For Output As #1\nPrint #1, \"Hello\"\nClose #1"
-  },
-  "themes": [
-    "file_io"
+  "example_programming": [
+    {
+      "language": "Visual Basic",
+      "body": "Open \"C:\\data.txt\" For Output As #1\nPrint #1, \"Hello\"\nClose #1"
+    },
+    {
+      "language": "JavaScript",
+      "body": "const ws = new WebSocket('ws://...');\nws.onopen = () => console.log('open');\nws.onclose = () => console.log('close');\nws.close();"
+    },
+    {
+      "language": "Python",
+      "body": "with open('file.txt') as f:\n  data = f.read()\nf.close()"
+    },
+    {
+      "language": "Java",
+      "body": "FileReader fr = new FileReader(\"data.txt\");\nfr.read();\nfr.close();"
+    },
+    {
+      "language": "SQL",
+      "body": "BEGIN TRANSACTION;\nUPDATE users SET active = 0;\nCOMMIT;\nCLOSE CURSOR;"
+    }
   ],
+  "themes": ["file_io"],
   "difficulty": 7
 }

@@ -6,12 +6,28 @@
     "english": "Assign a rank to each student by their exam score.",
     "japanese": "試験の得点に基づき、各生徒に順位を付けます。"
   },
-  "example_programming": {
-    "language": "SQL",
-    "body": "SELECT student_id, subject, score,\n       RANK() OVER (PARTITION BY subject ORDER BY score DESC) AS position\nFROM exam_results;"
-  },
-  "themes": [
-    "sql_aggregation"
+  "example_programming": [
+    {
+      "language": "SQL",
+      "body": "SELECT student_id, subject, score,\n       RANK() OVER (PARTITION BY subject ORDER BY score DESC) AS position\nFROM exam_results;"
+    },
+    {
+      "language": "JavaScript",
+      "body": "const scores = [{id: 1, score: 95}, {id: 2, score: 85}, {id: 3, score: 95}];\nconst sorted = [...scores].sort((a,b) => b.score - a.score);\nconst ranked = sorted.map((s, i) => ({...s, rank: i+1}));"
+    },
+    {
+      "language": "Visual Basic",
+      "body": "Dim scores As List(Of Integer) = New List(Of Integer) From {95, 85, 95}\nDim sorted = scores.OrderByDescending(Function(s) s).ToList()\nFor i As Integer = 0 To sorted.Count - 1\n    Debug.Print i + 1 & \". \" & sorted(i)\nNext"
+    },
+    {
+      "language": "Python",
+      "body": "from scipy.stats import rankdata\nscores = [95, 85, 95, 78]\nranks = rankdata([-x for x in scores], method='ordinal')\nprint(list(ranks))"
+    },
+    {
+      "language": "Java",
+      "body": "List<Integer> scores = Arrays.asList(95, 85, 95, 78);\nList<Integer> sorted = scores.stream().sorted(Collections.reverseOrder()).collect(Collectors.toList());\nfor (int i = 0; i < sorted.size(); i++) {\n    System.out.println((i + 1) + \": \" + sorted.get(i));\n}"
+    }
   ],
+  "themes": ["sql_aggregation"],
   "difficulty": 10
 }

@@ -6,12 +6,28 @@
     "english": "This analysis requires higher-order thinking skills.",
     "japanese": "この分析にはより高次の思考スキルが必要だ。"
   },
-  "example_programming": {
-    "language": "JavaScript",
-    "body": "// higher_order\nfunction multiplier(factor) {\n  return (n) => n * factor;\n}\nconst triple = multiplier(3);\nconsole.log([1, 2, 3].map(triple));"
-  },
-  "themes": [
-    "functions_and_procedures"
+  "example_programming": [
+    {
+      "language": "JavaScript",
+      "body": "// higher_order\nfunction multiplier(factor) {\n  return (n) => n * factor;\n}\nconst triple = multiplier(3);\nconsole.log([1, 2, 3].map(triple));"
+    },
+    {
+      "language": "Python",
+      "body": "def multiplier(factor):\n  def multiply(n):\n    return n * factor\n  return multiply\n\ntriple = multiplier(3)\nresult = [triple(x) for x in [1, 2, 3]]\nprint(result)"
+    },
+    {
+      "language": "Visual Basic",
+      "body": "Function Multiplier(factor As Integer) As Variant\n  Dim result As Variant\n  result = Function(n) n * factor\n  Multiplier = result\nEnd Function"
+    },
+    {
+      "language": "Java",
+      "body": "Function<Integer, Function<Integer, Integer>> multiplier = factor -> n -> n * factor;\nFunction<Integer, Integer> triple = multiplier.apply(3);\nList<Integer> result = Arrays.asList(1, 2, 3).stream()\n  .map(triple::apply)\n  .collect(Collectors.toList());"
+    },
+    {
+      "language": "SQL",
+      "body": "SELECT n, n * 3 AS result\nFROM (SELECT 1 AS n UNION SELECT 2 UNION SELECT 3) AS values;"
+    }
   ],
+  "themes": ["functions_and_procedures"],
   "difficulty": 9
 }

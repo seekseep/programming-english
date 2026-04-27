@@ -6,12 +6,28 @@
     "english": "Make a list of your favorite books.",
     "japanese": "好きな本のリストを作ってください。"
   },
-  "example_programming": {
-    "language": "JavaScript",
-    "body": "const list = ['apple', 'banana', 'cherry'];\nconsole.log(list);"
-  },
-  "themes": [
-    "collections"
+  "example_programming": [
+    {
+      "language": "JavaScript",
+      "body": "const list = ['apple', 'banana', 'cherry'];\nconsole.log(list);"
+    },
+    {
+      "language": "Python",
+      "body": "list = ['apple', 'banana', 'cherry']\nprint(list)"
+    },
+    {
+      "language": "Java",
+      "body": "List<String> list = new ArrayList<>();\nlist.add(\"apple\");\nlist.add(\"banana\");"
+    },
+    {
+      "language": "Visual Basic",
+      "body": "Dim list As New List(Of String)\nlist.Add(\"apple\")\nlist.Add(\"banana\")"
+    },
+    {
+      "language": "SQL",
+      "body": "SELECT * FROM list WHERE item_id < 10;"
+    }
   ],
+  "themes": ["collections"],
   "difficulty": 1
 }

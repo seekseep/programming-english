@@ -6,12 +6,28 @@
     "english": "The star system has a ternary arrangement of three suns.",
     "japanese": "その星系は三つの太陽からなる三重構造になっている。"
   },
-  "example_programming": {
-    "language": "JavaScript",
-    "body": "// ternary\nconst score = 72;\nconst grade = score >= 60 ? \"pass\" : \"fail\";\nconsole.log(grade);"
-  },
-  "themes": [
-    "operators"
+  "example_programming": [
+    {
+      "language": "JavaScript",
+      "body": "// ternary\nconst score = 72;\nconst grade = score >= 60 ? \"pass\" : \"fail\";\nconsole.log(grade);"
+    },
+    {
+      "language": "Visual Basic",
+      "body": "Dim score As Integer = 72\nDim grade As String = If(score >= 60, \"pass\", \"fail\")"
+    },
+    {
+      "language": "Python",
+      "body": "score = 72\ngrade = \"pass\" if score >= 60 else \"fail\"\nprint(grade)"
+    },
+    {
+      "language": "Java",
+      "body": "int score = 72;\nString grade = score >= 60 ? \"pass\" : \"fail\";\nSystem.out.println(grade);"
+    },
+    {
+      "language": "SQL",
+      "body": "SELECT CASE WHEN score >= 60 THEN 'pass' ELSE 'fail' END AS grade\nFROM results WHERE score = 72;"
+    }
   ],
+  "themes": ["operators"],
   "difficulty": 9
 }

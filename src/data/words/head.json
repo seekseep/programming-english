@@ -6,12 +6,28 @@
     "english": "Show me the head of the list so I can check the data.",
     "japanese": "データを確認したいので、リストの先頭部分を表示してください。"
   },
-  "example_programming": {
-    "language": "SQL",
-    "body": "SELECT *\nFROM sales\nORDER BY sold_at DESC\nLIMIT 5; -- head of the table"
-  },
-  "themes": [
-    "collections"
+  "example_programming": [
+    {
+      "language": "SQL",
+      "body": "SELECT *\nFROM sales\nORDER BY sold_at DESC\nLIMIT 5; -- head of the table"
+    },
+    {
+      "language": "JavaScript",
+      "body": "const data = [1, 2, 3, 4, 5];\nconst head = data.slice(0, 5);\nconsole.log(head);"
+    },
+    {
+      "language": "Python",
+      "body": "import pandas as pd\ndf = pd.read_csv('data.csv')\nhead_rows = df.head(5)\nprint(head_rows)"
+    },
+    {
+      "language": "Visual Basic",
+      "body": "Dim data As New Collection\nDim i As Integer\nFor i = 1 To 5\n  If i <= 5 Then\n    Debug.Print data(i)\n  End If\nNext"
+    },
+    {
+      "language": "Java",
+      "body": "List<Integer> data = Arrays.asList(1, 2, 3, 4, 5);\nList<Integer> head = data.stream()\n  .limit(5)\n  .collect(Collectors.toList());\nSystem.out.println(head);"
+    }
   ],
+  "themes": ["collections"],
   "difficulty": 4
 }

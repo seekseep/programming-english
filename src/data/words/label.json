@@ -6,12 +6,28 @@
     "english": "Update the status label to show the current progress.",
     "japanese": "現在の進捗を表示するように状態ラベルを更新してください。"
   },
-  "example_programming": {
-    "language": "Visual Basic",
-    "body": "Label1.Caption = \"Processing...\"\nDoEvents"
-  },
-  "themes": [
-    "vb_forms_controls"
+  "example_programming": [
+    {
+      "language": "Visual Basic",
+      "body": "Label1.Caption = \"Processing...\"\nDoEvents"
+    },
+    {
+      "language": "JavaScript",
+      "body": "const label = document.getElementById('status');\nlabel.textContent = 'Loading...';\nlabel.style.color = 'blue';"
+    },
+    {
+      "language": "Python",
+      "body": "from tkinter import Tk, Label\nroot = Tk()\nlabel = Label(root, text='Hello')\nlabel.pack()\nroot.mainloop()"
+    },
+    {
+      "language": "Java",
+      "body": "JLabel label = new JLabel(\"Status\");\nlabel.setText(\"Processing...\");\npanel.add(label);"
+    },
+    {
+      "language": "SQL",
+      "body": "SELECT id, label AS status_label FROM tasks WHERE completed = 1;"
+    }
   ],
+  "themes": ["vb_forms_controls"],
   "difficulty": 7
 }

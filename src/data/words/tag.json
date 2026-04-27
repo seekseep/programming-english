@@ -6,13 +6,28 @@
     "english": "Get all elements with the p tag from the document.",
     "japanese": "ドキュメントから p タグの要素をすべて取得してください。"
   },
-  "example_programming": {
-    "language": "JavaScript",
-    "body": "// tag\nconst paragraphs = document.querySelectorAll('p');\nparagraphs.forEach((p) => {\n  console.log(p.textContent);\n});"
-  },
-  "themes": [
-    "comments_and_docs",
-    "web_dom"
+  "example_programming": [
+    {
+      "language": "JavaScript",
+      "body": "// tag\nconst paragraphs = document.querySelectorAll('p');\nparagraphs.forEach((p) => {\n  console.log(p.textContent);\n});"
+    },
+    {
+      "language": "Visual Basic",
+      "body": "Dim elements As HtmlElementCollection = webBrowser.Document.GetElementsByTagName(\"p\")\nFor Each elem In elements\n    Debug.Print elem.InnerText\nNext"
+    },
+    {
+      "language": "Python",
+      "body": "from bs4 import BeautifulSoup\nsoup = BeautifulSoup(html, 'html.parser')\nparagraphs = soup.find_all('p')\nfor p in paragraphs:\n    print(p.text)"
+    },
+    {
+      "language": "Java",
+      "body": "Elements paragraphs = doc.select(\"p\");\nfor (Element p : paragraphs) {\n    System.out.println(p.text());\n}"
+    },
+    {
+      "language": "SQL",
+      "body": "SELECT * FROM html_elements WHERE tag = 'p';"
+    }
   ],
+  "themes": ["comments_and_docs", "web_dom"],
   "difficulty": 5
 }

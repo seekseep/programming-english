@@ -6,12 +6,28 @@
     "english": "Please check the type of the variable.",
     "japanese": "その変数の型を確認してください。"
   },
-  "example_programming": {
-    "language": "JavaScript",
-    "body": "const value = 42;\nconst type = typeof value;\nconsole.log(type);"
-  },
-  "themes": [
-    "variables_and_types"
+  "example_programming": [
+    {
+      "language": "JavaScript",
+      "body": "const value = 42;\nconst type = typeof value;\nconsole.log(type);"
+    },
+    {
+      "language": "Python",
+      "body": "value = 42\ntype_result = type(value)\nprint(type_result)"
+    },
+    {
+      "language": "Java",
+      "body": "Integer value = 42;\nString type = value.getClass().getSimpleName();\nSystem.out.println(type);"
+    },
+    {
+      "language": "Visual Basic",
+      "body": "Dim value As Integer = 42\nDim type_name As String = TypeName(value)\nDebug.Print type_name"
+    },
+    {
+      "language": "SQL",
+      "body": "SELECT 42 AS value,\n       SQL_VARIANT_PROPERTY(CAST(42 AS SQL_VARIANT), 'BaseType') AS type;"
+    }
   ],
+  "themes": ["variables_and_types"],
   "difficulty": 2
 }

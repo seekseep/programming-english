@@ -6,12 +6,28 @@
     "english": "Please print each item in the shopping list.",
     "japanese": "買い物リストの各項目をそれぞれ表示してください。"
   },
-  "example_programming": {
-    "language": "Visual Basic",
-    "body": "Dim items As String() = {\"apple\", \"banana\", \"cherry\"}\nFor Each item As String In items\n    Console.WriteLine(item)\nNext"
-  },
-  "themes": [
-    "collections"
+  "example_programming": [
+    {
+      "language": "JavaScript",
+      "body": "const items = [\"apple\", \"banana\", \"cherry\"];\nitems.forEach(item => console.log(item));"
+    },
+    {
+      "language": "Visual Basic",
+      "body": "Dim items As String() = {\"apple\", \"banana\", \"cherry\"}\nFor Each item As String In items\n    Console.WriteLine(item)\nNext"
+    },
+    {
+      "language": "Python",
+      "body": "items = [\"apple\", \"banana\", \"cherry\"]\nfor item in items:\n    print(item)"
+    },
+    {
+      "language": "Java",
+      "body": "String[] items = {\"apple\", \"banana\", \"cherry\"};\nfor(String item : items) System.out.println(item);"
+    },
+    {
+      "language": "SQL",
+      "body": "SELECT * FROM items WHERE id IN (SELECT each FROM list);"
+    }
   ],
+  "themes": ["collections"],
   "difficulty": 4
 }

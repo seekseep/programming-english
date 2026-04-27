@@ -6,12 +6,28 @@
     "english": "A protected member is visible to subclasses only.",
     "japanese": "protectedなメンバーは、サブクラスからのみ見えます。"
   },
-  "example_programming": {
-    "language": "Visual Basic",
-    "body": "Public Class Animal\n    Protected name As String\n    Protected Sub SetName(n As String)\n        name = n\n    End Sub\nEnd Class"
-  },
-  "themes": [
-    "scope"
+  "example_programming": [
+    {
+      "language": "Visual Basic",
+      "body": "Public Class Animal\n    Protected name As String\n    Protected Sub SetName(n As String)\n        name = n\n    End Sub\nEnd Class"
+    },
+    {
+      "language": "JavaScript",
+      "body": "class Animal {\n  _name = '';\n  setName(n) { this._name = n; }\n}\nclass Dog extends Animal {\n  bark() { console.log(this._name + ' barks'); }\n}"
+    },
+    {
+      "language": "Python",
+      "body": "class Animal:\n    def __init__(self):\n        self._name = ''\n    def _set_name(self, n):\n        self._name = n\nclass Dog(Animal):\n    pass"
+    },
+    {
+      "language": "Java",
+      "body": "public class Animal {\n    protected String name;\n    protected void setName(String n) { this.name = n; }\n}\npublic class Dog extends Animal { }"
+    },
+    {
+      "language": "SQL",
+      "body": "CREATE TABLE animals (\n  id INT PRIMARY KEY,\n  name VARCHAR(50)\n);"
+    }
   ],
+  "themes": ["scope"],
   "difficulty": 8
 }

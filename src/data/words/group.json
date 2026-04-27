@@ -6,12 +6,28 @@
     "english": "Group the orders by customer and count each group.",
     "japanese": "注文を顧客ごとにグループ化して件数を数えてください。"
   },
-  "example_programming": {
-    "language": "SQL",
-    "body": "SELECT customer_id, COUNT(*) AS order_count\nFROM orders\nGROUP BY customer_id\nORDER BY order_count DESC;"
-  },
-  "themes": [
-    "sql_aggregation"
+  "example_programming": [
+    {
+      "language": "SQL",
+      "body": "SELECT customer_id, COUNT(*) AS order_count\nFROM orders\nGROUP BY customer_id\nORDER BY order_count DESC;"
+    },
+    {
+      "language": "JavaScript",
+      "body": "const orders = [{id: 1, customerId: 10}, {id: 2, customerId: 10}, {id: 3, customerId: 20}];\nconst grouped = orders.reduce((acc, o) => {\n  acc[o.customerId] = (acc[o.customerId] || 0) + 1;\n  return acc;\n}, {});"
+    },
+    {
+      "language": "Python",
+      "body": "from itertools import groupby\norders = [{'id': 1, 'customer_id': 10}, {'id': 2, 'customer_id': 10}]\ngrouped = {k: len(list(g)) for k, g in groupby(orders, key=lambda x: x['customer_id'])}"
+    },
+    {
+      "language": "Visual Basic",
+      "body": "Dim dict As New Dictionary\nFor Each order In orders\n  If dict.Exists(order.customerId) Then\n    dict(order.customerId) = dict(order.customerId) + 1\n  Else\n    dict.Add order.customerId, 1\n  End If\nNext"
+    },
+    {
+      "language": "Java",
+      "body": "List<Order> orders = Arrays.asList(new Order(1, 10), new Order(2, 10));\nMap<Integer, Long> grouped = orders.stream()\n  .collect(Collectors.groupingBy(Order::getCustomerId, Collectors.counting()));"
+    }
   ],
+  "themes": ["sql_aggregation"],
   "difficulty": 6
 }

@@ -6,12 +6,28 @@
     "english": "We wait until all promises settle before rendering the page.",
     "japanese": "すべてのPromiseが確定してからページを描画します。"
   },
-  "example_programming": {
-    "language": "JavaScript",
-    "body": "const results = await Promise.allSettled([\n  fetch('/a'),\n  fetch('/b'),\n]);\nconst ok = results.filter((r) => r.status === 'fulfilled');"
-  },
-  "themes": [
-    "async_programming"
+  "example_programming": [
+    {
+      "language": "JavaScript",
+      "body": "const results = await Promise.allSettled([\n  fetch('/a'),\n  fetch('/b'),\n]);\nconst ok = results.filter((r) => r.status === 'fulfilled');"
+    },
+    {
+      "language": "Python",
+      "body": "import asyncio\nasync def main():\n    tasks = [fetch('/a'), fetch('/b')]\n    results = await asyncio.gather(*tasks, return_exceptions=True)\n    ok = [r for r in results if not isinstance(r, Exception)]"
+    },
+    {
+      "language": "Java",
+      "body": "CompletableFuture<?>[] futures = {fetchA(), fetchB()};\nCompletableFuture.allOf(futures).thenApply(v -> {\n    List<Object> settled = Stream.of(futures)\n        .map(CompletableFuture::join)\n        .collect(Collectors.toList());\n    return settled;\n});"
+    },
+    {
+      "language": "Visual Basic",
+      "body": "Dim tasks As Task() = {FetchAsync(\"a\"), FetchAsync(\"b\")}\nDim results = Await Task.WhenAll(tasks)\nDim settled = results.Where(Function(r) r IsNot Nothing).ToList()"
+    },
+    {
+      "language": "SQL",
+      "body": "SELECT COALESCE(result, 'failed') AS settle\nFROM async_tasks\nWHERE task_id IN (1, 2);"
+    }
   ],
+  "themes": ["async_programming"],
   "difficulty": 10
 }

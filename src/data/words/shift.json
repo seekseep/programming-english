@@ -6,13 +6,28 @@
     "english": "The nurse works the night shift three times a week.",
     "japanese": "その看護師は週に三回、夜勤のシフトに入っている。"
   },
-  "example_programming": {
-    "language": "JavaScript",
-    "body": "console.log(1 << 3);\nconsole.log(16 >> 2);\nconst queue = [1, 2, 3];\nconsole.log(queue.shift());"
-  },
-  "themes": [
-    "collections",
-    "operators"
+  "example_programming": [
+    {
+      "language": "JavaScript",
+      "body": "console.log(1 << 3);\nconsole.log(16 >> 2);\nconst queue = [1, 2, 3];\nconsole.log(queue.shift());"
+    },
+    {
+      "language": "Visual Basic",
+      "body": "Dim result1 As Integer = 1 << 3\nDim result2 As Integer = 16 >> 2\nDim queue As New List(Of Integer) From {1, 2, 3}\nDim first As Integer = queue(0)\nqueue.RemoveAt(0)"
+    },
+    {
+      "language": "Python",
+      "body": "print(1 << 3)\nprint(16 >> 2)\nqueue = [1, 2, 3]\nfirst = queue.pop(0)"
+    },
+    {
+      "language": "Java",
+      "body": "System.out.println(1 << 3);\nSystem.out.println(16 >> 2);\nQueue<Integer> queue = new LinkedList<>(Arrays.asList(1, 2, 3));\nint first = queue.poll();"
+    },
+    {
+      "language": "SQL",
+      "body": "SELECT 1 << 3 AS shift_left;\nSELECT 16 >> 2 AS shift_right;\nDELETE FROM queue WHERE id = (SELECT MIN(id) FROM queue);"
+    }
   ],
+  "themes": ["collections", "operators"],
   "difficulty": 9
 }

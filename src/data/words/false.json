@@ -6,12 +6,28 @@
     "english": "That statement is false.",
     "japanese": "その発言は誤りです。"
   },
-  "example_programming": {
-    "language": "Visual Basic",
-    "body": "Dim isDone As Boolean\nisDone = False"
-  },
-  "themes": [
-    "boolean_logic"
+  "example_programming": [
+    {
+      "language": "Visual Basic",
+      "body": "Dim isDone As Boolean\nisDone = False"
+    },
+    {
+      "language": "JavaScript",
+      "body": "const isValid = false;\nif (!isValid) {\n  console.log('Value is false');\n}"
+    },
+    {
+      "language": "Python",
+      "body": "is_valid = False\nif not is_valid:\n  print('Value is false')"
+    },
+    {
+      "language": "Java",
+      "body": "boolean isValid = false;\nif (!isValid) {\n  System.out.println(\"Value is false\");\n}"
+    },
+    {
+      "language": "SQL",
+      "body": "SELECT * FROM users\nWHERE is_active = false;"
+    }
   ],
+  "themes": ["boolean_logic"],
   "difficulty": 1
 }

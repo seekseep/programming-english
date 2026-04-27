@@ -6,12 +6,28 @@
     "english": "She received a small annual increment in salary.",
     "japanese": "彼女は毎年少額の昇給を受け取っていた。"
   },
-  "example_programming": {
-    "language": "JavaScript",
-    "body": "// increment\nlet score = 0;\nfor (let i = 0; i < 5; i++) {\n  score++;\n}\nconsole.log(score);"
-  },
-  "themes": [
-    "operators"
+  "example_programming": [
+    {
+      "language": "JavaScript",
+      "body": "// increment\nlet score = 0;\nfor (let i = 0; i < 5; i++) {\n  score++;\n}\nconsole.log(score);"
+    },
+    {
+      "language": "Python",
+      "body": "count = 0\nfor i in range(10):\n    count += 1\nprint(f\"Total increment: {count}\")"
+    },
+    {
+      "language": "Java",
+      "body": "int counter = 0;\nfor (int i = 0; i < 5; i++) {\n  counter++;\n}\nSystem.out.println(\"Counter: \" + counter);"
+    },
+    {
+      "language": "Visual Basic",
+      "body": "Dim count As Integer = 0\nFor i = 1 To 5\n    count = count + 1\nNext i\nDebug.Print \"Count: \" & count"
+    },
+    {
+      "language": "SQL",
+      "body": "UPDATE users SET visit_count = visit_count + 1 WHERE id = 1;"
+    }
   ],
+  "themes": ["operators"],
   "difficulty": 9
 }

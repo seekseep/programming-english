@@ -6,12 +6,28 @@
     "english": "Read the user name from the textbox and greet them.",
     "japanese": "テキストボックスからユーザー名を読み取って挨拶してください。"
   },
-  "example_programming": {
-    "language": "Visual Basic",
-    "body": "Dim userName As String\nuserName = TextBox1.Text\nMsgBox \"Hello, \" & userName"
-  },
-  "themes": [
-    "vb_forms_controls"
+  "example_programming": [
+    {
+      "language": "Visual Basic",
+      "body": "Dim userName As String\nuserName = TextBox1.Text\nMsgBox \"Hello, \" & userName"
+    },
+    {
+      "language": "JavaScript",
+      "body": "const textbox = document.querySelector('input[type=\"text\"]');\nconst userName = textbox.value;\nconsole.log('Hello, ' + userName);"
+    },
+    {
+      "language": "Python",
+      "body": "from tkinter import Tk, Entry\nroot = Tk()\ntextbox = Entry(root)\ntextbox.pack()\nuser_name = textbox.get()"
+    },
+    {
+      "language": "Java",
+      "body": "JTextField textbox = new JTextField(20);\nString userName = textbox.getText();\nJOptionPane.showMessageDialog(null, \"Hello, \" + userName);"
+    },
+    {
+      "language": "SQL",
+      "body": "SELECT user_input FROM textbox_data;\nUPDATE textbox_data SET value = 'Alice' WHERE field_name = 'username';"
+    }
   ],
+  "themes": ["vb_forms_controls"],
   "difficulty": 7
 }

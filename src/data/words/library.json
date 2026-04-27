@@ -6,12 +6,28 @@
     "english": "We use this library to parse JSON data.",
     "japanese": "私たちはJSONデータを解析するためにこのライブラリを使います。"
   },
-  "example_programming": {
-    "language": "Visual Basic",
-    "body": "' library\nImports System.IO\n\nPublic Sub ReadConfig()\n    Dim text As String = File.ReadAllText(\"config.txt\")\n    Debug.Print text\nEnd Sub"
-  },
-  "themes": [
-    "modules_and_imports"
+  "example_programming": [
+    {
+      "language": "Visual Basic",
+      "body": "' library\nImports System.IO\n\nPublic Sub ReadConfig()\n    Dim text As String = File.ReadAllText(\"config.txt\")\n    Debug.Print text\nEnd Sub"
+    },
+    {
+      "language": "JavaScript",
+      "body": "import axios from 'axios';\naxios.get('/api/data')\n  .then(res => console.log(res.data))\n  .catch(err => console.error(err));"
+    },
+    {
+      "language": "Python",
+      "body": "import numpy as np\nimport requests\ndata = requests.get('https://api.example.com').json()"
+    },
+    {
+      "language": "Java",
+      "body": "import com.google.gson.Gson;\nGson gson = new Gson();\nString json = gson.toJson(object);"
+    },
+    {
+      "language": "SQL",
+      "body": "CREATE LIBRARY mylib WITH IMPORT 'com.example.package';"
+    }
   ],
+  "themes": ["modules_and_imports"],
   "difficulty": 8
 }

@@ -6,12 +6,28 @@
     "english": "We partition the sales data by region for the window function.",
     "japanese": "ウィンドウ関数のために売上データを地域ごとにパーティション分割します。"
   },
-  "example_programming": {
-    "language": "SQL",
-    "body": "SELECT region, product, sales,\n       SUM(sales) OVER (PARTITION BY region ORDER BY sold_at) AS running_total\nFROM sales_log;"
-  },
-  "themes": [
-    "sql_aggregation"
+  "example_programming": [
+    {
+      "language": "SQL",
+      "body": "SELECT region, product, sales,\n       SUM(sales) OVER (PARTITION BY region ORDER BY sold_at) AS running_total\nFROM sales_log;"
+    },
+    {
+      "language": "JavaScript",
+      "body": "const sales = [{region: 'US', product: 'A', amount: 1000}, {region: 'US', product: 'B', amount: 500}];\nconst partition = {};\nsales.forEach(s => {\n  if (!partition[s.region]) partition[s.region] = [];\n  partition[s.region].push(s);\n});\nconsole.log(partition);"
+    },
+    {
+      "language": "Visual Basic",
+      "body": "Dim sales As List(Of Dictionary(Of String, Object)) = New List(Of Dictionary(Of String, Object))\nDim partition As Dictionary(Of String, List(Of Dictionary(Of String, Object))) = New Dictionary(Of String, List(Of Dictionary(Of String, Object)))\nFor Each item In sales\n    If Not partition.ContainsKey(item(\"region\")) Then\n        partition.Add(item(\"region\"), New List(Of Dictionary(Of String, Object)))\n    End If\nNext"
+    },
+    {
+      "language": "Python",
+      "body": "from itertools import groupby\nsales = [{'region': 'US', 'product': 'A'}, {'region': 'US', 'product': 'B'}, {'region': 'EU', 'product': 'C'}]\npartition = {k: list(g) for k, g in groupby(sales, key=lambda x: x['region'])}"
+    },
+    {
+      "language": "Java",
+      "body": "List<Sale> sales = Arrays.asList(new Sale(\"US\", \"A\"), new Sale(\"US\", \"B\"));\nMap<String, List<Sale>> partition = sales.stream()\n  .collect(Collectors.groupingBy(s -> s.getRegion()));\nSystem.out.println(partition);"
+    }
   ],
+  "themes": ["sql_aggregation"],
   "difficulty": 10
 }

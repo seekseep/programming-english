@@ -6,12 +6,28 @@
     "english": "Trim the input before saving it.",
     "japanese": "保存する前に入力の前後の空白を取り除いてください。"
   },
-  "example_programming": {
-    "language": "JavaScript",
-    "body": "const raw = \"   hello world   \";\nconst clean = raw.trim();\nconsole.log(clean);\nconsole.log(clean.length);"
-  },
-  "themes": [
-    "strings_and_text"
+  "example_programming": [
+    {
+      "language": "JavaScript",
+      "body": "const raw = \"   hello world   \";\nconst clean = raw.trim();\nconsole.log(clean);\nconsole.log(clean.length);"
+    },
+    {
+      "language": "Python",
+      "body": "raw = \"   hello world   \"\nclean = raw.strip()\nprint(clean)\nprint(len(clean))"
+    },
+    {
+      "language": "Java",
+      "body": "String raw = \"   hello world   \";\nString clean = raw.trim();\nSystem.out.println(clean);\nSystem.out.println(clean.length());"
+    },
+    {
+      "language": "Visual Basic",
+      "body": "Dim raw As String = \"   hello world   \"\nDim clean As String = Trim(raw)\nDebug.Print clean\nDebug.Print Len(clean)"
+    },
+    {
+      "language": "SQL",
+      "body": "SELECT TRIM('   hello world   ') AS clean,\n       LENGTH(TRIM('   hello world   ')) AS len;"
+    }
   ],
+  "themes": ["strings_and_text"],
   "difficulty": 3
 }

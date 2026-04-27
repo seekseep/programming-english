@@ -6,12 +6,28 @@
     "english": "Call the static method directly on the class.",
     "japanese": "クラスに対して直接、静的メソッドを呼び出します。"
   },
-  "example_programming": {
-    "language": "JavaScript",
-    "body": "class MathUtils {\n  static square(n) {\n    return n * n;\n  }\n}\n\nconsole.log(MathUtils.square(5));"
-  },
-  "themes": [
-    "scope"
+  "example_programming": [
+    {
+      "language": "JavaScript",
+      "body": "class MathUtils {\n  static square(n) {\n    return n * n;\n  }\n}\n\nconsole.log(MathUtils.square(5));"
+    },
+    {
+      "language": "Visual Basic",
+      "body": "Public Class MathUtils\n    Public Shared Function Square(n As Integer) As Integer\n        Return n * n\n    End Function\nEnd Class"
+    },
+    {
+      "language": "Python",
+      "body": "class MathUtils:\n    @staticmethod\n    def square(n):\n        return n * n\nprint(MathUtils.square(5))"
+    },
+    {
+      "language": "Java",
+      "body": "public class MathUtils {\n    public static int square(int n) {\n        return n * n;\n    }\n}"
+    },
+    {
+      "language": "SQL",
+      "body": "SELECT 5 * 5 AS static_square;"
+    }
   ],
+  "themes": ["scope"],
   "difficulty": 8
 }

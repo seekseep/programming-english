@@ -6,12 +6,28 @@
     "english": "Raise an error when the input is invalid.",
     "japanese": "入力が不正なときはエラーを発生させてください。"
   },
-  "example_programming": {
-    "language": "Visual Basic",
-    "body": "Public Sub CheckAge(ByVal age As Integer)\n    If age < 0 Then\n        Err.Raise 5, \"CheckAge\", \"age must be positive\"\n    End If\nEnd Sub"
-  },
-  "themes": [
-    "error_handling"
+  "example_programming": [
+    {
+      "language": "Visual Basic",
+      "body": "Public Sub CheckAge(ByVal age As Integer)\n    If age < 0 Then\n        Err.Raise 5, \"CheckAge\", \"age must be positive\"\n    End If\nEnd Sub"
+    },
+    {
+      "language": "JavaScript",
+      "body": "function checkAge(age) {\n  if (age < 0) {\n    throw new Error('age must be positive');\n  }\n}\ncheckAge(-5);"
+    },
+    {
+      "language": "Python",
+      "body": "def check_age(age):\n    if age < 0:\n        raise ValueError('age must be positive')\ncheck_age(-5)"
+    },
+    {
+      "language": "Java",
+      "body": "public void checkAge(int age) throws IllegalArgumentException {\n    if (age < 0) {\n        throw new IllegalArgumentException(\"age must be positive\");\n    }\n}"
+    },
+    {
+      "language": "SQL",
+      "body": "CREATE TRIGGER check_age BEFORE INSERT ON users\nFOR EACH ROW\nBEGIN\n  IF NEW.age < 0 THEN\n    SIGNAL SQLSTATE '45000' SET MESSAGE_TEXT = 'age must be positive';\n  END IF;\nEND;"
+    }
   ],
+  "themes": ["error_handling"],
   "difficulty": 8
 }

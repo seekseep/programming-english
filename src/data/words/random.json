@@ -6,12 +6,28 @@
     "english": "Generate a random number between one and six.",
     "japanese": "1 から 6 までの乱数を生成してください。"
   },
-  "example_programming": {
-    "language": "Visual Basic",
-    "body": "Randomize\nDim dice As Integer\ndice = Int(Rnd() * 6) + 1 ' random 1..6\nDebug.Print dice"
-  },
-  "themes": [
-    "numbers_and_math"
+  "example_programming": [
+    {
+      "language": "Visual Basic",
+      "body": "Randomize\nDim dice As Integer\ndice = Int(Rnd() * 6) + 1 ' random 1..6\nDebug.Print dice"
+    },
+    {
+      "language": "JavaScript",
+      "body": "const dice = Math.floor(Math.random() * 6) + 1;\nconsole.log(dice);"
+    },
+    {
+      "language": "Python",
+      "body": "import random\ndice = random.randint(1, 6)\nprint(dice)"
+    },
+    {
+      "language": "Java",
+      "body": "Random random = new Random();\nint dice = random.nextInt(6) + 1;\nSystem.out.println(dice);"
+    },
+    {
+      "language": "SQL",
+      "body": "SELECT FLOOR(RAND() * 6) + 1 AS dice;"
+    }
   ],
+  "themes": ["numbers_and_math"],
   "difficulty": 3
 }

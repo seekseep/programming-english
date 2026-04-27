@@ -6,12 +6,28 @@
     "english": "Change the style of the message element to make it red.",
     "japanese": "メッセージ要素のスタイルを変えて赤色にしてください。"
   },
-  "example_programming": {
-    "language": "JavaScript",
-    "body": "const message = document.querySelector('#message');\nmessage.style.color = 'red';\nmessage.style.fontWeight = 'bold';"
-  },
-  "themes": [
-    "web_dom"
+  "example_programming": [
+    {
+      "language": "JavaScript",
+      "body": "const message = document.querySelector('#message');\nmessage.style.color = 'red';\nmessage.style.fontWeight = 'bold';"
+    },
+    {
+      "language": "Visual Basic",
+      "body": "Dim label As New Label\nlabel.ForeColor = Color.Red\nlabel.Font = New Font(label.Font, FontStyle.Bold)"
+    },
+    {
+      "language": "Python",
+      "body": "from tkinter import *\nroot = Tk()\nlabel = Label(root, text=\"message\", fg=\"red\", font=(\"Arial\", 12, \"bold\"))\nlabel.pack()"
+    },
+    {
+      "language": "Java",
+      "body": "JLabel label = new JLabel(\"message\");\nlabel.setForeground(Color.RED);\nlabel.setFont(new Font(\"Arial\", Font.BOLD, 12));"
+    },
+    {
+      "language": "SQL",
+      "body": "CREATE TABLE styles (\n    element_id INT,\n    color VARCHAR(50),\n    font_weight VARCHAR(50)\n);\nINSERT INTO styles VALUES (1, 'red', 'bold');"
+    }
   ],
+  "themes": ["web_dom"],
   "difficulty": 5
 }

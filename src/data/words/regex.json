@@ -6,12 +6,28 @@
     "english": "A good regex cheat sheet can save hours of debugging.",
     "japanese": "よい正規表現のチートシートは何時間ものデバッグ時間を節約してくれる。"
   },
-  "example_programming": {
-    "language": "JavaScript",
-    "body": "// regex\nconst onlyDigits = /^\\d+$/;\nconsole.log(onlyDigits.test(\"12345\"));\nconsole.log(onlyDigits.test(\"12a45\"));"
-  },
-  "themes": [
-    "strings_and_text"
+  "example_programming": [
+    {
+      "language": "JavaScript",
+      "body": "// regex\nconst onlyDigits = /^\\d+$/;\nconsole.log(onlyDigits.test(\"12345\"));\nconsole.log(onlyDigits.test(\"12a45\"));"
+    },
+    {
+      "language": "Python",
+      "body": "import re\npattern = r'^\\d+$'\nprint(re.match(pattern, '12345'))\nprint(re.match(pattern, '12a45'))"
+    },
+    {
+      "language": "Java",
+      "body": "String regex = \"^\\\\d+$\";\nString text = \"12345\";\nif (text.matches(regex)) {\n    System.out.println(\"matches\");\n}"
+    },
+    {
+      "language": "Visual Basic",
+      "body": "Imports System.Text.RegularExpressions\nDim regex As New Regex(\"^\\d+$\")\nDim match = regex.Match(\"12345\")\nIf match.Success Then Debug.Print(\"matches\")"
+    },
+    {
+      "language": "SQL",
+      "body": "SELECT email FROM users\nWHERE email REGEXP '^[A-Za-z0-9._%+-]+@[A-Za-z0-9.-]+\\.[A-Z|a-z]{2,}$';"
+    }
   ],
+  "themes": ["strings_and_text"],
   "difficulty": 9
 }

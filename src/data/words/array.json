@@ -6,12 +6,28 @@
     "english": "The array has five numbers.",
     "japanese": "その配列には5つの数値が入っています。"
   },
-  "example_programming": {
-    "language": "Visual Basic",
-    "body": "' array\nDim numbers(2) As Integer\nnumbers(0) = 10\nnumbers(1) = 20\nnumbers(2) = 30"
-  },
-  "themes": [
-    "collections"
+  "example_programming": [
+    {
+      "language": "Visual Basic",
+      "body": "' array\nDim numbers(2) As Integer\nnumbers(0) = 10\nnumbers(1) = 20\nnumbers(2) = 30"
+    },
+    {
+      "language": "JavaScript",
+      "body": "const numbers = [10, 20, 30];\nconsole.log(numbers[0]);"
+    },
+    {
+      "language": "Python",
+      "body": "numbers = [10, 20, 30]\nprint(numbers[0])"
+    },
+    {
+      "language": "Java",
+      "body": "int[] numbers = {10, 20, 30};\nSystem.out.println(numbers[0]);"
+    },
+    {
+      "language": "SQL",
+      "body": "CREATE TABLE array_data (id INT, numbers INT);\nINSERT INTO array_data VALUES (1, 10), (2, 20), (3, 30);"
+    }
   ],
+  "themes": ["collections"],
   "difficulty": 1
 }

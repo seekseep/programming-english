@@ -6,12 +6,28 @@
     "english": "Slice the first three items from the list.",
     "japanese": "リストの最初の3つの項目を切り出してください。"
   },
-  "example_programming": {
-    "language": "JavaScript",
-    "body": "const items = [\"a\", \"b\", \"c\", \"d\", \"e\"];\nconst head = items.slice(0, 3);\nconsole.log(head); // [\"a\", \"b\", \"c\"]"
-  },
-  "themes": [
-    "strings_and_text"
+  "example_programming": [
+    {
+      "language": "JavaScript",
+      "body": "const items = [\"a\", \"b\", \"c\", \"d\", \"e\"];\nconst head = items.slice(0, 3);\nconsole.log(head); // [\"a\", \"b\", \"c\"]"
+    },
+    {
+      "language": "Visual Basic",
+      "body": "Dim items As String() = {\"a\", \"b\", \"c\", \"d\", \"e\"}\nDim head As String() = items.Take(3).ToArray()"
+    },
+    {
+      "language": "Python",
+      "body": "items = ['a', 'b', 'c', 'd', 'e']\nhead = items[0:3]\nprint(head)"
+    },
+    {
+      "language": "Java",
+      "body": "String[] items = {\"a\", \"b\", \"c\", \"d\", \"e\"};\nString[] head = Arrays.copyOfRange(items, 0, 3);"
+    },
+    {
+      "language": "SQL",
+      "body": "SELECT * FROM items LIMIT 3 OFFSET 0;"
+    }
   ],
+  "themes": ["strings_and_text"],
   "difficulty": 4
 }

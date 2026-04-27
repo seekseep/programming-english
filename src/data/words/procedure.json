@@ -6,12 +6,28 @@
     "english": "This procedure writes the log file and does not return a value.",
     "japanese": "このプロシージャはログファイルに書き込み、値は返しません。"
   },
-  "example_programming": {
-    "language": "Visual Basic",
-    "body": "' procedure\nSub WriteLog(message As String)\n    Debug.Print Now & \": \" & message\nEnd Sub\n\nCall WriteLog(\"started\")"
-  },
-  "themes": [
-    "functions_and_procedures"
+  "example_programming": [
+    {
+      "language": "Visual Basic",
+      "body": "' procedure\nSub WriteLog(message As String)\n    Debug.Print Now & \": \" & message\nEnd Sub\n\nCall WriteLog(\"started\")"
+    },
+    {
+      "language": "JavaScript",
+      "body": "function writeLog(message) {\n  console.log(new Date() + \": \" + message);\n}\nwriteLog(\"started\");"
+    },
+    {
+      "language": "Python",
+      "body": "from datetime import datetime\ndef write_log(message):\n    print(f\"{datetime.now()}: {message}\")\nwrite_log(\"started\")"
+    },
+    {
+      "language": "Java",
+      "body": "public void writeLog(String message) {\n    System.out.println(new Date() + \": \" + message);\n}\nwriteLog(\"started\");"
+    },
+    {
+      "language": "SQL",
+      "body": "CREATE PROCEDURE WriteLog(IN message VARCHAR(100))\nBEGIN\n  INSERT INTO logs (message, timestamp) VALUES (message, NOW());\nEND;"
+    }
   ],
+  "themes": ["functions_and_procedures"],
   "difficulty": 4
 }

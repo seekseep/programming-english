@@ -6,13 +6,28 @@
     "english": "Please log the value to check what is happening.",
     "japanese": "何が起きているか確認するために、その値をログに出してください。"
   },
-  "example_programming": {
-    "language": "JavaScript",
-    "body": "const name = \"Alice\";\nconsole.log(name);\nconsole.log(\"Login success\");"
-  },
-  "themes": [
-    "basic_io",
-    "numbers_and_math"
+  "example_programming": [
+    {
+      "language": "JavaScript",
+      "body": "const name = \"Alice\";\nconsole.log(name);\nconsole.log(\"Login success\");"
+    },
+    {
+      "language": "Visual Basic",
+      "body": "Dim result As Integer\nresult = 42\nDebug.Print \"Result: \" & result\nMsgBox \"Log complete\""
+    },
+    {
+      "language": "Python",
+      "body": "import logging\nlogging.basicConfig(level=logging.INFO)\nlogging.info(\"Application started\")\nlogging.info(\"Processing data\")"
+    },
+    {
+      "language": "Java",
+      "body": "System.out.println(\"Process started\");\nint value = 100;\nSystem.out.println(\"Value: \" + value);"
+    },
+    {
+      "language": "SQL",
+      "body": "INSERT INTO log (message, timestamp) VALUES ('User logged in', NOW());\nSELECT * FROM log ORDER BY timestamp DESC LIMIT 10;"
+    }
   ],
+  "themes": ["basic_io", "numbers_and_math"],
   "difficulty": 2
 }

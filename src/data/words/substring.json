@@ -6,12 +6,28 @@
     "english": "Take the substring after the at sign to get the domain.",
     "japanese": "アットマークの後ろの部分文字列を取り出して、ドメインを取得してください。"
   },
-  "example_programming": {
-    "language": "JavaScript",
-    "body": "const title = \"JavaScript Essentials\";\nconst prefix = title.substring(0, 10);\nconsole.log(prefix);"
-  },
-  "themes": [
-    "strings_and_text"
+  "example_programming": [
+    {
+      "language": "JavaScript",
+      "body": "const title = \"JavaScript Essentials\";\nconst prefix = title.substring(0, 10);\nconsole.log(prefix);"
+    },
+    {
+      "language": "Visual Basic",
+      "body": "Dim title As String = \"JavaScript Essentials\"\nDim prefix As String = title.Substring(0, 10)\nMsgBox prefix"
+    },
+    {
+      "language": "Python",
+      "body": "title = \"JavaScript Essentials\"\nprefix = title[0:10]\nprint(prefix)"
+    },
+    {
+      "language": "Java",
+      "body": "String title = \"JavaScript Essentials\";\nString prefix = title.substring(0, 10);\nSystem.out.println(prefix);"
+    },
+    {
+      "language": "SQL",
+      "body": "SELECT SUBSTRING('JavaScript Essentials', 1, 10) AS prefix;"
+    }
   ],
+  "themes": ["strings_and_text"],
   "difficulty": 4
 }

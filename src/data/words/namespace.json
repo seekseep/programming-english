@@ -6,13 +6,28 @@
     "english": "Put the helper classes under the Utils namespace.",
     "japanese": "ヘルパークラスをUtils名前空間の下に配置してください。"
   },
-  "example_programming": {
-    "language": "Visual Basic",
-    "body": "Namespace Utils\n    Public Class Logger\n        Public Shared Sub Info(msg As String)\n            Console.WriteLine(msg)\n        End Sub\n    End Class\nEnd Namespace"
-  },
-  "themes": [
-    "modules_and_imports",
-    "scope"
+  "example_programming": [
+    {
+      "language": "Visual Basic",
+      "body": "Namespace Utils\n    Public Class Logger\n        Public Shared Sub Info(msg As String)\n            Console.WriteLine(msg)\n        End Sub\n    End Class\nEnd Namespace"
+    },
+    {
+      "language": "JavaScript",
+      "body": "const namespace = {\n    Utils: {\n        log: function(msg) { console.log(msg); },\n        error: function(msg) { console.error(msg); }\n    }\n};\nnamespace.Utils.log('test');"
+    },
+    {
+      "language": "Python",
+      "body": "class Namespace:\n    class Utils:\n        @staticmethod\n        def log(msg):\n            print(msg)\nNamespace.Utils.log('test')"
+    },
+    {
+      "language": "Java",
+      "body": "package com.utils.namespace;\npublic class Logger {\n    public static void info(String msg) {\n        System.out.println(msg);\n    }\n}"
+    },
+    {
+      "language": "SQL",
+      "body": "CREATE SCHEMA namespace_utils;\nCREATE TABLE namespace_utils.logs (\n    id INT, message VARCHAR(255)\n);"
+    }
   ],
+  "themes": ["modules_and_imports", "scope"],
   "difficulty": 8
 }

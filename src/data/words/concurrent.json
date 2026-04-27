@@ -6,12 +6,28 @@
     "english": "The server handles many concurrent requests using async functions.",
     "japanese": "サーバーは非同期関数で多数の並行リクエストを処理します。"
   },
-  "example_programming": {
-    "language": "JavaScript",
-    "body": "// run fetches concurrently\nconst urls = ['/a', '/b', '/c'];\nconst results = await Promise.all(urls.map((u) => fetch(u)));"
-  },
-  "themes": [
-    "async_programming"
+  "example_programming": [
+    {
+      "language": "JavaScript",
+      "body": "const urls = ['/a', '/b', '/c'];\nconst results = await Promise.all(urls.map((u) => fetch(u)));"
+    },
+    {
+      "language": "Python",
+      "body": "import concurrent.futures\nwith concurrent.futures.ThreadPoolExecutor() as ex:\n  futures = [ex.submit(task, i) for i in range(5)]\n  results = [f.result() for f in futures]"
+    },
+    {
+      "language": "Java",
+      "body": "ExecutorService executor = Executors.newFixedThreadPool(2);\nList<Future> concurrent = new ArrayList<>();\nfor(int i=0; i<5; i++) {\n  concurrent.add(executor.submit(() -> task()));\n}"
+    },
+    {
+      "language": "Visual Basic",
+      "body": "Dim tasks As New Collection\nFor i = 1 To 5\n  tasks.Add CreateObject(\"WScript.Shell\").Exec(...)\nNext i"
+    },
+    {
+      "language": "SQL",
+      "body": "SELECT * FROM concurrent_tasks\nWHERE status IN ('pending', 'running')\nORDER BY concurrent_execution_id;"
+    }
   ],
+  "themes": ["async_programming"],
   "difficulty": 10
 }

@@ -6,12 +6,28 @@
     "english": "Check the agreement checkbox before clicking Submit.",
     "japanese": "送信する前に同意チェックボックスをオンにしてください。"
   },
-  "example_programming": {
-    "language": "Visual Basic",
-    "body": "If CheckBox1.Value = True Then\n    MsgBox \"Agreed\"\nEnd If"
-  },
-  "themes": [
-    "vb_forms_controls"
+  "example_programming": [
+    {
+      "language": "Visual Basic",
+      "body": "If CheckBox1.Value = True Then\n    MsgBox \"Agreed\"\nEnd If"
+    },
+    {
+      "language": "JavaScript",
+      "body": "const cb = document.querySelector('#agree');\nif (cb.checked) {\n  console.log('checkbox: ' + cb.checked);\n}\ncb.addEventListener('change', (e) => console.log(e.target.checked));"
+    },
+    {
+      "language": "Python",
+      "body": "var = tk.BooleanVar()\ncb = tk.Checkbutton(root, text='Agree', variable=var)\ncb.pack()\nprint(var.get())"
+    },
+    {
+      "language": "Java",
+      "body": "JCheckBox checkbox = new JCheckBox(\"Agree\");\nif (checkbox.isSelected()) {\n  System.out.println(\"checkbox: checked\");\n}\nframe.add(checkbox);"
+    },
+    {
+      "language": "SQL",
+      "body": "CREATE TABLE settings (\n  id INT,\n  checkbox BIT DEFAULT 0\n);"
+    }
   ],
+  "themes": ["vb_forms_controls"],
   "difficulty": 7
 }

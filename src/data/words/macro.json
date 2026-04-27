@@ -6,12 +6,28 @@
     "english": "Run the macro to format the monthly report.",
     "japanese": "月次レポートを整形するマクロを実行してください。"
   },
-  "example_programming": {
-    "language": "Visual Basic",
-    "body": "' macro\nSub FormatReport()\n    Range(\"A1:D1\").Font.Bold = True\n    Columns(\"A:D\").AutoFit\nEnd Sub"
-  },
-  "themes": [
-    "excel_vba_basics"
+  "example_programming": [
+    {
+      "language": "Visual Basic",
+      "body": "' macro\nSub FormatReport()\n    Range(\"A1:D1\").Font.Bold = True\n    Columns(\"A:D\").AutoFit\nEnd Sub"
+    },
+    {
+      "language": "JavaScript",
+      "body": "function* macro() {\n  yield document.body.style.backgroundColor = 'blue';\n  yield console.log('macro executed');\n}\nconst gen = macro();"
+    },
+    {
+      "language": "Python",
+      "body": "def macro():\n    cells = [(1, 'A'), (2, 'B'), (3, 'C')]\n    for row, col in cells:\n        print(f'Format {col}{row}')"
+    },
+    {
+      "language": "Java",
+      "body": "class MacroExecutor {\n    public void runMacro() {\n        for (int i = 1; i <= 5; i++) {\n            System.out.println(\"Executing step \" + i);\n        }\n    }\n}"
+    },
+    {
+      "language": "SQL",
+      "body": "CREATE MACRO process_data AS\nBEGIN\n    UPDATE records SET status = 'done';\n    COMMIT;\nEND;"
+    }
   ],
+  "themes": ["excel_vba_basics"],
   "difficulty": 7
 }

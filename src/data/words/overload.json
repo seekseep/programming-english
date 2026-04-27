@@ -6,12 +6,28 @@
     "english": "Do not overload the shelf with heavy books.",
     "japanese": "重い本で棚に過剰な負担をかけないで。"
   },
-  "example_programming": {
-    "language": "JavaScript",
-    "body": "// overload\nfunction area(a, b) {\n  if (b === undefined) return a * a;\n  return a * b;\n}\nconsole.log(area(5), area(3, 4));"
-  },
-  "themes": [
-    "functions_and_procedures"
+  "example_programming": [
+    {
+      "language": "JavaScript",
+      "body": "// overload\nfunction area(a, b) {\n  if (b === undefined) return a * a;\n  return a * b;\n}\nconsole.log(area(5), area(3, 4));"
+    },
+    {
+      "language": "Visual Basic",
+      "body": "Overloads Function Calc(x As Integer) As Integer\n    Return x * x\nEnd Function\nOverloads Function Calc(x As Integer, y As Integer) As Integer\n    Return x * y\nEnd Function"
+    },
+    {
+      "language": "Python",
+      "body": "from functools import singledispatch\n@singledispatch\ndef process(val):\n    raise NotImplementedError(f\"Cannot overload for {type(val)}\")\n@process.register(int)\ndef _(val):\n    return val * 2"
+    },
+    {
+      "language": "Java",
+      "body": "class Calculator {\n  public int overload(int a) { return a * a; }\n  public int overload(int a, int b) { return a * b; }\n}"
+    },
+    {
+      "language": "SQL",
+      "body": "CREATE FUNCTION overload_sum(a INT, b INT DEFAULT 0) RETURNS INT\nRETURN a + b;"
+    }
   ],
+  "themes": ["functions_and_procedures"],
   "difficulty": 9
 }

@@ -6,12 +6,28 @@
     "english": "Find users who bought both product A and product B.",
     "japanese": "商品Aと商品Bの両方を買ったユーザーを見つけてください。"
   },
-  "example_programming": {
-    "language": "SQL",
-    "body": "SELECT user_id FROM orders WHERE product_id = 1\nINTERSECT\nSELECT user_id FROM orders WHERE product_id = 2;"
-  },
-  "themes": [
-    "sql_joins"
+  "example_programming": [
+    {
+      "language": "SQL",
+      "body": "SELECT user_id FROM orders WHERE product_id = 1\nINTERSECT\nSELECT user_id FROM orders WHERE product_id = 2;"
+    },
+    {
+      "language": "JavaScript",
+      "body": "const set1 = new Set([1, 2, 3, 4]);\nconst set2 = new Set([3, 4, 5, 6]);\nconst intersect = [...set1].filter(x => set2.has(x));\nconsole.log(intersect);"
+    },
+    {
+      "language": "Python",
+      "body": "set1 = {1, 2, 3, 4}\nset2 = {3, 4, 5, 6}\nintersect = set1.intersection(set2)\nprint(intersect)"
+    },
+    {
+      "language": "Java",
+      "body": "Set<Integer> set1 = new HashSet<>(Arrays.asList(1, 2, 3, 4));\nSet<Integer> set2 = new HashSet<>(Arrays.asList(3, 4, 5, 6));\nset1.retainAll(set2);\nSystem.out.println(set1);"
+    },
+    {
+      "language": "Visual Basic",
+      "body": "Dim arr1() As Integer = {1, 2, 3, 4}\nDim arr2() As Integer = {3, 4, 5, 6}\nDim intersect As New Collection\nFor Each x In arr1\n    For Each y In arr2\n        If x = y Then intersect.Add x\n    Next\nNext"
+    }
   ],
+  "themes": ["sql_joins"],
   "difficulty": 6
 }

@@ -6,12 +6,28 @@
     "english": "Open the input file and read it line by line.",
     "japanese": "入力ファイルを開いて 1 行ずつ読み込んでください。"
   },
-  "example_programming": {
-    "language": "Visual Basic",
-    "body": "' file\nDim line As String\nOpen \"C:\\input.txt\" For Input As #1\nLine Input #1, line\nClose #1"
-  },
-  "themes": [
-    "file_io"
+  "example_programming": [
+    {
+      "language": "Visual Basic",
+      "body": "' file\nDim line As String\nOpen \"C:\\input.txt\" For Input As #1\nLine Input #1, line\nClose #1"
+    },
+    {
+      "language": "JavaScript",
+      "body": "const fs = require('fs');\nconst content = fs.readFileSync('input.txt', 'utf-8');\nconst lines = content.split('\\n');\nconsole.log(lines[0]);"
+    },
+    {
+      "language": "Python",
+      "body": "with open('input.txt', 'r') as file:\n  for line in file:\n    print(line.strip())\n    break"
+    },
+    {
+      "language": "Java",
+      "body": "try (BufferedReader br = new BufferedReader(new FileReader(\"input.txt\"))) {\n  String line = br.readLine();\n  System.out.println(line);\n}"
+    },
+    {
+      "language": "SQL",
+      "body": "LOAD DATA INFILE 'input.txt' INTO TABLE my_table\nFIELDS TERMINATED BY ',';"
+    }
   ],
+  "themes": ["file_io"],
   "difficulty": 7
 }

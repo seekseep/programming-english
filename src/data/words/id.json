@@ -6,12 +6,28 @@
     "english": "Get the element with the id 'username' and focus it.",
     "japanese": "id が 'username' の要素を取得してフォーカスしてください。"
   },
-  "example_programming": {
-    "language": "JavaScript",
-    "body": "const input = document.getElementById('username');\ninput.focus();"
-  },
-  "themes": [
-    "web_dom"
+  "example_programming": [
+    {
+      "language": "JavaScript",
+      "body": "const input = document.getElementById('username');\ninput.focus();"
+    },
+    {
+      "language": "Visual Basic",
+      "body": "Dim id As String\nid = \"user123\"\nMsgBox \"ID: \" & id"
+    },
+    {
+      "language": "Python",
+      "body": "user_id = 42\nid_string = f\"id_{user_id}\"\nprint(id_string)"
+    },
+    {
+      "language": "Java",
+      "body": "String id = \"user_456\";\nSystem.out.println(\"Element id: \" + id);"
+    },
+    {
+      "language": "SQL",
+      "body": "SELECT id, name FROM users WHERE id = 1;"
+    }
   ],
+  "themes": ["web_dom"],
   "difficulty": 5
 }

@@ -6,12 +6,28 @@
     "english": "A shared field is common to all instances of the class.",
     "japanese": "shared なフィールドはクラスの全インスタンスで共通です。"
   },
-  "example_programming": {
-    "language": "Visual Basic",
-    "body": "Public Class Counter\n    Public Shared Total As Integer = 0\n    Public Shared Sub Increment()\n        Total = Total + 1\n    End Sub\nEnd Class"
-  },
-  "themes": [
-    "scope"
+  "example_programming": [
+    {
+      "language": "Visual Basic",
+      "body": "Public Class Counter\n    Public Shared Total As Integer = 0\n    Public Shared Sub Increment()\n        Total = Total + 1\n    End Sub\nEnd Class"
+    },
+    {
+      "language": "JavaScript",
+      "body": "class Counter {\n  static count = 0;\n  static increment() {\n    this.count++;\n  }\n}\nCounter.increment();"
+    },
+    {
+      "language": "Python",
+      "body": "class Counter:\n    shared_count = 0\n    @classmethod\n    def increment(cls):\n        cls.shared_count += 1"
+    },
+    {
+      "language": "Java",
+      "body": "public class Counter {\n  public static int shared = 0;\n  public static void increment() {\n    shared++;\n  }\n}"
+    },
+    {
+      "language": "SQL",
+      "body": "CREATE TABLE shared_state (\n  key TEXT PRIMARY KEY,\n  value INTEGER\n);\nUPDATE shared_state SET value = value + 1 WHERE key = 'count';"
+    }
   ],
+  "themes": ["scope"],
   "difficulty": 8
 }

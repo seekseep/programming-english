@@ -6,13 +6,28 @@
     "english": "The value of this coin is small.",
     "japanese": "このコインの価値は小さいです。"
   },
-  "example_programming": {
-    "language": "JavaScript",
-    "body": "const value = 42;\nconsole.log(value);"
-  },
-  "themes": [
-    "collections",
-    "variables_and_types"
+  "example_programming": [
+    {
+      "language": "JavaScript",
+      "body": "const value = 42;\nconsole.log(value);"
+    },
+    {
+      "language": "Python",
+      "body": "value = 42\nprint(value)"
+    },
+    {
+      "language": "Java",
+      "body": "int value = 42;\nSystem.out.println(value);"
+    },
+    {
+      "language": "Visual Basic",
+      "body": "Dim value As Integer = 42\nDebug.Print value"
+    },
+    {
+      "language": "SQL",
+      "body": "SELECT 42 AS value;"
+    }
   ],
+  "themes": ["collections", "variables_and_types"],
   "difficulty": 1
 }

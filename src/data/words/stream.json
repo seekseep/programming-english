@@ -6,12 +6,28 @@
     "english": "Use a stream to process the huge log file chunk by chunk.",
     "japanese": "巨大なログファイルを少しずつ処理するためにストリームを使ってください。"
   },
-  "example_programming": {
-    "language": "JavaScript",
-    "body": "const fs = require('fs');\nconst stream = fs.createReadStream('huge.log');\nstream.on('data', chunk => console.log(chunk.length));"
-  },
-  "themes": [
-    "file_io"
+  "example_programming": [
+    {
+      "language": "JavaScript",
+      "body": "const fs = require('fs');\nconst stream = fs.createReadStream('huge.log');\nstream.on('data', chunk => console.log(chunk.length));"
+    },
+    {
+      "language": "Visual Basic",
+      "body": "Dim stream As FileStream = New FileStream(\"huge.log\", FileMode.Open)\nDim buffer As Byte() = New Byte(1024) {}\nDim bytesRead As Integer = stream.Read(buffer, 0, buffer.Length)"
+    },
+    {
+      "language": "Python",
+      "body": "with open('huge.log', 'rb') as stream:\n    while True:\n        chunk = stream.read(1024)\n        if not chunk:\n            break\n        print(len(chunk))"
+    },
+    {
+      "language": "Java",
+      "body": "try (InputStream stream = new FileInputStream(\"huge.log\")) {\n    byte[] buffer = new byte[1024];\n    int bytesRead;\n    while ((bytesRead = stream.read(buffer)) != -1) {\n        System.out.println(bytesRead);\n    }\n}"
+    },
+    {
+      "language": "SQL",
+      "body": "SELECT SUBSTRING(content, 1, 1024) as chunk FROM logs LIMIT 1;"
+    }
   ],
+  "themes": ["file_io"],
   "difficulty": 7
 }

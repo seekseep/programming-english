@@ -27,11 +27,11 @@ function WordDetailPage() {
         {record != null && (
           <div className="flex gap-6 text-sm">
             <div>
-              <span className="text-muted">正答: </span>
+              <span className="text-muted-foreground">正答: </span>
               <strong>{record.correctCount}</strong>
             </div>
             <div>
-              <span className="text-muted">誤答: </span>
+              <span className="text-muted-foreground">誤答: </span>
               <strong>{record.incorrectCount}</strong>
             </div>
           </div>
@@ -39,7 +39,7 @@ function WordDetailPage() {
 
         <div className="rounded-2xl border border-(--line) bg-white/80 p-5 space-y-4">
           <div>
-            <p className="text-sm text-muted mb-1">意味</p>
+            <p className="text-sm text-muted-foreground mb-1">意味</p>
             <p className="text-lg font-bold">
               {correct ? entry.japanese : '正答すると表示されます'}
             </p>
@@ -47,28 +47,28 @@ function WordDetailPage() {
 
           {correct && entry.description && (
             <div>
-              <p className="text-sm text-muted mb-1">解説</p>
+              <p className="text-sm text-muted-foreground mb-1">解説</p>
               <p>{entry.description}</p>
             </div>
           )}
 
           {correct && entry.example_natural.english && (
             <div>
-              <p className="text-sm text-muted mb-1">例文</p>
+              <p className="text-sm text-muted-foreground mb-1">例文</p>
               <p className="italic">{entry.example_natural.english}</p>
-              <p className="text-sm text-muted mt-1">
+              <p className="text-sm text-muted-foreground mt-1">
                 {entry.example_natural.japanese}
               </p>
             </div>
           )}
 
-          {correct && entry.example_programming.body && (
+          {correct && entry.example_programming[0]?.body && (
             <div>
-              <p className="text-sm text-muted mb-1">
-                コード例（{entry.example_programming.language}）
+              <p className="text-sm text-muted-foreground mb-1">
+                コード例（{entry.example_programming[0].language}）
               </p>
               <pre className="text-xs bg-(--line) rounded-md p-3 whitespace-pre-wrap overflow-x-auto">
-                {entry.example_programming.body}
+                {entry.example_programming[0].body}
               </pre>
             </div>
           )}
@@ -76,14 +76,16 @@ function WordDetailPage() {
           <div className="flex flex-wrap gap-1 pt-2">
             <Badge variant="outline">難易度 {entry.difficulty}</Badge>
             {entry.themes.map((t) => (
-              <Badge key={t} variant="outline">{t}</Badge>
+              <Badge key={t} variant="outline">
+                {t}
+              </Badge>
             ))}
           </div>
         </div>
 
         <Link
           to="/words"
-          className="block w-full text-center text-sm text-muted py-3 border border-(--line) rounded-2xl"
+          className="block w-full text-center text-sm text-muted-foreground py-3 border border-(--line) rounded-2xl"
         >
           ← 単語一覧に戻る
         </Link>

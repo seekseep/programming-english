@@ -6,12 +6,28 @@
     "english": "We need to handle the network error gracefully.",
     "japanese": "ネットワークエラーを適切に処理する必要があります。"
   },
-  "example_programming": {
-    "language": "JavaScript",
-    "body": "function handleError(err) {\n  console.error('handled:', err.message);\n}\n\nfetch('/api').catch(handleError);"
-  },
-  "themes": [
-    "error_handling"
+  "example_programming": [
+    {
+      "language": "JavaScript",
+      "body": "function handleError(err) {\n  console.error('handled:', err.message);\n}\n\nfetch('/api').catch(handleError);"
+    },
+    {
+      "language": "Python",
+      "body": "def handle_error(err):\n  print(f'Handled: {err}')\n\ntry:\n  fetch_data()\nexcept Exception as e:\n  handle_error(e)"
+    },
+    {
+      "language": "Visual Basic",
+      "body": "Sub HandleError(err As String)\n  MsgBox \"Error handled: \" & err\nEnd Sub\n\nOn Error GoTo ErrHandler\nCall ProcessData()\nExit Sub\nErrHandler:\n  Call HandleError(Err.Description)"
+    },
+    {
+      "language": "Java",
+      "body": "public static void handleError(Exception err) {\n  System.err.println(\"Handled: \" + err.getMessage());\n}\n\ntry {\n  fetchData();\n} catch (Exception e) {\n  handleError(e);\n}"
+    },
+    {
+      "language": "SQL",
+      "body": "BEGIN TRY\n  EXEC sp_FetchData\nEND TRY\nBEGIN CATCH\n  DECLARE @msg NVARCHAR(MAX) = ERROR_MESSAGE();\n  EXEC sp_HandleError @msg\nEND CATCH"
+    }
   ],
+  "themes": ["error_handling"],
   "difficulty": 8
 }

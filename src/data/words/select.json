@@ -6,13 +6,28 @@
     "english": "Select the name and price of every product.",
     "japanese": "すべての商品の name と price を取得してください。"
   },
-  "example_programming": {
-    "language": "SQL",
-    "body": "SELECT name, price\nFROM products;"
-  },
-  "themes": [
-    "excel_vba_basics",
-    "sql_query_basics"
+  "example_programming": [
+    {
+      "language": "SQL",
+      "body": "SELECT name, price\nFROM products;"
+    },
+    {
+      "language": "JavaScript",
+      "body": "const products = [{name: 'Apple', price: 100}, {name: 'Banana', price: 50}];\nconst selected = products.map(p => ({name: p.name, price: p.price}));\nconsole.log(selected);"
+    },
+    {
+      "language": "Python",
+      "body": "products = [{'name': 'Apple', 'price': 100}, {'name': 'Banana', 'price': 50}]\nselected = [{'name': p['name'], 'price': p['price']} for p in products]\nprint(selected)"
+    },
+    {
+      "language": "Java",
+      "body": "List<Map> products = List.of(\n  Map.of(\"name\", \"Apple\", \"price\", 100),\n  Map.of(\"name\", \"Banana\", \"price\", 50)\n);\nList<Map> selected = products.stream()\n    .map(p -> Map.of(\"name\", p.get(\"name\"), \"price\", p.get(\"price\")))\n    .collect(Collectors.toList());"
+    },
+    {
+      "language": "Visual Basic",
+      "body": "Dim products As New List(Of Dictionary(Of String, Object))\nDim selected = products.Select(Function(p) New Dictionary(Of String, Object) From {{\"name\", p(\"name\")}, {\"price\", p(\"price\")}}).ToList()"
+    }
   ],
+  "themes": ["excel_vba_basics", "sql_query_basics"],
   "difficulty": 5
 }

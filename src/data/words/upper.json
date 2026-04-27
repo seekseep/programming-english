@@ -6,12 +6,28 @@
     "english": "Show the country code in upper case.",
     "japanese": "国コードを大文字で表示してください。"
   },
-  "example_programming": {
-    "language": "SQL",
-    "body": "SELECT id, UPPER(country_code) AS code\nFROM users\nORDER BY id;"
-  },
-  "themes": [
-    "strings_and_text"
+  "example_programming": [
+    {
+      "language": "SQL",
+      "body": "SELECT id, UPPER(country_code) AS code\nFROM users\nORDER BY id;"
+    },
+    {
+      "language": "Python",
+      "body": "text = \"hello world\"\nuppercase = text.upper()\nprint(uppercase)"
+    },
+    {
+      "language": "JavaScript",
+      "body": "const text = \"hello world\";\nconst uppercase = text.toUpperCase();\nconsole.log(uppercase);"
+    },
+    {
+      "language": "Java",
+      "body": "String text = \"hello world\";\nString uppercase = text.toUpperCase();\nSystem.out.println(uppercase);"
+    },
+    {
+      "language": "Visual Basic",
+      "body": "Dim text As String = \"hello world\"\nDim uppercase As String = UCase(text)\nDebug.Print uppercase"
+    }
   ],
+  "themes": ["strings_and_text"],
   "difficulty": 3
 }

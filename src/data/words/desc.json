@@ -6,12 +6,28 @@
     "english": "List the newest posts in descending order by date.",
     "japanese": "投稿を日付の降順で新しい順に並べてください。"
   },
-  "example_programming": {
-    "language": "SQL",
-    "body": "SELECT id, title, created_at\nFROM posts\nORDER BY created_at DESC\nLIMIT 20;"
-  },
-  "themes": [
-    "sql_aggregation"
+  "example_programming": [
+    {
+      "language": "JavaScript",
+      "body": "const items = [1, 3, 2, 5];\nconst sorted = items.sort((a, b) => b - a);\nconsole.log(sorted);"
+    },
+    {
+      "language": "Visual Basic",
+      "body": "Sub SortDesc()\n    Dim arr As String() = {\"c\", \"a\", \"b\"}\n    Array.Sort(arr, New Comparison(Of String)(Function(x, y) y.CompareTo(x)))\nEnd Sub"
+    },
+    {
+      "language": "Python",
+      "body": "items = [1, 3, 2, 5]\nsorted_items = sorted(items, reverse=True)\nprint(sorted_items)"
+    },
+    {
+      "language": "Java",
+      "body": "List<Integer> nums = Arrays.asList(1, 3, 2, 5);\nnums.sort((a, b) -> b.compareTo(a));"
+    },
+    {
+      "language": "SQL",
+      "body": "SELECT id, title, created_at\nFROM posts\nORDER BY created_at DESC\nLIMIT 20;"
+    }
   ],
+  "themes": ["sql_aggregation"],
   "difficulty": 6
 }

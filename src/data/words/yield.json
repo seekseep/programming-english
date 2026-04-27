@@ -6,13 +6,28 @@
     "english": "The generator can yield each value lazily, one at a time.",
     "japanese": "ジェネレータは値を一つずつ遅延して yield で返せます。"
   },
-  "example_programming": {
-    "language": "JavaScript",
-    "body": "async function* pages(url) {\n  let next = url;\n  while (next) {\n    const res = await fetch(next).then((r) => r.json());\n    yield res.items;\n    next = res.nextUrl;\n  }\n}"
-  },
-  "themes": [
-    "async_programming",
-    "functions_and_procedures"
+  "example_programming": [
+    {
+      "language": "JavaScript",
+      "body": "async function* pages(url) {\n  let next = url;\n  while (next) {\n    const res = await fetch(next).then((r) => r.json());\n    yield res.items;\n    next = res.nextUrl;\n  }\n}"
+    },
+    {
+      "language": "Python",
+      "body": "def pages(url):\n  next_url = url\n  while next_url:\n    res = requests.get(next_url).json()\n    yield res['items']\n    next_url = res.get('nextUrl')\nfor item in pages('api/data'):\n  print(item)"
+    },
+    {
+      "language": "Java",
+      "body": "class PageIterator implements Iterator<List<?>> {\n  private String nextUrl;\n  public boolean hasNext() { return nextUrl != null; }\n  public List<?> next() {\n    Response res = fetch(nextUrl);\n    nextUrl = res.getNextUrl();\n    return res.getItems();\n  }\n}"
+    },
+    {
+      "language": "Visual Basic",
+      "body": "Function Pages(url As String) As Collection\n  Dim results As New Collection\n  Dim nextUrl As String = url\n  While nextUrl <> \"\"\n    Dim res = FetchData(nextUrl)\n    results.Add res.Items\n    nextUrl = res.NextUrl\n  Wend\n  Set Pages = results\nEnd Function"
+    },
+    {
+      "language": "SQL",
+      "body": "WITH RECURSIVE page_fetch AS (\n  SELECT items, next_url FROM api_pages WHERE url = 'api/data'\n  UNION ALL\n  SELECT items, next_url FROM api_pages WHERE url = (SELECT next_url FROM page_fetch)\n)\nSELECT items FROM page_fetch;"
+    }
   ],
+  "themes": ["async_programming", "functions_and_procedures"],
   "difficulty": 10
 }

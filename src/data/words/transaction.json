@@ -6,12 +6,28 @@
     "english": "Wrap the related updates in a single transaction to keep them atomic.",
     "japanese": "関連する更新を原子的に扱うため、ひとつのトランザクションにまとめます。"
   },
-  "example_programming": {
-    "language": "SQL",
-    "body": "-- transaction\nBEGIN;\nINSERT INTO orders (id, total) VALUES (1, 500);\nINSERT INTO order_items (order_id, product_id) VALUES (1, 42);\nCOMMIT;"
-  },
-  "themes": [
-    "database_concepts"
+  "example_programming": [
+    {
+      "language": "SQL",
+      "body": "-- transaction\nBEGIN;\nINSERT INTO orders (id, total) VALUES (1, 500);\nINSERT INTO order_items (order_id, product_id) VALUES (1, 42);\nCOMMIT;"
+    },
+    {
+      "language": "Python",
+      "body": "import sqlite3\nconn = sqlite3.connect('db.sqlite3')\ntry:\n  conn.execute('INSERT INTO orders (id, total) VALUES (1, 500)')\n  conn.execute('INSERT INTO order_items (order_id, product_id) VALUES (1, 42)')\n  conn.commit()\nexcept:\n  conn.rollback()"
+    },
+    {
+      "language": "JavaScript",
+      "body": "await db.transaction(async (trx) => {\n  await trx('orders').insert({id: 1, total: 500});\n  await trx('order_items').insert({order_id: 1, product_id: 42});\n});"
+    },
+    {
+      "language": "Java",
+      "body": "try {\n  connection.setAutoCommit(false);\n  stmt.executeUpdate(\"INSERT INTO orders\");\n  stmt.executeUpdate(\"INSERT INTO order_items\");\n  connection.commit();\n} catch (SQLException e) {\n  connection.rollback();\n}"
+    },
+    {
+      "language": "Visual Basic",
+      "body": "On Error GoTo TransactionError\nConn.BeginTrans\nConn.Execute \"INSERT INTO orders (id, total) VALUES (1, 500)\"\nConn.Execute \"INSERT INTO order_items (order_id) VALUES (1)\"\nConn.CommitTrans\nExit Sub\nTransactionError: Conn.RollbackTrans"
+    }
   ],
+  "themes": ["database_concepts"],
   "difficulty": 10
 }

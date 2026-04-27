@@ -6,12 +6,28 @@
     "english": "The square root of sixteen is four.",
     "japanese": "16 の平方根は 4 である。"
   },
-  "example_programming": {
-    "language": "JavaScript",
-    "body": "function distance(x, y) {\n  return Math.sqrt(x * x + y * y);\n}\nconsole.log(distance(3, 4));"
-  },
-  "themes": [
-    "numbers_and_math"
+  "example_programming": [
+    {
+      "language": "JavaScript",
+      "body": "function distance(x, y) {\n  return Math.sqrt(x * x + y * y);\n}\nconsole.log(distance(3, 4));"
+    },
+    {
+      "language": "Visual Basic",
+      "body": "Function distance(x As Double, y As Double) As Double\n    Return Math.Sqrt(x * x + y * y)\nEnd Function"
+    },
+    {
+      "language": "Python",
+      "body": "import math\ndef distance(x, y):\n    return math.sqrt(x * x + y * y)\nprint(distance(3, 4))"
+    },
+    {
+      "language": "Java",
+      "body": "public static double distance(double x, double y) {\n    return Math.sqrt(x * x + y * y);\n}"
+    },
+    {
+      "language": "SQL",
+      "body": "SELECT SQRT(3 * 3 + 4 * 4) AS distance;"
+    }
   ],
+  "themes": ["numbers_and_math"],
   "difficulty": 9
 }

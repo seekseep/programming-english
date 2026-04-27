@@ -6,13 +6,28 @@
     "english": "Send a GET request to get the user data.",
     "japanese": "ユーザーデータを取得するために GET リクエストを送ります。"
   },
-  "example_programming": {
-    "language": "JavaScript",
-    "body": "fetch(\"/api/users\", { method: \"GET\" })\n  .then((response) => response.json())\n  .then((data) => console.log(data));"
-  },
-  "themes": [
-    "basic_io",
-    "http_and_api"
+  "example_programming": [
+    {
+      "language": "JavaScript",
+      "body": "fetch(\"/api/users\", { method: \"GET\" })\n  .then((response) => response.json())\n  .then((data) => console.log(data));"
+    },
+    {
+      "language": "Python",
+      "body": "import requests\nresponse = requests.get('/api/users')\ndata = response.json()\nprint(data)"
+    },
+    {
+      "language": "Visual Basic",
+      "body": "Dim request As Object\nSet request = CreateObject(\"MSXML2.XMLHTTP\")\nCall request.Open(\"GET\", \"/api/users\")\nCall request.Send()"
+    },
+    {
+      "language": "Java",
+      "body": "HttpClient client = HttpClient.newHttpClient();\nHttpRequest request = HttpRequest.newBuilder()\n  .uri(new URI(\"/api/users\"))\n  .GET()\n  .build();\nHttpResponse response = client.send(request, HttpResponse.BodyHandlers.ofString());"
+    },
+    {
+      "language": "SQL",
+      "body": "SELECT * FROM users LIMIT 10;"
+    }
   ],
+  "themes": ["basic_io", "http_and_api"],
   "difficulty": 2
 }

@@ -6,12 +6,28 @@
     "english": "Mark the helper function as private so it is not exposed.",
     "japanese": "ヘルパー関数は外部に公開されないよう、privateにしてください。"
   },
-  "example_programming": {
-    "language": "Visual Basic",
-    "body": "Private Sub ValidateInput(ByVal value As String)\n    If Len(value) = 0 Then\n        Err.Raise 5, , \"empty value\"\n    End If\nEnd Sub"
-  },
-  "themes": [
-    "scope"
+  "example_programming": [
+    {
+      "language": "Visual Basic",
+      "body": "Private Sub ValidateInput(ByVal value As String)\n    If Len(value) = 0 Then\n        Err.Raise 5, , \"empty value\"\n    End If\nEnd Sub"
+    },
+    {
+      "language": "JavaScript",
+      "body": "class MyClass {\n  #privateField = \"secret\";\n  #privateMethod() { return this.#privateField; }\n}"
+    },
+    {
+      "language": "Python",
+      "body": "class MyClass:\n    def __init__(self):\n        self._private_field = \"secret\"\n    def _private_method(self):\n        return self._private_field"
+    },
+    {
+      "language": "Java",
+      "body": "public class MyClass {\n    private String privateField = \"secret\";\n    private void privateMethod() { }\n}"
+    },
+    {
+      "language": "SQL",
+      "body": "CREATE VIEW private_data AS\nSELECT user_id, email FROM users\nWHERE role = 'admin';"
+    }
   ],
+  "themes": ["scope"],
   "difficulty": 8
 }

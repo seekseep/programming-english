@@ -6,12 +6,28 @@
     "english": "Set a breakpoint on this line and inspect the variables.",
     "japanese": "この行にブレークポイントを設定して変数を確認してください。"
   },
-  "example_programming": {
-    "language": "JavaScript",
-    "body": "function calculate(total) {\n  debugger; // breakpoint for the debugger\n  return total * 1.1;\n}"
-  },
-  "themes": [
-    "debugging_and_testing"
+  "example_programming": [
+    {
+      "language": "JavaScript",
+      "body": "function calculate(total) {\n  debugger; // breakpoint for the debugger\n  return total * 1.1;\n}"
+    },
+    {
+      "language": "Visual Basic",
+      "body": "Function calculate(total As Double) As Double\n    'breakpoint set by debugger\n    Calculate = total * 1.1\nEnd Function"
+    },
+    {
+      "language": "Python",
+      "body": "import pdb\ndef calculate(total):\n    pdb.set_trace()  # breakpoint\n    return total * 1.1\ncalculate(100)"
+    },
+    {
+      "language": "Java",
+      "body": "public double calculate(double total) {\n    // breakpoint set by IDE debugger\n    return total * 1.1;\n}"
+    },
+    {
+      "language": "SQL",
+      "body": "-- breakpoint set in SQL Server Management Studio\nCREATE PROCEDURE Calculate @total FLOAT AS\nBEGIN\n    SELECT @total * 1.1 AS result;\nEND;"
+    }
   ],
+  "themes": ["debugging_and_testing"],
   "difficulty": 10
 }

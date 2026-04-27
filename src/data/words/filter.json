@@ -6,13 +6,28 @@
     "english": "Filter the list to show only active users.",
     "japanese": "有効なユーザーだけを表示するようにリストを絞り込んでください。"
   },
-  "example_programming": {
-    "language": "SQL",
-    "body": "-- filter\nSELECT id, name\nFROM users\nWHERE status = 'active'\nORDER BY id;"
-  },
-  "themes": [
-    "collections",
-    "sql_query_basics"
+  "example_programming": [
+    {
+      "language": "SQL",
+      "body": "-- filter\nSELECT id, name\nFROM users\nWHERE status = 'active'\nORDER BY id;"
+    },
+    {
+      "language": "JavaScript",
+      "body": "const users = [{id: 1, status: 'active'}, {id: 2, status: 'inactive'}];\nconst active = users.filter(u => u.status === 'active');\nconsole.log(active);"
+    },
+    {
+      "language": "Python",
+      "body": "users = [{'id': 1, 'status': 'active'}, {'id': 2, 'status': 'inactive'}]\nactive = [u for u in users if u['status'] == 'active']\nprint(active)"
+    },
+    {
+      "language": "Visual Basic",
+      "body": "Function FilterActive(users As Collection) As Collection\n  Dim result As New Collection\n  Dim u As Variant\n  For Each u In users\n    If u.status = \"active\" Then\n      result.Add u\n    End If\n  Next\nEnd Function"
+    },
+    {
+      "language": "Java",
+      "body": "List<User> users = List.of(new User(1, \"active\"), new User(2, \"inactive\"));\nList<User> active = users.stream()\n  .filter(u -> u.status.equals(\"active\"))\n  .collect(Collectors.toList());"
+    }
   ],
+  "themes": ["collections", "sql_query_basics"],
   "difficulty": 3
 }

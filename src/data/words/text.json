@@ -6,12 +6,28 @@
     "english": "Change the text of the button to 'Send'.",
     "japanese": "ボタンの文字列を 'Send' に変更してください。"
   },
-  "example_programming": {
-    "language": "JavaScript",
-    "body": "const button = document.getElementById(\"submitButton\");\nbutton.textContent = \"Send\";"
-  },
-  "themes": [
-    "strings_and_text"
+  "example_programming": [
+    {
+      "language": "JavaScript",
+      "body": "const button = document.getElementById(\"submitButton\");\nbutton.textContent = \"Send\";"
+    },
+    {
+      "language": "Visual Basic",
+      "body": "Dim button As Button = New Button\nbutton.Text = \"Send\""
+    },
+    {
+      "language": "Python",
+      "body": "from tkinter import Button\nbutton = Button(root, text=\"Send\")\nbutton.pack()"
+    },
+    {
+      "language": "Java",
+      "body": "JButton button = new JButton(\"Send\");\nbutton.setText(\"Send\");"
+    },
+    {
+      "language": "SQL",
+      "body": "SELECT text FROM buttons WHERE button_id = 'submitButton';\nUPDATE buttons SET text = 'Send' WHERE button_id = 'submitButton';"
+    }
   ],
+  "themes": ["strings_and_text"],
   "difficulty": 2
 }

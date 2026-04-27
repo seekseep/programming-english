@@ -6,13 +6,28 @@
     "english": "Get the distinct countries from the users table.",
     "japanese": "usersテーブルから重複を除いた国名を取得してください。"
   },
-  "example_programming": {
-    "language": "SQL",
-    "body": "SELECT DISTINCT country\nFROM users\nORDER BY country ASC;"
-  },
-  "themes": [
-    "sql_aggregation",
-    "sql_query_basics"
+  "example_programming": [
+    {
+      "language": "JavaScript",
+      "body": "const arr = [1, 2, 2, 3, 3, 3];\nconst distinct = [...new Set(arr)];\nconsole.log(distinct);"
+    },
+    {
+      "language": "Visual Basic",
+      "body": "Dim set As Object\nSet set = CreateObject(\"System.Collections.ArrayList\")\nset.Add \"apple\"\nset.Add \"apple\""
+    },
+    {
+      "language": "Python",
+      "body": "arr = [1, 2, 2, 3, 3, 3]\ndistinct = list(set(arr))\nprint(distinct)"
+    },
+    {
+      "language": "Java",
+      "body": "List<Integer> list = Arrays.asList(1, 2, 2, 3, 3);\nSet<Integer> distinct = new HashSet<>(list);"
+    },
+    {
+      "language": "SQL",
+      "body": "SELECT DISTINCT country\nFROM users\nORDER BY country ASC;"
+    }
   ],
+  "themes": ["sql_aggregation", "sql_query_basics"],
   "difficulty": 6
 }

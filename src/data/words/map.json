@@ -6,12 +6,28 @@
     "english": "Map each price to the price including tax.",
     "japanese": "それぞれの価格を税込み価格に対応させてください。"
   },
-  "example_programming": {
-    "language": "JavaScript",
-    "body": "const prices = [100, 250, 480];\nconst withTax = prices.map(p => Math.round(p * 1.1));\nconsole.log(withTax);"
-  },
-  "themes": [
-    "collections"
+  "example_programming": [
+    {
+      "language": "JavaScript",
+      "body": "const prices = [100, 250, 480];\nconst withTax = prices.map(p => Math.round(p * 1.1));\nconsole.log(withTax);"
+    },
+    {
+      "language": "Visual Basic",
+      "body": "Dim prices() As Integer = {100, 250, 480}\nDim mapped(2) As Integer\nFor i = 0 To UBound(prices)\n    mapped(i) = prices(i) * 2\nNext"
+    },
+    {
+      "language": "Python",
+      "body": "prices = [100, 250, 480]\nmapped = list(map(lambda p: p * 1.1, prices))\nprint(mapped)"
+    },
+    {
+      "language": "Java",
+      "body": "int[] prices = {100, 250, 480};\nint[] mapped = java.util.Arrays.stream(prices)\n    .map(p -> (int)(p * 1.1))\n    .toArray();"
+    },
+    {
+      "language": "SQL",
+      "body": "SELECT id, price, CAST(price * 1.1 AS INT) AS mapped_price\nFROM products\nORDER BY id;"
+    }
   ],
+  "themes": ["collections"],
   "difficulty": 4
 }

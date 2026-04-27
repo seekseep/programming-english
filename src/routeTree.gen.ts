@@ -9,11 +9,17 @@
 // Additionally, you should also exclude this file from your linter and/or formatter to prevent it from being checked or modified.
 
 import { Route as rootRouteImport } from './routes/__root'
+import { Route as SettingsRouteImport } from './routes/settings'
 import { Route as IndexRouteImport } from './routes/index'
 import { Route as WordsIndexRouteImport } from './routes/words/index'
 import { Route as WordsWordRouteImport } from './routes/words/$word'
 import { Route as StagesStageIdPlayRouteImport } from './routes/stages.$stageId.play'
 
+const SettingsRoute = SettingsRouteImport.update({
+  id: '/settings',
+  path: '/settings',
+  getParentRoute: () => rootRouteImport,
+} as any)
 const IndexRoute = IndexRouteImport.update({
   id: '/',
   path: '/',
@@ -37,12 +43,14 @@ const StagesStageIdPlayRoute = StagesStageIdPlayRouteImport.update({
 
 export interface FileRoutesByFullPath {
   '/': typeof IndexRoute
+  '/settings': typeof SettingsRoute
   '/words/$word': typeof WordsWordRoute
   '/words/': typeof WordsIndexRoute
   '/stages/$stageId/play': typeof StagesStageIdPlayRoute
 }
 export interface FileRoutesByTo {
   '/': typeof IndexRoute
+  '/settings': typeof SettingsRoute
   '/words/$word': typeof WordsWordRoute
   '/words': typeof WordsIndexRoute
   '/stages/$stageId/play': typeof StagesStageIdPlayRoute
@@ -50,20 +58,33 @@ export interface FileRoutesByTo {
 export interface FileRoutesById {
   __root__: typeof rootRouteImport
   '/': typeof IndexRoute
+  '/settings': typeof SettingsRoute
   '/words/$word': typeof WordsWordRoute
   '/words/': typeof WordsIndexRoute
   '/stages/$stageId/play': typeof StagesStageIdPlayRoute
 }
 export interface FileRouteTypes {
   fileRoutesByFullPath: FileRoutesByFullPath
-  fullPaths: '/' | '/words/$word' | '/words/' | '/stages/$stageId/play'
+  fullPaths:
+    | '/'
+    | '/settings'
+    | '/words/$word'
+    | '/words/'
+    | '/stages/$stageId/play'
   fileRoutesByTo: FileRoutesByTo
-  to: '/' | '/words/$word' | '/words' | '/stages/$stageId/play'
-  id: '__root__' | '/' | '/words/$word' | '/words/' | '/stages/$stageId/play'
+  to: '/' | '/settings' | '/words/$word' | '/words' | '/stages/$stageId/play'
+  id:
+    | '__root__'
+    | '/'
+    | '/settings'
+    | '/words/$word'
+    | '/words/'
+    | '/stages/$stageId/play'
   fileRoutesById: FileRoutesById
 }
 export interface RootRouteChildren {
   IndexRoute: typeof IndexRoute
+  SettingsRoute: typeof SettingsRoute
   WordsWordRoute: typeof WordsWordRoute
   WordsIndexRoute: typeof WordsIndexRoute
   StagesStageIdPlayRoute: typeof StagesStageIdPlayRoute
@@ -71,6 +92,13 @@ export interface RootRouteChildren {
 
 declare module '@tanstack/react-router' {
   interface FileRoutesByPath {
+    '/settings': {
+      id: '/settings'
+      path: '/settings'
+      fullPath: '/settings'
+      preLoaderRoute: typeof SettingsRouteImport
+      parentRoute: typeof rootRouteImport
+    }
     '/': {
       id: '/'
       path: '/'
@@ -104,6 +132,7 @@ declare module '@tanstack/react-router' {
 
 const rootRouteChildren: RootRouteChildren = {
   IndexRoute: IndexRoute,
+  SettingsRoute: SettingsRoute,
   WordsWordRoute: WordsWordRoute,
   WordsIndexRoute: WordsIndexRoute,
   StagesStageIdPlayRoute: StagesStageIdPlayRoute,

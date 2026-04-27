@@ -6,13 +6,28 @@
     "english": "Repeat the dash character ten times to make a separator.",
     "japanese": "ハイフンを10回繰り返して区切り線を作ってください。"
   },
-  "example_programming": {
-    "language": "Visual Basic",
-    "body": "' repeat\nDim line As String\nline = New String(\"-\"c, 10)\nDebug.Print line\nFor i As Integer = 1 To 3\n    Debug.Print \"hello\"\nNext"
-  },
-  "themes": [
-    "control_flow",
-    "strings_and_text"
+  "example_programming": [
+    {
+      "language": "Visual Basic",
+      "body": "' repeat\nDim line As String\nline = New String(\"-\"c, 10)\nDebug.Print line\nFor i As Integer = 1 To 3\n    Debug.Print \"hello\"\nNext"
+    },
+    {
+      "language": "JavaScript",
+      "body": "const line = '-'.repeat(10);\nconsole.log(line);\nfor (let i = 0; i < 3; i++) {\n    console.log('hello');\n}"
+    },
+    {
+      "language": "Python",
+      "body": "line = '-' * 10\nprint(line)\nfor i in range(3):\n    print('hello')"
+    },
+    {
+      "language": "Java",
+      "body": "String line = \"-\".repeat(10);\nSystem.out.println(line);\nfor (int i = 0; i < 3; i++) {\n    System.out.println(\"hello\");\n}"
+    },
+    {
+      "language": "SQL",
+      "body": "SELECT REPEAT('-', 10) AS line;\nWITH RECURSIVE cnt(x) AS (\n  SELECT 1 UNION ALL SELECT x+1 FROM cnt WHERE x < 3\n) SELECT 'hello' FROM cnt;"
+    }
   ],
+  "themes": ["control_flow", "strings_and_text"],
   "difficulty": 4
 }

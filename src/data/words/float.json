@@ -6,12 +6,28 @@
     "english": "The height column uses the float type.",
     "japanese": "身長の列は float 型を使っています。"
   },
-  "example_programming": {
-    "language": "SQL",
-    "body": "CREATE TABLE members (\n  id INT,\n  height FLOAT\n);"
-  },
-  "themes": [
-    "variables_and_types"
+  "example_programming": [
+    {
+      "language": "SQL",
+      "body": "CREATE TABLE members (\n  id INT,\n  height FLOAT\n);"
+    },
+    {
+      "language": "JavaScript",
+      "body": "const height = 1.75;\nconst weight = 65.5;\nconsole.log(typeof height === 'number');"
+    },
+    {
+      "language": "Python",
+      "body": "height = 1.75\nweight = 65.5\nprint(type(height))"
+    },
+    {
+      "language": "Visual Basic",
+      "body": "Dim height As Single\nDim weight As Double\nheight = 1.75\nweight = 65.5"
+    },
+    {
+      "language": "Java",
+      "body": "float height = 1.75f;\ndouble weight = 65.5;\nSystem.out.println(height);"
+    }
   ],
+  "themes": ["variables_and_types"],
   "difficulty": 2
 }

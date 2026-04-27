@@ -6,12 +6,28 @@
     "english": "Click the OK button to save the form.",
     "japanese": "フォームを保存するには OK ボタンをクリックしてください。"
   },
-  "example_programming": {
-    "language": "Visual Basic",
-    "body": "Private Sub Button1_Click()\n    MsgBox \"Saved!\"\nEnd Sub"
-  },
-  "themes": [
-    "vb_forms_controls"
+  "example_programming": [
+    {
+      "language": "Visual Basic",
+      "body": "Private Sub Button1_Click()\n    MsgBox \"Saved!\"\nEnd Sub"
+    },
+    {
+      "language": "JavaScript",
+      "body": "const button = document.querySelector('button');\nbutton.addEventListener('click', function() {\n    alert('Saved!');\n});"
+    },
+    {
+      "language": "Python",
+      "body": "import tkinter as tk\nroot = tk.Tk()\ndef on_button_click():\n    print('Saved!')\nbutton = tk.Button(root, text='Save', command=on_button_click)\nbutton.pack()"
+    },
+    {
+      "language": "Java",
+      "body": "JButton button = new JButton(\"Save\");\nbutton.addActionListener(e -> {\n    JOptionPane.showMessageDialog(null, \"Saved!\");\n});\nframe.add(button);"
+    },
+    {
+      "language": "SQL",
+      "body": "-- button interaction captured as stored procedure\nCREATE PROCEDURE OnButtonClick AS\nBEGIN\n    INSERT INTO logs (action, timestamp) VALUES ('Saved', GETDATE());\nEND;\nEXEC OnButtonClick;"
+    }
   ],
+  "themes": ["vb_forms_controls"],
   "difficulty": 7
 }

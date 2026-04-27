@@ -6,12 +6,28 @@
     "english": "His answer is true.",
     "japanese": "彼の答えは正しいです。"
   },
-  "example_programming": {
-    "language": "JavaScript",
-    "body": "const isReady = true;\nconsole.log(isReady);"
-  },
-  "themes": [
-    "boolean_logic"
+  "example_programming": [
+    {
+      "language": "JavaScript",
+      "body": "const isReady = true;\nconsole.log(isReady);"
+    },
+    {
+      "language": "Python",
+      "body": "is_ready = True\nprint(is_ready)"
+    },
+    {
+      "language": "Java",
+      "body": "boolean isReady = true;\nSystem.out.println(isReady);"
+    },
+    {
+      "language": "Visual Basic",
+      "body": "Dim isReady As Boolean = True\nDebug.Print isReady"
+    },
+    {
+      "language": "SQL",
+      "body": "SELECT 1 AS true_value,\n       CASE WHEN 1 = 1 THEN TRUE ELSE FALSE END AS is_true;"
+    }
   ],
+  "themes": ["boolean_logic"],
   "difficulty": 1
 }

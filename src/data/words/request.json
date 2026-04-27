@@ -6,12 +6,28 @@
     "english": "Send a POST request to create a new user.",
     "japanese": "新しいユーザーを作成するためにPOSTリクエストを送ってください。"
   },
-  "example_programming": {
-    "language": "JavaScript",
-    "body": "const request = new Request('/api/users', {\n  method: 'POST',\n  body: JSON.stringify({ name: 'Bob' })\n});\nconst res = await fetch(request);"
-  },
-  "themes": [
-    "http_and_api"
+  "example_programming": [
+    {
+      "language": "JavaScript",
+      "body": "const request = new Request('/api/users', {\n  method: 'POST',\n  body: JSON.stringify({ name: 'Bob' })\n});\nconst res = await fetch(request);"
+    },
+    {
+      "language": "Python",
+      "body": "import requests\nrequest = requests.Request('POST', '/api/users', json={'name': 'Bob'})\nresponse = requests.Session().send(request.prepare())"
+    },
+    {
+      "language": "Java",
+      "body": "HttpRequest request = HttpRequest.newBuilder()\n  .uri(new URI(\"/api/users\"))\n  .POST(HttpRequest.BodyPublishers.ofString(\"{\\\"name\\\":\\\"Bob\\\"}\"))\n  .build();"
+    },
+    {
+      "language": "Visual Basic",
+      "body": "Dim request As New System.Net.Http.HttpRequestMessage(System.Net.Http.HttpMethod.Post, \"/api/users\")\nrequest.Content = New System.Net.Http.StringContent(\"{name: Bob}\")"
+    },
+    {
+      "language": "SQL",
+      "body": "INSERT INTO api_logs (method, endpoint, payload)\nVALUES ('POST', '/api/users', '{\"name\": \"Bob\"}');"
+    }
   ],
+  "themes": ["http_and_api"],
   "difficulty": 6
 }

@@ -6,13 +6,28 @@
     "english": "Her name is a short string.",
     "japanese": "彼女の名前は短い文字列です。"
   },
-  "example_programming": {
-    "language": "JavaScript",
-    "body": "// string\nconst name = 'Alice';\nconsole.log(name);"
-  },
-  "themes": [
-    "strings_and_text",
-    "variables_and_types"
+  "example_programming": [
+    {
+      "language": "JavaScript",
+      "body": "// string\nconst name = 'Alice';\nconsole.log(name);"
+    },
+    {
+      "language": "Visual Basic",
+      "body": "Dim name As String = \"Alice\"\nMsgBox name"
+    },
+    {
+      "language": "Python",
+      "body": "name = 'Alice'\nprint(name)"
+    },
+    {
+      "language": "Java",
+      "body": "String name = \"Alice\";\nSystem.out.println(name);"
+    },
+    {
+      "language": "SQL",
+      "body": "SELECT 'Alice' AS name;"
+    }
   ],
+  "themes": ["strings_and_text", "variables_and_types"],
   "difficulty": 1
 }

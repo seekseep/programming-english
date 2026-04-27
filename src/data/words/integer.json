@@ -6,12 +6,28 @@
     "english": "The age column stores an integer value.",
     "japanese": "年齢の列は整数値を保存します。"
   },
-  "example_programming": {
-    "language": "SQL",
-    "body": "CREATE TABLE users (\n  id INTEGER,\n  age INTEGER\n);"
-  },
-  "themes": [
-    "variables_and_types"
+  "example_programming": [
+    {
+      "language": "SQL",
+      "body": "CREATE TABLE users (\n  id INTEGER,\n  age INTEGER\n);"
+    },
+    {
+      "language": "JavaScript",
+      "body": "let count = 42;\nif (Number.isInteger(count)) {\n  console.log(\"It is an integer\");\n}"
+    },
+    {
+      "language": "Python",
+      "body": "age = 25\nif isinstance(age, int):\n    print(f\"Age is an integer: {age}\")"
+    },
+    {
+      "language": "Java",
+      "body": "int integer = 100;\nSystem.out.println(\"Integer value: \" + integer);"
+    },
+    {
+      "language": "Visual Basic",
+      "body": "Dim age As Integer = 30\nDebug.Print \"Integer: \" & age"
+    }
   ],
+  "themes": ["variables_and_types"],
   "difficulty": 2
 }

@@ -6,13 +6,28 @@
     "english": "Write a test that covers both the success and failure paths.",
     "japanese": "成功ケースと失敗ケースの両方を網羅するテストを書いてください。"
   },
-  "example_programming": {
-    "language": "JavaScript",
-    "body": "test('adds two numbers', () => {\n  expect(add(2, 3)).toBe(5);\n});"
-  },
-  "themes": [
-    "boolean_logic",
-    "debugging_and_testing"
+  "example_programming": [
+    {
+      "language": "JavaScript",
+      "body": "test('adds two numbers', () => {\n  expect(add(2, 3)).toBe(5);\n});"
+    },
+    {
+      "language": "Visual Basic",
+      "body": "<TestMethod>\nPublic Sub TestAdd()\n    Dim result As Integer = Add(2, 3)\n    Assert.AreEqual(5, result)\nEnd Sub"
+    },
+    {
+      "language": "Python",
+      "body": "import unittest\nclass TestMath(unittest.TestCase):\n    def test_add(self):\n        self.assertEqual(add(2, 3), 5)"
+    },
+    {
+      "language": "Java",
+      "body": "@Test\npublic void testAdd() {\n    assertEquals(5, add(2, 3));\n}"
+    },
+    {
+      "language": "SQL",
+      "body": "CREATE TABLE test_results (\n    test_id INT,\n    test_name VARCHAR(255),\n    result VARCHAR(50)\n);\nINSERT INTO test_results VALUES (1, 'test_add', 'passed');"
+    }
   ],
+  "themes": ["boolean_logic", "debugging_and_testing"],
   "difficulty": 10
 }

@@ -6,13 +6,28 @@
     "english": "Concat the first name and the last name with a space.",
     "japanese": "名と姓をスペースで連結してください。"
   },
-  "example_programming": {
-    "language": "JavaScript",
-    "body": "const first = \"Taro\";\nconst last = \"Yamada\";\nconst fullName = first.concat(\" \", last);\nconsole.log(fullName);"
-  },
-  "themes": [
-    "operators",
-    "strings_and_text"
+  "example_programming": [
+    {
+      "language": "JavaScript",
+      "body": "const first = \"Taro\";\nconst last = \"Yamada\";\nconst fullName = first.concat(\" \", last);\nconsole.log(fullName);"
+    },
+    {
+      "language": "Python",
+      "body": "first = \"Taro\"\nlast = \"Yamada\"\nfull = first + \" \" + last\nresult = \"\".join([first, last])"
+    },
+    {
+      "language": "Java",
+      "body": "String first = \"Taro\";\nString last = \"Yamada\";\nString fullName = first.concat(\" \").concat(last);\nSystem.out.println(fullName);"
+    },
+    {
+      "language": "Visual Basic",
+      "body": "Dim first As String = \"Taro\"\nDim last As String = \"Yamada\"\nDim fullName As String = first & \" \" & last\nMsgBox fullName"
+    },
+    {
+      "language": "SQL",
+      "body": "SELECT CONCAT(first_name, ' ', last_name) AS fullname\nFROM users;"
+    }
   ],
+  "themes": ["operators", "strings_and_text"],
   "difficulty": 3
 }

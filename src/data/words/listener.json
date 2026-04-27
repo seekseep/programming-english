@@ -6,12 +6,28 @@
     "english": "Add a listener that runs when the window is resized.",
     "japanese": "ウィンドウのサイズが変わったときに動くリスナーを追加してください。"
   },
-  "example_programming": {
-    "language": "JavaScript",
-    "body": "window.addEventListener('resize', () => {\n  console.log('width:', window.innerWidth);\n});"
-  },
-  "themes": [
-    "events"
+  "example_programming": [
+    {
+      "language": "JavaScript",
+      "body": "window.addEventListener('resize', () => {\n  console.log('width:', window.innerWidth);\n});"
+    },
+    {
+      "language": "Python",
+      "body": "def listener(event):\n    print(f\"Event: {event}\")\n\nbtn.bind('<Button-1>', listener)"
+    },
+    {
+      "language": "Java",
+      "body": "button.addActionListener(new ActionListener() {\n  public void actionPerformed(ActionEvent e) {\n    System.out.println(\"listener triggered\");\n  }\n});"
+    },
+    {
+      "language": "Visual Basic",
+      "body": "Private Sub TextBox_listener()\n    TextBox1.Text = \"listener active\"\nEnd Sub"
+    },
+    {
+      "language": "SQL",
+      "body": "CREATE TRIGGER listener_trigger AFTER INSERT ON users BEGIN SELECT RAISE(NOTICE, 'listener'); END;"
+    }
   ],
+  "themes": ["events"],
   "difficulty": 5
 }

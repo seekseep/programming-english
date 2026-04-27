@@ -6,13 +6,28 @@
     "english": "One careless mistake can negate all our hard work.",
     "japanese": "たった一つの不注意な失敗が私たちの努力をすべて台無しにしかねない。"
   },
-  "example_programming": {
-    "language": "JavaScript",
-    "body": "const negate = (n) => -n;\nconsole.log(negate(7));\nconsole.log(negate(-3));"
-  },
-  "themes": [
-    "numbers_and_math",
-    "operators"
+  "example_programming": [
+    {
+      "language": "JavaScript",
+      "body": "const negate = (n) => -n;\nconsole.log(negate(7));\nconsole.log(negate(-3));"
+    },
+    {
+      "language": "Python",
+      "body": "def negate(n):\n    return -n\nprint(negate(7))\nprint(negate(-3))"
+    },
+    {
+      "language": "Java",
+      "body": "public static int negate(int n) {\n    return -n;\n}\nSystem.out.println(negate(7));\nSystem.out.println(negate(-3));"
+    },
+    {
+      "language": "Visual Basic",
+      "body": "Function Negate(n As Integer) As Integer\n    Return -n\nEnd Function\nMsgBox Negate(7)\nMsgBox Negate(-3)"
+    },
+    {
+      "language": "SQL",
+      "body": "SELECT -value AS negated_value, -price AS negated_price\nFROM numbers\nWHERE value > 0;"
+    }
   ],
+  "themes": ["numbers_and_math", "operators"],
   "difficulty": 9
 }

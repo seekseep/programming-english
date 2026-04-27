@@ -6,12 +6,28 @@
     "english": "If it rains, stay home; else, go outside.",
     "japanese": "雨なら家にいて、そうでなければ外に出ましょう。"
   },
-  "example_programming": {
-    "language": "JavaScript",
-    "body": "if (x > 0) {\n  console.log('positive');\n} else {\n  console.log('not positive');\n}"
-  },
-  "themes": [
-    "control_flow"
+  "example_programming": [
+    {
+      "language": "JavaScript",
+      "body": "if (x > 0) {\n  console.log('positive');\n} else {\n  console.log('not positive');\n}"
+    },
+    {
+      "language": "Visual Basic",
+      "body": "If x > 0 Then\n    Debug.Print \"positive\"\nElse\n    Debug.Print \"not positive\"\nEnd If"
+    },
+    {
+      "language": "Python",
+      "body": "if x > 0:\n    print('positive')\nelse:\n    print('not positive')"
+    },
+    {
+      "language": "Java",
+      "body": "if (x > 0) {\n    System.out.println(\"positive\");\n} else {\n    System.out.println(\"not positive\");\n}"
+    },
+    {
+      "language": "SQL",
+      "body": "SELECT CASE WHEN x > 0 THEN 'positive' ELSE 'not positive' END;"
+    }
   ],
+  "themes": ["control_flow"],
   "difficulty": 1
 }

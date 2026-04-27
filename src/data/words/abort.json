@@ -6,12 +6,28 @@
     "english": "We must abort the request if the user closes the dialog.",
     "japanese": "ユーザーがダイアログを閉じたら、リクエストを中断する必要があります。"
   },
-  "example_programming": {
-    "language": "JavaScript",
-    "body": "const controller = new AbortController();\nfetch('/api/data', { signal: controller.signal })\n  .catch(err => console.log('aborted:', err));\ncontroller.abort();"
-  },
-  "themes": [
-    "error_handling"
+  "example_programming": [
+    {
+      "language": "JavaScript",
+      "body": "const controller = new AbortController();\nfetch('/api/data', { signal: controller.signal })\n  .catch(err => console.log('aborted:', err));\ncontroller.abort();"
+    },
+    {
+      "language": "Visual Basic",
+      "body": "Sub AbortTask()\n    On Error GoTo AbortHandler\n    Call LongRunningTask()\n    Exit Sub\nAbortHandler:\n    MsgBox \"Task aborted\"\nEnd Sub"
+    },
+    {
+      "language": "Python",
+      "body": "import signal\ndef abort_handler(signum, frame):\n    raise KeyboardInterrupt('abort')\nsignal.signal(signal.SIGINT, abort_handler)\ntry:\n    process_data()\nexcept KeyboardInterrupt:\n    print('Operation aborted')"
+    },
+    {
+      "language": "Java",
+      "body": "Thread taskThread = new Thread(() -> longTask());\ntaskThread.start();\nif (shouldAbort) {\n    taskThread.interrupt();\n    System.out.println(\"Task aborted\");\n}"
+    },
+    {
+      "language": "SQL",
+      "body": "BEGIN TRANSACTION;\nUPDATE tasks SET status = 'aborted' WHERE id = @taskId;\nROLLBACK;\nSELECT 'Operation aborted';"
+    }
   ],
+  "themes": ["error_handling"],
   "difficulty": 8
 }

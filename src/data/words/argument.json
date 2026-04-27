@@ -6,12 +6,28 @@
     "english": "Please pass the user name as an argument.",
     "japanese": "ユーザー名を引数として渡してください。"
   },
-  "example_programming": {
-    "language": "Visual Basic",
-    "body": "Sub Greet(argument As String)\n    MsgBox \"Hello, \" & argument\nEnd Sub\n\nCall Greet(\"Taro\")"
-  },
-  "themes": [
-    "functions_and_procedures"
+  "example_programming": [
+    {
+      "language": "Visual Basic",
+      "body": "Sub Greet(argument As String)\n    MsgBox \"Hello, \" & argument\nEnd Sub\n\nCall Greet(\"Taro\")"
+    },
+    {
+      "language": "JavaScript",
+      "body": "function greet(argument) {\n  console.log(`Hello, ${argument}`);\n}\ngreet(\"Taro\");"
+    },
+    {
+      "language": "Python",
+      "body": "def greet(argument):\n    print(f\"Hello, {argument}\")\ngreet(\"Taro\")"
+    },
+    {
+      "language": "Java",
+      "body": "public static void greet(String argument) {\n    System.out.println(\"Hello, \" + argument);\n}\ngreet(\"Taro\");"
+    },
+    {
+      "language": "SQL",
+      "body": "CREATE PROCEDURE Greet @argument NVARCHAR(50) AS\nBEGIN\n  PRINT 'Hello, ' + @argument;\nEND;\nEXEC Greet 'Taro';"
+    }
   ],
+  "themes": ["functions_and_procedures"],
   "difficulty": 2
 }

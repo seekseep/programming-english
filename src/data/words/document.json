@@ -6,13 +6,28 @@
     "english": "Get the title element from the document and log its text.",
     "japanese": "ドキュメントからタイトル要素を取得して、そのテキストを出力してください。"
   },
-  "example_programming": {
-    "language": "JavaScript",
-    "body": "const title = document.querySelector('h1');\nconsole.log(title.textContent);"
-  },
-  "themes": [
-    "comments_and_docs",
-    "web_dom"
+  "example_programming": [
+    {
+      "language": "JavaScript",
+      "body": "const title = document.querySelector('h1');\nconsole.log(title.textContent);"
+    },
+    {
+      "language": "Visual Basic",
+      "body": "Dim doc As Object\nSet doc = CreateObject(\"htmlfile\")\ndoc.Write \"<h1>Title</h1>\""
+    },
+    {
+      "language": "Python",
+      "body": "import xml.dom.minidom as md\ndoc = md.Document()\nroot = doc.createElement('document')"
+    },
+    {
+      "language": "Java",
+      "body": "Document doc = new Document();\nElement root = doc.createElement(\"root\");\ndoc.appendChild(root);"
+    },
+    {
+      "language": "SQL",
+      "body": "SELECT document FROM files WHERE id = 1;"
+    }
   ],
+  "themes": ["comments_and_docs", "web_dom"],
   "difficulty": 5
 }

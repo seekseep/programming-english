@@ -6,12 +6,28 @@
     "english": "We replace the API client with a stub that returns fixed data.",
     "japanese": "APIクライアントを固定データを返すスタブに置き換えます。"
   },
-  "example_programming": {
-    "language": "JavaScript",
-    "body": "test('uses stubbed client', () => {\n  const apiStub = { getUser: () => ({ id: 1, name: 'Ada' }) };\n  expect(loadProfile(apiStub).name).toBe('Ada');\n});"
-  },
-  "themes": [
-    "debugging_and_testing"
+  "example_programming": [
+    {
+      "language": "JavaScript",
+      "body": "test('uses stubbed client', () => {\n  const apiStub = { getUser: () => ({ id: 1, name: 'Ada' }) };\n  expect(loadProfile(apiStub).name).toBe('Ada');\n});"
+    },
+    {
+      "language": "Visual Basic",
+      "body": "Public Class ApiStub\n    Public Function GetUser() As User\n        Return New User With {.id = 1, .name = \"Ada\"}\n    End Function\nEnd Class"
+    },
+    {
+      "language": "Python",
+      "body": "class ApiStub:\n    def get_user(self):\n        return {'id': 1, 'name': 'Ada'}\napi_stub = ApiStub()\nprofile = load_profile(api_stub)\nassert profile['name'] == 'Ada'"
+    },
+    {
+      "language": "Java",
+      "body": "public class ApiStub implements ApiClient {\n    public User getUser() {\n        return new User(1, \"Ada\");\n    }\n}"
+    },
+    {
+      "language": "SQL",
+      "body": "CREATE TABLE stub_users (\n    id INT PRIMARY KEY,\n    name VARCHAR(255)\n);\nINSERT INTO stub_users VALUES (1, 'Ada');"
+    }
   ],
+  "themes": ["debugging_and_testing"],
   "difficulty": 10
 }

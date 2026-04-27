@@ -6,12 +6,28 @@
     "english": "Add the job to the queue and process it later.",
     "japanese": "ジョブをキューに追加し、後で処理してください。"
   },
-  "example_programming": {
-    "language": "JavaScript",
-    "body": "const queue = [];\nqueue.push({ id: 1, url: '/api/a' });\nqueue.push({ id: 2, url: '/api/b' });\nconst next = queue.shift();"
-  },
-  "themes": [
-    "async_programming"
+  "example_programming": [
+    {
+      "language": "JavaScript",
+      "body": "const queue = [];\nqueue.push({ id: 1, url: '/api/a' });\nqueue.push({ id: 2, url: '/api/b' });\nconst next = queue.shift();"
+    },
+    {
+      "language": "Visual Basic",
+      "body": "Dim queue As Queue(Of Dictionary(Of String, Object)) = New Queue(Of Dictionary(Of String, Object))\nqueue.Enqueue(New Dictionary(Of String, Object) From {{\"id\", 1}})\nDim next = queue.Dequeue()"
+    },
+    {
+      "language": "Python",
+      "body": "from collections import deque\nqueue = deque()\nqueue.append({'id': 1, 'url': '/api/a'})\nqueue.append({'id': 2, 'url': '/api/b'})\nnext_item = queue.popleft()"
+    },
+    {
+      "language": "Java",
+      "body": "Queue<Map<String, Object>> queue = new LinkedList<>();\nqueue.offer(new HashMap<>(Map.of(\"id\", 1, \"url\", \"/api/a\")));\nqueue.offer(new HashMap<>(Map.of(\"id\", 2, \"url\", \"/api/b\")));\nMap<String, Object> next = queue.poll();"
+    },
+    {
+      "language": "SQL",
+      "body": "CREATE TABLE queue (\n  id INT AUTO_INCREMENT PRIMARY KEY,\n  job_id INT,\n  url VARCHAR(100),\n  processed BOOLEAN DEFAULT FALSE\n);"
+    }
   ],
+  "themes": ["async_programming"],
   "difficulty": 6
 }

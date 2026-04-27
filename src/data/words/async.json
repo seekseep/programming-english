@@ -6,12 +6,28 @@
     "english": "Use an async function to call the remote server.",
     "japanese": "リモートサーバーを呼び出すには非同期関数を使います。"
   },
-  "example_programming": {
-    "language": "JavaScript",
-    "body": "async function loadUser(id) {\n  const res = await fetch(`/users/${id}`);\n  return res.json();\n}"
-  },
-  "themes": [
-    "async_programming"
+  "example_programming": [
+    {
+      "language": "JavaScript",
+      "body": "async function loadUser(id) {\n  const res = await fetch(`/users/${id}`);\n  return res.json();\n}"
+    },
+    {
+      "language": "Visual Basic",
+      "body": "Public Async Function LoadUserAsync(id As Integer) As Task(Of User)\n    Dim response = Await client.GetAsync($\"/users/{id}\")\n    Return Await response.Content.ReadAsAsync(Of User)()\nEnd Function"
+    },
+    {
+      "language": "Python",
+      "body": "async def load_user(id):\n    async with aiohttp.ClientSession() as session:\n        async with session.get(f'/users/{id}') as resp:\n            return await resp.json()"
+    },
+    {
+      "language": "Java",
+      "body": "public CompletableFuture<User> loadUserAsync(int id) {\n    return client.getAsync(\"/users/\" + id)\n        .thenApply(resp -> parseJson(resp));\n}"
+    },
+    {
+      "language": "SQL",
+      "body": "CREATE PROCEDURE LoadUserAsync @id INT AS\nBEGIN\n    SELECT * FROM users WHERE id = @id;\nEND;\nEXEC sp_addtype @typename = 'LoadUserAsync';"
+    }
   ],
+  "themes": ["async_programming"],
   "difficulty": 6
 }

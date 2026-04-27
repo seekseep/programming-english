@@ -6,12 +6,28 @@
     "english": "Please input your name.",
     "japanese": "あなたの名前を入力してください。"
   },
-  "example_programming": {
-    "language": "Visual Basic",
-    "body": "Dim name As String\nname = InputBox(\"Enter your name\")"
-  },
-  "themes": [
-    "basic_io"
+  "example_programming": [
+    {
+      "language": "Visual Basic",
+      "body": "Dim name As String\nname = InputBox(\"Enter your name\")"
+    },
+    {
+      "language": "JavaScript",
+      "body": "const input = document.querySelector('input');\nconst value = input.value;"
+    },
+    {
+      "language": "Python",
+      "body": "name = input(\"Enter your name: \")\nprint(f\"Hello, {name}\")"
+    },
+    {
+      "language": "Java",
+      "body": "Scanner input = new Scanner(System.in);\nString name = input.nextLine();\nSystem.out.println(name);"
+    },
+    {
+      "language": "SQL",
+      "body": "INSERT INTO users (name) VALUES (:input_name);"
+    }
   ],
+  "themes": ["basic_io"],
   "difficulty": 1
 }

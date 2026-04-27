@@ -6,12 +6,28 @@
     "english": "Please convert the input string to a number before saving.",
     "japanese": "保存する前に、入力された文字列を数値に変換してください。"
   },
-  "example_programming": {
-    "language": "SQL",
-    "body": "SELECT order_id,\n       CONVERT(VARCHAR(10), order_date, 23) AS ymd,\n       CONVERT(DECIMAL(10,2), amount) AS amount\nFROM orders;"
-  },
-  "themes": [
-    "variables_and_types"
+  "example_programming": [
+    {
+      "language": "SQL",
+      "body": "SELECT order_id,\n       CONVERT(VARCHAR(10), order_date, 23) AS ymd,\n       CONVERT(DECIMAL(10,2), amount) AS amount\nFROM orders;"
+    },
+    {
+      "language": "JavaScript",
+      "body": "const str = \"123\";\nconst num = Number(str);\nconst date = new Date(\"2026-01-15\");\nconst json = JSON.parse('{\"key\": \"value\"}');"
+    },
+    {
+      "language": "Python",
+      "body": "text = \"456\"\nnum = int(text)\nfloat_val = float(\"3.14\")\ndate_str = str(datetime.date.today())"
+    },
+    {
+      "language": "Java",
+      "body": "String text = \"789\";\nint num = Integer.parseInt(text);\nlong val = Long.parseLong(text);\nDate date = new SimpleDateFormat(\"yyyy-MM-dd\").parse(\"2026-01-15\");"
+    },
+    {
+      "language": "Visual Basic",
+      "body": "Dim text As String = \"999\"\nDim num As Integer = CInt(text)\nDim date As Date = CDate(\"2026-01-15\")\nDim dbl As Double = CDbl(\"7.5\")"
+    }
   ],
+  "themes": ["variables_and_types"],
   "difficulty": 4
 }

@@ -4,6 +4,13 @@
 
 import { z } from 'zod'
 
+const ProgrammingExampleSchema = z.object({
+  language: z.string(),
+  body: z.string(),
+})
+
+export type ProgrammingExample = z.infer<typeof ProgrammingExampleSchema>
+
 export const WordSchema = z.object({
   /** 英単語見出し。ファイル名と一致する（例: "array", "pure_function"）。 */
   english: z.string(),
@@ -16,11 +23,10 @@ export const WordSchema = z.object({
     english: z.string(),
     japanese: z.string(),
   }),
-  /** プログラミング例（使用言語とコード片）。 */
-  example_programming: z.object({
-    language: z.string(),
-    body: z.string(),
-  }),
+  /** プログラミング例（使用言語とコード片）。単一オブジェクトまたは配列。 */
+  example_programming: z
+    .union([ProgrammingExampleSchema, z.array(ProgrammingExampleSchema)])
+    .transform((val) => (Array.isArray(val) ? val : [val])),
   /** 所属テーマID（themes.json のキー）。複数可。 */
   themes: z.array(z.string()),
   /** 1..10 の整数。これがそのままステージ番号になる。 */

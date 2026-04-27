@@ -6,12 +6,28 @@
     "english": "Show the login form when the workbook opens.",
     "japanese": "ブックを開いたときにログインフォームを表示してください。"
   },
-  "example_programming": {
-    "language": "Visual Basic",
-    "body": "Private Sub Workbook_Open()\n    UserForm1.Show\nEnd Sub"
-  },
-  "themes": [
-    "vb_forms_controls"
+  "example_programming": [
+    {
+      "language": "Visual Basic",
+      "body": "Private Sub Workbook_Open()\n    UserForm1.Show\nEnd Sub"
+    },
+    {
+      "language": "JavaScript",
+      "body": "const form = document.getElementById('loginForm');\nform.addEventListener('submit', (e) => {\n  e.preventDefault();\n  const name = form.elements['name'].value;\n  console.log(name);\n});"
+    },
+    {
+      "language": "Python",
+      "body": "from flask import Flask, request\napp = Flask(__name__)\n@app.route('/form', methods=['POST'])\ndef handle_form():\n  name = request.form.get('name')\n  return name"
+    },
+    {
+      "language": "Java",
+      "body": "JFrame frame = new JFrame();\nJPanel panel = new JPanel();\nJTextField nameField = new JTextField();\nJButton submit = new JButton(\"Submit\");\npanel.add(nameField);\npanel.add(submit);"
+    },
+    {
+      "language": "SQL",
+      "body": "CREATE TABLE form_submissions (\n  id INT PRIMARY KEY,\n  name VARCHAR(100),\n  email VARCHAR(100)\n);"
+    }
   ],
+  "themes": ["vb_forms_controls"],
   "difficulty": 7
 }

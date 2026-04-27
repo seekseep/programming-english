@@ -6,12 +6,28 @@
     "english": "An exception will be thrown when the file is missing.",
     "japanese": "ファイルが見つからないとき、例外が投げられます。"
   },
-  "example_programming": {
-    "language": "JavaScript",
-    "body": "try {\n  loadConfig();\n} catch (exception) {\n  console.error('caught:', exception);\n}"
-  },
-  "themes": [
-    "error_handling"
+  "example_programming": [
+    {
+      "language": "JavaScript",
+      "body": "try {\n  loadConfig();\n} catch (exception) {\n  console.error('caught:', exception);\n}"
+    },
+    {
+      "language": "Visual Basic",
+      "body": "On Error GoTo ErrHandler\nCall LoadConfig\nExit Sub\nErrHandler: MsgBox Err.Description"
+    },
+    {
+      "language": "Python",
+      "body": "try:\n    load_config()\nexcept Exception as exception:\n    print(f'Caught: {exception}')"
+    },
+    {
+      "language": "Java",
+      "body": "try {\n    loadConfig();\n} catch (Exception exception) {\n    System.err.println(exception);\n}"
+    },
+    {
+      "language": "SQL",
+      "body": "BEGIN TRY\n    SELECT 1\nEND TRY\nBEGIN CATCH\n    SELECT ERROR_MESSAGE() AS exception;\nEND CATCH"
+    }
   ],
+  "themes": ["error_handling"],
   "difficulty": 8
 }

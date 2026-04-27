@@ -6,13 +6,28 @@
     "english": "Set the href attribute of the link to the new URL.",
     "japanese": "リンクの href 属性を新しい URL に設定してください。"
   },
-  "example_programming": {
-    "language": "JavaScript",
-    "body": "const link = document.querySelector('a');\nlink.setAttribute('href', 'https://example.com');\nconsole.log(link.getAttribute('href'));"
-  },
-  "themes": [
-    "database_concepts",
-    "web_dom"
+  "example_programming": [
+    {
+      "language": "JavaScript",
+      "body": "const link = document.querySelector('a');\nlink.setAttribute('href', 'https://example.com');\nconsole.log(link.getAttribute('href'));"
+    },
+    {
+      "language": "Visual Basic",
+      "body": "Dim link As HtmlElement = doc.GetElementById(\"mylink\")\nlink.SetAttribute(\"href\", \"https://example.com\")\nMsgBox link.GetAttribute(\"href\")"
+    },
+    {
+      "language": "Python",
+      "body": "from xml.etree import ElementTree as ET\nlink = ET.Element('a')\nlink.set('href', 'https://example.com')\nprint(link.get('href'))"
+    },
+    {
+      "language": "Java",
+      "body": "Element link = document.querySelector(\"a\");\nlink.setAttribute(\"href\", \"https://example.com\");\nSystem.out.println(link.getAttribute(\"href\"));"
+    },
+    {
+      "language": "SQL",
+      "body": "ALTER TABLE users ADD COLUMN attribute_name VARCHAR(100);\nUPDATE users SET attribute_name = 'value' WHERE id = 1;"
+    }
   ],
+  "themes": ["database_concepts", "web_dom"],
   "difficulty": 5
 }

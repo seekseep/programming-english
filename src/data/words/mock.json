@@ -6,12 +6,28 @@
     "english": "We mock the network call so the test runs without a real server.",
     "japanese": "実サーバーなしでテストが走るようにネットワーク呼び出しをモック化します。"
   },
-  "example_programming": {
-    "language": "JavaScript",
-    "body": "test('loads user', async () => {\n  const fetchUser = jest.fn().mockResolvedValue({ id: 1, name: 'Ada' });\n  const user = await fetchUser();\n  expect(user.name).toBe('Ada');\n});"
-  },
-  "themes": [
-    "debugging_and_testing"
+  "example_programming": [
+    {
+      "language": "JavaScript",
+      "body": "test('loads user', async () => {\n  const fetchUser = jest.fn().mockResolvedValue({ id: 1, name: 'Ada' });\n  const user = await fetchUser();\n  expect(user.name).toBe('Ada');\n});"
+    },
+    {
+      "language": "Python",
+      "body": "from unittest.mock import Mock, patch\nwith patch('module.function') as mock_func:\n    mock_func.return_value = {'id': 1}\n    result = mock_func()\n    assert result['id'] == 1"
+    },
+    {
+      "language": "Java",
+      "body": "@Test\npublic void testWithMock() {\n    UserService mock = Mockito.mock(UserService.class);\n    Mockito.when(mock.getUser(1)).thenReturn(new User(1, \"Ada\"));\n    User user = mock.getUser(1);\n    assertEquals(\"Ada\", user.getName());\n}"
+    },
+    {
+      "language": "Visual Basic",
+      "body": "Public Class MockTest\n    Public Function TestMock() As Boolean\n        Dim mockObj As Object = CreateObject(\"MockLibrary.MockObject\")\n        mockObj.Setup(\"Method\", 42)\n        Return True\n    End Function\nEnd Class"
+    },
+    {
+      "language": "SQL",
+      "body": "BEGIN TRANSACTION;\nINSERT INTO mock_data (id, value) VALUES (1, 'test');\nROLLBACK;\nSELECT * FROM mock_data WHERE id = 1;"
+    }
   ],
+  "themes": ["debugging_and_testing"],
   "difficulty": 10
 }

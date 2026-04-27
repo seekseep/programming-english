@@ -6,12 +6,28 @@
     "english": "Check if the URL starts with \"https\".",
     "japanese": "URL が「https」で始まっているかを確認してください。"
   },
-  "example_programming": {
-    "language": "JavaScript",
-    "body": "const url = \"https://example.com/users\";\nif (url.startsWith(\"https\")) {\n  console.log(\"secure URL\");\n}"
-  },
-  "themes": [
-    "strings_and_text"
+  "example_programming": [
+    {
+      "language": "JavaScript",
+      "body": "const url = \"https://example.com/users\";\nif (url.startsWith(\"https\")) {\n  console.log(\"secure URL\");\n}"
+    },
+    {
+      "language": "Visual Basic",
+      "body": "Dim url As String = \"https://example.com/users\"\nIf url.StartsWith(\"https\") Then\n    MsgBox \"secure URL\"\nEnd If"
+    },
+    {
+      "language": "Python",
+      "body": "url = \"https://example.com/users\"\nif url.startswith(\"https\"):\n    print(\"secure URL\")"
+    },
+    {
+      "language": "Java",
+      "body": "String url = \"https://example.com/users\";\nif (url.startsWith(\"https\")) {\n    System.out.println(\"secure URL\");\n}"
+    },
+    {
+      "language": "SQL",
+      "body": "SELECT * FROM urls WHERE url LIKE 'https%';"
+    }
   ],
+  "themes": ["strings_and_text"],
   "difficulty": 4
 }

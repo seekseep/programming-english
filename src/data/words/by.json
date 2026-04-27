@@ -6,12 +6,28 @@
     "english": "Group the sales by region and order them by total.",
     "japanese": "売上を地域ごとにグループ化し、合計で並べ替えてください。"
   },
-  "example_programming": {
-    "language": "SQL",
-    "body": "SELECT region, SUM(amount) AS total\nFROM sales\nGROUP BY region\nORDER BY total DESC;"
-  },
-  "themes": [
-    "sql_aggregation"
+  "example_programming": [
+    {
+      "language": "SQL",
+      "body": "SELECT region, SUM(amount) AS total\nFROM sales\nGROUP BY region\nORDER BY total DESC;"
+    },
+    {
+      "language": "JavaScript",
+      "body": "const sales = [{region: 'A', amount: 100}, {region: 'B', amount: 200}, {region: 'A', amount: 50}];\nconst grouped = sales.reduce((acc, s) => {\n  if (!acc[s.region]) acc[s.region] = [];\n  acc[s.region].push(s);\n  return acc;\n}, {});"
+    },
+    {
+      "language": "Visual Basic",
+      "body": "Dim grouped = sales.GroupBy(Function(s) s.Region).Select(Function(g) New With {g.Key, .total = g.Sum(Function(s) s.Amount)}).OrderByDescending(Function(x) x.total)"
+    },
+    {
+      "language": "Python",
+      "body": "from itertools import groupby\nsales = [(\"A\", 100), (\"B\", 200), (\"A\", 50)]\ngrouped = {k: sum(v for _, v in g) for k, g in groupby(sorted(sales), key=lambda x: x[0])}"
+    },
+    {
+      "language": "Java",
+      "body": "Map<String, Integer> grouped = sales.stream()\n  .collect(Collectors.groupingBy(\n    Sale::getRegion,\n    Collectors.summingInt(Sale::getAmount)\n  ));"
+    }
   ],
+  "themes": ["sql_aggregation"],
   "difficulty": 6
 }

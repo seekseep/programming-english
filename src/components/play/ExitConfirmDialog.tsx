@@ -17,7 +17,10 @@ type Props = {
 
 export function ExitConfirmDialog({ open, onContinue, onExit }: Props) {
   return (
-    <AlertDialog open={open} onOpenChange={(nextOpen) => !nextOpen && onContinue()}>
+    <AlertDialog
+      open={open}
+      onOpenChange={(nextOpen) => !nextOpen && onContinue()}
+    >
       <AlertDialogContent className="bg-white">
         <AlertDialogHeader>
           <AlertDialogTitle>プレイを中断しますか？</AlertDialogTitle>

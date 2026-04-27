@@ -6,12 +6,28 @@
     "english": "Split the sentence by spaces to get each word.",
     "japanese": "各単語を得るために文をスペースで分割してください。"
   },
-  "example_programming": {
-    "language": "JavaScript",
-    "body": "const sentence = \"learn programming english\";\nconst words = sentence.split(\" \");\nconsole.log(words.length);\nconsole.log(words[0]);"
-  },
-  "themes": [
-    "strings_and_text"
+  "example_programming": [
+    {
+      "language": "JavaScript",
+      "body": "const sentence = \"learn programming english\";\nconst words = sentence.split(\" \");\nconsole.log(words.length);\nconsole.log(words[0]);"
+    },
+    {
+      "language": "Visual Basic",
+      "body": "Dim sentence As String = \"learn programming english\"\nDim words As String() = sentence.Split(\" \"c)\nMsgBox words.Length"
+    },
+    {
+      "language": "Python",
+      "body": "sentence = 'learn programming english'\nwords = sentence.split(' ')\nprint(len(words))\nprint(words[0])"
+    },
+    {
+      "language": "Java",
+      "body": "String sentence = \"learn programming english\";\nString[] words = sentence.split(\" \");\nSystem.out.println(words.length);\nSystem.out.println(words[0]);"
+    },
+    {
+      "language": "SQL",
+      "body": "SELECT * FROM (VALUES ('learn'), ('programming'), ('english')) AS t(word);"
+    }
   ],
+  "themes": ["strings_and_text"],
   "difficulty": 3
 }

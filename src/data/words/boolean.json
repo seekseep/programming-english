@@ -6,13 +6,28 @@
     "english": "A boolean value is either true or false.",
     "japanese": "真偽値はtrueかfalseのどちらかです。"
   },
-  "example_programming": {
-    "language": "Visual Basic",
-    "body": "Dim isReady As Boolean\nisReady = True"
-  },
-  "themes": [
-    "boolean_logic",
-    "variables_and_types"
+  "example_programming": [
+    {
+      "language": "Visual Basic",
+      "body": "Dim isReady As Boolean\nisReady = True"
+    },
+    {
+      "language": "JavaScript",
+      "body": "const isReady = true;\nif (isReady) {\n  console.log('Ready');\n}"
+    },
+    {
+      "language": "Python",
+      "body": "is_ready = True\nif is_ready:\n    print('Ready')"
+    },
+    {
+      "language": "Java",
+      "body": "boolean isReady = true;\nif (isReady) {\n    System.out.println(\"Ready\");\n}"
+    },
+    {
+      "language": "SQL",
+      "body": "DECLARE @isReady BIT = 1;\nIF @isReady = 1\n    PRINT 'Ready';"
+    }
   ],
+  "themes": ["boolean_logic", "variables_and_types"],
   "difficulty": 1
 }

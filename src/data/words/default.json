@@ -6,14 +6,28 @@
     "english": "The default value of this column is zero.",
     "japanese": "この列の既定値はゼロです。"
   },
-  "example_programming": {
-    "language": "SQL",
-    "body": "CREATE TABLE products (\n  id INT PRIMARY KEY,\n  name VARCHAR(50),\n  stock INT DEFAULT 0\n);"
-  },
-  "themes": [
-    "control_flow",
-    "database_concepts",
-    "modules_and_imports"
+  "example_programming": [
+    {
+      "language": "JavaScript",
+      "body": "const config = { timeout: 5000, retries: 3 };\nconst settings = { ...config, timeout: 3000 };"
+    },
+    {
+      "language": "Visual Basic",
+      "body": "Function GetDefault() As Integer\n    GetDefault = 100\nEnd Function"
+    },
+    {
+      "language": "Python",
+      "body": "def process(value=None):\n    if value is None:\n        value = 10\n    return value * 2"
+    },
+    {
+      "language": "Java",
+      "body": "class Config {\n    int timeout = 5000;\n}"
+    },
+    {
+      "language": "SQL",
+      "body": "CREATE TABLE products (\n  id INT PRIMARY KEY,\n  name VARCHAR(50),\n  stock INT DEFAULT 0\n);"
+    }
   ],
+  "themes": ["control_flow", "database_concepts", "modules_and_imports"],
   "difficulty": 3
 }

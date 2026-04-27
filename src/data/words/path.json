@@ -6,13 +6,28 @@
     "english": "Build the full path by combining the folder and file name.",
     "japanese": "フォルダ名とファイル名をつなげて完全なパスを作成してください。"
   },
-  "example_programming": {
-    "language": "Visual Basic",
-    "body": "Dim fullPath As String\nfullPath = ThisWorkbook.Path & \"\\output.csv\""
-  },
-  "themes": [
-    "file_io",
-    "http_and_api"
+  "example_programming": [
+    {
+      "language": "Visual Basic",
+      "body": "Dim fullPath As String\nfullPath = ThisWorkbook.Path & \"\\output.csv\""
+    },
+    {
+      "language": "JavaScript",
+      "body": "const path = require('path');\nconst fullPath = path.join(__dirname, 'output.csv');\nconsole.log(fullPath);"
+    },
+    {
+      "language": "Python",
+      "body": "from pathlib import Path\nfull_path = Path('.').joinpath('output.csv').resolve()\nprint(full_path)"
+    },
+    {
+      "language": "Java",
+      "body": "java.nio.file.Path path = java.nio.file.Paths.get(\"output.csv\");\nSystem.out.println(path.toAbsolutePath());"
+    },
+    {
+      "language": "SQL",
+      "body": "SELECT CONCAT(directory, '/', filename) AS path FROM files;"
+    }
   ],
+  "themes": ["file_io", "http_and_api"],
   "difficulty": 7
 }

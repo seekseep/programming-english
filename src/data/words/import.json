@@ -6,12 +6,28 @@
     "english": "Import the utility function from the helpers module.",
     "japanese": "helpersモジュールからユーティリティ関数をインポートしてください。"
   },
-  "example_programming": {
-    "language": "JavaScript",
-    "body": "import { formatDate } from './helpers';\nimport React from 'react';\n\nconsole.log(formatDate(new Date()));"
-  },
-  "themes": [
-    "modules_and_imports"
+  "example_programming": [
+    {
+      "language": "JavaScript",
+      "body": "import { formatDate } from './helpers';\nimport React from 'react';\n\nconsole.log(formatDate(new Date()));"
+    },
+    {
+      "language": "Python",
+      "body": "import os\nimport json\nfrom datetime import datetime\ndata = json.load(open('config.json'))"
+    },
+    {
+      "language": "Java",
+      "body": "import java.util.ArrayList;\nimport java.time.LocalDate;\n\nArrayList<String> list = new ArrayList<>();"
+    },
+    {
+      "language": "Visual Basic",
+      "body": "Imports System.IO\nImports System.Collections.Generic\n\nDim files = IO.Directory.GetFiles(\"C:\\\\Data\")"
+    },
+    {
+      "language": "SQL",
+      "body": "IMPORT FROM 'users.csv'\nINTO users (id, name, email);"
+    }
   ],
+  "themes": ["modules_and_imports"],
   "difficulty": 8
 }

@@ -6,12 +6,28 @@
     "english": "Retry the API call up to three times on failure.",
     "japanese": "失敗した場合、APIコールを最大3回まで再試行してください。"
   },
-  "example_programming": {
-    "language": "JavaScript",
-    "body": "async function retry(fn, times = 3) {\n  for (let i = 0; i < times; i++) {\n    try { return await fn(); } catch (e) {}\n  }\n  throw new Error('all retries failed');\n}"
-  },
-  "themes": [
-    "error_handling"
+  "example_programming": [
+    {
+      "language": "JavaScript",
+      "body": "async function retry(fn, times = 3) {\n  for (let i = 0; i < times; i++) {\n    try { return await fn(); } catch (e) {}\n  }\n  throw new Error('all retries failed');\n}"
+    },
+    {
+      "language": "Python",
+      "body": "def retry(fn, times=3):\n    for i in range(times):\n        try:\n            return fn()\n        except:\n            pass\n    raise Exception('all retries failed')"
+    },
+    {
+      "language": "Java",
+      "body": "public static <T> T retry(Callable<T> fn, int times) throws Exception {\n    for (int i = 0; i < times; i++) {\n        try { return fn.call(); } catch (Exception e) {}\n    }\n    throw new Exception(\"all retries failed\");\n}"
+    },
+    {
+      "language": "Visual Basic",
+      "body": "Public Function Retry(fn As Func(Of String), times As Integer) As String\n    For i As Integer = 0 To times - 1\n        Try\n            Return fn()\n        Catch\n        End Try\n    Next\n    Throw New Exception(\"all retries failed\")\nEnd Function"
+    },
+    {
+      "language": "SQL",
+      "body": "WITH retry_attempts AS (\n  SELECT 1 AS attempt\n  UNION ALL\n  SELECT attempt + 1 FROM retry_attempts WHERE attempt < 3\n) SELECT * FROM retry_attempts;"
+    }
   ],
+  "themes": ["error_handling"],
   "difficulty": 8
 }

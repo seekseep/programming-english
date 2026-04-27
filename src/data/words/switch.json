@@ -6,12 +6,28 @@
     "english": "Use a switch to handle each day of the week.",
     "japanese": "曜日ごとの処理には switch 文を使ってください。"
   },
-  "example_programming": {
-    "language": "Visual Basic",
-    "body": "Dim day As Integer\nday = 3\nSelect Case day ' switch-like\n    Case 1: Debug.Print \"Mon\"\n    Case 3: Debug.Print \"Wed\"\n    Case Else: Debug.Print \"?\"\nEnd Select"
-  },
-  "themes": [
-    "control_flow"
+  "example_programming": [
+    {
+      "language": "Visual Basic",
+      "body": "Dim day As Integer\nday = 3\nSelect Case day ' switch-like\n    Case 1: Debug.Print \"Mon\"\n    Case 3: Debug.Print \"Wed\"\n    Case Else: Debug.Print \"?\"\nEnd Select"
+    },
+    {
+      "language": "JavaScript",
+      "body": "const day = 3;\nswitch (day) {\n  case 1: console.log('Mon'); break;\n  case 3: console.log('Wed'); break;\n  default: console.log('?');\n}"
+    },
+    {
+      "language": "Python",
+      "body": "day = 3\nif day == 1:\n    print('Mon')\nelif day == 3:\n    print('Wed')\nelse:\n    print('?')"
+    },
+    {
+      "language": "Java",
+      "body": "int day = 3;\nswitch (day) {\n    case 1: System.out.println(\"Mon\"); break;\n    case 3: System.out.println(\"Wed\"); break;\n    default: System.out.println(\"?\");\n}"
+    },
+    {
+      "language": "SQL",
+      "body": "SELECT CASE day WHEN 1 THEN 'Mon' WHEN 3 THEN 'Wed' ELSE '?' END FROM days;"
+    }
   ],
+  "themes": ["control_flow"],
   "difficulty": 3
 }

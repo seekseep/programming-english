@@ -6,12 +6,28 @@
     "english": "Please write your phone number.",
     "japanese": "電話番号を書いてください。"
   },
-  "example_programming": {
-    "language": "JavaScript",
-    "body": "// number\nconst age = 25;\nconsole.log(typeof age);"
-  },
-  "themes": [
-    "variables_and_types"
+  "example_programming": [
+    {
+      "language": "JavaScript",
+      "body": "// number\nconst age = 25;\nconsole.log(typeof age);"
+    },
+    {
+      "language": "Python",
+      "body": "age = 25\nprint(type(age))\nnumber = 42.5"
+    },
+    {
+      "language": "Java",
+      "body": "int age = 25;\ndouble decimal = 42.5;\nSystem.out.println(age);"
+    },
+    {
+      "language": "Visual Basic",
+      "body": "Dim age As Integer = 25\nDim number As Double = 42.5\nMsgBox age"
+    },
+    {
+      "language": "SQL",
+      "body": "SELECT age, salary FROM employees WHERE number > 100 LIMIT 5;"
+    }
   ],
+  "themes": ["variables_and_types"],
   "difficulty": 1
 }

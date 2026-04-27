@@ -6,14 +6,28 @@
     "english": "Please append the new name to the list.",
     "japanese": "新しい名前をリストの末尾に追加してください。"
   },
-  "example_programming": {
-    "language": "JavaScript",
-    "body": "const names = [\"Alice\", \"Bob\"];\nfunction appendName(list, name) {\n  list.push(name);\n  return list;\n}\nappendName(names, \"Carol\");"
-  },
-  "themes": [
-    "collections",
-    "file_io",
-    "web_dom"
+  "example_programming": [
+    {
+      "language": "JavaScript",
+      "body": "const names = [\"Alice\", \"Bob\"];\nfunction appendName(list, name) {\n  list.push(name);\n  return list;\n}\nappendName(names, \"Carol\");"
+    },
+    {
+      "language": "Visual Basic",
+      "body": "Dim names As New List(Of String)\nnames.Add(\"Alice\")\nnames.Add(\"Bob\")\nnames.Append(\"Carol\")"
+    },
+    {
+      "language": "Python",
+      "body": "names = [\"Alice\", \"Bob\"]\nnames.append(\"Carol\")\nprint(names)"
+    },
+    {
+      "language": "Java",
+      "body": "List<String> names = new ArrayList<>();\nnames.add(\"Alice\");\nnames.add(\"Bob\");\nnames.add(\"Carol\");"
+    },
+    {
+      "language": "SQL",
+      "body": "INSERT INTO names (name) VALUES ('Alice');\nINSERT INTO names (name) VALUES ('Bob');\nINSERT INTO names (name) VALUES ('Carol');"
+    }
   ],
+  "themes": ["collections", "file_io", "web_dom"],
   "difficulty": 3
 }

@@ -6,12 +6,28 @@
     "english": "Include the source files from the src directory.",
     "japanese": "srcディレクトリからソースファイルを取り込んでください。"
   },
-  "example_programming": {
-    "language": "JavaScript",
-    "body": "// tsconfig.json\n{\n  \"include\": [\"src/**/*.ts\"],\n  \"exclude\": [\"node_modules\"]\n}"
-  },
-  "themes": [
-    "modules_and_imports"
+  "example_programming": [
+    {
+      "language": "JavaScript",
+      "body": "// tsconfig.json\n{\n  \"include\": [\"src/**/*.ts\"],\n  \"exclude\": [\"node_modules\"]\n}"
+    },
+    {
+      "language": "Python",
+      "body": "filenames = ['a.txt', 'b.txt']\nif 'a.txt' in filenames:\n    print(\"Found a.txt\")"
+    },
+    {
+      "language": "Java",
+      "body": "String[] files = {\"src/Main.java\"};\nif (files.length > 0 && files[0].includes(\"src\")) {\n  System.out.println(\"Source file\");\n}"
+    },
+    {
+      "language": "Visual Basic",
+      "body": "Dim path As String = \"src\\\\helpers.vb\"\nIf Dir(path) <> \"\" Then\n    Debug.Print \"File included\"\nEnd If"
+    },
+    {
+      "language": "SQL",
+      "body": "SELECT column1 FROM table1 WHERE column1 IN ('src', 'lib', 'data');"
+    }
   ],
+  "themes": ["modules_and_imports"],
   "difficulty": 8
 }

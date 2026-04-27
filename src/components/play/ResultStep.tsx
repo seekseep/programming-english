@@ -26,7 +26,9 @@ export function ResultStep() {
               className="flex items-center justify-between p-3 rounded-xl cursor-pointer text-left bg-(--card-bg)"
             >
               <span className="font-bold">{w.english}</span>
-              <span className="text-muted text-sm">{w.japanese}</span>
+              <span className="text-muted-foreground text-sm">
+                {w.japanese}
+              </span>
             </button>
           ))}
         </div>

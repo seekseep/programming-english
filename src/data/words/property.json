@@ -6,12 +6,28 @@
     "english": "Change the Text property of the button to \"Save\".",
     "japanese": "ボタンの Text プロパティを「保存」に変更してください。"
   },
-  "example_programming": {
-    "language": "Visual Basic",
-    "body": "' property\nButton1.Text = \"Save\"\nButton1.Enabled = False\nLabel1.Text = \"Please wait...\""
-  },
-  "themes": [
-    "vb_forms_controls"
+  "example_programming": [
+    {
+      "language": "Visual Basic",
+      "body": "' property\nButton1.Text = \"Save\"\nButton1.Enabled = False\nLabel1.Text = \"Please wait...\""
+    },
+    {
+      "language": "JavaScript",
+      "body": "const button = document.getElementById('btn');\nbutton.textContent = 'Save';\nbutton.disabled = false;\nconst label = document.getElementById('lbl');\nlabel.textContent = 'Please wait...';"
+    },
+    {
+      "language": "Python",
+      "body": "class Widget:\n    @property\n    def enabled(self):\n        return self._enabled\n    @enabled.setter\n    def enabled(self, value):\n        self._enabled = value"
+    },
+    {
+      "language": "Java",
+      "body": "public class Button {\n    private String text;\n    public String getText() { return text; }\n    public void setText(String text) { this.text = text; }\n}"
+    },
+    {
+      "language": "SQL",
+      "body": "CREATE TABLE button_properties (\n  id INT PRIMARY KEY,\n  text VARCHAR(100),\n  enabled BOOLEAN\n);"
+    }
   ],
+  "themes": ["vb_forms_controls"],
   "difficulty": 4
 }

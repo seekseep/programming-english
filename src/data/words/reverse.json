@@ -6,12 +6,28 @@
     "english": "Reverse the list so the newest entry comes first.",
     "japanese": "最新の項目が先頭に来るように、リストを逆順にしてください。"
   },
-  "example_programming": {
-    "language": "JavaScript",
-    "body": "const entries = [\"first\", \"second\", \"third\"];\nconst reversed = [...entries].reverse();\nconsole.log(reversed);"
-  },
-  "themes": [
-    "strings_and_text"
+  "example_programming": [
+    {
+      "language": "JavaScript",
+      "body": "const entries = [\"first\", \"second\", \"third\"];\nconst reversed = [...entries].reverse();\nconsole.log(reversed);"
+    },
+    {
+      "language": "Python",
+      "body": "entries = [\"first\", \"second\", \"third\"]\nreversed_list = entries[::-1]\nprint(reversed_list)"
+    },
+    {
+      "language": "Java",
+      "body": "List<String> entries = Arrays.asList(\"first\", \"second\", \"third\");\nCollections.reverse(entries);\nSystem.out.println(entries);"
+    },
+    {
+      "language": "Visual Basic",
+      "body": "Dim entries As New List(Of String) From {\"first\", \"second\", \"third\"}\nentries.Reverse()\nFor Each e In entries\n    Debug.Print(e)\nNext"
+    },
+    {
+      "language": "SQL",
+      "body": "SELECT REVERSE('hello') AS reversed;\nSELECT * FROM orders ORDER BY id DESC;"
+    }
   ],
+  "themes": ["strings_and_text"],
   "difficulty": 4
 }

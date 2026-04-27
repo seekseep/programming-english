@@ -6,12 +6,28 @@
     "english": "Move the processed files to the archive folder.",
     "japanese": "処理済みのファイルをアーカイブフォルダに移動してください。"
   },
-  "example_programming": {
-    "language": "Visual Basic",
-    "body": "Dim fso As Object\nSet fso = CreateObject(\"Scripting.FileSystemObject\")\nSet folder = fso.GetFolder(\"C:\\reports\")"
-  },
-  "themes": [
-    "file_io"
+  "example_programming": [
+    {
+      "language": "Visual Basic",
+      "body": "Dim fso As Object\nSet fso = CreateObject(\"Scripting.FileSystemObject\")\nSet folder = fso.GetFolder(\"C:\\reports\")"
+    },
+    {
+      "language": "JavaScript",
+      "body": "const fs = require('fs');\nconst files = fs.readdirSync('./reports');\nconsole.log(files);"
+    },
+    {
+      "language": "Python",
+      "body": "import os\nfolder_path = './reports'\nfiles = os.listdir(folder_path)\nprint(files)"
+    },
+    {
+      "language": "Java",
+      "body": "File folder = new File(\"./reports\");\nFile[] files = folder.listFiles();\nfor (File f : files) {\n  System.out.println(f.getName());\n}"
+    },
+    {
+      "language": "SQL",
+      "body": "SELECT * FROM information_schema.tables\nWHERE table_schema = 'reports';"
+    }
   ],
+  "themes": ["file_io"],
   "difficulty": 7
 }

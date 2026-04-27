@@ -6,12 +6,28 @@
     "english": "Return a promise that resolves with the user data.",
     "japanese": "ユーザーデータで解決するプロミスを返してください。"
   },
-  "example_programming": {
-    "language": "JavaScript",
-    "body": "const promise = new Promise((resolve, reject) => {\n  setTimeout(() => resolve('done'), 500);\n});\npromise.then(value => console.log(value));"
-  },
-  "themes": [
-    "async_programming"
+  "example_programming": [
+    {
+      "language": "JavaScript",
+      "body": "const promise = new Promise((resolve, reject) => {\n  setTimeout(() => resolve('done'), 500);\n});\npromise.then(value => console.log(value));"
+    },
+    {
+      "language": "Visual Basic",
+      "body": "Dim promise As Task(Of String) = Task.Run(Of String)(Function()\n    System.Threading.Thread.Sleep(500)\n    Return \"done\"\nEnd Function)"
+    },
+    {
+      "language": "Python",
+      "body": "import asyncio\nasync def fetch():\n    await asyncio.sleep(0.5)\n    return 'done'\nawait fetch()"
+    },
+    {
+      "language": "Java",
+      "body": "CompletableFuture<String> promise = CompletableFuture.supplyAsync(() -> {\n    try { Thread.sleep(500); } catch (InterruptedException e) { }\n    return \"done\";\n});"
+    },
+    {
+      "language": "SQL",
+      "body": "START TRANSACTION;\nSELECT 'waiting for promise' AS status;\nCOMMIT;"
+    }
   ],
+  "themes": ["async_programming"],
   "difficulty": 6
 }

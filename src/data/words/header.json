@@ -6,12 +6,28 @@
     "english": "Add an Authorization header to the request.",
     "japanese": "リクエストに認証ヘッダーを追加してください。"
   },
-  "example_programming": {
-    "language": "JavaScript",
-    "body": "const res = await fetch('/api/me', {\n  headers: {\n    'Authorization': 'Bearer ' + token,\n    'Accept': 'application/json'\n  }\n});"
-  },
-  "themes": [
-    "http_and_api"
+  "example_programming": [
+    {
+      "language": "JavaScript",
+      "body": "const res = await fetch('/api/me', {\n  headers: {\n    'Authorization': 'Bearer ' + token,\n    'Accept': 'application/json'\n  }\n});"
+    },
+    {
+      "language": "Python",
+      "body": "import requests\nheaders = {\n  'Authorization': f'Bearer {token}',\n  'Content-Type': 'application/json'\n}\nresponse = requests.get('/api/me', headers=headers)"
+    },
+    {
+      "language": "Visual Basic",
+      "body": "Dim request As Object\nSet request = CreateObject(\"MSXML2.XMLHTTP\")\nCall request.SetRequestHeader(\"Authorization\", \"Bearer \" & token)\nCall request.SetRequestHeader(\"Accept\", \"application/json\")"
+    },
+    {
+      "language": "Java",
+      "body": "HttpRequest request = HttpRequest.newBuilder()\n  .uri(new URI(\"/api/me\"))\n  .header(\"Authorization\", \"Bearer \" + token)\n  .header(\"Accept\", \"application/json\")\n  .build();"
+    },
+    {
+      "language": "SQL",
+      "body": "SELECT header_key, header_value\nFROM request_headers\nWHERE request_id = 123;"
+    }
   ],
+  "themes": ["http_and_api"],
   "difficulty": 6
 }

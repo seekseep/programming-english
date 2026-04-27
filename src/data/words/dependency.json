@@ -6,12 +6,28 @@
     "english": "This project has lodash as a dependency.",
     "japanese": "このプロジェクトは依存関係としてlodashを持っています。"
   },
-  "example_programming": {
-    "language": "JavaScript",
-    "body": "// dependency\n// package.json\n{\n  \"dependencies\": {\n    \"lodash\": \"^4.17.21\"\n  }\n}"
-  },
-  "themes": [
-    "modules_and_imports"
+  "example_programming": [
+    {
+      "language": "JavaScript",
+      "body": "import lodash from 'lodash';\nconst dep = { dependency: lodash.map([1,2,3], x => x*2) };"
+    },
+    {
+      "language": "Visual Basic",
+      "body": "Dim dep As Object\nSet dep = CreateObject(\"Scripting.FileSystemObject\")\nMsgBox TypeName(dep)"
+    },
+    {
+      "language": "Python",
+      "body": "import json\ndependency = {'name': 'flask', 'version': '2.0'}\nprint(json.dumps(dependency))"
+    },
+    {
+      "language": "Java",
+      "body": "import java.util.*;\nList<String> dependency = Arrays.asList(\"junit\", \"spring\");"
+    },
+    {
+      "language": "SQL",
+      "body": "SELECT table_name FROM information_schema.tables\nWHERE table_schema = 'public' AND dependency IS NOT NULL;"
+    }
   ],
+  "themes": ["modules_and_imports"],
   "difficulty": 8
 }

@@ -6,12 +6,28 @@
     "english": "The password must be valid before you submit the form.",
     "japanese": "フォームを送信する前にパスワードが妥当である必要があります。"
   },
-  "example_programming": {
-    "language": "Visual Basic",
-    "body": "Function IsValid(name As String) As Boolean\n    IsValid = (Len(Trim(name)) > 0)\nEnd Function\n\nDebug.Print IsValid(\"Taro\")"
-  },
-  "themes": [
-    "boolean_logic"
+  "example_programming": [
+    {
+      "language": "Visual Basic",
+      "body": "Function IsValid(name As String) As Boolean\n    IsValid = (Len(Trim(name)) > 0)\nEnd Function\n\nDebug.Print IsValid(\"Taro\")"
+    },
+    {
+      "language": "Python",
+      "body": "def is_valid(name):\n  return len(name.strip()) > 0\nprint(is_valid(\"Taro\"))"
+    },
+    {
+      "language": "JavaScript",
+      "body": "function isValid(name) {\n  return name.trim().length > 0;\n}\nconsole.log(isValid(\"Taro\"));"
+    },
+    {
+      "language": "Java",
+      "body": "boolean isValid(String name) {\n  return name != null && name.trim().length() > 0;\n}\nSystem.out.println(isValid(\"Taro\"));"
+    },
+    {
+      "language": "SQL",
+      "body": "SELECT CASE WHEN TRIM(name) <> '' THEN 1 ELSE 0 END AS is_valid\nFROM users;"
+    }
   ],
+  "themes": ["boolean_logic"],
   "difficulty": 3
 }

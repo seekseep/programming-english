@@ -6,12 +6,28 @@
     "english": "The finally block always runs to clean up resources.",
     "japanese": "finallyブロックは、リソースを片付けるために必ず実行されます。"
   },
-  "example_programming": {
-    "language": "JavaScript",
-    "body": "try {\n  await load();\n} catch (e) {\n  console.error(e);\n} finally {\n  hideSpinner();\n}"
-  },
-  "themes": [
-    "error_handling"
+  "example_programming": [
+    {
+      "language": "JavaScript",
+      "body": "try {\n  await load();\n} catch (e) {\n  console.error(e);\n} finally {\n  hideSpinner();\n}"
+    },
+    {
+      "language": "Python",
+      "body": "try:\n  load_data()\nexcept Exception as e:\n  print(f'Error: {e}')\nfinally:\n  hide_spinner()"
+    },
+    {
+      "language": "Visual Basic",
+      "body": "On Error GoTo ErrorHandler\nLoad()\nExit Sub\nErrorHandler:\n  MsgBox Err.Description\nFinally:\n  HideSpinner()\nEnd Sub"
+    },
+    {
+      "language": "Java",
+      "body": "try {\n  load();\n} catch (Exception e) {\n  System.err.println(e);\n} finally {\n  hideSpinner();\n}"
+    },
+    {
+      "language": "SQL",
+      "body": "BEGIN TRY\n  EXEC sp_LoadData\nEND TRY\nBEGIN CATCH\n  SELECT ERROR_MESSAGE()\nEND CATCH"
+    }
   ],
+  "themes": ["error_handling"],
   "difficulty": 8
 }

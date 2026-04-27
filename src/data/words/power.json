@@ -6,12 +6,28 @@
     "english": "The storm knocked out power across the whole town.",
     "japanese": "嵐が町全体の電力を止めてしまった。"
   },
-  "example_programming": {
-    "language": "JavaScript",
-    "body": "// power\nconsole.log(Math.pow(2, 10));\nconsole.log(3 ** 4);"
-  },
-  "themes": [
-    "numbers_and_math"
+  "example_programming": [
+    {
+      "language": "JavaScript",
+      "body": "// power\nconsole.log(Math.pow(2, 10));\nconsole.log(3 ** 4);"
+    },
+    {
+      "language": "Visual Basic",
+      "body": "Debug.Print 2 ^ 10\nDebug.Print 3 ^ 4"
+    },
+    {
+      "language": "Python",
+      "body": "print(pow(2, 10))\nprint(3 ** 4)"
+    },
+    {
+      "language": "Java",
+      "body": "System.out.println(Math.pow(2, 10));\nSystem.out.println(Math.pow(3, 4));"
+    },
+    {
+      "language": "SQL",
+      "body": "SELECT POWER(2, 10) AS power_result, POWER(3, 4) AS another_power;"
+    }
   ],
+  "themes": ["numbers_and_math"],
   "difficulty": 9
 }

@@ -6,12 +6,28 @@
     "english": "Check the response status before reading the body.",
     "japanese": "本文を読む前にレスポンスのステータスを確認してください。"
   },
-  "example_programming": {
-    "language": "JavaScript",
-    "body": "const response = await fetch('/api/items');\nif (response.ok) {\n  const items = await response.json();\n  console.log(items);\n}"
-  },
-  "themes": [
-    "http_and_api"
+  "example_programming": [
+    {
+      "language": "JavaScript",
+      "body": "const response = await fetch('/api/items');\nif (response.ok) {\n  const items = await response.json();\n  console.log(items);\n}"
+    },
+    {
+      "language": "Python",
+      "body": "import requests\nresponse = requests.get('/api/items')\nif response.status_code == 200:\n    items = response.json()\n    print(items)"
+    },
+    {
+      "language": "Java",
+      "body": "HttpResponse<String> response = client.send(request, HttpResponse.BodyHandlers.ofString());\nif (response.statusCode() == 200) {\n    String body = response.body();\n    System.out.println(body);\n}"
+    },
+    {
+      "language": "Visual Basic",
+      "body": "Dim response As System.Net.Http.HttpResponseMessage = Await client.SendAsync(request)\nIf response.IsSuccessStatusCode Then\n    Dim content = Await response.Content.ReadAsStringAsync()\n    Debug.Print(content)\nEnd If"
+    },
+    {
+      "language": "SQL",
+      "body": "SELECT response_code, response_body\nFROM api_responses\nWHERE response_code = 200;"
+    }
   ],
+  "themes": ["http_and_api"],
   "difficulty": 6
 }

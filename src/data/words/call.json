@@ -6,12 +6,28 @@
     "english": "You need to call the function to see the result.",
     "japanese": "結果を見るには、その関数を呼び出す必要があります。"
   },
-  "example_programming": {
-    "language": "Visual Basic",
-    "body": "Sub ShowMessage()\n    MsgBox \"Hello\"\nEnd Sub\n\nCall ShowMessage"
-  },
-  "themes": [
-    "functions_and_procedures"
+  "example_programming": [
+    {
+      "language": "Visual Basic",
+      "body": "Sub ShowMessage()\n    MsgBox \"Hello\"\nEnd Sub\n\nCall ShowMessage"
+    },
+    {
+      "language": "JavaScript",
+      "body": "function showMessage() {\n    console.log('Hello');\n}\nshowMessage();"
+    },
+    {
+      "language": "Python",
+      "body": "def show_message():\n    print('Hello')\nshow_message()"
+    },
+    {
+      "language": "Java",
+      "body": "public static void showMessage() {\n    System.out.println(\"Hello\");\n}\nshowMessage();"
+    },
+    {
+      "language": "SQL",
+      "body": "CREATE PROCEDURE ShowMessage AS\nBEGIN\n    PRINT 'Hello';\nEND;\nEXEC ShowMessage;"
+    }
   ],
+  "themes": ["functions_and_procedures"],
   "difficulty": 2
 }

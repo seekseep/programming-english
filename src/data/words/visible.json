@@ -6,12 +6,28 @@
     "english": "Hide the advanced options until the user checks the box.",
     "japanese": "ユーザーがチェックを入れるまで詳細オプションを非表示にしてください。"
   },
-  "example_programming": {
-    "language": "Visual Basic",
-    "body": "Frame1.Visible = False\nIf CheckBox1.Value = True Then\n    Frame1.Visible = True\nEnd If"
-  },
-  "themes": [
-    "vb_forms_controls"
+  "example_programming": [
+    {
+      "language": "Visual Basic",
+      "body": "Frame1.Visible = False\nIf CheckBox1.Value = True Then\n    Frame1.Visible = True\nEnd If"
+    },
+    {
+      "language": "Python",
+      "body": "class Widget:\n  visible = False\n  def show(self):\n    self.visible = True\nwidget = Widget()\nwidget.show()"
+    },
+    {
+      "language": "JavaScript",
+      "body": "const element = document.getElementById('advanced');\nelement.style.display = 'none';\nif (checkbox.checked) {\n  element.style.display = 'block';\n}"
+    },
+    {
+      "language": "Java",
+      "body": "JPanel advancedPanel = new JPanel();\nadvancedPanel.setVisible(false);\nif (checkBox.isSelected()) {\n  advancedPanel.setVisible(true);\n}"
+    },
+    {
+      "language": "SQL",
+      "body": "SELECT id, name,\n       CASE WHEN is_active THEN 1 ELSE 0 END AS visible\nFROM items;"
+    }
   ],
+  "themes": ["vb_forms_controls"],
   "difficulty": 7
 }

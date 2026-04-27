@@ -6,13 +6,28 @@
     "english": "The catch block runs when an error is thrown inside try.",
     "japanese": "catchブロックは、tryの中でエラーが投げられたときに実行されます。"
   },
-  "example_programming": {
-    "language": "JavaScript",
-    "body": "try {\n  const data = JSON.parse(input);\n} catch (e) {\n  console.error('parse failed:', e.message);\n}"
-  },
-  "themes": [
-    "async_programming",
-    "error_handling"
+  "example_programming": [
+    {
+      "language": "JavaScript",
+      "body": "try {\n  const data = JSON.parse(input);\n} catch (e) {\n  console.error('parse failed:', e.message);\n}"
+    },
+    {
+      "language": "Python",
+      "body": "try:\n  val = int(user_input)\nexcept ValueError:\n  print('catch error: invalid input')\nexcept Exception as e:\n  print(f'catch: {e}')"
+    },
+    {
+      "language": "Java",
+      "body": "try {\n  int x = Integer.parseInt(str);\n} catch (NumberFormatException e) {\n  System.out.println(\"catch error\");\n  e.printStackTrace();\n}"
+    },
+    {
+      "language": "Visual Basic",
+      "body": "On Error GoTo ErrorHandler\nDim x As Integer = Val(input)\nExit Sub\nErrorHandler:\nMsgBox \"catch error: \" & Err.Description"
+    },
+    {
+      "language": "SQL",
+      "body": "BEGIN TRY\n  INSERT INTO users VALUES ('test');\nEND TRY\nBEGIN CATCH\n  PRINT 'catch error';\nEND CATCH;"
+    }
   ],
+  "themes": ["async_programming", "error_handling"],
   "difficulty": 8
 }

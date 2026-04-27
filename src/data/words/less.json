@@ -6,12 +6,28 @@
     "english": "Three is less than seven.",
     "japanese": "3 は 7 より小さいです。"
   },
-  "example_programming": {
-    "language": "Visual Basic",
-    "body": "Dim age As Integer\nage = 12\nIf age < 18 Then ' less than\n    Debug.Print \"minor\"\nEnd If"
-  },
-  "themes": [
-    "operators"
+  "example_programming": [
+    {
+      "language": "Visual Basic",
+      "body": "Dim age As Integer\nage = 12\nIf age < 18 Then ' less than\n    Debug.Print \"minor\"\nEnd If"
+    },
+    {
+      "language": "JavaScript",
+      "body": "const age = 12;\nif (age < 18) {\n  console.log(\"minor\");\n}"
+    },
+    {
+      "language": "Python",
+      "body": "age = 12\nif age < 18:\n    print(\"minor\")"
+    },
+    {
+      "language": "Java",
+      "body": "int age = 12;\nif (age < 18) {\n  System.out.println(\"minor\");\n}"
+    },
+    {
+      "language": "SQL",
+      "body": "SELECT * FROM users WHERE age < 18;"
+    }
   ],
+  "themes": ["operators"],
   "difficulty": 3
 }

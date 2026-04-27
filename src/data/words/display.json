@@ -6,12 +6,28 @@
     "english": "The program will display a welcome message.",
     "japanese": "プログラムは歓迎のメッセージを表示します。"
   },
-  "example_programming": {
-    "language": "Visual Basic",
-    "body": "Sub Display()\n    MsgBox \"Welcome!\"\nEnd Sub\n\nCall Display"
-  },
-  "themes": [
-    "basic_io"
+  "example_programming": [
+    {
+      "language": "JavaScript",
+      "body": "const msg = \"Hello\";\nconsole.log(msg);"
+    },
+    {
+      "language": "Visual Basic",
+      "body": "Sub Display()\n    MsgBox \"Welcome!\"\nEnd Sub"
+    },
+    {
+      "language": "Python",
+      "body": "message = \"Hello\"\nprint(message)"
+    },
+    {
+      "language": "Java",
+      "body": "String message = \"Hello\";\nSystem.out.println(message);"
+    },
+    {
+      "language": "SQL",
+      "body": "SELECT display FROM screens WHERE id = 1;"
+    }
   ],
+  "themes": ["basic_io"],
   "difficulty": 2
 }

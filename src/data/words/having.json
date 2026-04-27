@@ -6,12 +6,28 @@
     "english": "Show customers having more than ten orders.",
     "japanese": "注文が10件より多い顧客を表示してください。"
   },
-  "example_programming": {
-    "language": "SQL",
-    "body": "SELECT customer_id, COUNT(*) AS cnt\nFROM orders\nGROUP BY customer_id\nHAVING COUNT(*) > 10;"
-  },
-  "themes": [
-    "sql_aggregation"
+  "example_programming": [
+    {
+      "language": "SQL",
+      "body": "SELECT customer_id, COUNT(*) AS cnt\nFROM orders\nGROUP BY customer_id\nHAVING COUNT(*) > 10;"
+    },
+    {
+      "language": "JavaScript",
+      "body": "const orders = [{cId: 1}, {cId: 1}, {cId: 2}];\nconst grouped = orders.reduce((acc, o) => {\n  acc[o.cId] = (acc[o.cId] || 0) + 1;\n  return acc;\n}, {});\nconst filtered = Object.entries(grouped).filter(([_, cnt]) => cnt > 10);"
+    },
+    {
+      "language": "Python",
+      "body": "from collections import Counter\norders = [1, 1, 2, 2, 2, 3]\ncounts = Counter(orders)\nfiltered = {k: v for k, v in counts.items() if v > 1}\nprint(filtered)"
+    },
+    {
+      "language": "Visual Basic",
+      "body": "Dim dict As New Dictionary\nFor Each o In orders\n  dict(o.cId) = dict(o.cId) + 1\nNext\nFor Each key In dict.Keys\n  If dict(key) > 10 Then\n    Debug.Print key\n  End If\nNext"
+    },
+    {
+      "language": "Java",
+      "body": "List<Order> orders = Arrays.asList(new Order(1, 1), new Order(2, 1));\nMap<Integer, Long> counted = orders.stream()\n  .collect(Collectors.groupingBy(Order::getCId, Collectors.counting()));\nMap<Integer, Long> filtered = counted.entrySet().stream()\n  .filter(e -> e.getValue() > 10)\n  .collect(Collectors.toMap(Map.Entry::getKey, Map.Entry::getValue));"
+    }
   ],
+  "themes": ["sql_aggregation"],
   "difficulty": 6
 }

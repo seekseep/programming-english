@@ -6,13 +6,28 @@
     "english": "The country code column is defined as a char of length two.",
     "japanese": "国コードの列は長さ 2 の char 型で定義されています。"
   },
-  "example_programming": {
-    "language": "SQL",
-    "body": "CREATE TABLE countries (\n  code CHAR(2),\n  name VARCHAR(50)\n);"
-  },
-  "themes": [
-    "strings_and_text",
-    "variables_and_types"
+  "example_programming": [
+    {
+      "language": "SQL",
+      "body": "CREATE TABLE countries (\n  code CHAR(2),\n  name VARCHAR(50)\n);"
+    },
+    {
+      "language": "JavaScript",
+      "body": "const str = \"hello\";\nconst ch = str.charAt(0);\nconst code = str.charCodeAt(1);"
+    },
+    {
+      "language": "Python",
+      "body": "text = \"a\"\nchar_code = ord(text)\nchar = chr(65)"
+    },
+    {
+      "language": "Java",
+      "body": "char letter = 'x';\nchar code = 65;\nString str = \"hello\";\nchar first = str.charAt(0);"
+    },
+    {
+      "language": "Visual Basic",
+      "body": "Dim ch As String = \"A\"\nDim code As Integer = Asc(ch)\nDim chr As String = Chr(65)"
+    }
   ],
+  "themes": ["strings_and_text", "variables_and_types"],
   "difficulty": 2
 }

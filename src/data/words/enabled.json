@@ -6,12 +6,28 @@
     "english": "Disable the save button while the file is being written.",
     "japanese": "ファイル書き込み中は保存ボタンを無効にしてください。"
   },
-  "example_programming": {
-    "language": "Visual Basic",
-    "body": "Button1.Enabled = False\nCall SaveData\nButton1.Enabled = True"
-  },
-  "themes": [
-    "vb_forms_controls"
+  "example_programming": [
+    {
+      "language": "JavaScript",
+      "body": "const btn = document.getElementById('save');\nbtn.disabled = true;\nprocessData();\nbtn.disabled = false;"
+    },
+    {
+      "language": "Visual Basic",
+      "body": "Button1.Enabled = False\nCall SaveData\nButton1.Enabled = True"
+    },
+    {
+      "language": "Python",
+      "body": "enabled = True\nif enabled:\n    process()\nelse:\n    print('disabled')"
+    },
+    {
+      "language": "Java",
+      "body": "JButton btn = new JButton();\nbtn.setEnabled(true);\nbtn.setEnabled(false);"
+    },
+    {
+      "language": "SQL",
+      "body": "SELECT * FROM controls WHERE enabled = 1;"
+    }
   ],
+  "themes": ["vb_forms_controls"],
   "difficulty": 7
 }

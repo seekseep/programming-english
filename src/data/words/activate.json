@@ -6,12 +6,28 @@
     "english": "Activate the summary sheet before writing the results.",
     "japanese": "結果を書き込む前にサマリーシートをアクティブにしてください。"
   },
-  "example_programming": {
-    "language": "Visual Basic",
-    "body": "Worksheets(\"Summary\").Activate\nRange(\"A1\").Value = \"Report\""
-  },
-  "themes": [
-    "excel_vba_basics"
+  "example_programming": [
+    {
+      "language": "Visual Basic",
+      "body": "Worksheets(\"Summary\").Activate\nRange(\"A1\").Value = \"Report\""
+    },
+    {
+      "language": "JavaScript",
+      "body": "const tab = document.querySelector('[data-tab=\"settings\"]');\ntab.classList.add('active');\ntab.setAttribute('aria-selected', 'true');\ntab.focus();"
+    },
+    {
+      "language": "Python",
+      "body": "class Feature:\n    def activate(self):\n        self.is_active = True\n        print(f'Feature activated')\nfeature = Feature()\nfeature.activate()"
+    },
+    {
+      "language": "Java",
+      "body": "public class User {\n    boolean isActive;\n    public void activate() {\n        isActive = true;\n        System.out.println(\"User activated\");\n    }\n}"
+    },
+    {
+      "language": "SQL",
+      "body": "UPDATE users SET is_active = 1, activated_at = NOW() WHERE id = @userId;"
+    }
   ],
+  "themes": ["excel_vba_basics"],
   "difficulty": 7
 }

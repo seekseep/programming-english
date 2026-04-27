@@ -6,13 +6,28 @@
     "english": "Create an index on the email column to speed up searches.",
     "japanese": "検索を速くするために、email 列にインデックスを作成してください。"
   },
-  "example_programming": {
-    "language": "SQL",
-    "body": "CREATE INDEX idx_users_email\nON users (email);"
-  },
-  "themes": [
-    "collections",
-    "database_concepts"
+  "example_programming": [
+    {
+      "language": "SQL",
+      "body": "CREATE INDEX idx_users_email\nON users (email);"
+    },
+    {
+      "language": "JavaScript",
+      "body": "const arr = ['a', 'b', 'c'];\nconst index = arr.indexOf('b');\nconsole.log(index);"
+    },
+    {
+      "language": "Python",
+      "body": "items = ['apple', 'banana', 'cherry']\nindex = items.index('banana')\nprint(f\"Index: {index}\")"
+    },
+    {
+      "language": "Java",
+      "body": "String[] items = {\"x\", \"y\", \"z\"};\nint index = java.util.Arrays.asList(items).indexOf(\"y\");\nSystem.out.println(index);"
+    },
+    {
+      "language": "Visual Basic",
+      "body": "Dim arr() As String = {\"a\", \"b\", \"c\"}\nDim index As Integer = 1\nDebug.Print \"Index: \" & index"
+    }
   ],
+  "themes": ["collections", "database_concepts"],
   "difficulty": 2
 }

@@ -6,12 +6,28 @@
     "english": "Reduce the array of prices to a single total.",
     "japanese": "価格の配列を集約して、合計金額ひとつにまとめてください。"
   },
-  "example_programming": {
-    "language": "JavaScript",
-    "body": "const prices = [120, 340, 80];\nconst total = prices.reduce((sum, p) => sum + p, 0);\nconsole.log(total); // 540"
-  },
-  "themes": [
-    "collections"
+  "example_programming": [
+    {
+      "language": "JavaScript",
+      "body": "const prices = [120, 340, 80];\nconst total = prices.reduce((sum, p) => sum + p, 0);\nconsole.log(total);"
+    },
+    {
+      "language": "Python",
+      "body": "from functools import reduce\nprices = [120, 340, 80]\ntotal = reduce(lambda sum, p: sum + p, prices, 0)\nprint(total)"
+    },
+    {
+      "language": "Java",
+      "body": "List<Integer> prices = Arrays.asList(120, 340, 80);\nint total = prices.stream().reduce(0, Integer::sum);\nSystem.out.println(total);"
+    },
+    {
+      "language": "Visual Basic",
+      "body": "Dim prices As Integer() = {120, 340, 80}\nDim total As Integer = prices.Aggregate(0, Function(sum, p) sum + p)\nDebug.Print(total)"
+    },
+    {
+      "language": "SQL",
+      "body": "SELECT SUM(price) AS reduce\nFROM (SELECT 120 AS price UNION ALL SELECT 340 UNION ALL SELECT 80) t;"
+    }
   ],
+  "themes": ["collections"],
   "difficulty": 4
 }

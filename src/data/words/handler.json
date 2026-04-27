@@ -6,12 +6,28 @@
     "english": "Register a click handler for the button.",
     "japanese": "ボタンにクリック用のハンドラーを登録してください。"
   },
-  "example_programming": {
-    "language": "JavaScript",
-    "body": "// handler\nfunction handleClick(event) {\n  console.log('clicked:', event.target.id);\n}\ndocument.querySelector('#save').addEventListener('click', handleClick);"
-  },
-  "themes": [
-    "events"
+  "example_programming": [
+    {
+      "language": "JavaScript",
+      "body": "// handler\nfunction handleClick(event) {\n  console.log('clicked:', event.target.id);\n}\ndocument.querySelector('#save').addEventListener('click', handleClick);"
+    },
+    {
+      "language": "Python",
+      "body": "def click_handler(event):\n  print(f'clicked: {event.target}')\n\nbutton.connect('clicked', click_handler)"
+    },
+    {
+      "language": "Visual Basic",
+      "body": "Private Sub btnSave_Click()\n  MsgBox \"Button clicked\"\nEnd Sub"
+    },
+    {
+      "language": "Java",
+      "body": "button.addActionListener(new ActionListener() {\n  public void actionPerformed(ActionEvent e) {\n    System.out.println(\"Button clicked\");\n  }\n});"
+    },
+    {
+      "language": "SQL",
+      "body": "CREATE TRIGGER click_handler\nAFTER INSERT ON events\nFOR EACH ROW\nBEGIN\n  INSERT INTO logs VALUES (NEW.id, NOW());\nEND;"
+    }
   ],
+  "themes": ["events"],
   "difficulty": 5
 }

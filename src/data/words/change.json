@@ -6,12 +6,28 @@
     "english": "Run the validation function when the select box value changes.",
     "japanese": "セレクトボックスの値が変わったら検証関数を実行してください。"
   },
-  "example_programming": {
-    "language": "JavaScript",
-    "body": "const select = document.querySelector('#country');\nselect.addEventListener('change', (event) => {\n  console.log('selected:', event.target.value);\n});"
-  },
-  "themes": [
-    "events"
+  "example_programming": [
+    {
+      "language": "JavaScript",
+      "body": "const select = document.querySelector('#country');\nselect.addEventListener('change', (event) => {\n  console.log('selected:', event.target.value);\n});"
+    },
+    {
+      "language": "Python",
+      "body": "def on_change(var):\n  print(f'change: {var.get()}')\nvar = tk.StringVar()\nvar.trace('w', lambda n, i, m: on_change(var))"
+    },
+    {
+      "language": "Java",
+      "body": "JComboBox<String> combo = new JComboBox<>();\ncombo.addActionListener(e -> {\n  String selected = (String) combo.getSelectedItem();\n  System.out.println(\"change: \" + selected);\n});"
+    },
+    {
+      "language": "Visual Basic",
+      "body": "Private Sub ComboBox1_Change()\n    MsgBox \"change: \" & ComboBox1.Value\nEnd Sub"
+    },
+    {
+      "language": "SQL",
+      "body": "CREATE TRIGGER on_change\nAFTER UPDATE ON settings\nFOR EACH ROW\nBEGIN\n  INSERT INTO audit (action) VALUES ('change');\nEND;"
+    }
   ],
+  "themes": ["events"],
   "difficulty": 5
 }

@@ -6,12 +6,28 @@
     "english": "We normalize the tables to remove duplicate customer data.",
     "japanese": "重複した顧客データを取り除くためにテーブルを正規化します。"
   },
-  "example_programming": {
-    "language": "SQL",
-    "body": "-- normalize: split addresses into a separate table\nCREATE TABLE addresses (\n  id INTEGER PRIMARY KEY,\n  customer_id INTEGER REFERENCES customers(id),\n  city VARCHAR(100)\n);"
-  },
-  "themes": [
-    "database_concepts"
+  "example_programming": [
+    {
+      "language": "SQL",
+      "body": "-- normalize: split addresses into a separate table\nCREATE TABLE addresses (\n  id INTEGER PRIMARY KEY,\n  customer_id INTEGER REFERENCES customers(id),\n  city VARCHAR(100)\n);"
+    },
+    {
+      "language": "JavaScript",
+      "body": "const normalize = (str) => str.toLowerCase().trim();\nconst normalized = normalize('  HELLO WORLD  ');\nconsole.log(normalized);"
+    },
+    {
+      "language": "Python",
+      "body": "import unicodedata\ndef normalize(text):\n    return unicodedata.normalize('NFKD', text).lower()\nnorm = normalize('Café')\nprint(norm)"
+    },
+    {
+      "language": "Java",
+      "body": "public static String normalize(String str) {\n    return str.toLowerCase().trim();\n}\nString normalized = normalize(\"  HELLO  \");\nSystem.out.println(normalized);"
+    },
+    {
+      "language": "Visual Basic",
+      "body": "Function NormalizeString(str As String) As String\n    Return LCase(Trim(str))\nEnd Function\nDim result = NormalizeString(\"  HELLO  \")"
+    }
   ],
+  "themes": ["database_concepts"],
   "difficulty": 10
 }

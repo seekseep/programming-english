@@ -6,12 +6,28 @@
     "english": "Create a backup directory before copying the files.",
     "japanese": "ファイルをコピーする前にバックアップ用のディレクトリを作成してください。"
   },
-  "example_programming": {
-    "language": "Visual Basic",
-    "body": "' directory\nDim fileName As String\nfileName = Dir(\"C:\\reports\\*.xlsx\")\nDo While fileName <> \"\"\n    Debug.Print fileName\n    fileName = Dir\nLoop"
-  },
-  "themes": [
-    "file_io"
+  "example_programming": [
+    {
+      "language": "JavaScript",
+      "body": "const fs = require('fs');\nconst files = fs.readdirSync('./directory');\nconsole.log(files);"
+    },
+    {
+      "language": "Visual Basic",
+      "body": "Dim fileName As String\nfileName = Dir(\"C:\\reports\\*.xlsx\")\nDo While fileName <> \"\"\n    Debug.Print fileName\n    fileName = Dir\nLoop"
+    },
+    {
+      "language": "Python",
+      "body": "import os\nfiles = os.listdir('./directory')\nfor f in files:\n    print(f)"
+    },
+    {
+      "language": "Java",
+      "body": "File directory = new File(\"./data\");\nString[] files = directory.list();\nfor(String f : files) System.out.println(f);"
+    },
+    {
+      "language": "SQL",
+      "body": "SELECT * FROM information_schema.schemata\nWHERE directory IS NOT NULL ORDER BY schema_name;"
+    }
   ],
+  "themes": ["file_io"],
   "difficulty": 7
 }

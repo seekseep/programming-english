@@ -6,12 +6,28 @@
     "english": "Wrap the risky code inside a try block.",
     "japanese": "危険なコードはtryブロックで囲んでください。"
   },
-  "example_programming": {
-    "language": "JavaScript",
-    "body": "try {\n  const user = await fetchUser(id);\n  render(user);\n} catch (e) {\n  showError(e);\n}"
-  },
-  "themes": [
-    "error_handling"
+  "example_programming": [
+    {
+      "language": "JavaScript",
+      "body": "try {\n  const user = await fetchUser(id);\n  render(user);\n} catch (e) {\n  showError(e);\n}"
+    },
+    {
+      "language": "Python",
+      "body": "try:\n  user = fetch_user(user_id)\n  render(user)\nexcept Exception as e:\n  show_error(e)"
+    },
+    {
+      "language": "Java",
+      "body": "try {\n  User user = fetchUser(id);\n  render(user);\n} catch (Exception e) {\n  showError(e);\n}"
+    },
+    {
+      "language": "Visual Basic",
+      "body": "On Error GoTo ErrorHandler\nDim user As Object\nSet user = FetchUser(id)\nRender user\nExit Sub\nErrorHandler: ShowError Err"
+    },
+    {
+      "language": "SQL",
+      "body": "BEGIN TRY\n  SELECT * FROM users WHERE id = @id;\nEND TRY\nBEGIN CATCH\n  SELECT ERROR_MESSAGE() AS error_message;\nEND CATCH"
+    }
   ],
+  "themes": ["error_handling"],
   "difficulty": 8
 }

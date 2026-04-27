@@ -6,12 +6,28 @@
     "english": "Print each item in the shopping list.",
     "japanese": "買い物リストの各項目を出力してください。"
   },
-  "example_programming": {
-    "language": "JavaScript",
-    "body": "const list = [\"apple\", \"banana\", \"orange\"];\nfor (const item of list) {\n  console.log(item);\n}"
-  },
-  "themes": [
-    "collections"
+  "example_programming": [
+    {
+      "language": "JavaScript",
+      "body": "const list = [\"apple\", \"banana\", \"orange\"];\nfor (const item of list) {\n  console.log(item);\n}"
+    },
+    {
+      "language": "Python",
+      "body": "items = [\"apple\", \"banana\", \"orange\"]\nfor item in items:\n    print(item)"
+    },
+    {
+      "language": "Java",
+      "body": "List<String> items = Arrays.asList(\"apple\", \"banana\");\nfor (String item : items) {\n  System.out.println(item);\n}"
+    },
+    {
+      "language": "Visual Basic",
+      "body": "Dim items() As String = {\"apple\", \"banana\"}\nFor Each item In items\n    Debug.Print item\nNext"
+    },
+    {
+      "language": "SQL",
+      "body": "SELECT item_name, price FROM items WHERE status = 'active';"
+    }
   ],
+  "themes": ["collections"],
   "difficulty": 2
 }

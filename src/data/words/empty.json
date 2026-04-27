@@ -6,13 +6,28 @@
     "english": "Check if the list is empty before using it.",
     "japanese": "使う前にリストが空かどうか確認してください。"
   },
-  "example_programming": {
-    "language": "JavaScript",
-    "body": "const items = [];\nconst empty = items.length === 0;\nconsole.log(empty);"
-  },
-  "themes": [
-    "boolean_logic",
-    "collections"
+  "example_programming": [
+    {
+      "language": "JavaScript",
+      "body": "const items = [];\nconst empty = items.length === 0;\nconsole.log(empty);"
+    },
+    {
+      "language": "Visual Basic",
+      "body": "Dim text As String = \"\"\nIf text = \"\" Then\n    Debug.Print \"empty\"\nEnd If"
+    },
+    {
+      "language": "Python",
+      "body": "items = []\nempty = len(items) == 0\nprint(empty)"
+    },
+    {
+      "language": "Java",
+      "body": "List<Integer> items = new ArrayList<>();\nboolean empty = items.isEmpty();"
+    },
+    {
+      "language": "SQL",
+      "body": "SELECT * FROM data WHERE field = '' OR field IS NULL;"
+    }
   ],
+  "themes": ["boolean_logic", "collections"],
   "difficulty": 2
 }

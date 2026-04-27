@@ -6,12 +6,28 @@
     "english": "Show a message when the user clicks the save button.",
     "japanese": "ユーザーが保存ボタンをクリックしたらメッセージを表示してください。"
   },
-  "example_programming": {
-    "language": "JavaScript",
-    "body": "const button = document.querySelector('#save');\nbutton.addEventListener('click', () => {\n  console.log('saved!');\n});"
-  },
-  "themes": [
-    "events"
+  "example_programming": [
+    {
+      "language": "JavaScript",
+      "body": "const button = document.querySelector('#save');\nbutton.addEventListener('click', () => {\n  console.log('saved!');\n});"
+    },
+    {
+      "language": "Python",
+      "body": "def on_click():\n  print('click')\nbtn = tk.Button(root, text='Save', command=on_click)\nbtn.pack()"
+    },
+    {
+      "language": "Java",
+      "body": "JButton btn = new JButton(\"Save\");\nbtn.addActionListener(e -> {\n  System.out.println(\"click\");\n});"
+    },
+    {
+      "language": "Visual Basic",
+      "body": "Private Sub Button1_Click()\n    MsgBox \"click: saved\"\nEnd Sub"
+    },
+    {
+      "language": "SQL",
+      "body": "CREATE TABLE events (\n  id INT,\n  event_type VARCHAR(20),\n  click_timestamp DATETIME\n);"
+    }
   ],
+  "themes": ["events"],
   "difficulty": 5
 }

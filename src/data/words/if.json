@@ -6,12 +6,28 @@
     "english": "If it is sunny, we will go.",
     "japanese": "もし晴れたら、私たちは行きます。"
   },
-  "example_programming": {
-    "language": "Visual Basic",
-    "body": "If score >= 60 Then\n    Debug.Print \"Pass\"\nEnd If"
-  },
-  "themes": [
-    "control_flow"
+  "example_programming": [
+    {
+      "language": "Visual Basic",
+      "body": "If score >= 60 Then\n    Debug.Print \"Pass\"\nEnd If"
+    },
+    {
+      "language": "JavaScript",
+      "body": "if (score >= 60) {\n  console.log(\"Pass\");\n}"
+    },
+    {
+      "language": "Python",
+      "body": "if score >= 60:\n    print(\"Pass\")"
+    },
+    {
+      "language": "Java",
+      "body": "if (score >= 60) {\n  System.out.println(\"Pass\");\n}"
+    },
+    {
+      "language": "SQL",
+      "body": "SELECT * FROM users WHERE age >= 18;"
+    }
   ],
+  "themes": ["control_flow"],
   "difficulty": 1
 }

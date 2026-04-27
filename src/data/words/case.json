@@ -6,12 +6,28 @@
     "english": "Handle each case separately in the query.",
     "japanese": "クエリでそれぞれの場合を別々に処理します。"
   },
-  "example_programming": {
-    "language": "SQL",
-    "body": "SELECT name,\n  CASE\n    WHEN score >= 80 THEN 'pass'\n    ELSE 'fail'\n  END AS result\nFROM students;"
-  },
-  "themes": [
-    "control_flow"
+  "example_programming": [
+    {
+      "language": "SQL",
+      "body": "SELECT name,\n  CASE\n    WHEN score >= 80 THEN 'pass'\n    ELSE 'fail'\n  END AS result\nFROM students;"
+    },
+    {
+      "language": "JavaScript",
+      "body": "switch(level) {\n  case 1: console.log('easy'); break;\n  case 2: console.log('hard'); break;\n}"
+    },
+    {
+      "language": "Python",
+      "body": "match status:\n  case 'active': print('on')\n  case 'inactive': print('off')"
+    },
+    {
+      "language": "Java",
+      "body": "switch(grade) {\n  case 'A': return \"excellent\";\n  case 'B': return \"good\";\n}"
+    },
+    {
+      "language": "Visual Basic",
+      "body": "Select Case type\n  Case \"admin\"\n    MsgBox \"Access granted\"\n  Case Else\n    MsgBox \"Access denied\"\nEnd Select"
+    }
   ],
+  "themes": ["control_flow"],
   "difficulty": 3
 }

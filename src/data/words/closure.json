@@ -6,12 +6,28 @@
     "english": "The shop announced its closure at the end of the month.",
     "japanese": "その店は月末の閉店を告知した。"
   },
-  "example_programming": {
-    "language": "JavaScript",
-    "body": "// closure\nfunction makeCounter() {\n  let count = 0;\n  return () => ++count;\n}\nconst next = makeCounter();\nconsole.log(next(), next(), next());"
-  },
-  "themes": [
-    "functions_and_procedures"
+  "example_programming": [
+    {
+      "language": "JavaScript",
+      "body": "function makeCounter() {\n  let count = 0;\n  return () => ++count;\n}\nconst next = makeCounter();\nconsole.log(next(), next(), next());"
+    },
+    {
+      "language": "Python",
+      "body": "def make_closure(x):\n  def inner(y):\n    return x + y\n  return inner\nadd5 = make_closure(5)\nprint(add5(3))"
+    },
+    {
+      "language": "Java",
+      "body": "class Adder {\n  private final int x;\n  Adder(int x) { this.x = x; }\n  int apply(int y) { return x + y; }\n}"
+    },
+    {
+      "language": "Visual Basic",
+      "body": "Function MakeClosure(x As Integer) As Object\n  Dim closure As Object\n  Set closure = New Dictionary\n  closure(\"func\") = Function(y) x + y\n  Set MakeClosure = closure\nEnd Function"
+    },
+    {
+      "language": "SQL",
+      "body": "WITH closure_data AS (\n  SELECT id, value, (value * 100) AS multiplied\n  FROM items\n)\nSELECT * FROM closure_data;"
+    }
   ],
+  "themes": ["functions_and_procedures"],
   "difficulty": 9
 }

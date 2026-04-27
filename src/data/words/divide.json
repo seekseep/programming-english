@@ -6,12 +6,28 @@
     "english": "Divide ten by two.",
     "japanese": "10を2で割ってください。"
   },
-  "example_programming": {
-    "language": "JavaScript",
-    "body": "// divide\nconst result = 10 / 2;\nconsole.log(result);"
-  },
-  "themes": [
-    "operators"
+  "example_programming": [
+    {
+      "language": "JavaScript",
+      "body": "const result = 10 / 2;\nconsole.log(result);"
+    },
+    {
+      "language": "Visual Basic",
+      "body": "Dim result As Integer\nresult = 10 \\ 2"
+    },
+    {
+      "language": "Python",
+      "body": "result = 10 / 2\nprint(result)"
+    },
+    {
+      "language": "Java",
+      "body": "int result = 10 / 2;\nSystem.out.println(result);"
+    },
+    {
+      "language": "SQL",
+      "body": "SELECT 10 / 2 AS divide;"
+    }
   ],
+  "themes": ["operators"],
   "difficulty": 1
 }

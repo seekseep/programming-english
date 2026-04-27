@@ -6,12 +6,28 @@
     "english": "Sort the numbers in ascending order.",
     "japanese": "数値を昇順に並べ替えてください。"
   },
-  "example_programming": {
-    "language": "JavaScript",
-    "body": "const numbers = [5, 2, 9, 1];\nnumbers.sort((a, b) => a - b);\nconsole.log(numbers);"
-  },
-  "themes": [
-    "collections"
+  "example_programming": [
+    {
+      "language": "JavaScript",
+      "body": "const numbers = [5, 2, 9, 1];\nnumbers.sort((a, b) => a - b);\nconsole.log(numbers);"
+    },
+    {
+      "language": "Visual Basic",
+      "body": "Dim numbers As Integer() = {5, 2, 9, 1}\nArray.Sort(numbers)\nFor Each n In numbers\n    Debug.Print n\nNext"
+    },
+    {
+      "language": "Python",
+      "body": "numbers = [5, 2, 9, 1]\nnumbers.sort()\nprint(numbers)"
+    },
+    {
+      "language": "Java",
+      "body": "int[] numbers = {5, 2, 9, 1};\nArrays.sort(numbers);\nfor (int n : numbers) {\n    System.out.println(n);\n}"
+    },
+    {
+      "language": "SQL",
+      "body": "SELECT * FROM numbers ORDER BY value ASC;"
+    }
   ],
+  "themes": ["collections"],
   "difficulty": 3
 }

@@ -6,12 +6,28 @@
     "english": "The mountain stream had pure, cold water.",
     "japanese": "その山の小川には澄んだ冷たい水が流れていた。"
   },
-  "example_programming": {
-    "language": "JavaScript",
-    "body": "// pure\nconst add = (a, b) => a + b;\nconsole.log(add(2, 3));\nconsole.log(add(2, 3));"
-  },
-  "themes": [
-    "functions_and_procedures"
+  "example_programming": [
+    {
+      "language": "JavaScript",
+      "body": "// pure\nconst add = (a, b) => a + b;\nconsole.log(add(2, 3));\nconsole.log(add(2, 3));"
+    },
+    {
+      "language": "Visual Basic",
+      "body": "' pure function\nFunction Add(a As Integer, b As Integer) As Integer\n    Return a + b\nEnd Function\nDebug.Print Add(2, 3)"
+    },
+    {
+      "language": "Python",
+      "body": "def add(a, b):\n    return a + b\nprint(add(2, 3))\nprint(add(2, 3))"
+    },
+    {
+      "language": "Java",
+      "body": "public static int add(int a, int b) {\n    return a + b;\n}\nSystem.out.println(add(2, 3));"
+    },
+    {
+      "language": "SQL",
+      "body": "CREATE PURE FUNCTION add(a INT, b INT) RETURNS INT\nRETURN a + b;"
+    }
   ],
+  "themes": ["functions_and_procedures"],
   "difficulty": 9
 }

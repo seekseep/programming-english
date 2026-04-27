@@ -6,12 +6,28 @@
     "english": "Every snowflake is said to have a unique shape.",
     "japanese": "すべての雪の結晶はそれぞれ唯一の形をしていると言われる。"
   },
-  "example_programming": {
-    "language": "SQL",
-    "body": "CREATE TABLE accounts (\n  id INTEGER PRIMARY KEY,\n  email TEXT NOT NULL UNIQUE,\n  username TEXT NOT NULL UNIQUE\n);"
-  },
-  "themes": [
-    "database_concepts"
+  "example_programming": [
+    {
+      "language": "SQL",
+      "body": "CREATE TABLE accounts (\n  id INTEGER PRIMARY KEY,\n  email TEXT NOT NULL UNIQUE,\n  username TEXT NOT NULL UNIQUE\n);"
+    },
+    {
+      "language": "Python",
+      "body": "from sqlalchemy import Column, String, Integer, UniqueConstraint\nclass Account(Base):\n  id = Column(Integer, primary_key=True)\n  email = Column(String, unique=True)\n  username = Column(String, unique=True)"
+    },
+    {
+      "language": "JavaScript",
+      "body": "const schema = {\n  type: 'object',\n  properties: {\n    email: { type: 'string', unique: true },\n    username: { type: 'string', unique: true }\n  }\n};"
+    },
+    {
+      "language": "Java",
+      "body": "@Entity\n@Table(uniqueConstraints = {\n  @UniqueConstraint(columnNames = \"email\"),\n  @UniqueConstraint(columnNames = \"username\")\n})\npublic class Account {}"
+    },
+    {
+      "language": "Visual Basic",
+      "body": "Dim tbl As Table\nSet tbl = db.CreateTableDef(\"accounts\")\nDim field As Field\nSet field = tbl.CreateField(\"email\", dbText)\nfield.Attributes = field.Attributes + dbUniqueForeignKey\ntbl.Fields.Append field"
+    }
   ],
+  "themes": ["database_concepts"],
   "difficulty": 9
 }

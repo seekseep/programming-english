@@ -6,12 +6,28 @@
     "english": "The window function calculates a running total without collapsing rows.",
     "japanese": "ウィンドウ関数は行を畳み込まずに累計を計算します。"
   },
-  "example_programming": {
-    "language": "SQL",
-    "body": "-- window\nSELECT sale_date, amount,\n       SUM(amount) OVER (PARTITION BY region ORDER BY sale_date) AS running_total\nFROM sales;"
-  },
-  "themes": [
-    "sql_aggregation"
+  "example_programming": [
+    {
+      "language": "SQL",
+      "body": "-- window\nSELECT sale_date, amount,\n       SUM(amount) OVER (PARTITION BY region ORDER BY sale_date) AS running_total\nFROM sales;"
+    },
+    {
+      "language": "Python",
+      "body": "import pandas as pd\ndf = pd.read_sql('SELECT * FROM sales')\ndf['running_total'] = df.groupby('region')['amount'].cumsum()\nprint(df)"
+    },
+    {
+      "language": "JavaScript",
+      "body": "const result = db.raw(`\n  SELECT sale_date, amount,\n    SUM(amount) OVER (PARTITION BY region ORDER BY sale_date) AS running_total\n  FROM sales\n`);"
+    },
+    {
+      "language": "Java",
+      "body": "List<Sale> sales = saleRepo.findAll();\nMap<String, List<Sale>> byRegion = sales.stream()\n  .collect(Collectors.groupingBy(Sale::getRegion));\nbyRegion.forEach((region, items) -> {\n  int sum = 0;\n  for (Sale s : items) sum += s.getAmount();\n});"
+    },
+    {
+      "language": "Visual Basic",
+      "body": "Dim rs As Recordset\nSet rs = db.OpenRecordset(\"\"\"\nSELECT sale_date, amount,\n  SUM(amount) OVER (PARTITION BY region ORDER BY sale_date) AS running_total\nFROM sales\"\"\")"
+    }
   ],
+  "themes": ["sql_aggregation"],
   "difficulty": 10
 }

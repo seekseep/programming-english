@@ -6,12 +6,28 @@
     "english": "A foreign key defines the relation between two tables.",
     "japanese": "外部キーは2つのテーブル間のリレーションを定義します。"
   },
-  "example_programming": {
-    "language": "SQL",
-    "body": "-- relation between orders and customers\nCREATE TABLE orders (\n  id INTEGER PRIMARY KEY,\n  customer_id INTEGER NOT NULL REFERENCES customers(id)\n);"
-  },
-  "themes": [
-    "database_concepts"
+  "example_programming": [
+    {
+      "language": "SQL",
+      "body": "-- relation between orders and customers\nCREATE TABLE orders (\n  id INTEGER PRIMARY KEY,\n  customer_id INTEGER NOT NULL REFERENCES customers(id)\n);"
+    },
+    {
+      "language": "JavaScript",
+      "body": "const orders = [{id: 1, customer_id: 100}, {id: 2, customer_id: 101}];\nconst customers = [{id: 100, name: 'Alice'}, {id: 101, name: 'Bob'}];\nconst withCustomer = orders.map(o => ({\n  ...o, customer: customers.find(c => c.id === o.customer_id)\n}));"
+    },
+    {
+      "language": "Python",
+      "body": "orders = [{'id': 1, 'customer_id': 100}]\ncustomers = [{'id': 100, 'name': 'Alice'}]\nresult = []\nfor order in orders:\n    customer = next((c for c in customers if c['id'] == order['customer_id']), None)\n    result.append({**order, 'customer': customer})"
+    },
+    {
+      "language": "Java",
+      "body": "class Relation {\n    int orderId;\n    int customerId;\n    String customerName;\n}\nList<Relation> relations = new ArrayList<>();"
+    },
+    {
+      "language": "Visual Basic",
+      "body": "Dim orders As New List(Of Integer) From {1, 2}\nDim customers As New List(Of String) From {\"Alice\", \"Bob\"}\nFor Each orderId In orders\n    Dim customer = customers(orderId - 1)\n    Debug.Print(orderId & \" -> \" & customer)\nNext"
+    }
   ],
+  "themes": ["database_concepts"],
   "difficulty": 10
 }

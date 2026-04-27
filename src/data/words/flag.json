@@ -6,12 +6,28 @@
     "english": "Use a flag to remember whether the user is logged in.",
     "japanese": "ユーザーがログイン済みかどうかを覚えておくためにフラグを使います。"
   },
-  "example_programming": {
-    "language": "Visual Basic",
-    "body": "Dim flag As Boolean\nflag = True\nIf flag Then\n    MsgBox \"Logged in\"\nEnd If"
-  },
-  "themes": [
-    "boolean_logic"
+  "example_programming": [
+    {
+      "language": "Visual Basic",
+      "body": "Dim flag As Boolean\nflag = True\nIf flag Then\n    MsgBox \"Logged in\"\nEnd If"
+    },
+    {
+      "language": "JavaScript",
+      "body": "let isLoggedIn = true;\nif (isLoggedIn) {\n  console.log('User logged in');\n}"
+    },
+    {
+      "language": "Python",
+      "body": "is_logged_in = True\nif is_logged_in:\n  print('User logged in')"
+    },
+    {
+      "language": "Java",
+      "body": "boolean isLoggedIn = true;\nif (isLoggedIn) {\n  System.out.println(\"User logged in\");\n}"
+    },
+    {
+      "language": "SQL",
+      "body": "SELECT id FROM users WHERE is_logged_in_flag = 1;"
+    }
   ],
+  "themes": ["boolean_logic"],
   "difficulty": 2
 }

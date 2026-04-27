@@ -6,12 +6,28 @@
     "english": "Prevent the default behavior of the event when the form is submitted.",
     "japanese": "フォームが送信されたら、イベントのデフォルトの動作を止めてください。"
   },
-  "example_programming": {
-    "language": "JavaScript",
-    "body": "const form = document.querySelector('form');\nform.addEventListener('submit', (event) => {\n  event.preventDefault();\n  console.log('submitted');\n});"
-  },
-  "themes": [
-    "events"
+  "example_programming": [
+    {
+      "language": "JavaScript",
+      "body": "const form = document.querySelector('form');\nform.addEventListener('submit', (event) => {\n  event.preventDefault();\n  console.log('submitted');\n});"
+    },
+    {
+      "language": "Visual Basic",
+      "body": "Sub Button1_Click()\n    MsgBox \"event triggered\"\nEnd Sub"
+    },
+    {
+      "language": "Python",
+      "body": "def on_event(event):\n    print(f'Event: {event.type}')\nlistener = on_event"
+    },
+    {
+      "language": "Java",
+      "body": "button.addActionListener(new ActionListener() {\n    public void actionPerformed(ActionEvent event) {\n        System.out.println(\"event\");\n    }\n});"
+    },
+    {
+      "language": "SQL",
+      "body": "CREATE EVENT my_event ON SCHEDULE EVERY 1 HOUR DO SELECT 1;"
+    }
   ],
+  "themes": ["events"],
   "difficulty": 5
 }

@@ -6,12 +6,28 @@
     "english": "Throw an error when the user is not authorized.",
     "japanese": "ユーザーが認可されていないときは、エラーを投げてください。"
   },
-  "example_programming": {
-    "language": "JavaScript",
-    "body": "function divide(a, b) {\n  if (b === 0) {\n    throw new Error('division by zero');\n  }\n  return a / b;\n}"
-  },
-  "themes": [
-    "error_handling"
+  "example_programming": [
+    {
+      "language": "JavaScript",
+      "body": "function divide(a, b) {\n  if (b === 0) {\n    throw new Error('division by zero');\n  }\n  return a / b;\n}"
+    },
+    {
+      "language": "Python",
+      "body": "def divide(a, b):\n  if b == 0:\n    raise ValueError('division by zero')\n  return a / b\nresult = divide(10, 0)"
+    },
+    {
+      "language": "Java",
+      "body": "public int divide(int a, int b) throws Exception {\n  if (b == 0) {\n    throw new Exception(\"division by zero\");\n  }\n  return a / b;\n}"
+    },
+    {
+      "language": "Visual Basic",
+      "body": "Sub ValidateUser(name As String)\n  If Len(name) = 0 Then\n    Err.Raise 11\n  End If\nEnd Sub\nOn Error Goto ErrorHandler"
+    },
+    {
+      "language": "SQL",
+      "body": "CREATE PROCEDURE DivideNumbers @a INT, @b INT AS\nIF @b = 0\n  THROW 50000, 'division by zero', 1;\nSELECT @a / @b;"
+    }
   ],
+  "themes": ["error_handling"],
   "difficulty": 8
 }
